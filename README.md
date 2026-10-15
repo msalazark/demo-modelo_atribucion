@@ -8,8 +8,8 @@ Los datos son sintéticos, con la misma estructura del export de GA4 en BigQuery
 
 ```bash
 pip install duckdb pandas numpy scikit-learn
-python generar_datos.py   # crea data/ecommerce.duckdb (~290 mil eventos, 40 mil usuarios)
-python run_demo.py        # SQL + modelos + validación; escribe resultados/*.csv (~30 s)
+python generar_datos.py   # crea data/ecommerce.duckdb (~920 mil eventos, 120 mil usuarios, 12 meses: 2025-10 a 2026-09)
+python run_demo.py        # SQL + modelos + validación; recalcula los modelos por mes acumulado y escribe resultados/*.csv (~5 min)
 ```
 
 ## Archivos
@@ -31,3 +31,27 @@ python run_demo.py        # SQL + modelos + validación; escribe resultados/*.cs
    y programarlo como consulta recurrente.
 3. Leer la tabla `rutas` desde BigQuery en lugar de DuckDB y correr `markov()` y `shapley()`.
 4. `efecto_real()` solo existe en la demo: con datos reales se valida con experimentos de incrementalidad.
+
+## Dashboard de decisión
+
+La lógica vive en `run_demo.py` (y `atribucion.py`, `metricas_decision.py`). El reporte es **mensual acumulado**:
+el periodo `2026-03` es desde el primer dato hasta el cierre de marzo, con los modelos recalculados
+en cada corte (las cuotas de distintos meses no se suman). Todas las tablas `mart_*` traen `periodo`. El dashboard
+solo lee las tablas `mart_*` de DuckDB y arma reportes.
+
+```bash
+python run_demo.py            # atribución + alcance/asistencia/conversión -> tablas mart_* + CSV
+streamlit run dashboard.py
+```
+
+| Tabla en DuckDB | Contenido |
+|---|---|
+| `mart_atribucion__canal` | Conversiones, ingresos, ROAS por modelo y efecto real |
+| `mart_decision__canal` | Alcance, asistencia, conversión, Shapley, CPA y ROAS por canal, más `senal`, `motivo` y `confianza` |
+| `mart_decision__pares_asistencia` | Qué canal asiste a cuál cierra |
+| `mart_decision__rutas_top` | Rutas que más venden |
+| `mart_periodos` | Rango de fechas, pedidos, semáforo de evidencia y si el último mes está incompleto |
+| `mart_kpi__mensual` | Pedidos, ingresos, inversión, MER y CPA del mes (no acumulado) |
+| `mart_calidad__conciliacion` / `__error_modelo` | Conciliación con backend y error de cada modelo |
+
+Cada tabla también se exporta a `resultados/<tabla>.csv`, lista para cargar a BigQuery.

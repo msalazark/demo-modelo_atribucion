@@ -22,9 +22,9 @@ import numpy as np
 import pandas as pd
 
 SEED = 20261014
-N_USUARIOS = 40_000
-INICIO = datetime(2026, 8, 1, tzinfo=timezone.utc)
-DIAS = 60
+N_USUARIOS = 120_000
+INICIO = datetime(2025, 10, 1, tzinfo=timezone.utc)
+DIAS = 365   # 12 meses: 2025-10 a 2026-09, base del reporte mensual acumulado
 DOMINIO = "https://www.tiendademo.pe"
 
 # Canal -> combinaciones fuente/medio tal como llegan en las UTMs
@@ -106,7 +106,7 @@ def main():
         for idx, (ts, canal) in enumerate(ruta):
             ga_session_id = int(ts.timestamp())
             source, medium = FUENTES[canal][rng.integers(len(FUENTES[canal]))]
-            campana = None if source is None else f"{canal.lower().replace(' ', '_')}_q3"
+            campana = None if source is None else f"{canal.lower().replace(' ', '_')}_always_on"
             url = DOMINIO + "/"
             cts = None
             if source is not None:

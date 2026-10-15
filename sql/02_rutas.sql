@@ -4,12 +4,16 @@
 -- así entran también las compras que GA4 no vio (thank you page perdida,
 -- transferencia, contraentrega). El vínculo es el client_id y el session_id de GA4
 -- que el checkout guarda en el pedido.
+--
+-- Reporte acumulado: la tabla `parametros(corte)` fija la fecha de corte. Solo cuentan
+-- sesiones y pedidos hasta esa fecha; quien compra después del corte figura como no convertido.
 
 CREATE OR REPLACE TABLE rutas AS
 WITH conversiones AS (
   SELECT order_id, ga_client_id AS user_pseudo_id, created_at, revenue_pen, payment_method
   FROM orders
   WHERE status = 'pagado' AND ga_client_id IS NOT NULL
+    AND created_at <= (SELECT corte FROM parametros)
 ),
 convertidas AS (
   SELECT
@@ -35,6 +39,7 @@ no_convertidas AS (
     list(s.canal ORDER BY s.inicio_sesion)    AS ruta
   FROM sesiones s
   WHERE NOT s.es_pasarela
+    AND s.inicio_sesion <= (SELECT corte FROM parametros)
     AND s.user_pseudo_id NOT IN (SELECT user_pseudo_id FROM conversiones)
   GROUP BY ALL
 )
