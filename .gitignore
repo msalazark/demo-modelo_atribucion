@@ -1,0 +1,32 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Credenciales y configuración local (nunca versionar)
+.env
+.env.*
+*.json.key
+service-account*.json
+credentials*.json
+
+# Datos generados (descomentar si no quieres versionar los resultados del demo)
+# resultados/
+*.parquet
+*.db
+*.sqlite
+
+# IDE / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
