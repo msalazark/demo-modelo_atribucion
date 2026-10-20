@@ -1,0 +1,9 @@
+canal_apertura,pedidos,dias_p50,dias_p90,ventana_dias
+(todos),5114,7.7,21.3,90
+Direct,471,9.3,22.4,90
+Display,477,8.6,21.1,90
+Email,176,7.0,19.3,90
+Organic Search,1047,7.1,20.0,90
+Paid Search,770,7.2,20.7,90
+Paid Social,1857,7.3,20.9,90
+Referral,316,10.1,23.5,90

@@ -1,37 +1,481 @@
-modelo,error_medio_pp,periodo
-ultimo_no_directo,4.0,2025-10
-markov,5.33,2025-10
-shapley,0.89,2025-10
-ultimo_no_directo,3.27,2025-11
-markov,5.31,2025-11
-shapley,1.13,2025-11
-ultimo_no_directo,3.14,2025-12
-markov,5.09,2025-12
-shapley,0.79,2025-12
-ultimo_no_directo,3.2,2026-01
-markov,5.09,2026-01
-shapley,0.97,2026-01
-ultimo_no_directo,2.96,2026-02
-markov,5.14,2026-02
-shapley,0.74,2026-02
-ultimo_no_directo,3.23,2026-03
-markov,5.16,2026-03
-shapley,0.7,2026-03
-ultimo_no_directo,3.21,2026-04
-markov,5.16,2026-04
-shapley,0.5,2026-04
-ultimo_no_directo,3.33,2026-05
-markov,5.13,2026-05
-shapley,0.56,2026-05
-ultimo_no_directo,3.37,2026-06
-markov,5.13,2026-06
-shapley,0.37,2026-06
-ultimo_no_directo,3.37,2026-07
-markov,5.11,2026-07
-shapley,0.43,2026-07
-ultimo_no_directo,3.39,2026-08
-markov,5.07,2026-08
-shapley,0.37,2026-08
-ultimo_no_directo,3.34,2026-09
-markov,5.07,2026-09
-shapley,0.36,2026-09
+modelo,error_medio_pp,ventana_dias,dim,segmento
+primer_clic,3.95,7,Todos,Todos
+ultimo_clic,3.9,7,Todos,Todos
+lineal,3.63,7,Todos,Todos
+posicion_u,3.67,7,Todos,Todos
+decaimiento_temporal,3.61,7,Todos,Todos
+ultimo_no_directo,2.79,7,Todos,Todos
+markov,4.72,7,Todos,Todos
+shapley,2.55,7,Todos,Todos
+primer_clic,4.07,7,Dispositivo,desktop
+ultimo_clic,4.22,7,Dispositivo,desktop
+lineal,3.48,7,Dispositivo,desktop
+posicion_u,3.52,7,Dispositivo,desktop
+decaimiento_temporal,3.46,7,Dispositivo,desktop
+ultimo_no_directo,3.0,7,Dispositivo,desktop
+markov,4.67,7,Dispositivo,desktop
+shapley,2.97,7,Dispositivo,desktop
+primer_clic,3.91,7,Dispositivo,mobile
+ultimo_clic,4.0,7,Dispositivo,mobile
+lineal,3.75,7,Dispositivo,mobile
+posicion_u,3.81,7,Dispositivo,mobile
+decaimiento_temporal,3.73,7,Dispositivo,mobile
+ultimo_no_directo,2.66,7,Dispositivo,mobile
+markov,4.88,7,Dispositivo,mobile
+shapley,2.7,7,Dispositivo,mobile
+primer_clic,3.84,7,Dispositivo,tablet
+ultimo_clic,4.3,7,Dispositivo,tablet
+lineal,3.86,7,Dispositivo,tablet
+posicion_u,3.75,7,Dispositivo,tablet
+decaimiento_temporal,3.91,7,Dispositivo,tablet
+ultimo_no_directo,2.88,7,Dispositivo,tablet
+markov,4.87,7,Dispositivo,tablet
+shapley,2.92,7,Dispositivo,tablet
+primer_clic,4.05,7,Región,Lima
+ultimo_clic,4.11,7,Región,Lima
+lineal,3.79,7,Región,Lima
+posicion_u,3.83,7,Región,Lima
+decaimiento_temporal,3.76,7,Región,Lima
+ultimo_no_directo,2.59,7,Región,Lima
+markov,4.85,7,Región,Lima
+shapley,2.76,7,Región,Lima
+primer_clic,3.79,7,Región,Provincias
+ultimo_clic,3.52,7,Región,Provincias
+lineal,3.43,7,Región,Provincias
+posicion_u,3.4,7,Región,Provincias
+decaimiento_temporal,3.39,7,Región,Provincias
+ultimo_no_directo,3.1,7,Región,Provincias
+markov,4.51,7,Región,Provincias
+shapley,2.22,7,Región,Provincias
+primer_clic,3.55,7,Tipo de cliente,nuevo
+ultimo_clic,3.73,7,Tipo de cliente,nuevo
+lineal,3.42,7,Tipo de cliente,nuevo
+posicion_u,3.45,7,Tipo de cliente,nuevo
+decaimiento_temporal,3.38,7,Tipo de cliente,nuevo
+ultimo_no_directo,2.84,7,Tipo de cliente,nuevo
+markov,4.64,7,Tipo de cliente,nuevo
+shapley,2.51,7,Tipo de cliente,nuevo
+primer_clic,5.28,7,Tipo de cliente,recurrente
+ultimo_clic,5.24,7,Tipo de cliente,recurrente
+lineal,5.03,7,Tipo de cliente,recurrente
+posicion_u,5.01,7,Tipo de cliente,recurrente
+decaimiento_temporal,5.03,7,Tipo de cliente,recurrente
+ultimo_no_directo,2.54,7,Tipo de cliente,recurrente
+markov,5.6,7,Tipo de cliente,recurrente
+shapley,3.58,7,Tipo de cliente,recurrente
+primer_clic,4.27,7,Categoría,Hogar
+ultimo_clic,4.3,7,Categoría,Hogar
+lineal,3.91,7,Categoría,Hogar
+posicion_u,3.85,7,Categoría,Hogar
+decaimiento_temporal,3.92,7,Categoría,Hogar
+ultimo_no_directo,2.66,7,Categoría,Hogar
+markov,4.8,7,Categoría,Hogar
+shapley,3.22,7,Categoría,Hogar
+primer_clic,3.44,7,Categoría,Libros y papelería
+ultimo_clic,3.26,7,Categoría,Libros y papelería
+lineal,3.01,7,Categoría,Libros y papelería
+posicion_u,3.08,7,Categoría,Libros y papelería
+decaimiento_temporal,3.04,7,Categoría,Libros y papelería
+ultimo_no_directo,3.01,7,Categoría,Libros y papelería
+markov,4.36,7,Categoría,Libros y papelería
+shapley,2.48,7,Categoría,Libros y papelería
+primer_clic,3.88,7,Categoría,Moda
+ultimo_clic,4.2,7,Categoría,Moda
+lineal,3.65,7,Categoría,Moda
+posicion_u,3.75,7,Categoría,Moda
+decaimiento_temporal,3.63,7,Categoría,Moda
+ultimo_no_directo,2.58,7,Categoría,Moda
+markov,4.88,7,Categoría,Moda
+shapley,2.63,7,Categoría,Moda
+primer_clic,4.09,7,Categoría,Tecnología
+ultimo_clic,3.89,7,Categoría,Tecnología
+lineal,3.93,7,Categoría,Tecnología
+posicion_u,3.87,7,Categoría,Tecnología
+decaimiento_temporal,3.89,7,Categoría,Tecnología
+ultimo_no_directo,2.99,7,Categoría,Tecnología
+markov,4.82,7,Categoría,Tecnología
+shapley,2.94,7,Categoría,Tecnología
+primer_clic,4.4,14,Todos,Todos
+ultimo_clic,3.61,14,Todos,Todos
+lineal,3.5,14,Todos,Todos
+posicion_u,3.53,14,Todos,Todos
+decaimiento_temporal,3.46,14,Todos,Todos
+ultimo_no_directo,3.1,14,Todos,Todos
+markov,4.82,14,Todos,Todos
+shapley,1.03,14,Todos,Todos
+primer_clic,4.57,14,Dispositivo,desktop
+ultimo_clic,4.22,14,Dispositivo,desktop
+lineal,3.43,14,Dispositivo,desktop
+posicion_u,3.49,14,Dispositivo,desktop
+decaimiento_temporal,3.3,14,Dispositivo,desktop
+ultimo_no_directo,3.76,14,Dispositivo,desktop
+markov,4.71,14,Dispositivo,desktop
+shapley,1.39,14,Dispositivo,desktop
+primer_clic,4.39,14,Dispositivo,mobile
+ultimo_clic,3.64,14,Dispositivo,mobile
+lineal,3.53,14,Dispositivo,mobile
+posicion_u,3.56,14,Dispositivo,mobile
+decaimiento_temporal,3.52,14,Dispositivo,mobile
+ultimo_no_directo,2.78,14,Dispositivo,mobile
+markov,4.88,14,Dispositivo,mobile
+shapley,1.04,14,Dispositivo,mobile
+primer_clic,4.06,14,Dispositivo,tablet
+ultimo_clic,4.14,14,Dispositivo,tablet
+lineal,3.83,14,Dispositivo,tablet
+posicion_u,3.64,14,Dispositivo,tablet
+decaimiento_temporal,3.8,14,Dispositivo,tablet
+ultimo_no_directo,2.97,14,Dispositivo,tablet
+markov,4.93,14,Dispositivo,tablet
+shapley,2.28,14,Dispositivo,tablet
+primer_clic,4.31,14,Región,Lima
+ultimo_clic,3.84,14,Región,Lima
+lineal,3.67,14,Región,Lima
+posicion_u,3.7,14,Región,Lima
+decaimiento_temporal,3.63,14,Región,Lima
+ultimo_no_directo,3.02,14,Región,Lima
+markov,4.95,14,Región,Lima
+shapley,1.27,14,Región,Lima
+primer_clic,4.57,14,Región,Provincias
+ultimo_clic,3.2,14,Región,Provincias
+lineal,3.22,14,Región,Provincias
+posicion_u,3.22,14,Región,Provincias
+decaimiento_temporal,3.15,14,Región,Provincias
+ultimo_no_directo,3.22,14,Región,Provincias
+markov,4.61,14,Región,Provincias
+shapley,0.63,14,Región,Provincias
+primer_clic,4.4,14,Tipo de cliente,nuevo
+ultimo_clic,3.39,14,Tipo de cliente,nuevo
+lineal,3.19,14,Tipo de cliente,nuevo
+posicion_u,3.25,14,Tipo de cliente,nuevo
+decaimiento_temporal,3.17,14,Tipo de cliente,nuevo
+ultimo_no_directo,2.98,14,Tipo de cliente,nuevo
+markov,4.69,14,Tipo de cliente,nuevo
+shapley,0.94,14,Tipo de cliente,nuevo
+primer_clic,4.91,14,Tipo de cliente,recurrente
+ultimo_clic,5.46,14,Tipo de cliente,recurrente
+lineal,4.8,14,Tipo de cliente,recurrente
+posicion_u,4.59,14,Tipo de cliente,recurrente
+decaimiento_temporal,4.87,14,Tipo de cliente,recurrente
+ultimo_no_directo,3.4,14,Tipo de cliente,recurrente
+markov,5.59,14,Tipo de cliente,recurrente
+shapley,1.97,14,Tipo de cliente,recurrente
+primer_clic,4.42,14,Categoría,Hogar
+ultimo_clic,4.1,14,Categoría,Hogar
+lineal,3.84,14,Categoría,Hogar
+posicion_u,3.68,14,Categoría,Hogar
+decaimiento_temporal,3.73,14,Categoría,Hogar
+ultimo_no_directo,3.02,14,Categoría,Hogar
+markov,4.79,14,Categoría,Hogar
+shapley,1.9,14,Categoría,Hogar
+primer_clic,3.82,14,Categoría,Libros y papelería
+ultimo_clic,3.18,14,Categoría,Libros y papelería
+lineal,3.06,14,Categoría,Libros y papelería
+posicion_u,3.18,14,Categoría,Libros y papelería
+decaimiento_temporal,3.01,14,Categoría,Libros y papelería
+ultimo_no_directo,3.29,14,Categoría,Libros y papelería
+markov,4.63,14,Categoría,Libros y papelería
+shapley,1.14,14,Categoría,Libros y papelería
+primer_clic,4.81,14,Categoría,Moda
+ultimo_clic,3.97,14,Categoría,Moda
+lineal,3.46,14,Categoría,Moda
+posicion_u,3.6,14,Categoría,Moda
+decaimiento_temporal,3.4,14,Categoría,Moda
+ultimo_no_directo,2.65,14,Categoría,Moda
+markov,4.88,14,Categoría,Moda
+shapley,1.09,14,Categoría,Moda
+primer_clic,4.3,14,Categoría,Tecnología
+ultimo_clic,3.63,14,Categoría,Tecnología
+lineal,3.58,14,Categoría,Tecnología
+posicion_u,3.54,14,Categoría,Tecnología
+decaimiento_temporal,3.62,14,Categoría,Tecnología
+ultimo_no_directo,3.57,14,Categoría,Tecnología
+markov,4.91,14,Categoría,Tecnología
+shapley,1.12,14,Categoría,Tecnología
+primer_clic,5.91,30,Todos,Todos
+ultimo_clic,3.53,30,Todos,Todos
+lineal,3.42,30,Todos,Todos
+posicion_u,3.44,30,Todos,Todos
+decaimiento_temporal,3.38,30,Todos,Todos
+ultimo_no_directo,3.07,30,Todos,Todos
+markov,4.84,30,Todos,Todos
+shapley,0.51,30,Todos,Todos
+primer_clic,5.81,30,Dispositivo,desktop
+ultimo_clic,4.25,30,Dispositivo,desktop
+lineal,3.35,30,Dispositivo,desktop
+posicion_u,3.5,30,Dispositivo,desktop
+decaimiento_temporal,3.25,30,Dispositivo,desktop
+ultimo_no_directo,3.97,30,Dispositivo,desktop
+markov,4.8,30,Dispositivo,desktop
+shapley,0.67,30,Dispositivo,desktop
+primer_clic,5.91,30,Dispositivo,mobile
+ultimo_clic,3.6,30,Dispositivo,mobile
+lineal,3.41,30,Dispositivo,mobile
+posicion_u,3.36,30,Dispositivo,mobile
+decaimiento_temporal,3.42,30,Dispositivo,mobile
+ultimo_no_directo,2.66,30,Dispositivo,mobile
+markov,4.86,30,Dispositivo,mobile
+shapley,0.84,30,Dispositivo,mobile
+primer_clic,6.35,30,Dispositivo,tablet
+ultimo_clic,4.11,30,Dispositivo,tablet
+lineal,3.81,30,Dispositivo,tablet
+posicion_u,3.89,30,Dispositivo,tablet
+decaimiento_temporal,3.79,30,Dispositivo,tablet
+ultimo_no_directo,3.06,30,Dispositivo,tablet
+markov,4.88,30,Dispositivo,tablet
+shapley,1.37,30,Dispositivo,tablet
+primer_clic,5.84,30,Región,Lima
+ultimo_clic,3.81,30,Región,Lima
+lineal,3.58,30,Región,Lima
+posicion_u,3.63,30,Región,Lima
+decaimiento_temporal,3.55,30,Región,Lima
+ultimo_no_directo,3.06,30,Región,Lima
+markov,4.95,30,Región,Lima
+shapley,0.76,30,Región,Lima
+primer_clic,6.03,30,Región,Provincias
+ultimo_clic,3.07,30,Región,Provincias
+lineal,3.13,30,Región,Provincias
+posicion_u,3.12,30,Región,Provincias
+decaimiento_temporal,3.09,30,Región,Provincias
+ultimo_no_directo,3.09,30,Región,Provincias
+markov,4.66,30,Región,Provincias
+shapley,0.7,30,Región,Provincias
+primer_clic,5.9,30,Tipo de cliente,nuevo
+ultimo_clic,3.26,30,Tipo de cliente,nuevo
+lineal,3.04,30,Tipo de cliente,nuevo
+posicion_u,3.11,30,Tipo de cliente,nuevo
+decaimiento_temporal,3.05,30,Tipo de cliente,nuevo
+ultimo_no_directo,2.92,30,Tipo de cliente,nuevo
+markov,4.68,30,Tipo de cliente,nuevo
+shapley,0.8,30,Tipo de cliente,nuevo
+primer_clic,6.06,30,Tipo de cliente,recurrente
+ultimo_clic,5.61,30,Tipo de cliente,recurrente
+lineal,4.89,30,Tipo de cliente,recurrente
+posicion_u,4.6,30,Tipo de cliente,recurrente
+decaimiento_temporal,4.91,30,Tipo de cliente,recurrente
+ultimo_no_directo,3.49,30,Tipo de cliente,recurrente
+markov,5.58,30,Tipo de cliente,recurrente
+shapley,1.52,30,Tipo de cliente,recurrente
+primer_clic,6.02,30,Categoría,Hogar
+ultimo_clic,4.08,30,Categoría,Hogar
+lineal,3.75,30,Categoría,Hogar
+posicion_u,3.56,30,Categoría,Hogar
+decaimiento_temporal,3.66,30,Categoría,Hogar
+ultimo_no_directo,2.99,30,Categoría,Hogar
+markov,4.83,30,Categoría,Hogar
+shapley,1.12,30,Categoría,Hogar
+primer_clic,5.34,30,Categoría,Libros y papelería
+ultimo_clic,3.21,30,Categoría,Libros y papelería
+lineal,3.24,30,Categoría,Libros y papelería
+posicion_u,3.41,30,Categoría,Libros y papelería
+decaimiento_temporal,3.1,30,Categoría,Libros y papelería
+ultimo_no_directo,3.28,30,Categoría,Libros y papelería
+markov,4.67,30,Categoría,Libros y papelería
+shapley,0.59,30,Categoría,Libros y papelería
+primer_clic,6.24,30,Categoría,Moda
+ultimo_clic,3.86,30,Categoría,Moda
+lineal,3.24,30,Categoría,Moda
+posicion_u,3.32,30,Categoría,Moda
+decaimiento_temporal,3.28,30,Categoría,Moda
+ultimo_no_directo,2.54,30,Categoría,Moda
+markov,4.82,30,Categoría,Moda
+shapley,1.06,30,Categoría,Moda
+primer_clic,5.75,30,Categoría,Tecnología
+ultimo_clic,3.62,30,Categoría,Tecnología
+lineal,3.49,30,Categoría,Tecnología
+posicion_u,3.51,30,Categoría,Tecnología
+decaimiento_temporal,3.58,30,Categoría,Tecnología
+ultimo_no_directo,3.67,30,Categoría,Tecnología
+markov,4.98,30,Categoría,Tecnología
+shapley,0.33,30,Categoría,Tecnología
+primer_clic,6.04,60,Todos,Todos
+ultimo_clic,3.53,60,Todos,Todos
+lineal,3.41,60,Todos,Todos
+posicion_u,3.45,60,Todos,Todos
+decaimiento_temporal,3.37,60,Todos,Todos
+ultimo_no_directo,3.07,60,Todos,Todos
+markov,4.84,60,Todos,Todos
+shapley,0.54,60,Todos,Todos
+primer_clic,5.84,60,Dispositivo,desktop
+ultimo_clic,4.25,60,Dispositivo,desktop
+lineal,3.34,60,Dispositivo,desktop
+posicion_u,3.48,60,Dispositivo,desktop
+decaimiento_temporal,3.24,60,Dispositivo,desktop
+ultimo_no_directo,3.98,60,Dispositivo,desktop
+markov,4.8,60,Dispositivo,desktop
+shapley,0.65,60,Dispositivo,desktop
+primer_clic,6.1,60,Dispositivo,mobile
+ultimo_clic,3.58,60,Dispositivo,mobile
+lineal,3.4,60,Dispositivo,mobile
+posicion_u,3.37,60,Dispositivo,mobile
+decaimiento_temporal,3.41,60,Dispositivo,mobile
+ultimo_no_directo,2.67,60,Dispositivo,mobile
+markov,4.86,60,Dispositivo,mobile
+shapley,0.94,60,Dispositivo,mobile
+primer_clic,6.49,60,Dispositivo,tablet
+ultimo_clic,4.11,60,Dispositivo,tablet
+lineal,3.82,60,Dispositivo,tablet
+posicion_u,3.93,60,Dispositivo,tablet
+decaimiento_temporal,3.8,60,Dispositivo,tablet
+ultimo_no_directo,3.04,60,Dispositivo,tablet
+markov,4.87,60,Dispositivo,tablet
+shapley,1.37,60,Dispositivo,tablet
+primer_clic,6.0,60,Región,Lima
+ultimo_clic,3.81,60,Región,Lima
+lineal,3.57,60,Región,Lima
+posicion_u,3.65,60,Región,Lima
+decaimiento_temporal,3.54,60,Región,Lima
+ultimo_no_directo,3.06,60,Región,Lima
+markov,4.94,60,Región,Lima
+shapley,0.77,60,Región,Lima
+primer_clic,6.13,60,Región,Provincias
+ultimo_clic,3.06,60,Región,Provincias
+lineal,3.13,60,Región,Provincias
+posicion_u,3.12,60,Región,Provincias
+decaimiento_temporal,3.08,60,Región,Provincias
+ultimo_no_directo,3.07,60,Región,Provincias
+markov,4.65,60,Región,Provincias
+shapley,0.68,60,Región,Provincias
+primer_clic,6.08,60,Tipo de cliente,nuevo
+ultimo_clic,3.25,60,Tipo de cliente,nuevo
+lineal,3.02,60,Tipo de cliente,nuevo
+posicion_u,3.11,60,Tipo de cliente,nuevo
+decaimiento_temporal,3.03,60,Tipo de cliente,nuevo
+ultimo_no_directo,2.92,60,Tipo de cliente,nuevo
+markov,4.67,60,Tipo de cliente,nuevo
+shapley,0.88,60,Tipo de cliente,nuevo
+primer_clic,6.05,60,Tipo de cliente,recurrente
+ultimo_clic,5.62,60,Tipo de cliente,recurrente
+lineal,4.88,60,Tipo de cliente,recurrente
+posicion_u,4.58,60,Tipo de cliente,recurrente
+decaimiento_temporal,4.9,60,Tipo de cliente,recurrente
+ultimo_no_directo,3.5,60,Tipo de cliente,recurrente
+markov,5.58,60,Tipo de cliente,recurrente
+shapley,1.45,60,Tipo de cliente,recurrente
+primer_clic,6.22,60,Categoría,Hogar
+ultimo_clic,4.08,60,Categoría,Hogar
+lineal,3.73,60,Categoría,Hogar
+posicion_u,3.57,60,Categoría,Hogar
+decaimiento_temporal,3.65,60,Categoría,Hogar
+ultimo_no_directo,3.01,60,Categoría,Hogar
+markov,4.83,60,Categoría,Hogar
+shapley,1.09,60,Categoría,Hogar
+primer_clic,5.64,60,Categoría,Libros y papelería
+ultimo_clic,3.21,60,Categoría,Libros y papelería
+lineal,3.29,60,Categoría,Libros y papelería
+posicion_u,3.48,60,Categoría,Libros y papelería
+decaimiento_temporal,3.1,60,Categoría,Libros y papelería
+ultimo_no_directo,3.29,60,Categoría,Libros y papelería
+markov,4.67,60,Categoría,Libros y papelería
+shapley,0.57,60,Categoría,Libros y papelería
+primer_clic,6.3,60,Categoría,Moda
+ultimo_clic,3.86,60,Categoría,Moda
+lineal,3.22,60,Categoría,Moda
+posicion_u,3.3,60,Categoría,Moda
+decaimiento_temporal,3.27,60,Categoría,Moda
+ultimo_no_directo,2.53,60,Categoría,Moda
+markov,4.82,60,Categoría,Moda
+shapley,1.09,60,Categoría,Moda
+primer_clic,5.83,60,Categoría,Tecnología
+ultimo_clic,3.6,60,Categoría,Tecnología
+lineal,3.46,60,Categoría,Tecnología
+posicion_u,3.51,60,Categoría,Tecnología
+decaimiento_temporal,3.56,60,Categoría,Tecnología
+ultimo_no_directo,3.66,60,Categoría,Tecnología
+markov,4.97,60,Categoría,Tecnología
+shapley,0.28,60,Categoría,Tecnología
+primer_clic,6.04,90,Todos,Todos
+ultimo_clic,3.53,90,Todos,Todos
+lineal,3.41,90,Todos,Todos
+posicion_u,3.45,90,Todos,Todos
+decaimiento_temporal,3.37,90,Todos,Todos
+ultimo_no_directo,3.07,90,Todos,Todos
+markov,4.84,90,Todos,Todos
+shapley,0.54,90,Todos,Todos
+primer_clic,5.84,90,Dispositivo,desktop
+ultimo_clic,4.25,90,Dispositivo,desktop
+lineal,3.34,90,Dispositivo,desktop
+posicion_u,3.48,90,Dispositivo,desktop
+decaimiento_temporal,3.24,90,Dispositivo,desktop
+ultimo_no_directo,3.98,90,Dispositivo,desktop
+markov,4.8,90,Dispositivo,desktop
+shapley,0.65,90,Dispositivo,desktop
+primer_clic,6.1,90,Dispositivo,mobile
+ultimo_clic,3.58,90,Dispositivo,mobile
+lineal,3.4,90,Dispositivo,mobile
+posicion_u,3.37,90,Dispositivo,mobile
+decaimiento_temporal,3.41,90,Dispositivo,mobile
+ultimo_no_directo,2.67,90,Dispositivo,mobile
+markov,4.86,90,Dispositivo,mobile
+shapley,0.94,90,Dispositivo,mobile
+primer_clic,6.49,90,Dispositivo,tablet
+ultimo_clic,4.11,90,Dispositivo,tablet
+lineal,3.82,90,Dispositivo,tablet
+posicion_u,3.93,90,Dispositivo,tablet
+decaimiento_temporal,3.8,90,Dispositivo,tablet
+ultimo_no_directo,3.04,90,Dispositivo,tablet
+markov,4.87,90,Dispositivo,tablet
+shapley,1.37,90,Dispositivo,tablet
+primer_clic,6.0,90,Región,Lima
+ultimo_clic,3.81,90,Región,Lima
+lineal,3.57,90,Región,Lima
+posicion_u,3.65,90,Región,Lima
+decaimiento_temporal,3.54,90,Región,Lima
+ultimo_no_directo,3.06,90,Región,Lima
+markov,4.94,90,Región,Lima
+shapley,0.77,90,Región,Lima
+primer_clic,6.13,90,Región,Provincias
+ultimo_clic,3.06,90,Región,Provincias
+lineal,3.13,90,Región,Provincias
+posicion_u,3.12,90,Región,Provincias
+decaimiento_temporal,3.08,90,Región,Provincias
+ultimo_no_directo,3.07,90,Región,Provincias
+markov,4.65,90,Región,Provincias
+shapley,0.68,90,Región,Provincias
+primer_clic,6.08,90,Tipo de cliente,nuevo
+ultimo_clic,3.25,90,Tipo de cliente,nuevo
+lineal,3.02,90,Tipo de cliente,nuevo
+posicion_u,3.11,90,Tipo de cliente,nuevo
+decaimiento_temporal,3.03,90,Tipo de cliente,nuevo
+ultimo_no_directo,2.92,90,Tipo de cliente,nuevo
+markov,4.67,90,Tipo de cliente,nuevo
+shapley,0.88,90,Tipo de cliente,nuevo
+primer_clic,6.05,90,Tipo de cliente,recurrente
+ultimo_clic,5.62,90,Tipo de cliente,recurrente
+lineal,4.88,90,Tipo de cliente,recurrente
+posicion_u,4.58,90,Tipo de cliente,recurrente
+decaimiento_temporal,4.9,90,Tipo de cliente,recurrente
+ultimo_no_directo,3.5,90,Tipo de cliente,recurrente
+markov,5.58,90,Tipo de cliente,recurrente
+shapley,1.45,90,Tipo de cliente,recurrente
+primer_clic,6.22,90,Categoría,Hogar
+ultimo_clic,4.08,90,Categoría,Hogar
+lineal,3.73,90,Categoría,Hogar
+posicion_u,3.57,90,Categoría,Hogar
+decaimiento_temporal,3.65,90,Categoría,Hogar
+ultimo_no_directo,3.01,90,Categoría,Hogar
+markov,4.83,90,Categoría,Hogar
+shapley,1.09,90,Categoría,Hogar
+primer_clic,5.64,90,Categoría,Libros y papelería
+ultimo_clic,3.21,90,Categoría,Libros y papelería
+lineal,3.29,90,Categoría,Libros y papelería
+posicion_u,3.48,90,Categoría,Libros y papelería
+decaimiento_temporal,3.1,90,Categoría,Libros y papelería
+ultimo_no_directo,3.29,90,Categoría,Libros y papelería
+markov,4.67,90,Categoría,Libros y papelería
+shapley,0.57,90,Categoría,Libros y papelería
+primer_clic,6.3,90,Categoría,Moda
+ultimo_clic,3.86,90,Categoría,Moda
+lineal,3.22,90,Categoría,Moda
+posicion_u,3.3,90,Categoría,Moda
+decaimiento_temporal,3.27,90,Categoría,Moda
+ultimo_no_directo,2.53,90,Categoría,Moda
+markov,4.82,90,Categoría,Moda
+shapley,1.09,90,Categoría,Moda
+primer_clic,5.83,90,Categoría,Tecnología
+ultimo_clic,3.6,90,Categoría,Tecnología
+lineal,3.46,90,Categoría,Tecnología
+posicion_u,3.51,90,Categoría,Tecnología
+decaimiento_temporal,3.56,90,Categoría,Tecnología
+ultimo_no_directo,3.66,90,Categoría,Tecnología
+markov,4.97,90,Categoría,Tecnología
+shapley,0.28,90,Categoría,Tecnología

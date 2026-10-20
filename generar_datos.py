@@ -22,9 +22,11 @@ import numpy as np
 import pandas as pd
 
 SEED = 20261014
-N_USUARIOS = 120_000
-INICIO = datetime(2025, 10, 1, tzinfo=timezone.utc)
-DIAS = 365   # 12 meses: 2025-10 a 2026-09, base del reporte mensual acumulado
+N_USUARIOS = 150_000
+INICIO = datetime(2025, 7, 1, tzinfo=timezone.utc)
+# 15 meses (2025-07 a 2026-09): los últimos 12 son la ventana de análisis y los 3 anteriores dan
+# historia de lookback y una ventana previa para vigilar la estabilidad del modelo.
+DIAS = 457
 DOMINIO = "https://www.tiendademo.pe"
 
 # Canal -> combinaciones fuente/medio tal como llegan en las UTMs
@@ -44,6 +46,27 @@ P_PRIMERA = {"Paid Social": .26, "Display": .12, "Organic Search": .22, "Paid Se
              "Referral": .08, "Email": .03, "Direct": .15}
 P_SIGUIENTE = {"Direct": .28, "Paid Search": .18, "Email": .14, "Organic Search": .18,
                "Paid Social": .12, "Display": .05, "Referral": .05}
+
+# Atributos del usuario conocidos aun si no compra (sirven como filtros del dashboard).
+# Influyen en el MIX de canales, no en la probabilidad de compra: así el efecto real por canal
+# sigue siendo el mismo en todos los segmentos y se puede validar el modelo dentro de cada uno.
+SEGMENTOS = {
+    "device_category": {"mobile": .60, "desktop": .32, "tablet": .08},
+    "geo_region": {"Lima": .62, "Provincias": .38},
+    "customer_type": {"nuevo": .72, "recurrente": .28},
+    "content_group": {"Tecnología": .30, "Hogar": .22, "Moda": .30, "Libros y papelería": .18},
+}
+SESGO_CANAL = {  # (atributo, valor) -> multiplicador sobre la probabilidad de entrar por cada canal
+    ("device_category", "mobile"): {"Paid Social": 1.5, "Direct": .8, "Paid Search": .8, "Email": .7, "Organic Search": .9},
+    ("device_category", "desktop"): {"Paid Search": 1.3, "Email": 1.5, "Organic Search": 1.1, "Paid Social": .6},
+    ("geo_region", "Provincias"): {"Paid Social": 1.3, "Display": 1.4, "Referral": .8, "Email": .8},
+    ("geo_region", "Lima"): {"Paid Search": 1.1, "Email": 1.1},
+    ("customer_type", "recurrente"): {"Direct": 2.2, "Email": 2.2, "Paid Social": .5, "Display": .5, "Referral": .7},
+    ("content_group", "Moda"): {"Paid Social": 1.4, "Display": 1.3, "Paid Search": .8},
+    ("content_group", "Tecnología"): {"Paid Search": 1.4, "Organic Search": 1.2, "Paid Social": .8},
+    ("content_group", "Hogar"): {"Referral": 1.5, "Email": 1.2},
+    ("content_group", "Libros y papelería"): {"Organic Search": 1.3, "Display": .7},
+}
 
 # Modelo real de conversión: logit(p) = b0 + suma(beta_canal) + sinergia social x search
 PARAMS_REALES = {
@@ -74,6 +97,15 @@ def elegir(rng, dist):
     return claves[rng.choice(len(claves), p=pesos / pesos.sum())]
 
 
+def sesgar(dist: dict, atributos: dict) -> dict:
+    """Ajusta la distribución de canales según el segmento del usuario."""
+    ajustada = dict(dist)
+    for par in atributos.items():
+        for canal, f in SESGO_CANAL.get(par, {}).items():
+            ajustada[canal] *= f
+    return ajustada
+
+
 def param(key, s=None, i=None, d=None):
     return {"key": key, "value": {"string_value": s, "int_value": i, "double_value": d}}
 
@@ -82,6 +114,7 @@ def main():
     rng = np.random.default_rng(SEED)
     fin = INICIO + timedelta(days=DIAS)
     eventos, pedidos = [], []
+    atributos_usuario: dict[str, dict] = {}
     sesiones_pagadas = {c: {} for c in COSTO_POR_SESION}  # canal -> fecha -> sesiones
     n_pedido = 100_000
 
@@ -89,13 +122,16 @@ def main():
         user_pseudo_id = f"{rng.integers(10**9, 10**10)}.{int(INICIO.timestamp()) + u}"
         n_ses = min(int(rng.geometric(0.45)), 8)   # 1 a 8 sesiones, media ~2,2
         t = INICIO + timedelta(seconds=float(rng.uniform(0, DIAS * 86400)))
+        atributos = {a: elegir(rng, d) for a, d in SEGMENTOS.items()}
+        atributos_usuario[user_pseudo_id] = atributos
+        p_primera, p_siguiente = sesgar(P_PRIMERA, atributos), sesgar(P_SIGUIENTE, atributos)
         ruta = []
         for k in range(n_ses):
             if k > 0:
                 t = t + timedelta(days=float(rng.exponential(3.0)), minutes=float(rng.uniform(5, 600)))
             if t >= fin:
                 break
-            canal = elegir(rng, P_PRIMERA if k == 0 else P_SIGUIENTE)
+            canal = elegir(rng, p_primera if k == 0 else p_siguiente)
             ruta.append((t, canal))
 
         if not ruta:
@@ -200,8 +236,11 @@ def main():
           event_date VARCHAR, event_timestamp BIGINT, event_name VARCHAR, user_pseudo_id VARCHAR,
           event_params STRUCT(key VARCHAR, value STRUCT(string_value VARCHAR, int_value BIGINT, double_value DOUBLE))[],
           collected_traffic_source STRUCT(manual_source VARCHAR, manual_medium VARCHAR, manual_campaign_name VARCHAR, gclid VARCHAR),
-          ecommerce STRUCT(transaction_id VARCHAR, purchase_revenue DOUBLE))""")
+          ecommerce STRUCT(transaction_id VARCHAR, purchase_revenue DOUBLE),
+          device_category VARCHAR, geo_region VARCHAR, customer_type VARCHAR, content_group VARCHAR)""")
     df_ev = pd.DataFrame(eventos)
+    for atributo in SEGMENTOS:  # atributos del usuario repetidos en cada evento (columnas planas)
+        df_ev[atributo] = df_ev.user_pseudo_id.map(lambda u, a=atributo: atributos_usuario[u][a])
     con.execute("INSERT INTO events SELECT * FROM df_ev")
     df_ped = pd.DataFrame(pedidos)
     con.execute("CREATE TABLE orders AS SELECT * FROM df_ped")

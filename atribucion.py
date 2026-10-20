@@ -174,3 +174,71 @@ def efecto_real(rutas: pd.DataFrame, params_json: str) -> pd.Series:
         for c in T:
             efecto[c] += pt - p(T - {c})
     return pd.Series(efecto)
+
+
+# ---------------------------------------------------------------- modelos de referencia (reglas)
+MODELOS_REGLA = ["primer_clic", "ultimo_clic", "lineal", "posicion_u", "decaimiento_temporal"]
+
+
+def _pesos(modelo: str, n: int, dias: list[float], vida_media: float) -> list[float]:
+    """Reparto del crédito de una venta entre las n sesiones de su ruta (suma 1)."""
+    if modelo == "primer_clic":
+        return [1.0] + [0.0] * (n - 1)
+    if modelo == "ultimo_clic":  # incluye Direct: es la regla ingenua de referencia
+        return [0.0] * (n - 1) + [1.0]
+    if modelo == "lineal":
+        return [1.0 / n] * n
+    if modelo == "posicion_u":  # 40 % primera, 40 % última, 20 % repartido en el medio
+        if n == 1:
+            return [1.0]
+        if n == 2:
+            return [0.5, 0.5]
+        return [0.4] + [0.2 / (n - 2)] * (n - 2) + [0.4]
+    if modelo == "decaimiento_temporal":  # cada `vida_media` días el crédito se reduce a la mitad
+        crudo = [0.5 ** (d / vida_media) for d in dias]
+        total = sum(crudo)
+        return [c / total for c in crudo]
+    raise ValueError(f"Modelo desconocido: {modelo}")
+
+
+def modelos_regla(rutas: pd.DataFrame, vida_media: float = 7.0) -> dict[str, pd.DataFrame]:
+    """Primer clic, último clic, lineal, posición U y decaimiento temporal."""
+    conv = {m: defaultdict(float) for m in MODELOS_REGLA}
+    ingreso = {m: defaultdict(float) for m in MODELOS_REGLA}
+    for ruta, dias, valor in rutas.loc[rutas.convirtio, ["ruta", "dias_antes", "revenue_pen"]].itertuples(index=False):
+        for m in MODELOS_REGLA:
+            for canal, w in zip(ruta, _pesos(m, len(ruta), dias, vida_media)):
+                conv[m][canal] += w
+                ingreso[m][canal] += w * valor
+    return {
+        m: pd.DataFrame({"conversiones": pd.Series(conv[m]), "ingresos": pd.Series(ingreso[m])})
+        for m in MODELOS_REGLA
+    }
+
+
+# ---------------------------------------------------------------- roles según Markov
+def markov_roles(rutas: pd.DataFrame) -> pd.DataFrame:
+    """
+    Qué hace cada canal dentro de la cadena, a partir de las transiciones observadas:
+      p_apertura_pct   % de las rutas que empiezan en el canal (abridor)
+      p_continua_pct   % de las visitas al canal tras las cuales el usuario sigue a otro canal (asistente)
+      p_cierre_pct     % de las visitas al canal que terminan en compra (conversor)
+      p_abandono_pct   % de las visitas que terminan sin compra
+    """
+    salidas: dict[str, Counter] = defaultdict(Counter)
+    aperturas = Counter()
+    for ruta, convirtio in rutas[["ruta", "convirtio"]].itertuples(index=False):
+        estados = [*ruta, CONV if convirtio else NULO]
+        aperturas[ruta[0]] += 1
+        for a, b in zip(estados[:-1], estados[1:]):
+            salidas[a][b] += 1
+    filas = {}
+    for canal, s in salidas.items():
+        n = sum(s.values())
+        filas[canal] = {
+            "p_apertura_pct": aperturas[canal] / len(rutas) * 100,
+            "p_continua_pct": (n - s[CONV] - s[NULO]) / n * 100,
+            "p_cierre_pct": s[CONV] / n * 100,
+            "p_abandono_pct": s[NULO] / n * 100,
+        }
+    return pd.DataFrame(filas).T.round(2).rename_axis("canal")

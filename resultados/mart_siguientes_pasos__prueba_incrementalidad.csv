@@ -1,0 +1,28 @@
+canal,semanas,holdout_pct,usuarios_prueba,usuarios_control,tasa_base_pct,emd_relativo_pct
+Display,4,10,1426,142,1.15,229.4
+Display,4,20,1426,285,1.15,172.0
+Display,4,50,1426,713,1.15,137.6
+Display,8,10,2852,285,1.15,162.2
+Display,8,20,2852,570,1.15,121.6
+Display,8,50,2852,1426,1.15,97.3
+Display,12,10,4278,427,1.15,132.4
+Display,12,20,4278,855,1.15,99.3
+Display,12,50,4278,2139,1.15,79.5
+Paid Search,4,10,2613,261,3.47,96.3
+Paid Search,4,20,2613,522,3.47,72.2
+Paid Search,4,50,2613,1306,3.47,57.8
+Paid Search,8,10,5226,522,3.47,68.1
+Paid Search,8,20,5226,1045,3.47,51.1
+Paid Search,8,50,5226,2613,3.47,40.9
+Paid Search,12,10,7840,784,3.47,55.6
+Paid Search,12,20,7840,1568,3.47,41.7
+Paid Search,12,50,7840,3920,3.47,33.4
+Paid Social,4,10,3300,330,3.44,86.2
+Paid Social,4,20,3300,660,3.44,64.6
+Paid Social,4,50,3300,1650,3.44,51.7
+Paid Social,8,10,6601,660,3.44,60.9
+Paid Social,8,20,6601,1320,3.44,45.7
+Paid Social,8,50,6601,3300,3.44,36.6
+Paid Social,12,10,9902,990,3.44,49.7
+Paid Social,12,20,9902,1980,3.44,37.3
+Paid Social,12,50,9902,4951,3.44,29.8

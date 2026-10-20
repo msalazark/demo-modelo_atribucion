@@ -45,3 +45,17 @@ SELECT
   -- no son un canal de marketing y se excluyen de la ruta.
   coalesce(lower(source) IN ('niubiz.com.pe','mercadopago.com.pe','paypal.com','izipay.pe'), FALSE) AS es_pasarela
 FROM por_sesion;
+
+
+-- Atributos del usuario (filtros del dashboard). En GA4 vienen de device.category, geo.region,
+-- una propiedad de usuario (cliente nuevo o recurrente) y el grupo de contenido; aquí están
+-- aplanados. Se toma el valor del primer evento del usuario.
+CREATE OR REPLACE TABLE usuarios AS
+SELECT
+  user_pseudo_id,
+  arg_min(device_category, event_timestamp) AS device_category,
+  arg_min(geo_region,      event_timestamp) AS geo_region,
+  arg_min(customer_type,   event_timestamp) AS customer_type,
+  arg_min(content_group,   event_timestamp) AS content_group
+FROM events
+GROUP BY user_pseudo_id;

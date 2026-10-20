@@ -30,3 +30,9 @@ credentials*.json
 .idea/
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log
+
+# Secretos de Streamlit (API keys)
+.streamlit/secrets.toml

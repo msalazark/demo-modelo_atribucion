@@ -1,0 +1,6 @@
+regla,ultimos_60d,60d_previos,cambio,umbral,unidad,estado
+Inversión en medios,21509.120000000003,21257.07,1.1857231499919907,25,%,ok
+Mix de inversión (mayor cambio de un canal),0.42951734354128757,0.0,0.42951734354128757,10,pp,ok
+Pedidos,889.0,901.0,-1.3318534961154316,25,%,ok
+Conversión por sesión,2.0511755612468563,2.056373388109095,-0.2527666858701205,15,%,ok
+Canales nuevos,0.0,0.0,0.0,0,canales,ok

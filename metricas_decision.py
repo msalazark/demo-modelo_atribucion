@@ -100,26 +100,36 @@ UMBRAL_ESCALAR = 1.2   # ROAS del canal / ROAS promedio de los pagados
 UMBRAL_REVISAR = 0.8
 RATIO_ASISTIDOR = 2.0  # asistencias por cierre propio
 BRECHA_MODELOS_PP = 3.0
+SOBRE_INDICE_PP = 3.0  # en un segmento: diferencia de cuota frente al total
 
 
-def asignar_senal(m: pd.DataFrame) -> pd.DataFrame:
+def _confianza(ancho_ci: float, pedidos: int) -> str:
+    """Con intervalo bootstrap, por su ancho; sin él, por el volumen de pedidos del corte."""
+    if pd.notna(ancho_ci):
+        return "alta" if ancho_ci <= 2.0 else "media" if ancho_ci <= 4.0 else "baja"
+    return "alta" if pedidos >= 3000 else "media" if pedidos >= 1000 else "baja"
+
+
+def asignar_senal(m: pd.DataFrame, pedidos: int, es_segmento: bool) -> pd.DataFrame:
     """
-    Agrega a la tabla por canal una señal accionable para gerencia:
-      confianza  alta/media/baja según el ancho del intervalo del 90 % de la cuota Shapley
-      brecha_vs_ultimo_clic_pp  cuánto crédito gana o pierde el canal frente al último clic
-      senal / motivo  qué hacer y por qué
+    Agrega a la tabla por canal una señal accionable para gerencia, para UN modelo de atribución.
 
-    OJO: el ROAS es promedio, no marginal. La señal "Escalar" es una hipótesis a validar
-    con una prueba de incrementalidad antes de mover presupuesto, no una orden.
+    Columnas requeridas en `m` (índice = canal):
+      cuota_pct, cuota_ultimo_no_directo_pct, roas, cpa, costo, ancho_ci (puede ser NaN),
+      ratio_asistencia, tasa_conv_usuario_pct y, si es_segmento, cuota_total_pct.
+    Devuelve las mismas filas con: confianza, brecha_vs_ultimo_clic_pp, senal, motivo.
+
+    OJO: el ROAS es promedio, no marginal. "Escalar" es una hipótesis a validar con una prueba
+    de incrementalidad antes de mover presupuesto, no una orden. Dentro de un segmento no hay
+    costo por canal, así que la señal solo compara el peso del canal frente al total.
     """
     m = m.copy()
-    pagados = m.dropna(subset=["costo"])
-    roas_prom = pagados.ingresos_shapley.sum() / pagados.costo.sum() if len(pagados) else float("nan")
+    pagados = m[m.costo.notna() & m.roas.notna()]
+    roas_prom = (pagados.roas * pagados.costo).sum() / pagados.costo.sum() if len(pagados) else float("nan")
     mediana_conv = m.drop(index="Direct", errors="ignore").tasa_conv_usuario_pct.median()
 
-    ancho = m.shapley_pct_p95 - m.shapley_pct_p05
-    m["confianza"] = pd.cut(ancho, [-1, 2.0, 4.0, 1e9], labels=["alta", "media", "baja"]).astype(str)
-    m["brecha_vs_ultimo_clic_pp"] = (m.shapley_pct - m.ultimo_no_directo_pct).round(1)
+    m["confianza"] = [_confianza(a, pedidos) for a in m.ancho_ci]
+    m["brecha_vs_ultimo_clic_pp"] = (m.cuota_pct - m.cuota_ultimo_no_directo_pct).round(1)
 
     senales, motivos = [], []
     for canal, r in m.iterrows():
@@ -133,15 +143,21 @@ def asignar_senal(m: pd.DataFrame) -> pd.DataFrame:
 
         if canal == "Direct":
             senal, motivo = "No es palanca", "Es el regreso de usuarios que ya conocían la marca; no se invierte en él."
-        elif pd.notna(r.costo):
-            rel = r.roas_shapley / roas_prom
-            base = f"ROAS {r.roas_shapley:.1f} frente a {roas_prom:.1f} del promedio pagado; CPA S/ {r.cpa_shapley:.0f}."
-            if rel >= UMBRAL_ESCALAR:
-                senal, motivo = "Escalar (validar)", base
-            elif rel <= UMBRAL_REVISAR:
-                senal, motivo = "Revisar", base
+        elif es_segmento:
+            dif = r.cuota_pct - r.cuota_total_pct
+            base = f"Aporta {r.cuota_pct:.1f} % en este segmento frente a {r.cuota_total_pct:.1f} % del total."
+            if dif >= SOBRE_INDICE_PP:
+                senal, motivo = "Sobre-índice", base + " Pesa más aquí que en el total."
+            elif dif <= -SOBRE_INDICE_PP:
+                senal, motivo = "Sub-índice", base + " Pesa menos aquí que en el total."
             else:
-                senal, motivo = "Mantener", base
+                senal, motivo = "Igual al total", base
+            extra = ""
+        elif pd.notna(r.costo) and pd.notna(r.roas):
+            rel = r.roas / roas_prom
+            base = f"ROAS {r.roas:.1f} frente a {roas_prom:.1f} del promedio pagado; CPA S/ {r.cpa:.0f}."
+            senal = "Escalar (validar)" if rel >= UMBRAL_ESCALAR else "Revisar" if rel <= UMBRAL_REVISAR else "Mantener"
+            motivo = base
             if r.ratio_asistencia >= RATIO_ASISTIDOR:
                 motivo += f" Además asiste {r.ratio_asistencia:.1f} ventas por cada cierre propio."
         elif r.ratio_asistencia >= RATIO_ASISTIDOR:
@@ -153,8 +169,8 @@ def asignar_senal(m: pd.DataFrame) -> pd.DataFrame:
                       "no de alcance.")
         else:
             senal = "Mantener"
-            motivo = f"Aporta {r.shapley_pct:.1f} % de las ventas sin una señal clara de cambio."
+            motivo = f"Aporta {r.cuota_pct:.1f} % de las ventas sin una señal clara de cambio."
         senales.append(senal)
         motivos.append(motivo + extra)
     m["senal"], m["motivo"] = senales, motivos
-    return m
+    return m[["confianza", "brecha_vs_ultimo_clic_pp", "senal", "motivo"]]

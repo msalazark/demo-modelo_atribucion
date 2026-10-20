@@ -12,3 +12,6 @@ threadpoolctl==3.7.0
 tzdata==2026.5
 streamlit==1.66.0
 altair==6.3.0
+anthropic==1.15.0
+structlog==26.1.0
+pytest==9.1.1

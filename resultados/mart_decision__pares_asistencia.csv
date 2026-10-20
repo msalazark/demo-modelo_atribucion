@@ -1,433 +1,2159 @@
-asistente,cierre,conversiones,periodo
-Paid Search,Paid Social,20,2025-10
-Email,Paid Social,16,2025-10
-Organic Search,Paid Social,17,2025-10
-Display,Paid Social,6,2025-10
-Direct,Paid Social,23,2025-10
-Referral,Organic Search,14,2025-10
-Email,Organic Search,24,2025-10
-Paid Social,Organic Search,33,2025-10
-Direct,Organic Search,25,2025-10
-Paid Search,Organic Search,34,2025-10
-Paid Social,Referral,9,2025-10
-Paid Search,Referral,7,2025-10
-Email,Referral,6,2025-10
-Referral,Email,12,2025-10
-Organic Search,Email,29,2025-10
-Display,Email,13,2025-10
-Paid Social,Email,38,2025-10
-Direct,Email,30,2025-10
-Paid Search,Email,27,2025-10
-Display,Organic Search,8,2025-10
-Direct,Referral,4,2025-10
-Paid Social,Paid Search,54,2025-10
-Email,Paid Search,25,2025-10
-Direct,Paid Search,45,2025-10
-Organic Search,Paid Search,29,2025-10
-Referral,Paid Social,8,2025-10
-Referral,Paid Search,9,2025-10
-Display,Paid Search,7,2025-10
-Organic Search,Referral,4,2025-10
-Display,Referral,2,2025-10
-Paid Social,Display,9,2025-10
-Direct,Display,13,2025-10
-Paid Search,Display,10,2025-10
-Referral,Display,2,2025-10
-Email,Display,4,2025-10
-Organic Search,Display,5,2025-10
-Organic Search,Paid Search,75,2025-11
-Paid Social,Paid Search,122,2025-11
-Direct,Paid Search,102,2025-11
-Email,Paid Search,63,2025-11
-Referral,Organic Search,32,2025-11
-Display,Paid Search,20,2025-11
-Paid Social,Display,15,2025-11
-Referral,Display,4,2025-11
-Direct,Display,22,2025-11
-Email,Display,8,2025-11
-Email,Organic Search,52,2025-11
-Display,Organic Search,24,2025-11
-Paid Social,Organic Search,81,2025-11
-Paid Search,Organic Search,75,2025-11
-Paid Social,Email,79,2025-11
-Referral,Email,25,2025-11
-Direct,Email,71,2025-11
-Paid Search,Email,66,2025-11
-Paid Search,Paid Social,82,2025-11
-Direct,Paid Social,83,2025-11
-Email,Paid Social,54,2025-11
-Display,Email,27,2025-11
-Direct,Organic Search,72,2025-11
-Organic Search,Email,69,2025-11
-Paid Social,Referral,23,2025-11
-Paid Search,Referral,24,2025-11
-Referral,Paid Search,20,2025-11
-Display,Paid Social,30,2025-11
-Email,Referral,18,2025-11
-Organic Search,Paid Social,60,2025-11
-Paid Search,Display,15,2025-11
-Direct,Referral,20,2025-11
-Organic Search,Referral,13,2025-11
-Display,Referral,8,2025-11
-Referral,Paid Social,25,2025-11
-Organic Search,Display,10,2025-11
-Referral,Organic Search,42,2025-12
-Paid Social,Organic Search,134,2025-12
-Direct,Organic Search,107,2025-12
-Paid Search,Organic Search,113,2025-12
-Direct,Paid Social,125,2025-12
-Email,Paid Social,81,2025-12
-Organic Search,Paid Search,126,2025-12
-Paid Social,Paid Search,191,2025-12
-Direct,Paid Search,154,2025-12
-Email,Paid Search,102,2025-12
-Display,Paid Search,40,2025-12
-Display,Organic Search,39,2025-12
-Email,Organic Search,83,2025-12
-Referral,Paid Social,38,2025-12
-Paid Search,Paid Social,130,2025-12
-Organic Search,Paid Social,104,2025-12
-Paid Social,Display,34,2025-12
-Direct,Display,34,2025-12
-Paid Search,Display,29,2025-12
-Referral,Paid Search,38,2025-12
-Paid Social,Email,131,2025-12
-Direct,Email,119,2025-12
-Paid Search,Email,114,2025-12
-Email,Display,17,2025-12
-Paid Search,Referral,36,2025-12
-Direct,Referral,33,2025-12
-Email,Referral,25,2025-12
-Organic Search,Email,100,2025-12
-Display,Email,48,2025-12
-Referral,Email,47,2025-12
-Display,Paid Social,47,2025-12
-Paid Social,Referral,37,2025-12
-Display,Referral,12,2025-12
-Organic Search,Display,22,2025-12
-Organic Search,Referral,27,2025-12
-Referral,Display,9,2025-12
-Referral,Email,65,2026-01
-Display,Email,63,2026-01
-Organic Search,Paid Social,142,2026-01
-Paid Search,Paid Social,168,2026-01
-Direct,Paid Social,168,2026-01
-Email,Paid Social,98,2026-01
-Paid Social,Email,184,2026-01
-Direct,Email,170,2026-01
-Organic Search,Email,144,2026-01
-Paid Social,Paid Search,278,2026-01
-Direct,Paid Search,221,2026-01
-Email,Paid Search,150,2026-01
-Organic Search,Paid Search,179,2026-01
-Display,Paid Search,60,2026-01
-Direct,Organic Search,152,2026-01
-Paid Search,Email,161,2026-01
-Email,Referral,35,2026-01
-Organic Search,Referral,44,2026-01
-Display,Referral,23,2026-01
-Paid Social,Referral,54,2026-01
-Paid Search,Referral,53,2026-01
-Paid Social,Organic Search,185,2026-01
-Paid Search,Organic Search,149,2026-01
-Referral,Organic Search,58,2026-01
-Email,Organic Search,116,2026-01
-Display,Paid Social,57,2026-01
-Display,Organic Search,54,2026-01
-Direct,Referral,48,2026-01
-Referral,Paid Social,48,2026-01
-Direct,Display,50,2026-01
-Paid Search,Display,46,2026-01
-Organic Search,Display,31,2026-01
-Paid Social,Display,48,2026-01
-Email,Display,25,2026-01
-Referral,Paid Search,55,2026-01
-Referral,Display,13,2026-01
-Paid Social,Paid Search,331,2026-02
-Email,Paid Search,179,2026-02
-Paid Social,Organic Search,222,2026-02
-Email,Organic Search,147,2026-02
-Paid Search,Organic Search,202,2026-02
-Direct,Paid Social,214,2026-02
-Organic Search,Email,185,2026-02
-Direct,Email,208,2026-02
-Paid Search,Email,210,2026-02
-Paid Social,Email,226,2026-02
-Display,Email,82,2026-02
-Display,Organic Search,76,2026-02
-Organic Search,Paid Search,212,2026-02
-Display,Paid Search,81,2026-02
-Direct,Paid Search,268,2026-02
-Direct,Organic Search,202,2026-02
-Paid Search,Paid Social,222,2026-02
-Email,Paid Social,130,2026-02
-Paid Social,Referral,63,2026-02
-Display,Referral,25,2026-02
-Direct,Referral,59,2026-02
-Email,Referral,41,2026-02
-Referral,Email,78,2026-02
-Organic Search,Paid Social,189,2026-02
-Paid Search,Referral,64,2026-02
-Referral,Organic Search,75,2026-02
-Organic Search,Referral,52,2026-02
-Referral,Paid Social,64,2026-02
-Referral,Paid Search,76,2026-02
-Display,Paid Social,74,2026-02
-Direct,Display,58,2026-02
-Email,Display,30,2026-02
-Paid Social,Display,56,2026-02
-Paid Search,Display,55,2026-02
-Organic Search,Display,37,2026-02
-Referral,Display,15,2026-02
-Organic Search,Paid Social,233,2026-03
-Referral,Paid Social,77,2026-03
-Paid Search,Paid Social,268,2026-03
-Direct,Organic Search,257,2026-03
-Email,Organic Search,186,2026-03
-Email,Display,36,2026-03
-Organic Search,Display,44,2026-03
-Paid Social,Display,65,2026-03
-Direct,Display,69,2026-03
-Paid Search,Display,66,2026-03
-Paid Search,Organic Search,259,2026-03
-Organic Search,Email,240,2026-03
-Paid Social,Email,284,2026-03
-Direct,Email,267,2026-03
-Paid Social,Organic Search,283,2026-03
-Paid Social,Paid Search,418,2026-03
-Direct,Paid Search,354,2026-03
-Email,Paid Search,239,2026-03
-Organic Search,Referral,65,2026-03
-Paid Social,Referral,83,2026-03
-Paid Search,Referral,85,2026-03
-Paid Search,Email,257,2026-03
-Display,Organic Search,97,2026-03
-Referral,Email,96,2026-03
-Organic Search,Paid Search,279,2026-03
-Display,Paid Search,111,2026-03
-Display,Email,97,2026-03
-Direct,Paid Social,248,2026-03
-Email,Paid Social,156,2026-03
-Referral,Organic Search,100,2026-03
-Email,Referral,51,2026-03
-Direct,Referral,79,2026-03
-Referral,Paid Search,98,2026-03
-Display,Paid Social,87,2026-03
-Display,Referral,28,2026-03
-Referral,Display,17,2026-03
-Organic Search,Display,53,2026-04
-Paid Social,Display,77,2026-04
-Paid Search,Display,72,2026-04
-Email,Display,43,2026-04
-Organic Search,Paid Search,335,2026-04
-Paid Social,Paid Search,477,2026-04
-Email,Paid Social,184,2026-04
-Direct,Paid Social,290,2026-04
-Paid Search,Paid Social,321,2026-04
-Direct,Display,76,2026-04
-Display,Paid Search,136,2026-04
-Direct,Paid Search,399,2026-04
-Email,Paid Search,273,2026-04
-Direct,Email,307,2026-04
-Organic Search,Email,274,2026-04
-Paid Social,Email,320,2026-04
-Paid Search,Email,295,2026-04
-Paid Social,Organic Search,331,2026-04
-Display,Organic Search,105,2026-04
-Direct,Organic Search,309,2026-04
-Email,Organic Search,216,2026-04
-Paid Search,Organic Search,301,2026-04
-Referral,Email,109,2026-04
-Organic Search,Paid Social,276,2026-04
-Direct,Referral,98,2026-04
-Paid Search,Referral,98,2026-04
-Display,Paid Social,95,2026-04
-Display,Email,111,2026-04
-Referral,Organic Search,113,2026-04
-Referral,Paid Search,110,2026-04
-Referral,Paid Social,92,2026-04
-Paid Social,Referral,97,2026-04
-Email,Referral,64,2026-04
-Organic Search,Referral,73,2026-04
-Referral,Display,18,2026-04
-Display,Referral,33,2026-04
-Paid Social,Paid Search,556,2026-05
-Display,Paid Search,155,2026-05
-Email,Paid Search,314,2026-05
-Organic Search,Paid Search,404,2026-05
-Direct,Paid Search,475,2026-05
-Paid Search,Paid Social,366,2026-05
-Email,Paid Social,209,2026-05
-Organic Search,Paid Social,312,2026-05
-Direct,Paid Social,339,2026-05
-Referral,Organic Search,127,2026-05
-Paid Search,Organic Search,352,2026-05
-Direct,Organic Search,360,2026-05
-Email,Organic Search,249,2026-05
-Organic Search,Display,65,2026-05
-Direct,Display,84,2026-05
-Paid Search,Display,83,2026-05
-Paid Social,Organic Search,389,2026-05
-Organic Search,Referral,82,2026-05
-Paid Social,Referral,110,2026-05
-Direct,Referral,110,2026-05
-Paid Search,Referral,111,2026-05
-Paid Social,Email,366,2026-05
-Referral,Paid Social,106,2026-05
-Display,Paid Social,112,2026-05
-Referral,Paid Search,135,2026-05
-Direct,Email,350,2026-05
-Paid Search,Email,341,2026-05
-Display,Organic Search,120,2026-05
-Paid Social,Display,95,2026-05
-Organic Search,Email,312,2026-05
-Email,Display,49,2026-05
-Email,Referral,74,2026-05
-Display,Referral,41,2026-05
-Display,Email,129,2026-05
-Referral,Email,126,2026-05
-Referral,Display,22,2026-05
-Paid Social,Organic Search,443,2026-06
-Email,Organic Search,278,2026-06
-Paid Search,Organic Search,393,2026-06
-Organic Search,Email,343,2026-06
-Paid Social,Email,413,2026-06
-Display,Email,142,2026-06
-Paid Search,Email,374,2026-06
-Referral,Email,139,2026-06
-Direct,Email,386,2026-06
-Organic Search,Paid Search,456,2026-06
-Paid Social,Paid Search,634,2026-06
-Direct,Paid Search,528,2026-06
-Email,Paid Search,353,2026-06
-Direct,Organic Search,405,2026-06
-Organic Search,Paid Social,352,2026-06
-Referral,Paid Social,119,2026-06
-Paid Search,Paid Social,406,2026-06
-Email,Display,62,2026-06
-Organic Search,Display,78,2026-06
-Paid Social,Display,112,2026-06
-Direct,Display,100,2026-06
-Paid Search,Display,95,2026-06
-Referral,Paid Search,151,2026-06
-Organic Search,Referral,91,2026-06
-Paid Social,Referral,119,2026-06
-Paid Search,Referral,120,2026-06
-Display,Organic Search,135,2026-06
-Referral,Organic Search,143,2026-06
-Display,Paid Search,171,2026-06
-Direct,Paid Social,389,2026-06
-Email,Paid Social,233,2026-06
-Email,Referral,82,2026-06
-Direct,Referral,123,2026-06
-Display,Paid Social,129,2026-06
-Display,Referral,44,2026-06
-Referral,Display,25,2026-06
-Display,Email,164,2026-07
-Organic Search,Paid Social,384,2026-07
-Direct,Paid Social,430,2026-07
-Paid Search,Paid Social,445,2026-07
-Organic Search,Email,381,2026-07
-Paid Social,Email,465,2026-07
-Direct,Email,435,2026-07
-Referral,Email,151,2026-07
-Paid Search,Email,418,2026-07
-Paid Social,Organic Search,485,2026-07
-Referral,Organic Search,159,2026-07
-Paid Search,Organic Search,431,2026-07
-Email,Organic Search,304,2026-07
-Organic Search,Paid Search,516,2026-07
-Organic Search,Display,85,2026-07
-Paid Social,Display,119,2026-07
-Paid Search,Display,104,2026-07
-Email,Display,67,2026-07
-Paid Social,Paid Search,713,2026-07
-Direct,Organic Search,454,2026-07
-Direct,Paid Search,590,2026-07
-Email,Paid Search,401,2026-07
-Display,Paid Social,141,2026-07
-Referral,Paid Search,171,2026-07
-Display,Paid Search,190,2026-07
-Email,Paid Social,261,2026-07
-Organic Search,Referral,104,2026-07
-Display,Referral,48,2026-07
-Paid Search,Referral,129,2026-07
-Direct,Referral,136,2026-07
-Display,Organic Search,151,2026-07
-Email,Referral,90,2026-07
-Paid Social,Referral,129,2026-07
-Direct,Display,106,2026-07
-Referral,Paid Social,134,2026-07
-Referral,Display,28,2026-07
-Referral,Email,168,2026-08
-Display,Email,181,2026-08
-Paid Search,Email,457,2026-08
-Organic Search,Paid Search,559,2026-08
-Direct,Paid Search,629,2026-08
-Direct,Paid Social,468,2026-08
-Organic Search,Referral,120,2026-08
-Direct,Referral,151,2026-08
-Paid Search,Referral,145,2026-08
-Paid Social,Email,519,2026-08
-Direct,Email,483,2026-08
-Paid Search,Paid Social,496,2026-08
-Email,Paid Social,292,2026-08
-Paid Social,Organic Search,539,2026-08
-Email,Organic Search,335,2026-08
-Email,Referral,100,2026-08
-Display,Referral,59,2026-08
-Paid Social,Referral,144,2026-08
-Paid Social,Paid Search,771,2026-08
-Referral,Paid Search,180,2026-08
-Organic Search,Email,425,2026-08
-Display,Organic Search,163,2026-08
-Direct,Organic Search,496,2026-08
-Paid Search,Organic Search,473,2026-08
-Paid Search,Display,121,2026-08
-Email,Display,78,2026-08
-Organic Search,Paid Social,421,2026-08
-Organic Search,Display,96,2026-08
-Paid Social,Display,134,2026-08
-Direct,Display,123,2026-08
-Referral,Display,35,2026-08
-Email,Paid Search,428,2026-08
-Referral,Organic Search,175,2026-08
-Display,Paid Search,204,2026-08
-Display,Paid Social,155,2026-08
-Referral,Paid Social,150,2026-08
-Referral,Paid Search,202,2026-09
-Email,Paid Search,465,2026-09
-Organic Search,Paid Search,611,2026-09
-Paid Social,Paid Search,848,2026-09
-Direct,Paid Search,675,2026-09
-Organic Search,Display,108,2026-09
-Paid Social,Display,148,2026-09
-Paid Search,Display,131,2026-09
-Email,Display,86,2026-09
-Organic Search,Paid Social,457,2026-09
-Direct,Paid Social,508,2026-09
-Paid Search,Paid Social,544,2026-09
-Email,Paid Social,322,2026-09
-Display,Paid Search,221,2026-09
-Direct,Display,138,2026-09
-Display,Paid Social,172,2026-09
-Display,Organic Search,176,2026-09
-Paid Search,Organic Search,520,2026-09
-Direct,Email,528,2026-09
-Organic Search,Email,466,2026-09
-Paid Social,Email,570,2026-09
-Paid Search,Email,507,2026-09
-Referral,Organic Search,191,2026-09
-Paid Social,Organic Search,583,2026-09
-Direct,Organic Search,539,2026-09
-Email,Organic Search,361,2026-09
-Referral,Email,182,2026-09
-Paid Social,Referral,159,2026-09
-Display,Referral,66,2026-09
-Direct,Referral,167,2026-09
-Email,Referral,111,2026-09
-Paid Search,Referral,157,2026-09
-Display,Email,195,2026-09
-Referral,Paid Social,169,2026-09
-Referral,Display,37,2026-09
-Organic Search,Referral,130,2026-09
+asistente,cierre,conversiones,ventana_dias,dim,segmento
+Paid Social,Email,267,7,Todos,Todos
+Paid Search,Email,272,7,Todos,Todos
+Organic Search,Email,275,7,Todos,Todos
+Display,Paid Social,85,7,Todos,Todos
+Email,Paid Social,164,7,Todos,Todos
+Direct,Paid Search,447,7,Todos,Todos
+Referral,Paid Search,95,7,Todos,Todos
+Display,Paid Search,93,7,Todos,Todos
+Paid Social,Paid Search,421,7,Todos,Todos
+Paid Social,Organic Search,296,7,Todos,Todos
+Direct,Organic Search,359,7,Todos,Todos
+Email,Organic Search,219,7,Todos,Todos
+Organic Search,Paid Search,309,7,Todos,Todos
+Email,Paid Search,278,7,Todos,Todos
+Paid Search,Organic Search,291,7,Todos,Todos
+Direct,Display,89,7,Todos,Todos
+Email,Display,39,7,Todos,Todos
+Organic Search,Paid Social,231,7,Todos,Todos
+Paid Search,Paid Social,293,7,Todos,Todos
+Direct,Paid Social,329,7,Todos,Todos
+Referral,Paid Social,71,7,Todos,Todos
+Paid Social,Referral,69,7,Todos,Todos
+Direct,Referral,67,7,Todos,Todos
+Direct,Email,370,7,Todos,Todos
+Referral,Display,18,7,Todos,Todos
+Paid Social,Display,75,7,Todos,Todos
+Display,Organic Search,85,7,Todos,Todos
+Referral,Email,87,7,Todos,Todos
+Paid Search,Display,70,7,Todos,Todos
+Display,Email,87,7,Todos,Todos
+Organic Search,Referral,57,7,Todos,Todos
+Paid Search,Referral,69,7,Todos,Todos
+Email,Referral,54,7,Todos,Todos
+Display,Referral,11,7,Todos,Todos
+Referral,Organic Search,61,7,Todos,Todos
+Organic Search,Display,44,7,Todos,Todos
+Paid Social,Email,71,7,Dispositivo,desktop
+Paid Search,Email,113,7,Dispositivo,desktop
+Organic Search,Email,123,7,Dispositivo,desktop
+Direct,Organic Search,102,7,Dispositivo,desktop
+Email,Organic Search,80,7,Dispositivo,desktop
+Paid Social,Paid Search,104,7,Dispositivo,desktop
+Paid Search,Organic Search,85,7,Dispositivo,desktop
+Paid Social,Organic Search,42,7,Dispositivo,desktop
+Paid Social,Display,16,7,Dispositivo,desktop
+Direct,Display,20,7,Dispositivo,desktop
+Organic Search,Paid Search,103,7,Dispositivo,desktop
+Direct,Paid Search,140,7,Dispositivo,desktop
+Paid Search,Paid Social,65,7,Dispositivo,desktop
+Referral,Paid Social,13,7,Dispositivo,desktop
+Direct,Email,150,7,Dispositivo,desktop
+Display,Organic Search,23,7,Dispositivo,desktop
+Email,Paid Search,105,7,Dispositivo,desktop
+Display,Email,32,7,Dispositivo,desktop
+Organic Search,Paid Social,30,7,Dispositivo,desktop
+Direct,Paid Social,59,7,Dispositivo,desktop
+Email,Paid Social,34,7,Dispositivo,desktop
+Referral,Email,35,7,Dispositivo,desktop
+Display,Paid Social,16,7,Dispositivo,desktop
+Referral,Paid Search,34,7,Dispositivo,desktop
+Paid Search,Display,18,7,Dispositivo,desktop
+Organic Search,Display,14,7,Dispositivo,desktop
+Email,Display,16,7,Dispositivo,desktop
+Organic Search,Referral,16,7,Dispositivo,desktop
+Email,Referral,19,7,Dispositivo,desktop
+Display,Paid Search,28,7,Dispositivo,desktop
+Referral,Organic Search,18,7,Dispositivo,desktop
+Paid Social,Referral,15,7,Dispositivo,desktop
+Paid Search,Referral,15,7,Dispositivo,desktop
+Direct,Referral,25,7,Dispositivo,desktop
+Display,Referral,2,7,Dispositivo,desktop
+Referral,Display,3,7,Dispositivo,desktop
+Display,Paid Social,61,7,Dispositivo,mobile
+Email,Paid Social,120,7,Dispositivo,mobile
+Direct,Paid Search,265,7,Dispositivo,mobile
+Referral,Paid Search,52,7,Dispositivo,mobile
+Display,Paid Search,57,7,Dispositivo,mobile
+Paid Social,Paid Search,285,7,Dispositivo,mobile
+Paid Social,Organic Search,233,7,Dispositivo,mobile
+Paid Search,Organic Search,189,7,Dispositivo,mobile
+Organic Search,Paid Social,186,7,Dispositivo,mobile
+Paid Search,Paid Social,201,7,Dispositivo,mobile
+Direct,Paid Social,248,7,Dispositivo,mobile
+Direct,Display,61,7,Dispositivo,mobile
+Organic Search,Paid Search,178,7,Dispositivo,mobile
+Referral,Paid Social,54,7,Dispositivo,mobile
+Direct,Organic Search,223,7,Dispositivo,mobile
+Paid Social,Referral,52,7,Dispositivo,mobile
+Direct,Referral,40,7,Dispositivo,mobile
+Paid Social,Email,172,7,Dispositivo,mobile
+Direct,Email,187,7,Dispositivo,mobile
+Email,Paid Search,148,7,Dispositivo,mobile
+Organic Search,Email,135,7,Dispositivo,mobile
+Paid Search,Email,133,7,Dispositivo,mobile
+Referral,Email,48,7,Dispositivo,mobile
+Paid Search,Display,45,7,Dispositivo,mobile
+Paid Social,Display,56,7,Dispositivo,mobile
+Email,Organic Search,123,7,Dispositivo,mobile
+Organic Search,Referral,37,7,Dispositivo,mobile
+Paid Search,Referral,49,7,Dispositivo,mobile
+Email,Referral,32,7,Dispositivo,mobile
+Display,Referral,9,7,Dispositivo,mobile
+Referral,Display,14,7,Dispositivo,mobile
+Display,Organic Search,59,7,Dispositivo,mobile
+Display,Email,47,7,Dispositivo,mobile
+Referral,Organic Search,42,7,Dispositivo,mobile
+Organic Search,Display,29,7,Dispositivo,mobile
+Email,Display,22,7,Dispositivo,mobile
+Paid Social,Organic Search,21,7,Dispositivo,tablet
+Direct,Organic Search,34,7,Dispositivo,tablet
+Organic Search,Paid Search,28,7,Dispositivo,tablet
+Direct,Paid Search,42,7,Dispositivo,tablet
+Email,Paid Search,25,7,Dispositivo,tablet
+Direct,Display,8,7,Dispositivo,tablet
+Email,Display,1,7,Dispositivo,tablet
+Paid Social,Paid Search,32,7,Dispositivo,tablet
+Referral,Display,1,7,Dispositivo,tablet
+Email,Organic Search,16,7,Dispositivo,tablet
+Paid Social,Email,24,7,Dispositivo,tablet
+Paid Search,Email,26,7,Dispositivo,tablet
+Direct,Email,33,7,Dispositivo,tablet
+Paid Search,Organic Search,17,7,Dispositivo,tablet
+Organic Search,Paid Social,15,7,Dispositivo,tablet
+Referral,Paid Search,9,7,Dispositivo,tablet
+Paid Search,Paid Social,27,7,Dispositivo,tablet
+Direct,Paid Social,22,7,Dispositivo,tablet
+Display,Email,8,7,Dispositivo,tablet
+Email,Paid Social,10,7,Dispositivo,tablet
+Display,Paid Social,8,7,Dispositivo,tablet
+Organic Search,Email,17,7,Dispositivo,tablet
+Display,Paid Search,8,7,Dispositivo,tablet
+Referral,Email,4,7,Dispositivo,tablet
+Paid Social,Display,3,7,Dispositivo,tablet
+Paid Search,Display,7,7,Dispositivo,tablet
+Organic Search,Display,1,7,Dispositivo,tablet
+Referral,Paid Social,4,7,Dispositivo,tablet
+Display,Organic Search,3,7,Dispositivo,tablet
+Organic Search,Referral,4,7,Dispositivo,tablet
+Paid Search,Referral,5,7,Dispositivo,tablet
+Paid Social,Referral,2,7,Dispositivo,tablet
+Email,Referral,3,7,Dispositivo,tablet
+Direct,Referral,2,7,Dispositivo,tablet
+Referral,Organic Search,1,7,Dispositivo,tablet
+Paid Social,Email,167,7,Región,Lima
+Paid Search,Email,195,7,Región,Lima
+Organic Search,Email,188,7,Región,Lima
+Direct,Paid Search,272,7,Región,Lima
+Referral,Paid Search,63,7,Región,Lima
+Display,Paid Search,55,7,Región,Lima
+Paid Social,Paid Search,242,7,Región,Lima
+Paid Social,Organic Search,175,7,Región,Lima
+Paid Search,Organic Search,193,7,Región,Lima
+Organic Search,Paid Social,139,7,Región,Lima
+Paid Search,Paid Social,180,7,Región,Lima
+Direct,Paid Social,208,7,Región,Lima
+Direct,Display,45,7,Región,Lima
+Organic Search,Paid Search,191,7,Región,Lima
+Direct,Organic Search,229,7,Región,Lima
+Email,Organic Search,149,7,Región,Lima
+Paid Social,Referral,48,7,Región,Lima
+Direct,Referral,47,7,Región,Lima
+Direct,Email,255,7,Región,Lima
+Email,Paid Search,191,7,Región,Lima
+Referral,Display,13,7,Región,Lima
+Referral,Paid Social,45,7,Región,Lima
+Display,Organic Search,46,7,Región,Lima
+Referral,Email,62,7,Región,Lima
+Email,Paid Social,112,7,Región,Lima
+Display,Paid Social,48,7,Región,Lima
+Organic Search,Referral,37,7,Región,Lima
+Paid Search,Referral,49,7,Región,Lima
+Display,Referral,6,7,Región,Lima
+Paid Search,Display,33,7,Región,Lima
+Paid Social,Display,38,7,Región,Lima
+Display,Email,52,7,Región,Lima
+Organic Search,Display,28,7,Región,Lima
+Email,Display,23,7,Región,Lima
+Referral,Organic Search,38,7,Región,Lima
+Email,Referral,31,7,Región,Lima
+Display,Paid Social,37,7,Región,Provincias
+Email,Paid Social,52,7,Región,Provincias
+Paid Social,Organic Search,121,7,Región,Provincias
+Direct,Organic Search,130,7,Región,Provincias
+Email,Organic Search,70,7,Región,Provincias
+Organic Search,Paid Search,118,7,Región,Provincias
+Direct,Paid Search,175,7,Región,Provincias
+Email,Paid Search,87,7,Región,Provincias
+Direct,Display,44,7,Región,Provincias
+Email,Display,16,7,Región,Provincias
+Direct,Paid Social,121,7,Región,Provincias
+Organic Search,Paid Social,92,7,Región,Provincias
+Referral,Paid Social,26,7,Región,Provincias
+Paid Search,Organic Search,98,7,Región,Provincias
+Paid Social,Email,100,7,Región,Provincias
+Paid Search,Email,77,7,Región,Provincias
+Paid Social,Display,37,7,Región,Provincias
+Organic Search,Email,87,7,Región,Provincias
+Direct,Email,115,7,Región,Provincias
+Paid Social,Paid Search,179,7,Región,Provincias
+Paid Search,Display,37,7,Región,Provincias
+Display,Email,35,7,Región,Provincias
+Organic Search,Referral,20,7,Región,Provincias
+Direct,Referral,20,7,Región,Provincias
+Paid Social,Referral,21,7,Región,Provincias
+Paid Search,Referral,20,7,Región,Provincias
+Email,Referral,23,7,Región,Provincias
+Display,Paid Search,38,7,Región,Provincias
+Referral,Email,25,7,Región,Provincias
+Paid Search,Paid Social,113,7,Región,Provincias
+Referral,Paid Search,32,7,Región,Provincias
+Display,Organic Search,39,7,Región,Provincias
+Referral,Organic Search,23,7,Región,Provincias
+Organic Search,Display,16,7,Región,Provincias
+Referral,Display,5,7,Región,Provincias
+Display,Referral,5,7,Región,Provincias
+Paid Social,Email,208,7,Tipo de cliente,nuevo
+Paid Search,Email,187,7,Tipo de cliente,nuevo
+Display,Paid Social,78,7,Tipo de cliente,nuevo
+Email,Paid Social,135,7,Tipo de cliente,nuevo
+Direct,Paid Search,306,7,Tipo de cliente,nuevo
+Referral,Paid Search,81,7,Tipo de cliente,nuevo
+Display,Paid Search,84,7,Tipo de cliente,nuevo
+Paid Social,Paid Search,371,7,Tipo de cliente,nuevo
+Paid Social,Organic Search,257,7,Tipo de cliente,nuevo
+Direct,Organic Search,248,7,Tipo de cliente,nuevo
+Email,Organic Search,167,7,Tipo de cliente,nuevo
+Organic Search,Paid Search,252,7,Tipo de cliente,nuevo
+Email,Paid Search,204,7,Tipo de cliente,nuevo
+Paid Search,Organic Search,237,7,Tipo de cliente,nuevo
+Organic Search,Paid Social,202,7,Tipo de cliente,nuevo
+Paid Search,Paid Social,258,7,Tipo de cliente,nuevo
+Direct,Paid Social,263,7,Tipo de cliente,nuevo
+Direct,Display,77,7,Tipo de cliente,nuevo
+Referral,Paid Social,66,7,Tipo de cliente,nuevo
+Paid Social,Referral,65,7,Tipo de cliente,nuevo
+Direct,Referral,56,7,Tipo de cliente,nuevo
+Direct,Email,200,7,Tipo de cliente,nuevo
+Referral,Display,14,7,Tipo de cliente,nuevo
+Organic Search,Email,184,7,Tipo de cliente,nuevo
+Paid Social,Display,69,7,Tipo de cliente,nuevo
+Display,Organic Search,75,7,Tipo de cliente,nuevo
+Referral,Email,58,7,Tipo de cliente,nuevo
+Display,Email,71,7,Tipo de cliente,nuevo
+Organic Search,Referral,48,7,Tipo de cliente,nuevo
+Paid Search,Referral,60,7,Tipo de cliente,nuevo
+Email,Referral,46,7,Tipo de cliente,nuevo
+Display,Referral,11,7,Tipo de cliente,nuevo
+Paid Search,Display,62,7,Tipo de cliente,nuevo
+Referral,Organic Search,55,7,Tipo de cliente,nuevo
+Organic Search,Display,37,7,Tipo de cliente,nuevo
+Email,Display,35,7,Tipo de cliente,nuevo
+Organic Search,Email,91,7,Tipo de cliente,recurrente
+Direct,Display,12,7,Tipo de cliente,recurrente
+Email,Display,4,7,Tipo de cliente,recurrente
+Direct,Organic Search,111,7,Tipo de cliente,recurrente
+Paid Social,Organic Search,39,7,Tipo de cliente,recurrente
+Email,Organic Search,52,7,Tipo de cliente,recurrente
+Organic Search,Paid Search,57,7,Tipo de cliente,recurrente
+Direct,Paid Search,141,7,Tipo de cliente,recurrente
+Paid Social,Paid Search,50,7,Tipo de cliente,recurrente
+Email,Paid Search,74,7,Tipo de cliente,recurrente
+Direct,Email,170,7,Tipo de cliente,recurrente
+Paid Search,Organic Search,54,7,Tipo de cliente,recurrente
+Paid Search,Email,85,7,Tipo de cliente,recurrente
+Organic Search,Paid Social,29,7,Tipo de cliente,recurrente
+Direct,Paid Social,66,7,Tipo de cliente,recurrente
+Email,Paid Social,29,7,Tipo de cliente,recurrente
+Paid Search,Display,8,7,Tipo de cliente,recurrente
+Paid Social,Display,6,7,Tipo de cliente,recurrente
+Paid Social,Email,59,7,Tipo de cliente,recurrente
+Referral,Display,4,7,Tipo de cliente,recurrente
+Display,Organic Search,10,7,Tipo de cliente,recurrente
+Display,Email,16,7,Tipo de cliente,recurrente
+Paid Social,Referral,4,7,Tipo de cliente,recurrente
+Paid Search,Referral,9,7,Tipo de cliente,recurrente
+Referral,Paid Search,14,7,Tipo de cliente,recurrente
+Organic Search,Display,7,7,Tipo de cliente,recurrente
+Referral,Organic Search,6,7,Tipo de cliente,recurrente
+Display,Paid Search,9,7,Tipo de cliente,recurrente
+Paid Search,Paid Social,35,7,Tipo de cliente,recurrente
+Referral,Email,29,7,Tipo de cliente,recurrente
+Direct,Referral,11,7,Tipo de cliente,recurrente
+Email,Referral,8,7,Tipo de cliente,recurrente
+Referral,Paid Social,5,7,Tipo de cliente,recurrente
+Display,Paid Social,7,7,Tipo de cliente,recurrente
+Organic Search,Referral,9,7,Tipo de cliente,recurrente
+Paid Social,Organic Search,60,7,Categoría,Hogar
+Paid Search,Organic Search,55,7,Categoría,Hogar
+Paid Social,Email,70,7,Categoría,Hogar
+Direct,Email,94,7,Categoría,Hogar
+Organic Search,Email,76,7,Categoría,Hogar
+Paid Social,Paid Search,89,7,Categoría,Hogar
+Paid Search,Email,73,7,Categoría,Hogar
+Organic Search,Paid Social,47,7,Categoría,Hogar
+Direct,Paid Social,69,7,Categoría,Hogar
+Email,Paid Social,41,7,Categoría,Hogar
+Email,Paid Search,62,7,Categoría,Hogar
+Direct,Organic Search,81,7,Categoría,Hogar
+Email,Organic Search,45,7,Categoría,Hogar
+Organic Search,Paid Search,72,7,Categoría,Hogar
+Referral,Paid Search,31,7,Categoría,Hogar
+Paid Social,Referral,19,7,Categoría,Hogar
+Organic Search,Referral,21,7,Categoría,Hogar
+Direct,Referral,20,7,Categoría,Hogar
+Direct,Paid Search,92,7,Categoría,Hogar
+Display,Paid Search,20,7,Categoría,Hogar
+Display,Referral,4,7,Categoría,Hogar
+Referral,Email,37,7,Categoría,Hogar
+Display,Organic Search,13,7,Categoría,Hogar
+Paid Social,Display,9,7,Categoría,Hogar
+Paid Search,Display,15,7,Categoría,Hogar
+Paid Search,Paid Social,52,7,Categoría,Hogar
+Referral,Paid Social,25,7,Categoría,Hogar
+Display,Email,22,7,Categoría,Hogar
+Direct,Display,17,7,Categoría,Hogar
+Referral,Organic Search,20,7,Categoría,Hogar
+Referral,Display,8,7,Categoría,Hogar
+Email,Display,11,7,Categoría,Hogar
+Paid Search,Referral,19,7,Categoría,Hogar
+Organic Search,Display,4,7,Categoría,Hogar
+Display,Paid Social,17,7,Categoría,Hogar
+Email,Referral,19,7,Categoría,Hogar
+Direct,Display,10,7,Categoría,Libros y papelería
+Email,Display,4,7,Categoría,Libros y papelería
+Organic Search,Paid Social,42,7,Categoría,Libros y papelería
+Paid Search,Paid Social,52,7,Categoría,Libros y papelería
+Direct,Paid Social,57,7,Categoría,Libros y papelería
+Paid Social,Paid Search,75,7,Categoría,Libros y papelería
+Organic Search,Paid Search,59,7,Categoría,Libros y papelería
+Referral,Display,3,7,Categoría,Libros y papelería
+Paid Social,Organic Search,55,7,Categoría,Libros y papelería
+Paid Search,Organic Search,64,7,Categoría,Libros y papelería
+Email,Organic Search,37,7,Categoría,Libros y papelería
+Organic Search,Email,44,7,Categoría,Libros y papelería
+Paid Search,Email,36,7,Categoría,Libros y papelería
+Direct,Paid Search,69,7,Categoría,Libros y papelería
+Paid Search,Display,7,7,Categoría,Libros y papelería
+Paid Social,Display,12,7,Categoría,Libros y papelería
+Paid Social,Email,42,7,Categoría,Libros y papelería
+Organic Search,Referral,8,7,Categoría,Libros y papelería
+Direct,Referral,9,7,Categoría,Libros y papelería
+Paid Social,Referral,14,7,Categoría,Libros y papelería
+Direct,Organic Search,75,7,Categoría,Libros y papelería
+Direct,Email,60,7,Categoría,Libros y papelería
+Email,Paid Social,33,7,Categoría,Libros y papelería
+Organic Search,Display,7,7,Categoría,Libros y papelería
+Email,Paid Search,51,7,Categoría,Libros y papelería
+Email,Referral,7,7,Categoría,Libros y papelería
+Referral,Organic Search,10,7,Categoría,Libros y papelería
+Referral,Paid Search,14,7,Categoría,Libros y papelería
+Display,Paid Social,9,7,Categoría,Libros y papelería
+Display,Email,10,7,Categoría,Libros y papelería
+Display,Paid Search,11,7,Categoría,Libros y papelería
+Display,Organic Search,11,7,Categoría,Libros y papelería
+Referral,Paid Social,8,7,Categoría,Libros y papelería
+Paid Search,Referral,12,7,Categoría,Libros y papelería
+Referral,Email,6,7,Categoría,Libros y papelería
+Display,Referral,2,7,Categoría,Libros y papelería
+Display,Paid Social,38,7,Categoría,Moda
+Email,Paid Social,50,7,Categoría,Moda
+Organic Search,Paid Search,73,7,Categoría,Moda
+Direct,Paid Search,132,7,Categoría,Moda
+Email,Paid Search,70,7,Categoría,Moda
+Paid Social,Paid Search,125,7,Categoría,Moda
+Direct,Display,39,7,Categoría,Moda
+Direct,Paid Social,132,7,Categoría,Moda
+Organic Search,Paid Social,77,7,Categoría,Moda
+Referral,Paid Social,20,7,Categoría,Moda
+Direct,Organic Search,94,7,Categoría,Moda
+Paid Social,Organic Search,95,7,Categoría,Moda
+Paid Social,Referral,22,7,Categoría,Moda
+Direct,Referral,19,7,Categoría,Moda
+Paid Search,Organic Search,62,7,Categoría,Moda
+Email,Organic Search,64,7,Categoría,Moda
+Direct,Email,107,7,Categoría,Moda
+Paid Social,Display,34,7,Categoría,Moda
+Paid Search,Paid Social,100,7,Categoría,Moda
+Paid Social,Email,95,7,Categoría,Moda
+Paid Search,Email,67,7,Categoría,Moda
+Display,Email,26,7,Categoría,Moda
+Referral,Email,26,7,Categoría,Moda
+Paid Search,Referral,17,7,Categoría,Moda
+Organic Search,Email,69,7,Categoría,Moda
+Paid Search,Display,27,7,Categoría,Moda
+Referral,Display,4,7,Categoría,Moda
+Referral,Paid Search,16,7,Categoría,Moda
+Display,Organic Search,25,7,Categoría,Moda
+Referral,Organic Search,17,7,Categoría,Moda
+Organic Search,Display,21,7,Categoría,Moda
+Display,Paid Search,30,7,Categoría,Moda
+Email,Display,18,7,Categoría,Moda
+Email,Referral,14,7,Categoría,Moda
+Display,Referral,4,7,Categoría,Moda
+Organic Search,Referral,12,7,Categoría,Moda
+Paid Social,Email,60,7,Categoría,Tecnología
+Paid Search,Email,96,7,Categoría,Tecnología
+Organic Search,Email,86,7,Categoría,Tecnología
+Direct,Paid Search,154,7,Categoría,Tecnología
+Referral,Paid Search,34,7,Categoría,Tecnología
+Display,Paid Search,32,7,Categoría,Tecnología
+Paid Social,Paid Search,132,7,Categoría,Tecnología
+Paid Social,Organic Search,86,7,Categoría,Tecnología
+Direct,Organic Search,109,7,Categoría,Tecnología
+Email,Organic Search,73,7,Categoría,Tecnología
+Paid Search,Organic Search,110,7,Categoría,Tecnología
+Organic Search,Paid Search,105,7,Categoría,Tecnología
+Direct,Email,109,7,Categoría,Tecnología
+Display,Organic Search,36,7,Categoría,Tecnología
+Referral,Email,18,7,Categoría,Tecnología
+Email,Paid Search,95,7,Categoría,Tecnología
+Organic Search,Paid Social,65,7,Categoría,Tecnología
+Direct,Referral,19,7,Categoría,Tecnología
+Paid Search,Referral,21,7,Categoría,Tecnología
+Email,Referral,14,7,Categoría,Tecnología
+Direct,Paid Social,71,7,Categoría,Tecnología
+Email,Paid Social,40,7,Categoría,Tecnología
+Paid Search,Paid Social,89,7,Categoría,Tecnología
+Direct,Display,23,7,Categoría,Tecnología
+Paid Search,Display,21,7,Categoría,Tecnología
+Paid Social,Display,20,7,Categoría,Tecnología
+Referral,Paid Social,18,7,Categoría,Tecnología
+Display,Email,29,7,Categoría,Tecnología
+Paid Social,Referral,14,7,Categoría,Tecnología
+Display,Paid Social,21,7,Categoría,Tecnología
+Referral,Organic Search,14,7,Categoría,Tecnología
+Organic Search,Referral,16,7,Categoría,Tecnología
+Organic Search,Display,12,7,Categoría,Tecnología
+Display,Referral,1,7,Categoría,Tecnología
+Email,Display,6,7,Categoría,Tecnología
+Referral,Display,3,7,Categoría,Tecnología
+Paid Social,Paid Search,617,14,Todos,Todos
+Referral,Paid Search,144,14,Todos,Todos
+Direct,Paid Search,566,14,Todos,Todos
+Paid Social,Organic Search,464,14,Todos,Todos
+Display,Organic Search,136,14,Todos,Todos
+Paid Search,Paid Social,432,14,Todos,Todos
+Organic Search,Display,83,14,Todos,Todos
+Paid Search,Display,100,14,Todos,Todos
+Direct,Display,113,14,Todos,Todos
+Direct,Email,502,14,Todos,Todos
+Organic Search,Email,415,14,Todos,Todos
+Email,Paid Search,393,14,Todos,Todos
+Direct,Paid Social,442,14,Todos,Todos
+Email,Paid Social,236,14,Todos,Todos
+Organic Search,Paid Social,344,14,Todos,Todos
+Referral,Paid Social,113,14,Todos,Todos
+Referral,Email,124,14,Todos,Todos
+Direct,Organic Search,482,14,Todos,Todos
+Email,Organic Search,324,14,Todos,Todos
+Organic Search,Paid Search,469,14,Todos,Todos
+Paid Search,Organic Search,433,14,Todos,Todos
+Paid Social,Referral,103,14,Todos,Todos
+Organic Search,Referral,86,14,Todos,Todos
+Display,Paid Social,152,14,Todos,Todos
+Display,Email,134,14,Todos,Todos
+Paid Social,Email,430,14,Todos,Todos
+Paid Search,Email,435,14,Todos,Todos
+Referral,Organic Search,107,14,Todos,Todos
+Direct,Referral,96,14,Todos,Todos
+Email,Referral,76,14,Todos,Todos
+Paid Social,Display,121,14,Todos,Todos
+Email,Display,66,14,Todos,Todos
+Display,Paid Search,160,14,Todos,Todos
+Paid Search,Referral,99,14,Todos,Todos
+Display,Referral,21,14,Todos,Todos
+Referral,Display,27,14,Todos,Todos
+Paid Social,Paid Search,147,14,Dispositivo,desktop
+Referral,Paid Search,52,14,Dispositivo,desktop
+Direct,Paid Search,179,14,Dispositivo,desktop
+Organic Search,Display,23,14,Dispositivo,desktop
+Paid Search,Display,23,14,Dispositivo,desktop
+Direct,Display,23,14,Dispositivo,desktop
+Direct,Email,203,14,Dispositivo,desktop
+Organic Search,Email,180,14,Dispositivo,desktop
+Direct,Paid Social,81,14,Dispositivo,desktop
+Email,Paid Social,51,14,Dispositivo,desktop
+Organic Search,Paid Social,57,14,Dispositivo,desktop
+Paid Search,Paid Social,82,14,Dispositivo,desktop
+Referral,Paid Social,20,14,Dispositivo,desktop
+Email,Paid Search,150,14,Dispositivo,desktop
+Organic Search,Paid Search,154,14,Dispositivo,desktop
+Direct,Organic Search,139,14,Dispositivo,desktop
+Paid Search,Organic Search,130,14,Dispositivo,desktop
+Paid Social,Organic Search,85,14,Dispositivo,desktop
+Email,Organic Search,110,14,Dispositivo,desktop
+Direct,Referral,32,14,Dispositivo,desktop
+Organic Search,Referral,25,14,Dispositivo,desktop
+Paid Social,Referral,26,14,Dispositivo,desktop
+Email,Referral,25,14,Dispositivo,desktop
+Paid Search,Email,188,14,Dispositivo,desktop
+Referral,Email,48,14,Dispositivo,desktop
+Paid Social,Display,22,14,Dispositivo,desktop
+Email,Display,20,14,Dispositivo,desktop
+Display,Paid Social,26,14,Dispositivo,desktop
+Paid Social,Email,122,14,Dispositivo,desktop
+Paid Search,Referral,29,14,Dispositivo,desktop
+Referral,Organic Search,28,14,Dispositivo,desktop
+Display,Paid Search,52,14,Dispositivo,desktop
+Display,Email,48,14,Dispositivo,desktop
+Display,Organic Search,43,14,Dispositivo,desktop
+Referral,Display,6,14,Dispositivo,desktop
+Display,Referral,6,14,Dispositivo,desktop
+Paid Social,Paid Search,416,14,Dispositivo,mobile
+Direct,Paid Search,335,14,Dispositivo,mobile
+Paid Social,Organic Search,344,14,Dispositivo,mobile
+Display,Organic Search,85,14,Dispositivo,mobile
+Paid Search,Paid Social,313,14,Dispositivo,mobile
+Email,Paid Search,202,14,Dispositivo,mobile
+Referral,Email,69,14,Dispositivo,mobile
+Direct,Paid Social,322,14,Dispositivo,mobile
+Direct,Organic Search,301,14,Dispositivo,mobile
+Email,Organic Search,188,14,Dispositivo,mobile
+Organic Search,Email,212,14,Dispositivo,mobile
+Paid Search,Organic Search,269,14,Dispositivo,mobile
+Paid Social,Referral,75,14,Dispositivo,mobile
+Organic Search,Referral,53,14,Dispositivo,mobile
+Direct,Email,256,14,Dispositivo,mobile
+Organic Search,Paid Social,263,14,Dispositivo,mobile
+Display,Paid Social,112,14,Dispositivo,mobile
+Display,Email,75,14,Dispositivo,mobile
+Paid Social,Email,272,14,Dispositivo,mobile
+Email,Paid Social,168,14,Dispositivo,mobile
+Paid Search,Email,211,14,Dispositivo,mobile
+Referral,Organic Search,76,14,Dispositivo,mobile
+Organic Search,Paid Search,272,14,Dispositivo,mobile
+Direct,Referral,56,14,Dispositivo,mobile
+Referral,Paid Social,83,14,Dispositivo,mobile
+Direct,Display,81,14,Dispositivo,mobile
+Paid Search,Display,68,14,Dispositivo,mobile
+Display,Paid Search,94,14,Dispositivo,mobile
+Paid Social,Display,93,14,Dispositivo,mobile
+Organic Search,Display,56,14,Dispositivo,mobile
+Email,Display,42,14,Dispositivo,mobile
+Referral,Paid Search,83,14,Dispositivo,mobile
+Paid Search,Referral,62,14,Dispositivo,mobile
+Email,Referral,46,14,Dispositivo,mobile
+Display,Referral,14,14,Dispositivo,mobile
+Referral,Display,17,14,Dispositivo,mobile
+Paid Social,Paid Search,54,14,Dispositivo,tablet
+Direct,Organic Search,42,14,Dispositivo,tablet
+Paid Search,Organic Search,34,14,Dispositivo,tablet
+Paid Social,Organic Search,35,14,Dispositivo,tablet
+Organic Search,Paid Search,43,14,Dispositivo,tablet
+Direct,Paid Search,52,14,Dispositivo,tablet
+Email,Paid Search,41,14,Dispositivo,tablet
+Direct,Email,43,14,Dispositivo,tablet
+Paid Search,Email,36,14,Dispositivo,tablet
+Paid Social,Email,36,14,Dispositivo,tablet
+Email,Organic Search,26,14,Dispositivo,tablet
+Paid Search,Paid Social,37,14,Dispositivo,tablet
+Display,Paid Social,14,14,Dispositivo,tablet
+Organic Search,Paid Social,24,14,Dispositivo,tablet
+Email,Paid Social,17,14,Dispositivo,tablet
+Direct,Display,9,14,Dispositivo,tablet
+Email,Display,4,14,Dispositivo,tablet
+Direct,Referral,8,14,Dispositivo,tablet
+Organic Search,Referral,8,14,Dispositivo,tablet
+Paid Search,Referral,8,14,Dispositivo,tablet
+Display,Email,11,14,Dispositivo,tablet
+Referral,Paid Search,9,14,Dispositivo,tablet
+Paid Search,Display,9,14,Dispositivo,tablet
+Organic Search,Email,23,14,Dispositivo,tablet
+Display,Paid Search,14,14,Dispositivo,tablet
+Direct,Paid Social,39,14,Dispositivo,tablet
+Paid Social,Display,6,14,Dispositivo,tablet
+Display,Organic Search,8,14,Dispositivo,tablet
+Email,Referral,5,14,Dispositivo,tablet
+Referral,Paid Social,10,14,Dispositivo,tablet
+Organic Search,Display,4,14,Dispositivo,tablet
+Referral,Email,7,14,Dispositivo,tablet
+Referral,Organic Search,3,14,Dispositivo,tablet
+Referral,Display,4,14,Dispositivo,tablet
+Display,Referral,1,14,Dispositivo,tablet
+Paid Social,Referral,2,14,Dispositivo,tablet
+Paid Social,Paid Search,361,14,Región,Lima
+Referral,Paid Search,93,14,Región,Lima
+Direct,Paid Search,349,14,Región,Lima
+Paid Social,Organic Search,279,14,Región,Lima
+Display,Organic Search,81,14,Región,Lima
+Paid Search,Paid Social,271,14,Región,Lima
+Organic Search,Display,44,14,Región,Lima
+Paid Search,Display,53,14,Región,Lima
+Direct,Display,59,14,Región,Lima
+Direct,Email,349,14,Región,Lima
+Organic Search,Email,288,14,Región,Lima
+Email,Paid Search,267,14,Región,Lima
+Direct,Paid Social,282,14,Región,Lima
+Email,Paid Social,158,14,Región,Lima
+Organic Search,Paid Social,203,14,Región,Lima
+Referral,Paid Social,72,14,Región,Lima
+Referral,Email,88,14,Región,Lima
+Direct,Organic Search,310,14,Región,Lima
+Email,Organic Search,218,14,Región,Lima
+Paid Search,Organic Search,283,14,Región,Lima
+Referral,Organic Search,74,14,Región,Lima
+Display,Paid Social,83,14,Región,Lima
+Paid Social,Email,278,14,Región,Lima
+Organic Search,Paid Search,289,14,Región,Lima
+Paid Search,Email,306,14,Región,Lima
+Paid Social,Referral,69,14,Región,Lima
+Organic Search,Referral,57,14,Región,Lima
+Direct,Referral,67,14,Región,Lima
+Display,Email,81,14,Región,Lima
+Email,Referral,50,14,Región,Lima
+Display,Paid Search,99,14,Región,Lima
+Paid Search,Referral,69,14,Región,Lima
+Paid Social,Display,62,14,Región,Lima
+Email,Display,38,14,Región,Lima
+Display,Referral,11,14,Región,Lima
+Referral,Display,18,14,Región,Lima
+Paid Social,Paid Search,256,14,Región,Provincias
+Direct,Paid Search,217,14,Región,Provincias
+Email,Paid Search,126,14,Región,Provincias
+Direct,Paid Social,160,14,Región,Provincias
+Paid Search,Paid Social,161,14,Región,Provincias
+Organic Search,Paid Search,180,14,Región,Provincias
+Paid Social,Organic Search,185,14,Región,Provincias
+Display,Organic Search,55,14,Región,Provincias
+Direct,Organic Search,172,14,Región,Provincias
+Paid Search,Organic Search,150,14,Región,Provincias
+Paid Social,Referral,34,14,Región,Provincias
+Organic Search,Referral,29,14,Región,Provincias
+Organic Search,Paid Social,141,14,Región,Provincias
+Display,Paid Social,69,14,Región,Provincias
+Direct,Email,153,14,Región,Provincias
+Organic Search,Email,127,14,Región,Provincias
+Display,Email,53,14,Región,Provincias
+Paid Social,Email,152,14,Región,Provincias
+Paid Search,Email,129,14,Región,Provincias
+Referral,Paid Search,51,14,Región,Provincias
+Email,Organic Search,106,14,Región,Provincias
+Referral,Paid Social,41,14,Región,Provincias
+Paid Social,Display,59,14,Región,Provincias
+Email,Display,28,14,Región,Provincias
+Organic Search,Display,39,14,Región,Provincias
+Paid Search,Referral,30,14,Región,Provincias
+Display,Paid Search,61,14,Región,Provincias
+Email,Paid Social,78,14,Región,Provincias
+Direct,Display,54,14,Región,Provincias
+Paid Search,Display,47,14,Región,Provincias
+Direct,Referral,29,14,Región,Provincias
+Referral,Organic Search,33,14,Región,Provincias
+Email,Referral,26,14,Región,Provincias
+Referral,Email,36,14,Región,Provincias
+Referral,Display,9,14,Región,Provincias
+Display,Referral,10,14,Región,Provincias
+Paid Social,Paid Search,533,14,Tipo de cliente,nuevo
+Referral,Paid Search,118,14,Tipo de cliente,nuevo
+Direct,Paid Search,401,14,Tipo de cliente,nuevo
+Paid Social,Organic Search,396,14,Tipo de cliente,nuevo
+Display,Organic Search,117,14,Tipo de cliente,nuevo
+Paid Search,Paid Social,379,14,Tipo de cliente,nuevo
+Organic Search,Display,73,14,Tipo de cliente,nuevo
+Paid Search,Display,88,14,Tipo de cliente,nuevo
+Direct,Display,101,14,Tipo de cliente,nuevo
+Email,Paid Search,291,14,Tipo de cliente,nuevo
+Direct,Paid Social,358,14,Tipo de cliente,nuevo
+Email,Paid Social,198,14,Tipo de cliente,nuevo
+Organic Search,Paid Social,297,14,Tipo de cliente,nuevo
+Referral,Paid Social,105,14,Tipo de cliente,nuevo
+Direct,Organic Search,340,14,Tipo de cliente,nuevo
+Email,Organic Search,242,14,Tipo de cliente,nuevo
+Organic Search,Paid Search,376,14,Tipo de cliente,nuevo
+Paid Search,Organic Search,357,14,Tipo de cliente,nuevo
+Paid Social,Referral,95,14,Tipo de cliente,nuevo
+Organic Search,Referral,72,14,Tipo de cliente,nuevo
+Direct,Email,284,14,Tipo de cliente,nuevo
+Organic Search,Email,281,14,Tipo de cliente,nuevo
+Display,Paid Social,139,14,Tipo de cliente,nuevo
+Paid Social,Email,330,14,Tipo de cliente,nuevo
+Paid Search,Email,297,14,Tipo de cliente,nuevo
+Direct,Referral,79,14,Tipo de cliente,nuevo
+Display,Email,110,14,Tipo de cliente,nuevo
+Email,Referral,64,14,Tipo de cliente,nuevo
+Referral,Organic Search,91,14,Tipo de cliente,nuevo
+Referral,Email,87,14,Tipo de cliente,nuevo
+Paid Social,Display,114,14,Tipo de cliente,nuevo
+Email,Display,60,14,Tipo de cliente,nuevo
+Display,Paid Search,145,14,Tipo de cliente,nuevo
+Paid Search,Referral,82,14,Tipo de cliente,nuevo
+Display,Referral,20,14,Tipo de cliente,nuevo
+Referral,Display,22,14,Tipo de cliente,nuevo
+Direct,Email,218,14,Tipo de cliente,recurrente
+Organic Search,Email,134,14,Tipo de cliente,recurrente
+Direct,Paid Search,165,14,Tipo de cliente,recurrente
+Email,Paid Search,102,14,Tipo de cliente,recurrente
+Referral,Email,37,14,Tipo de cliente,recurrente
+Display,Email,24,14,Tipo de cliente,recurrente
+Paid Social,Email,100,14,Tipo de cliente,recurrente
+Paid Social,Organic Search,68,14,Tipo de cliente,recurrente
+Display,Organic Search,19,14,Tipo de cliente,recurrente
+Referral,Organic Search,16,14,Tipo de cliente,recurrente
+Email,Organic Search,82,14,Tipo de cliente,recurrente
+Paid Search,Email,138,14,Tipo de cliente,recurrente
+Direct,Organic Search,142,14,Tipo de cliente,recurrente
+Paid Search,Organic Search,76,14,Tipo de cliente,recurrente
+Organic Search,Paid Search,93,14,Tipo de cliente,recurrente
+Direct,Display,12,14,Tipo de cliente,recurrente
+Paid Search,Display,12,14,Tipo de cliente,recurrente
+Direct,Paid Social,84,14,Tipo de cliente,recurrente
+Paid Search,Paid Social,53,14,Tipo de cliente,recurrente
+Paid Social,Display,7,14,Tipo de cliente,recurrente
+Organic Search,Display,10,14,Tipo de cliente,recurrente
+Email,Display,6,14,Tipo de cliente,recurrente
+Paid Search,Referral,17,14,Tipo de cliente,recurrente
+Paid Social,Paid Search,84,14,Tipo de cliente,recurrente
+Organic Search,Paid Social,47,14,Tipo de cliente,recurrente
+Display,Paid Social,13,14,Tipo de cliente,recurrente
+Email,Paid Social,38,14,Tipo de cliente,recurrente
+Referral,Paid Search,26,14,Tipo de cliente,recurrente
+Paid Social,Referral,8,14,Tipo de cliente,recurrente
+Organic Search,Referral,14,14,Tipo de cliente,recurrente
+Referral,Paid Social,8,14,Tipo de cliente,recurrente
+Display,Paid Search,15,14,Tipo de cliente,recurrente
+Direct,Referral,17,14,Tipo de cliente,recurrente
+Email,Referral,12,14,Tipo de cliente,recurrente
+Display,Referral,1,14,Tipo de cliente,recurrente
+Referral,Display,5,14,Tipo de cliente,recurrente
+Paid Social,Organic Search,98,14,Categoría,Hogar
+Display,Organic Search,23,14,Categoría,Hogar
+Direct,Email,124,14,Categoría,Hogar
+Organic Search,Email,107,14,Categoría,Hogar
+Direct,Paid Search,113,14,Categoría,Hogar
+Email,Paid Search,88,14,Categoría,Hogar
+Referral,Email,48,14,Categoría,Hogar
+Referral,Organic Search,32,14,Categoría,Hogar
+Email,Organic Search,66,14,Categoría,Hogar
+Paid Search,Paid Social,87,14,Categoría,Hogar
+Display,Paid Social,33,14,Categoría,Hogar
+Email,Paid Social,64,14,Categoría,Hogar
+Paid Search,Organic Search,82,14,Categoría,Hogar
+Direct,Paid Social,97,14,Categoría,Hogar
+Referral,Paid Social,39,14,Categoría,Hogar
+Direct,Organic Search,112,14,Categoría,Hogar
+Paid Social,Email,112,14,Categoría,Hogar
+Paid Social,Display,19,14,Categoría,Hogar
+Organic Search,Display,12,14,Categoría,Hogar
+Email,Display,20,14,Categoría,Hogar
+Paid Search,Email,109,14,Categoría,Hogar
+Paid Social,Paid Search,129,14,Categoría,Hogar
+Organic Search,Paid Search,112,14,Categoría,Hogar
+Organic Search,Referral,30,14,Categoría,Hogar
+Direct,Referral,32,14,Categoría,Hogar
+Display,Paid Search,40,14,Categoría,Hogar
+Paid Social,Referral,31,14,Categoría,Hogar
+Display,Email,29,14,Categoría,Hogar
+Referral,Paid Search,47,14,Categoría,Hogar
+Organic Search,Paid Social,69,14,Categoría,Hogar
+Paid Search,Referral,29,14,Categoría,Hogar
+Display,Referral,9,14,Categoría,Hogar
+Email,Referral,30,14,Categoría,Hogar
+Paid Search,Display,19,14,Categoría,Hogar
+Direct,Display,21,14,Categoría,Hogar
+Referral,Display,11,14,Categoría,Hogar
+Paid Social,Paid Search,110,14,Categoría,Libros y papelería
+Referral,Paid Search,20,14,Categoría,Libros y papelería
+Direct,Paid Search,95,14,Categoría,Libros y papelería
+Direct,Organic Search,97,14,Categoría,Libros y papelería
+Paid Social,Organic Search,88,14,Categoría,Libros y papelería
+Email,Organic Search,57,14,Categoría,Libros y papelería
+Organic Search,Paid Search,91,14,Categoría,Libros y papelería
+Email,Paid Search,72,14,Categoría,Libros y papelería
+Paid Search,Organic Search,91,14,Categoría,Libros y papelería
+Display,Organic Search,15,14,Categoría,Libros y papelería
+Paid Search,Paid Social,76,14,Categoría,Libros y papelería
+Email,Paid Social,41,14,Categoría,Libros y papelería
+Paid Social,Referral,17,14,Categoría,Libros y papelería
+Organic Search,Referral,14,14,Categoría,Libros y papelería
+Direct,Referral,11,14,Categoría,Libros y papelería
+Direct,Email,79,14,Categoría,Libros y papelería
+Paid Search,Email,71,14,Categoría,Libros y papelería
+Referral,Email,11,14,Categoría,Libros y papelería
+Direct,Paid Social,72,14,Categoría,Libros y papelería
+Display,Paid Social,21,14,Categoría,Libros y papelería
+Referral,Organic Search,19,14,Categoría,Libros y papelería
+Organic Search,Paid Social,59,14,Categoría,Libros y papelería
+Organic Search,Email,72,14,Categoría,Libros y papelería
+Paid Social,Email,65,14,Categoría,Libros y papelería
+Paid Search,Referral,16,14,Categoría,Libros y papelería
+Paid Social,Display,16,14,Categoría,Libros y papelería
+Organic Search,Display,11,14,Categoría,Libros y papelería
+Direct,Display,12,14,Categoría,Libros y papelería
+Display,Paid Search,13,14,Categoría,Libros y papelería
+Display,Email,14,14,Categoría,Libros y papelería
+Referral,Paid Social,10,14,Categoría,Libros y papelería
+Email,Referral,12,14,Categoría,Libros y papelería
+Paid Search,Display,9,14,Categoría,Libros y papelería
+Email,Display,7,14,Categoría,Libros y papelería
+Referral,Display,4,14,Categoría,Libros y papelería
+Display,Referral,3,14,Categoría,Libros y papelería
+Paid Social,Paid Search,185,14,Categoría,Moda
+Referral,Paid Search,26,14,Categoría,Moda
+Direct,Paid Search,161,14,Categoría,Moda
+Paid Search,Paid Social,147,14,Categoría,Moda
+Organic Search,Display,34,14,Categoría,Moda
+Paid Search,Display,41,14,Categoría,Moda
+Direct,Display,51,14,Categoría,Moda
+Organic Search,Email,112,14,Categoría,Moda
+Paid Social,Organic Search,141,14,Categoría,Moda
+Paid Search,Organic Search,101,14,Categoría,Moda
+Direct,Organic Search,125,14,Categoría,Moda
+Email,Paid Search,104,14,Categoría,Moda
+Paid Social,Referral,34,14,Categoría,Moda
+Organic Search,Referral,22,14,Categoría,Moda
+Organic Search,Paid Social,126,14,Categoría,Moda
+Display,Paid Social,67,14,Categoría,Moda
+Direct,Paid Social,174,14,Categoría,Moda
+Direct,Email,151,14,Categoría,Moda
+Display,Email,43,14,Categoría,Moda
+Paid Social,Email,148,14,Categoría,Moda
+Organic Search,Paid Search,117,14,Categoría,Moda
+Direct,Referral,28,14,Categoría,Moda
+Email,Referral,17,14,Categoría,Moda
+Referral,Organic Search,26,14,Categoría,Moda
+Display,Organic Search,44,14,Categoría,Moda
+Paid Social,Display,52,14,Categoría,Moda
+Email,Display,31,14,Categoría,Moda
+Display,Paid Search,57,14,Categoría,Moda
+Referral,Email,35,14,Categoría,Moda
+Email,Organic Search,92,14,Categoría,Moda
+Referral,Paid Social,31,14,Categoría,Moda
+Paid Search,Email,107,14,Categoría,Moda
+Email,Paid Social,70,14,Categoría,Moda
+Display,Referral,6,14,Categoría,Moda
+Referral,Display,8,14,Categoría,Moda
+Paid Search,Referral,24,14,Categoría,Moda
+Paid Social,Paid Search,193,14,Categoría,Tecnología
+Email,Paid Search,129,14,Categoría,Tecnología
+Direct,Paid Social,99,14,Categoría,Tecnología
+Email,Paid Social,61,14,Categoría,Tecnología
+Organic Search,Paid Social,90,14,Categoría,Tecnología
+Paid Search,Paid Social,122,14,Categoría,Tecnología
+Referral,Paid Social,33,14,Categoría,Tecnología
+Direct,Paid Search,197,14,Categoría,Tecnología
+Paid Social,Organic Search,137,14,Categoría,Tecnología
+Paid Search,Organic Search,159,14,Categoría,Tecnología
+Paid Social,Email,105,14,Categoría,Tecnología
+Paid Search,Email,148,14,Categoría,Tecnología
+Organic Search,Paid Search,149,14,Categoría,Tecnología
+Email,Organic Search,109,14,Categoría,Tecnología
+Direct,Email,148,14,Categoría,Tecnología
+Organic Search,Email,124,14,Categoría,Tecnología
+Referral,Email,30,14,Categoría,Tecnología
+Direct,Organic Search,148,14,Categoría,Tecnología
+Display,Organic Search,54,14,Categoría,Tecnología
+Paid Search,Referral,30,14,Categoría,Tecnología
+Referral,Paid Search,51,14,Categoría,Tecnología
+Display,Paid Search,50,14,Categoría,Tecnología
+Display,Paid Social,31,14,Categoría,Tecnología
+Display,Email,48,14,Categoría,Tecnología
+Organic Search,Display,26,14,Categoría,Tecnología
+Paid Social,Referral,21,14,Categoría,Tecnología
+Email,Referral,17,14,Categoría,Tecnología
+Direct,Referral,25,14,Categoría,Tecnología
+Organic Search,Referral,20,14,Categoría,Tecnología
+Direct,Display,29,14,Categoría,Tecnología
+Paid Search,Display,31,14,Categoría,Tecnología
+Paid Social,Display,34,14,Categoría,Tecnología
+Referral,Organic Search,30,14,Categoría,Tecnología
+Display,Referral,3,14,Categoría,Tecnología
+Referral,Display,4,14,Categoría,Tecnología
+Email,Display,8,14,Categoría,Tecnología
+Direct,Paid Social,471,30,Todos,Todos
+Organic Search,Paid Social,413,30,Todos,Todos
+Referral,Paid Social,147,30,Todos,Todos
+Paid Social,Paid Search,752,30,Todos,Todos
+Organic Search,Paid Search,538,30,Todos,Todos
+Direct,Paid Search,610,30,Todos,Todos
+Direct,Email,541,30,Todos,Todos
+Organic Search,Email,495,30,Todos,Todos
+Paid Search,Email,495,30,Todos,Todos
+Paid Social,Email,526,30,Todos,Todos
+Email,Paid Search,446,30,Todos,Todos
+Display,Paid Search,215,30,Todos,Todos
+Direct,Referral,107,30,Todos,Todos
+Organic Search,Referral,108,30,Todos,Todos
+Display,Referral,29,30,Todos,Todos
+Paid Search,Paid Social,492,30,Todos,Todos
+Display,Paid Social,190,30,Todos,Todos
+Paid Social,Organic Search,567,30,Todos,Todos
+Paid Search,Organic Search,512,30,Todos,Todos
+Email,Organic Search,374,30,Todos,Todos
+Direct,Organic Search,522,30,Todos,Todos
+Email,Paid Social,273,30,Todos,Todos
+Referral,Paid Search,184,30,Todos,Todos
+Referral,Email,151,30,Todos,Todos
+Paid Search,Referral,113,30,Todos,Todos
+Paid Social,Referral,130,30,Todos,Todos
+Email,Referral,85,30,Todos,Todos
+Referral,Organic Search,136,30,Todos,Todos
+Direct,Display,121,30,Todos,Todos
+Paid Search,Display,118,30,Todos,Todos
+Paid Social,Display,147,30,Todos,Todos
+Email,Display,75,30,Todos,Todos
+Organic Search,Display,105,30,Todos,Todos
+Display,Email,156,30,Todos,Todos
+Display,Organic Search,165,30,Todos,Todos
+Referral,Display,32,30,Todos,Todos
+Direct,Paid Social,82,30,Dispositivo,desktop
+Organic Search,Paid Social,67,30,Dispositivo,desktop
+Referral,Paid Social,26,30,Dispositivo,desktop
+Direct,Email,219,30,Dispositivo,desktop
+Organic Search,Email,208,30,Dispositivo,desktop
+Paid Search,Email,209,30,Dispositivo,desktop
+Paid Social,Email,159,30,Dispositivo,desktop
+Direct,Referral,36,30,Dispositivo,desktop
+Organic Search,Referral,38,30,Dispositivo,desktop
+Display,Referral,9,30,Dispositivo,desktop
+Paid Social,Organic Search,116,30,Dispositivo,desktop
+Paid Search,Organic Search,156,30,Dispositivo,desktop
+Email,Organic Search,128,30,Dispositivo,desktop
+Paid Search,Referral,35,30,Dispositivo,desktop
+Direct,Organic Search,152,30,Dispositivo,desktop
+Organic Search,Paid Search,173,30,Dispositivo,desktop
+Email,Paid Search,165,30,Dispositivo,desktop
+Paid Social,Paid Search,179,30,Dispositivo,desktop
+Direct,Paid Search,193,30,Dispositivo,desktop
+Paid Search,Paid Social,96,30,Dispositivo,desktop
+Display,Paid Social,33,30,Dispositivo,desktop
+Display,Paid Search,67,30,Dispositivo,desktop
+Referral,Email,59,30,Dispositivo,desktop
+Display,Email,56,30,Dispositivo,desktop
+Referral,Paid Search,63,30,Dispositivo,desktop
+Email,Paid Social,60,30,Dispositivo,desktop
+Paid Social,Referral,31,30,Dispositivo,desktop
+Email,Referral,27,30,Dispositivo,desktop
+Organic Search,Display,29,30,Dispositivo,desktop
+Paid Social,Display,29,30,Dispositivo,desktop
+Email,Display,23,30,Dispositivo,desktop
+Paid Search,Display,27,30,Dispositivo,desktop
+Display,Organic Search,51,30,Dispositivo,desktop
+Referral,Organic Search,35,30,Dispositivo,desktop
+Direct,Display,27,30,Dispositivo,desktop
+Referral,Display,7,30,Dispositivo,desktop
+Paid Social,Paid Search,504,30,Dispositivo,mobile
+Organic Search,Paid Search,317,30,Dispositivo,mobile
+Direct,Paid Search,363,30,Dispositivo,mobile
+Email,Paid Search,232,30,Dispositivo,mobile
+Organic Search,Email,258,30,Dispositivo,mobile
+Display,Paid Search,126,30,Dispositivo,mobile
+Direct,Paid Social,346,30,Dispositivo,mobile
+Organic Search,Paid Social,316,30,Dispositivo,mobile
+Paid Search,Paid Social,355,30,Dispositivo,mobile
+Display,Paid Social,141,30,Dispositivo,mobile
+Organic Search,Referral,61,30,Dispositivo,mobile
+Direct,Organic Search,326,30,Dispositivo,mobile
+Paid Social,Organic Search,410,30,Dispositivo,mobile
+Email,Organic Search,219,30,Dispositivo,mobile
+Paid Social,Email,325,30,Dispositivo,mobile
+Paid Search,Organic Search,320,30,Dispositivo,mobile
+Email,Paid Social,194,30,Dispositivo,mobile
+Referral,Paid Search,105,30,Dispositivo,mobile
+Referral,Paid Social,107,30,Dispositivo,mobile
+Referral,Email,83,30,Dispositivo,mobile
+Direct,Referral,62,30,Dispositivo,mobile
+Paid Search,Referral,69,30,Dispositivo,mobile
+Paid Social,Referral,94,30,Dispositivo,mobile
+Display,Referral,18,30,Dispositivo,mobile
+Email,Referral,53,30,Dispositivo,mobile
+Direct,Email,275,30,Dispositivo,mobile
+Paid Search,Email,243,30,Dispositivo,mobile
+Referral,Organic Search,95,30,Dispositivo,mobile
+Direct,Display,83,30,Dispositivo,mobile
+Paid Search,Display,80,30,Dispositivo,mobile
+Paid Social,Display,111,30,Dispositivo,mobile
+Email,Display,48,30,Dispositivo,mobile
+Organic Search,Display,71,30,Dispositivo,mobile
+Display,Organic Search,104,30,Dispositivo,mobile
+Display,Email,89,30,Dispositivo,mobile
+Referral,Display,20,30,Dispositivo,mobile
+Direct,Paid Search,54,30,Dispositivo,tablet
+Email,Paid Search,49,30,Dispositivo,tablet
+Organic Search,Paid Search,48,30,Dispositivo,tablet
+Paid Social,Paid Search,69,30,Dispositivo,tablet
+Display,Paid Search,22,30,Dispositivo,tablet
+Paid Social,Organic Search,41,30,Dispositivo,tablet
+Paid Search,Organic Search,36,30,Dispositivo,tablet
+Email,Organic Search,27,30,Dispositivo,tablet
+Direct,Paid Social,43,30,Dispositivo,tablet
+Organic Search,Paid Social,30,30,Dispositivo,tablet
+Display,Paid Social,16,30,Dispositivo,tablet
+Paid Search,Paid Social,41,30,Dispositivo,tablet
+Referral,Paid Social,14,30,Dispositivo,tablet
+Referral,Paid Search,16,30,Dispositivo,tablet
+Direct,Email,47,30,Dispositivo,tablet
+Organic Search,Email,29,30,Dispositivo,tablet
+Paid Search,Email,43,30,Dispositivo,tablet
+Paid Social,Email,42,30,Dispositivo,tablet
+Direct,Display,11,30,Dispositivo,tablet
+Organic Search,Display,5,30,Dispositivo,tablet
+Paid Search,Display,11,30,Dispositivo,tablet
+Display,Email,11,30,Dispositivo,tablet
+Email,Paid Social,19,30,Dispositivo,tablet
+Display,Organic Search,10,30,Dispositivo,tablet
+Referral,Email,9,30,Dispositivo,tablet
+Paid Social,Display,7,30,Dispositivo,tablet
+Direct,Organic Search,44,30,Dispositivo,tablet
+Referral,Organic Search,6,30,Dispositivo,tablet
+Organic Search,Referral,9,30,Dispositivo,tablet
+Email,Referral,5,30,Dispositivo,tablet
+Direct,Referral,9,30,Dispositivo,tablet
+Paid Search,Referral,9,30,Dispositivo,tablet
+Paid Social,Referral,5,30,Dispositivo,tablet
+Email,Display,4,30,Dispositivo,tablet
+Referral,Display,5,30,Dispositivo,tablet
+Display,Referral,2,30,Dispositivo,tablet
+Direct,Paid Social,301,30,Región,Lima
+Organic Search,Paid Social,250,30,Región,Lima
+Referral,Paid Social,95,30,Región,Lima
+Paid Social,Paid Search,453,30,Región,Lima
+Organic Search,Paid Search,332,30,Región,Lima
+Direct,Paid Search,378,30,Región,Lima
+Email,Paid Search,299,30,Región,Lima
+Organic Search,Email,346,30,Región,Lima
+Display,Paid Search,133,30,Región,Lima
+Direct,Referral,76,30,Región,Lima
+Organic Search,Referral,74,30,Región,Lima
+Display,Referral,17,30,Región,Lima
+Paid Search,Paid Social,302,30,Región,Lima
+Display,Paid Social,106,30,Región,Lima
+Paid Social,Organic Search,346,30,Región,Lima
+Paid Search,Organic Search,334,30,Región,Lima
+Email,Organic Search,250,30,Región,Lima
+Direct,Organic Search,339,30,Región,Lima
+Direct,Email,377,30,Región,Lima
+Paid Social,Email,344,30,Región,Lima
+Referral,Paid Search,116,30,Región,Lima
+Email,Paid Social,185,30,Región,Lima
+Paid Search,Referral,81,30,Región,Lima
+Paid Social,Referral,88,30,Región,Lima
+Email,Referral,57,30,Región,Lima
+Paid Search,Email,347,30,Región,Lima
+Referral,Email,106,30,Región,Lima
+Referral,Organic Search,89,30,Región,Lima
+Direct,Display,62,30,Región,Lima
+Email,Display,41,30,Región,Lima
+Organic Search,Display,58,30,Región,Lima
+Paid Social,Display,79,30,Región,Lima
+Paid Search,Display,62,30,Región,Lima
+Display,Email,96,30,Región,Lima
+Display,Organic Search,98,30,Región,Lima
+Referral,Display,21,30,Región,Lima
+Direct,Email,164,30,Región,Provincias
+Organic Search,Email,149,30,Región,Provincias
+Paid Search,Email,148,30,Región,Provincias
+Paid Social,Email,182,30,Región,Provincias
+Paid Social,Paid Search,299,30,Región,Provincias
+Direct,Organic Search,183,30,Región,Provincias
+Paid Social,Organic Search,221,30,Región,Provincias
+Email,Organic Search,124,30,Región,Provincias
+Direct,Paid Search,232,30,Región,Provincias
+Email,Paid Search,147,30,Región,Provincias
+Organic Search,Paid Search,206,30,Región,Provincias
+Display,Paid Search,82,30,Región,Provincias
+Direct,Paid Social,170,30,Región,Provincias
+Paid Search,Paid Social,190,30,Región,Provincias
+Display,Paid Social,84,30,Región,Provincias
+Email,Paid Social,88,30,Región,Provincias
+Referral,Email,45,30,Región,Provincias
+Direct,Referral,31,30,Región,Provincias
+Organic Search,Referral,34,30,Región,Provincias
+Display,Referral,12,30,Región,Provincias
+Paid Social,Referral,42,30,Región,Provincias
+Paid Search,Organic Search,178,30,Región,Provincias
+Organic Search,Paid Social,163,30,Región,Provincias
+Paid Search,Referral,32,30,Región,Provincias
+Email,Referral,28,30,Región,Provincias
+Direct,Display,59,30,Región,Provincias
+Paid Search,Display,56,30,Región,Provincias
+Paid Social,Display,68,30,Región,Provincias
+Referral,Paid Search,68,30,Región,Provincias
+Display,Email,60,30,Región,Provincias
+Referral,Paid Social,52,30,Región,Provincias
+Display,Organic Search,67,30,Región,Provincias
+Organic Search,Display,47,30,Región,Provincias
+Email,Display,34,30,Región,Provincias
+Referral,Organic Search,47,30,Región,Provincias
+Referral,Display,11,30,Región,Provincias
+Organic Search,Email,333,30,Tipo de cliente,nuevo
+Direct,Referral,89,30,Tipo de cliente,nuevo
+Organic Search,Referral,92,30,Tipo de cliente,nuevo
+Display,Referral,27,30,Tipo de cliente,nuevo
+Direct,Paid Social,379,30,Tipo de cliente,nuevo
+Organic Search,Paid Social,356,30,Tipo de cliente,nuevo
+Paid Search,Paid Social,428,30,Tipo de cliente,nuevo
+Paid Social,Paid Search,644,30,Tipo de cliente,nuevo
+Direct,Organic Search,375,30,Tipo de cliente,nuevo
+Paid Social,Organic Search,476,30,Tipo de cliente,nuevo
+Email,Organic Search,279,30,Tipo de cliente,nuevo
+Paid Social,Email,402,30,Tipo de cliente,nuevo
+Paid Search,Organic Search,416,30,Tipo de cliente,nuevo
+Direct,Email,308,30,Tipo de cliente,nuevo
+Direct,Paid Search,432,30,Tipo de cliente,nuevo
+Email,Paid Search,331,30,Tipo de cliente,nuevo
+Organic Search,Paid Search,427,30,Tipo de cliente,nuevo
+Display,Paid Search,193,30,Tipo de cliente,nuevo
+Display,Paid Social,173,30,Tipo de cliente,nuevo
+Email,Paid Social,227,30,Tipo de cliente,nuevo
+Referral,Paid Search,153,30,Tipo de cliente,nuevo
+Referral,Email,105,30,Tipo de cliente,nuevo
+Paid Search,Referral,93,30,Tipo de cliente,nuevo
+Paid Social,Referral,120,30,Tipo de cliente,nuevo
+Email,Referral,73,30,Tipo de cliente,nuevo
+Paid Search,Email,332,30,Tipo de cliente,nuevo
+Referral,Organic Search,116,30,Tipo de cliente,nuevo
+Referral,Paid Social,135,30,Tipo de cliente,nuevo
+Direct,Display,107,30,Tipo de cliente,nuevo
+Paid Search,Display,106,30,Tipo de cliente,nuevo
+Paid Social,Display,138,30,Tipo de cliente,nuevo
+Email,Display,69,30,Tipo de cliente,nuevo
+Organic Search,Display,95,30,Tipo de cliente,nuevo
+Display,Email,126,30,Tipo de cliente,nuevo
+Display,Organic Search,142,30,Tipo de cliente,nuevo
+Referral,Display,27,30,Tipo de cliente,nuevo
+Direct,Paid Social,92,30,Tipo de cliente,recurrente
+Organic Search,Paid Social,57,30,Tipo de cliente,recurrente
+Referral,Paid Social,12,30,Tipo de cliente,recurrente
+Paid Social,Paid Search,108,30,Tipo de cliente,recurrente
+Organic Search,Paid Search,111,30,Tipo de cliente,recurrente
+Direct,Paid Search,178,30,Tipo de cliente,recurrente
+Direct,Email,233,30,Tipo de cliente,recurrente
+Organic Search,Email,162,30,Tipo de cliente,recurrente
+Paid Search,Email,163,30,Tipo de cliente,recurrente
+Paid Social,Email,124,30,Tipo de cliente,recurrente
+Email,Paid Search,115,30,Tipo de cliente,recurrente
+Display,Paid Search,22,30,Tipo de cliente,recurrente
+Paid Search,Paid Social,64,30,Tipo de cliente,recurrente
+Display,Paid Social,17,30,Tipo de cliente,recurrente
+Organic Search,Referral,16,30,Tipo de cliente,recurrente
+Paid Social,Organic Search,91,30,Tipo de cliente,recurrente
+Paid Search,Organic Search,96,30,Tipo de cliente,recurrente
+Email,Organic Search,95,30,Tipo de cliente,recurrente
+Email,Paid Social,46,30,Tipo de cliente,recurrente
+Paid Social,Referral,10,30,Tipo de cliente,recurrente
+Paid Search,Referral,20,30,Tipo de cliente,recurrente
+Direct,Referral,18,30,Tipo de cliente,recurrente
+Referral,Paid Search,31,30,Tipo de cliente,recurrente
+Direct,Organic Search,147,30,Tipo de cliente,recurrente
+Display,Organic Search,23,30,Tipo de cliente,recurrente
+Direct,Display,14,30,Tipo de cliente,recurrente
+Organic Search,Display,10,30,Tipo de cliente,recurrente
+Paid Search,Display,12,30,Tipo de cliente,recurrente
+Display,Email,30,30,Tipo de cliente,recurrente
+Referral,Email,46,30,Tipo de cliente,recurrente
+Paid Social,Display,9,30,Tipo de cliente,recurrente
+Email,Display,6,30,Tipo de cliente,recurrente
+Email,Referral,12,30,Tipo de cliente,recurrente
+Referral,Organic Search,20,30,Tipo de cliente,recurrente
+Referral,Display,5,30,Tipo de cliente,recurrente
+Display,Referral,2,30,Tipo de cliente,recurrente
+Direct,Referral,33,30,Categoría,Hogar
+Organic Search,Referral,36,30,Categoría,Hogar
+Display,Referral,12,30,Categoría,Hogar
+Paid Social,Paid Search,158,30,Categoría,Hogar
+Paid Social,Organic Search,112,30,Categoría,Hogar
+Paid Search,Organic Search,102,30,Categoría,Hogar
+Email,Organic Search,76,30,Categoría,Hogar
+Direct,Paid Social,104,30,Categoría,Hogar
+Paid Search,Paid Social,105,30,Categoría,Hogar
+Display,Paid Social,44,30,Categoría,Hogar
+Email,Paid Social,71,30,Categoría,Hogar
+Email,Referral,33,30,Categoría,Hogar
+Paid Search,Referral,33,30,Categoría,Hogar
+Direct,Paid Search,122,30,Categoría,Hogar
+Direct,Email,135,30,Categoría,Hogar
+Organic Search,Email,128,30,Categoría,Hogar
+Paid Search,Email,127,30,Categoría,Hogar
+Paid Social,Email,133,30,Categoría,Hogar
+Direct,Organic Search,120,30,Categoría,Hogar
+Referral,Organic Search,41,30,Categoría,Hogar
+Organic Search,Paid Search,125,30,Categoría,Hogar
+Paid Social,Referral,40,30,Categoría,Hogar
+Organic Search,Paid Social,86,30,Categoría,Hogar
+Referral,Paid Social,53,30,Categoría,Hogar
+Email,Paid Search,103,30,Categoría,Hogar
+Display,Paid Search,53,30,Categoría,Hogar
+Referral,Paid Search,59,30,Categoría,Hogar
+Paid Social,Display,27,30,Categoría,Hogar
+Organic Search,Display,18,30,Categoría,Hogar
+Email,Display,22,30,Categoría,Hogar
+Display,Email,37,30,Categoría,Hogar
+Referral,Email,56,30,Categoría,Hogar
+Direct,Display,23,30,Categoría,Hogar
+Paid Search,Display,23,30,Categoría,Hogar
+Display,Organic Search,30,30,Categoría,Hogar
+Referral,Display,11,30,Categoría,Hogar
+Direct,Paid Social,79,30,Categoría,Libros y papelería
+Organic Search,Paid Social,70,30,Categoría,Libros y papelería
+Referral,Paid Social,14,30,Categoría,Libros y papelería
+Organic Search,Email,84,30,Categoría,Libros y papelería
+Paid Social,Organic Search,109,30,Categoría,Libros y papelería
+Paid Search,Organic Search,102,30,Categoría,Libros y papelería
+Direct,Organic Search,106,30,Categoría,Libros y papelería
+Direct,Email,87,30,Categoría,Libros y papelería
+Paid Social,Email,79,30,Categoría,Libros y papelería
+Referral,Email,18,30,Categoría,Libros y papelería
+Direct,Referral,15,30,Categoría,Libros y papelería
+Paid Search,Referral,17,30,Categoría,Libros y papelería
+Paid Social,Referral,22,30,Categoría,Libros y papelería
+Direct,Paid Search,104,30,Categoría,Libros y papelería
+Organic Search,Paid Search,101,30,Categoría,Libros y papelería
+Paid Social,Paid Search,128,30,Categoría,Libros y papelería
+Paid Search,Paid Social,87,30,Categoría,Libros y papelería
+Organic Search,Referral,15,30,Categoría,Libros y papelería
+Email,Referral,14,30,Categoría,Libros y papelería
+Paid Search,Email,80,30,Categoría,Libros y papelería
+Email,Paid Social,47,30,Categoría,Libros y papelería
+Direct,Display,13,30,Categoría,Libros y papelería
+Paid Search,Display,11,30,Categoría,Libros y papelería
+Paid Social,Display,16,30,Categoría,Libros y papelería
+Email,Paid Search,82,30,Categoría,Libros y papelería
+Display,Email,18,30,Categoría,Libros y papelería
+Display,Organic Search,21,30,Categoría,Libros y papelería
+Email,Organic Search,64,30,Categoría,Libros y papelería
+Display,Paid Social,24,30,Categoría,Libros y papelería
+Organic Search,Display,14,30,Categoría,Libros y papelería
+Email,Display,8,30,Categoría,Libros y papelería
+Referral,Paid Search,25,30,Categoría,Libros y papelería
+Referral,Organic Search,25,30,Categoría,Libros y papelería
+Display,Paid Search,20,30,Categoría,Libros y papelería
+Referral,Display,4,30,Categoría,Libros y papelería
+Display,Referral,5,30,Categoría,Libros y papelería
+Direct,Paid Search,171,30,Categoría,Moda
+Organic Search,Paid Search,132,30,Categoría,Moda
+Paid Social,Paid Search,224,30,Categoría,Moda
+Email,Paid Search,115,30,Categoría,Moda
+Direct,Paid Social,182,30,Categoría,Moda
+Organic Search,Paid Social,150,30,Categoría,Moda
+Paid Search,Paid Social,159,30,Categoría,Moda
+Display,Paid Search,69,30,Categoría,Moda
+Referral,Paid Social,42,30,Categoría,Moda
+Email,Paid Social,88,30,Categoría,Moda
+Direct,Referral,29,30,Categoría,Moda
+Organic Search,Referral,25,30,Categoría,Moda
+Display,Referral,8,30,Categoría,Moda
+Paid Social,Referral,40,30,Categoría,Moda
+Direct,Email,160,30,Categoría,Moda
+Organic Search,Email,131,30,Categoría,Moda
+Paid Search,Email,118,30,Categoría,Moda
+Paid Social,Email,176,30,Categoría,Moda
+Direct,Organic Search,135,30,Categoría,Moda
+Paid Search,Organic Search,121,30,Categoría,Moda
+Display,Paid Social,83,30,Categoría,Moda
+Email,Organic Search,105,30,Categoría,Moda
+Display,Email,48,30,Categoría,Moda
+Referral,Paid Search,35,30,Categoría,Moda
+Direct,Display,53,30,Categoría,Moda
+Paid Search,Display,46,30,Categoría,Moda
+Referral,Email,40,30,Categoría,Moda
+Paid Social,Organic Search,166,30,Categoría,Moda
+Paid Social,Display,63,30,Categoría,Moda
+Email,Display,33,30,Categoría,Moda
+Paid Search,Referral,28,30,Categoría,Moda
+Email,Referral,18,30,Categoría,Moda
+Organic Search,Display,38,30,Categoría,Moda
+Display,Organic Search,51,30,Categoría,Moda
+Referral,Display,12,30,Categoría,Moda
+Referral,Organic Search,32,30,Categoría,Moda
+Paid Social,Paid Search,242,30,Categoría,Tecnología
+Organic Search,Paid Search,180,30,Categoría,Tecnología
+Direct,Paid Search,213,30,Categoría,Tecnología
+Direct,Email,159,30,Categoría,Tecnología
+Organic Search,Email,152,30,Categoría,Tecnología
+Paid Search,Email,170,30,Categoría,Tecnología
+Paid Social,Email,138,30,Categoría,Tecnología
+Display,Paid Search,73,30,Categoría,Tecnología
+Direct,Paid Social,106,30,Categoría,Tecnología
+Organic Search,Paid Social,107,30,Categoría,Tecnología
+Paid Search,Paid Social,141,30,Categoría,Tecnología
+Display,Paid Social,39,30,Categoría,Tecnología
+Organic Search,Referral,32,30,Categoría,Tecnología
+Direct,Organic Search,161,30,Categoría,Tecnología
+Paid Social,Organic Search,180,30,Categoría,Tecnología
+Email,Organic Search,129,30,Categoría,Tecnología
+Referral,Paid Search,65,30,Categoría,Tecnología
+Paid Search,Organic Search,187,30,Categoría,Tecnología
+Direct,Display,32,30,Categoría,Tecnología
+Email,Display,12,30,Categoría,Tecnología
+Organic Search,Display,35,30,Categoría,Tecnología
+Paid Social,Display,41,30,Categoría,Tecnología
+Paid Search,Display,38,30,Categoría,Tecnología
+Email,Paid Search,146,30,Categoría,Tecnología
+Display,Organic Search,63,30,Categoría,Tecnología
+Direct,Referral,30,30,Categoría,Tecnología
+Paid Social,Referral,28,30,Categoría,Tecnología
+Display,Email,53,30,Categoría,Tecnología
+Paid Search,Referral,35,30,Categoría,Tecnología
+Display,Referral,4,30,Categoría,Tecnología
+Email,Paid Social,67,30,Categoría,Tecnología
+Referral,Email,37,30,Categoría,Tecnología
+Referral,Organic Search,38,30,Categoría,Tecnología
+Referral,Paid Social,38,30,Categoría,Tecnología
+Email,Referral,20,30,Categoría,Tecnología
+Referral,Display,5,30,Categoría,Tecnología
+Organic Search,Paid Search,545,60,Todos,Todos
+Organic Search,Email,499,60,Todos,Todos
+Paid Search,Email,496,60,Todos,Todos
+Display,Email,161,60,Todos,Todos
+Paid Search,Organic Search,513,60,Todos,Todos
+Display,Organic Search,167,60,Todos,Todos
+Direct,Paid Social,473,60,Todos,Todos
+Organic Search,Paid Social,419,60,Todos,Todos
+Paid Search,Paid Social,495,60,Todos,Todos
+Display,Paid Social,193,60,Todos,Todos
+Paid Social,Paid Search,759,60,Todos,Todos
+Direct,Paid Search,611,60,Todos,Todos
+Direct,Email,545,60,Todos,Todos
+Paid Social,Email,530,60,Todos,Todos
+Email,Paid Search,447,60,Todos,Todos
+Display,Paid Search,218,60,Todos,Todos
+Referral,Email,152,60,Todos,Todos
+Paid Social,Organic Search,573,60,Todos,Todos
+Email,Organic Search,376,60,Todos,Todos
+Paid Social,Display,148,60,Todos,Todos
+Referral,Paid Search,186,60,Todos,Todos
+Email,Paid Social,273,60,Todos,Todos
+Direct,Display,123,60,Todos,Todos
+Organic Search,Display,107,60,Todos,Todos
+Referral,Display,32,60,Todos,Todos
+Email,Display,75,60,Todos,Todos
+Referral,Organic Search,138,60,Todos,Todos
+Paid Social,Referral,132,60,Todos,Todos
+Organic Search,Referral,110,60,Todos,Todos
+Paid Search,Display,120,60,Todos,Todos
+Referral,Paid Social,152,60,Todos,Todos
+Direct,Organic Search,525,60,Todos,Todos
+Direct,Referral,107,60,Todos,Todos
+Email,Referral,86,60,Todos,Todos
+Paid Search,Referral,113,60,Todos,Todos
+Display,Referral,29,60,Todos,Todos
+Organic Search,Paid Search,174,60,Dispositivo,desktop
+Organic Search,Email,210,60,Dispositivo,desktop
+Paid Search,Email,210,60,Dispositivo,desktop
+Display,Email,57,60,Dispositivo,desktop
+Paid Social,Paid Search,181,60,Dispositivo,desktop
+Direct,Paid Search,193,60,Dispositivo,desktop
+Direct,Email,220,60,Dispositivo,desktop
+Paid Social,Email,159,60,Dispositivo,desktop
+Referral,Email,59,60,Dispositivo,desktop
+Display,Paid Social,33,60,Dispositivo,desktop
+Organic Search,Paid Social,68,60,Dispositivo,desktop
+Paid Search,Paid Social,96,60,Dispositivo,desktop
+Email,Paid Social,60,60,Dispositivo,desktop
+Paid Search,Organic Search,156,60,Dispositivo,desktop
+Display,Organic Search,53,60,Dispositivo,desktop
+Email,Organic Search,129,60,Dispositivo,desktop
+Direct,Paid Social,83,60,Dispositivo,desktop
+Paid Social,Referral,32,60,Dispositivo,desktop
+Organic Search,Referral,38,60,Dispositivo,desktop
+Direct,Display,28,60,Dispositivo,desktop
+Organic Search,Display,29,60,Dispositivo,desktop
+Paid Social,Display,30,60,Dispositivo,desktop
+Paid Search,Display,29,60,Dispositivo,desktop
+Referral,Display,7,60,Dispositivo,desktop
+Referral,Paid Social,27,60,Dispositivo,desktop
+Display,Paid Search,67,60,Dispositivo,desktop
+Email,Paid Search,166,60,Dispositivo,desktop
+Direct,Organic Search,152,60,Dispositivo,desktop
+Paid Search,Referral,35,60,Dispositivo,desktop
+Email,Referral,27,60,Dispositivo,desktop
+Paid Social,Organic Search,118,60,Dispositivo,desktop
+Referral,Paid Search,63,60,Dispositivo,desktop
+Referral,Organic Search,37,60,Dispositivo,desktop
+Direct,Referral,36,60,Dispositivo,desktop
+Email,Display,23,60,Dispositivo,desktop
+Display,Referral,9,60,Dispositivo,desktop
+Paid Search,Organic Search,321,60,Dispositivo,mobile
+Display,Organic Search,104,60,Dispositivo,mobile
+Direct,Paid Social,347,60,Dispositivo,mobile
+Organic Search,Paid Social,320,60,Dispositivo,mobile
+Paid Search,Paid Social,358,60,Dispositivo,mobile
+Display,Paid Social,144,60,Dispositivo,mobile
+Paid Social,Paid Search,508,60,Dispositivo,mobile
+Organic Search,Paid Search,321,60,Dispositivo,mobile
+Direct,Paid Search,364,60,Dispositivo,mobile
+Email,Paid Search,232,60,Dispositivo,mobile
+Display,Paid Search,129,60,Dispositivo,mobile
+Direct,Email,277,60,Dispositivo,mobile
+Organic Search,Email,259,60,Dispositivo,mobile
+Paid Search,Email,243,60,Dispositivo,mobile
+Paid Social,Email,329,60,Dispositivo,mobile
+Referral,Email,84,60,Dispositivo,mobile
+Paid Social,Organic Search,414,60,Dispositivo,mobile
+Email,Organic Search,219,60,Dispositivo,mobile
+Paid Social,Display,111,60,Dispositivo,mobile
+Referral,Paid Search,107,60,Dispositivo,mobile
+Email,Paid Social,194,60,Dispositivo,mobile
+Referral,Organic Search,95,60,Dispositivo,mobile
+Paid Search,Display,80,60,Dispositivo,mobile
+Email,Display,48,60,Dispositivo,mobile
+Referral,Paid Social,110,60,Dispositivo,mobile
+Direct,Organic Search,329,60,Dispositivo,mobile
+Direct,Display,84,60,Dispositivo,mobile
+Organic Search,Display,73,60,Dispositivo,mobile
+Direct,Referral,62,60,Dispositivo,mobile
+Email,Referral,53,60,Dispositivo,mobile
+Organic Search,Referral,62,60,Dispositivo,mobile
+Paid Social,Referral,95,60,Dispositivo,mobile
+Paid Search,Referral,69,60,Dispositivo,mobile
+Display,Referral,18,60,Dispositivo,mobile
+Display,Email,91,60,Dispositivo,mobile
+Referral,Display,20,60,Dispositivo,mobile
+Direct,Email,48,60,Dispositivo,tablet
+Organic Search,Email,30,60,Dispositivo,tablet
+Paid Social,Email,42,60,Dispositivo,tablet
+Organic Search,Paid Social,31,60,Dispositivo,tablet
+Display,Paid Social,16,60,Dispositivo,tablet
+Direct,Paid Social,43,60,Dispositivo,tablet
+Paid Search,Email,43,60,Dispositivo,tablet
+Referral,Email,9,60,Dispositivo,tablet
+Paid Search,Paid Social,41,60,Dispositivo,tablet
+Email,Paid Social,19,60,Dispositivo,tablet
+Direct,Display,11,60,Dispositivo,tablet
+Organic Search,Display,5,60,Dispositivo,tablet
+Referral,Display,5,60,Dispositivo,tablet
+Email,Display,4,60,Dispositivo,tablet
+Paid Social,Paid Search,70,60,Dispositivo,tablet
+Email,Paid Search,49,60,Dispositivo,tablet
+Direct,Paid Search,54,60,Dispositivo,tablet
+Organic Search,Paid Search,50,60,Dispositivo,tablet
+Referral,Paid Search,16,60,Dispositivo,tablet
+Referral,Paid Social,15,60,Dispositivo,tablet
+Display,Paid Search,22,60,Dispositivo,tablet
+Paid Social,Organic Search,41,60,Dispositivo,tablet
+Email,Organic Search,28,60,Dispositivo,tablet
+Direct,Organic Search,44,60,Dispositivo,tablet
+Direct,Referral,9,60,Dispositivo,tablet
+Organic Search,Referral,10,60,Dispositivo,tablet
+Paid Search,Referral,9,60,Dispositivo,tablet
+Display,Referral,2,60,Dispositivo,tablet
+Paid Search,Display,11,60,Dispositivo,tablet
+Paid Social,Display,7,60,Dispositivo,tablet
+Paid Search,Organic Search,36,60,Dispositivo,tablet
+Referral,Organic Search,6,60,Dispositivo,tablet
+Display,Organic Search,10,60,Dispositivo,tablet
+Display,Email,13,60,Dispositivo,tablet
+Paid Social,Referral,5,60,Dispositivo,tablet
+Email,Referral,6,60,Dispositivo,tablet
+Organic Search,Email,348,60,Región,Lima
+Paid Search,Email,348,60,Región,Lima
+Display,Email,99,60,Región,Lima
+Paid Search,Organic Search,334,60,Región,Lima
+Display,Organic Search,99,60,Región,Lima
+Direct,Paid Social,301,60,Región,Lima
+Organic Search,Paid Social,253,60,Región,Lima
+Paid Search,Paid Social,304,60,Región,Lima
+Display,Paid Social,107,60,Región,Lima
+Paid Social,Paid Search,459,60,Región,Lima
+Organic Search,Paid Search,336,60,Región,Lima
+Direct,Paid Search,379,60,Región,Lima
+Direct,Email,379,60,Región,Lima
+Paid Social,Email,347,60,Región,Lima
+Email,Paid Search,300,60,Región,Lima
+Display,Paid Search,136,60,Región,Lima
+Referral,Email,107,60,Región,Lima
+Paid Social,Display,79,60,Región,Lima
+Email,Paid Social,185,60,Región,Lima
+Direct,Display,62,60,Región,Lima
+Organic Search,Display,58,60,Región,Lima
+Referral,Display,21,60,Región,Lima
+Email,Display,41,60,Región,Lima
+Email,Organic Search,252,60,Región,Lima
+Referral,Paid Social,99,60,Región,Lima
+Direct,Organic Search,341,60,Región,Lima
+Paid Social,Organic Search,349,60,Región,Lima
+Direct,Referral,76,60,Región,Lima
+Email,Referral,58,60,Región,Lima
+Organic Search,Referral,76,60,Región,Lima
+Paid Social,Referral,90,60,Región,Lima
+Paid Search,Referral,81,60,Región,Lima
+Paid Search,Display,62,60,Región,Lima
+Referral,Paid Search,117,60,Región,Lima
+Referral,Organic Search,90,60,Región,Lima
+Display,Referral,17,60,Región,Lima
+Organic Search,Paid Search,209,60,Región,Provincias
+Paid Social,Paid Search,300,60,Región,Provincias
+Direct,Paid Search,232,60,Región,Provincias
+Direct,Paid Social,172,60,Región,Provincias
+Paid Search,Paid Social,191,60,Región,Provincias
+Paid Social,Organic Search,224,60,Región,Provincias
+Paid Search,Organic Search,179,60,Región,Provincias
+Email,Organic Search,124,60,Región,Provincias
+Display,Paid Search,82,60,Región,Provincias
+Referral,Paid Search,69,60,Región,Provincias
+Email,Paid Search,147,60,Región,Provincias
+Organic Search,Paid Social,166,60,Región,Provincias
+Email,Paid Social,88,60,Región,Provincias
+Direct,Email,166,60,Región,Provincias
+Organic Search,Email,151,60,Región,Provincias
+Referral,Email,45,60,Región,Provincias
+Display,Paid Social,86,60,Región,Provincias
+Paid Search,Email,148,60,Región,Provincias
+Referral,Organic Search,48,60,Región,Provincias
+Paid Social,Referral,42,60,Región,Provincias
+Organic Search,Referral,34,60,Región,Provincias
+Paid Social,Display,69,60,Región,Provincias
+Paid Search,Display,58,60,Región,Provincias
+Email,Display,34,60,Región,Provincias
+Direct,Display,61,60,Región,Provincias
+Organic Search,Display,49,60,Región,Provincias
+Referral,Display,11,60,Región,Provincias
+Referral,Paid Social,53,60,Región,Provincias
+Paid Social,Email,183,60,Región,Provincias
+Direct,Organic Search,184,60,Región,Provincias
+Display,Organic Search,68,60,Región,Provincias
+Display,Email,62,60,Región,Provincias
+Direct,Referral,31,60,Región,Provincias
+Email,Referral,28,60,Región,Provincias
+Display,Referral,12,60,Región,Provincias
+Paid Search,Referral,32,60,Región,Provincias
+Organic Search,Paid Search,431,60,Tipo de cliente,nuevo
+Paid Search,Organic Search,417,60,Tipo de cliente,nuevo
+Display,Organic Search,144,60,Tipo de cliente,nuevo
+Direct,Paid Social,381,60,Tipo de cliente,nuevo
+Organic Search,Paid Social,361,60,Tipo de cliente,nuevo
+Paid Search,Paid Social,431,60,Tipo de cliente,nuevo
+Display,Paid Social,175,60,Tipo de cliente,nuevo
+Paid Social,Paid Search,650,60,Tipo de cliente,nuevo
+Direct,Paid Search,433,60,Tipo de cliente,nuevo
+Direct,Email,312,60,Tipo de cliente,nuevo
+Organic Search,Email,337,60,Tipo de cliente,nuevo
+Paid Social,Email,406,60,Tipo de cliente,nuevo
+Email,Paid Search,332,60,Tipo de cliente,nuevo
+Display,Paid Search,196,60,Tipo de cliente,nuevo
+Paid Search,Email,333,60,Tipo de cliente,nuevo
+Referral,Email,106,60,Tipo de cliente,nuevo
+Paid Social,Organic Search,480,60,Tipo de cliente,nuevo
+Email,Organic Search,281,60,Tipo de cliente,nuevo
+Paid Social,Display,139,60,Tipo de cliente,nuevo
+Referral,Paid Search,155,60,Tipo de cliente,nuevo
+Email,Paid Social,227,60,Tipo de cliente,nuevo
+Direct,Display,109,60,Tipo de cliente,nuevo
+Organic Search,Display,96,60,Tipo de cliente,nuevo
+Referral,Display,27,60,Tipo de cliente,nuevo
+Email,Display,69,60,Tipo de cliente,nuevo
+Referral,Organic Search,118,60,Tipo de cliente,nuevo
+Paid Social,Referral,122,60,Tipo de cliente,nuevo
+Organic Search,Referral,94,60,Tipo de cliente,nuevo
+Paid Search,Display,108,60,Tipo de cliente,nuevo
+Referral,Paid Social,138,60,Tipo de cliente,nuevo
+Direct,Organic Search,378,60,Tipo de cliente,nuevo
+Direct,Referral,89,60,Tipo de cliente,nuevo
+Email,Referral,74,60,Tipo de cliente,nuevo
+Paid Search,Referral,93,60,Tipo de cliente,nuevo
+Display,Email,130,60,Tipo de cliente,nuevo
+Display,Referral,27,60,Tipo de cliente,nuevo
+Organic Search,Email,162,60,Tipo de cliente,recurrente
+Paid Search,Email,163,60,Tipo de cliente,recurrente
+Display,Email,31,60,Tipo de cliente,recurrente
+Organic Search,Paid Social,58,60,Tipo de cliente,recurrente
+Display,Paid Social,18,60,Tipo de cliente,recurrente
+Direct,Paid Social,92,60,Tipo de cliente,recurrente
+Direct,Email,233,60,Tipo de cliente,recurrente
+Paid Social,Email,124,60,Tipo de cliente,recurrente
+Referral,Email,46,60,Tipo de cliente,recurrente
+Direct,Paid Search,178,60,Tipo de cliente,recurrente
+Paid Social,Paid Search,109,60,Tipo de cliente,recurrente
+Direct,Organic Search,147,60,Tipo de cliente,recurrente
+Email,Organic Search,95,60,Tipo de cliente,recurrente
+Email,Paid Social,46,60,Tipo de cliente,recurrente
+Referral,Paid Search,31,60,Tipo de cliente,recurrente
+Email,Paid Search,115,60,Tipo de cliente,recurrente
+Paid Search,Paid Social,64,60,Tipo de cliente,recurrente
+Paid Search,Organic Search,96,60,Tipo de cliente,recurrente
+Referral,Organic Search,20,60,Tipo de cliente,recurrente
+Organic Search,Paid Search,114,60,Tipo de cliente,recurrente
+Display,Paid Search,22,60,Tipo de cliente,recurrente
+Paid Social,Organic Search,93,60,Tipo de cliente,recurrente
+Direct,Referral,18,60,Tipo de cliente,recurrente
+Paid Search,Referral,20,60,Tipo de cliente,recurrente
+Paid Social,Referral,10,60,Tipo de cliente,recurrente
+Email,Referral,12,60,Tipo de cliente,recurrente
+Organic Search,Referral,16,60,Tipo de cliente,recurrente
+Display,Organic Search,23,60,Tipo de cliente,recurrente
+Referral,Paid Social,14,60,Tipo de cliente,recurrente
+Display,Referral,2,60,Tipo de cliente,recurrente
+Direct,Display,14,60,Tipo de cliente,recurrente
+Email,Display,6,60,Tipo de cliente,recurrente
+Organic Search,Display,11,60,Tipo de cliente,recurrente
+Paid Search,Display,12,60,Tipo de cliente,recurrente
+Referral,Display,5,60,Tipo de cliente,recurrente
+Paid Social,Display,9,60,Tipo de cliente,recurrente
+Direct,Email,135,60,Categoría,Hogar
+Organic Search,Email,130,60,Categoría,Hogar
+Organic Search,Paid Social,86,60,Categoría,Hogar
+Display,Paid Social,45,60,Categoría,Hogar
+Direct,Paid Social,106,60,Categoría,Hogar
+Paid Social,Paid Search,160,60,Categoría,Hogar
+Organic Search,Paid Search,126,60,Categoría,Hogar
+Display,Paid Search,53,60,Categoría,Hogar
+Referral,Paid Search,60,60,Categoría,Hogar
+Email,Paid Search,103,60,Categoría,Hogar
+Referral,Email,57,60,Categoría,Hogar
+Paid Search,Email,128,60,Categoría,Hogar
+Paid Social,Email,135,60,Categoría,Hogar
+Paid Search,Paid Social,107,60,Categoría,Hogar
+Email,Paid Social,71,60,Categoría,Hogar
+Paid Social,Referral,40,60,Categoría,Hogar
+Organic Search,Referral,36,60,Categoría,Hogar
+Paid Social,Display,28,60,Categoría,Hogar
+Paid Search,Display,23,60,Categoría,Hogar
+Email,Display,22,60,Categoría,Hogar
+Direct,Paid Search,123,60,Categoría,Hogar
+Direct,Display,23,60,Categoría,Hogar
+Organic Search,Display,18,60,Categoría,Hogar
+Direct,Referral,33,60,Categoría,Hogar
+Email,Referral,33,60,Categoría,Hogar
+Paid Search,Referral,33,60,Categoría,Hogar
+Direct,Organic Search,120,60,Categoría,Hogar
+Paid Search,Organic Search,102,60,Categoría,Hogar
+Email,Organic Search,76,60,Categoría,Hogar
+Referral,Paid Social,55,60,Categoría,Hogar
+Display,Referral,12,60,Categoría,Hogar
+Paid Social,Organic Search,114,60,Categoría,Hogar
+Display,Email,37,60,Categoría,Hogar
+Referral,Organic Search,41,60,Categoría,Hogar
+Display,Organic Search,32,60,Categoría,Hogar
+Referral,Display,11,60,Categoría,Hogar
+Direct,Paid Social,79,60,Categoría,Libros y papelería
+Organic Search,Paid Social,72,60,Categoría,Libros y papelería
+Paid Search,Paid Social,87,60,Categoría,Libros y papelería
+Display,Paid Social,24,60,Categoría,Libros y papelería
+Paid Social,Paid Search,128,60,Categoría,Libros y papelería
+Display,Paid Search,21,60,Categoría,Libros y papelería
+Email,Paid Search,82,60,Categoría,Libros y papelería
+Direct,Email,89,60,Categoría,Libros y papelería
+Organic Search,Email,86,60,Categoría,Libros y papelería
+Paid Social,Email,80,60,Categoría,Libros y papelería
+Paid Search,Email,80,60,Categoría,Libros y papelería
+Referral,Email,18,60,Categoría,Libros y papelería
+Paid Social,Organic Search,109,60,Categoría,Libros y papelería
+Paid Search,Organic Search,102,60,Categoría,Libros y papelería
+Email,Organic Search,64,60,Categoría,Libros y papelería
+Paid Social,Display,16,60,Categoría,Libros y papelería
+Email,Paid Social,47,60,Categoría,Libros y papelería
+Referral,Paid Social,14,60,Categoría,Libros y papelería
+Direct,Paid Search,104,60,Categoría,Libros y papelería
+Direct,Organic Search,107,60,Categoría,Libros y papelería
+Organic Search,Paid Search,103,60,Categoría,Libros y papelería
+Display,Organic Search,21,60,Categoría,Libros y papelería
+Paid Social,Referral,22,60,Categoría,Libros y papelería
+Paid Search,Referral,17,60,Categoría,Libros y papelería
+Display,Referral,5,60,Categoría,Libros y papelería
+Display,Email,18,60,Categoría,Libros y papelería
+Referral,Paid Search,25,60,Categoría,Libros y papelería
+Paid Search,Display,11,60,Categoría,Libros y papelería
+Direct,Referral,15,60,Categoría,Libros y papelería
+Organic Search,Referral,16,60,Categoría,Libros y papelería
+Direct,Display,14,60,Categoría,Libros y papelería
+Email,Display,8,60,Categoría,Libros y papelería
+Organic Search,Display,15,60,Categoría,Libros y papelería
+Referral,Display,4,60,Categoría,Libros y papelería
+Email,Referral,15,60,Categoría,Libros y papelería
+Referral,Organic Search,25,60,Categoría,Libros y papelería
+Paid Social,Paid Search,227,60,Categoría,Moda
+Organic Search,Paid Search,134,60,Categoría,Moda
+Direct,Paid Search,171,60,Categoría,Moda
+Paid Social,Email,177,60,Categoría,Moda
+Email,Paid Search,115,60,Categoría,Moda
+Organic Search,Email,131,60,Categoría,Moda
+Paid Search,Email,118,60,Categoría,Moda
+Direct,Email,161,60,Categoría,Moda
+Display,Paid Search,70,60,Categoría,Moda
+Referral,Email,40,60,Categoría,Moda
+Display,Paid Social,84,60,Categoría,Moda
+Organic Search,Paid Social,152,60,Categoría,Moda
+Direct,Display,53,60,Categoría,Moda
+Organic Search,Display,39,60,Categoría,Moda
+Referral,Display,12,60,Categoría,Moda
+Email,Display,33,60,Categoría,Moda
+Direct,Paid Social,182,60,Categoría,Moda
+Paid Search,Paid Social,160,60,Categoría,Moda
+Email,Paid Social,88,60,Categoría,Moda
+Paid Social,Display,63,60,Categoría,Moda
+Paid Search,Display,47,60,Categoría,Moda
+Direct,Organic Search,136,60,Categoría,Moda
+Email,Organic Search,106,60,Categoría,Moda
+Paid Social,Organic Search,168,60,Categoría,Moda
+Referral,Paid Social,45,60,Categoría,Moda
+Paid Search,Organic Search,122,60,Categoría,Moda
+Referral,Organic Search,33,60,Categoría,Moda
+Display,Organic Search,51,60,Categoría,Moda
+Display,Email,51,60,Categoría,Moda
+Paid Social,Referral,41,60,Categoría,Moda
+Direct,Referral,29,60,Categoría,Moda
+Referral,Paid Search,35,60,Categoría,Moda
+Paid Search,Referral,28,60,Categoría,Moda
+Organic Search,Referral,25,60,Categoría,Moda
+Display,Referral,8,60,Categoría,Moda
+Email,Referral,18,60,Categoría,Moda
+Organic Search,Paid Search,182,60,Categoría,Tecnología
+Organic Search,Email,152,60,Categoría,Tecnología
+Paid Search,Email,170,60,Categoría,Tecnología
+Display,Email,55,60,Categoría,Tecnología
+Paid Search,Organic Search,187,60,Categoría,Tecnología
+Display,Organic Search,63,60,Categoría,Tecnología
+Paid Social,Paid Search,244,60,Categoría,Tecnología
+Email,Paid Search,147,60,Categoría,Tecnología
+Direct,Paid Social,106,60,Categoría,Tecnología
+Paid Search,Paid Social,141,60,Categoría,Tecnología
+Direct,Email,160,60,Categoría,Tecnología
+Paid Social,Email,138,60,Categoría,Tecnología
+Organic Search,Paid Social,109,60,Categoría,Tecnología
+Email,Paid Social,67,60,Categoría,Tecnología
+Direct,Paid Search,213,60,Categoría,Tecnología
+Paid Social,Organic Search,182,60,Categoría,Tecnología
+Referral,Organic Search,39,60,Categoría,Tecnología
+Email,Organic Search,130,60,Categoría,Tecnología
+Referral,Paid Search,66,60,Categoría,Tecnología
+Display,Paid Search,74,60,Categoría,Tecnología
+Display,Paid Social,40,60,Categoría,Tecnología
+Referral,Paid Social,38,60,Categoría,Tecnología
+Direct,Organic Search,162,60,Categoría,Tecnología
+Referral,Email,37,60,Categoría,Tecnología
+Paid Social,Referral,29,60,Categoría,Tecnología
+Direct,Referral,30,60,Categoría,Tecnología
+Organic Search,Referral,33,60,Categoría,Tecnología
+Paid Search,Referral,35,60,Categoría,Tecnología
+Email,Referral,20,60,Categoría,Tecnología
+Paid Social,Display,41,60,Categoría,Tecnología
+Organic Search,Display,35,60,Categoría,Tecnología
+Paid Search,Display,39,60,Categoría,Tecnología
+Direct,Display,33,60,Categoría,Tecnología
+Email,Display,12,60,Categoría,Tecnología
+Referral,Display,5,60,Categoría,Tecnología
+Display,Referral,4,60,Categoría,Tecnología
+Organic Search,Paid Social,419,90,Todos,Todos
+Direct,Paid Social,473,90,Todos,Todos
+Email,Paid Social,273,90,Todos,Todos
+Direct,Paid Search,611,90,Todos,Todos
+Organic Search,Paid Search,545,90,Todos,Todos
+Referral,Paid Search,186,90,Todos,Todos
+Email,Paid Search,447,90,Todos,Todos
+Direct,Organic Search,525,90,Todos,Todos
+Email,Organic Search,376,90,Todos,Todos
+Paid Social,Organic Search,573,90,Todos,Todos
+Display,Organic Search,167,90,Todos,Todos
+Paid Search,Organic Search,513,90,Todos,Todos
+Paid Search,Paid Social,495,90,Todos,Todos
+Direct,Email,545,90,Todos,Todos
+Organic Search,Email,499,90,Todos,Todos
+Paid Social,Email,530,90,Todos,Todos
+Display,Email,161,90,Todos,Todos
+Paid Search,Email,496,90,Todos,Todos
+Referral,Paid Social,152,90,Todos,Todos
+Paid Social,Paid Search,759,90,Todos,Todos
+Display,Paid Social,193,90,Todos,Todos
+Display,Paid Search,218,90,Todos,Todos
+Referral,Email,152,90,Todos,Todos
+Referral,Organic Search,138,90,Todos,Todos
+Paid Social,Display,148,90,Todos,Todos
+Organic Search,Display,107,90,Todos,Todos
+Direct,Display,123,90,Todos,Todos
+Organic Search,Referral,110,90,Todos,Todos
+Paid Search,Referral,113,90,Todos,Todos
+Direct,Referral,107,90,Todos,Todos
+Paid Search,Display,120,90,Todos,Todos
+Email,Display,75,90,Todos,Todos
+Email,Referral,86,90,Todos,Todos
+Display,Referral,29,90,Todos,Todos
+Paid Social,Referral,132,90,Todos,Todos
+Referral,Display,32,90,Todos,Todos
+Organic Search,Paid Social,68,90,Dispositivo,desktop
+Direct,Paid Social,83,90,Dispositivo,desktop
+Email,Paid Social,60,90,Dispositivo,desktop
+Direct,Paid Search,193,90,Dispositivo,desktop
+Organic Search,Paid Search,174,90,Dispositivo,desktop
+Referral,Paid Search,63,90,Dispositivo,desktop
+Email,Paid Search,166,90,Dispositivo,desktop
+Organic Search,Email,210,90,Dispositivo,desktop
+Paid Search,Email,210,90,Dispositivo,desktop
+Direct,Email,220,90,Dispositivo,desktop
+Paid Social,Email,159,90,Dispositivo,desktop
+Paid Social,Paid Search,181,90,Dispositivo,desktop
+Paid Search,Paid Social,96,90,Dispositivo,desktop
+Display,Paid Search,67,90,Dispositivo,desktop
+Direct,Organic Search,152,90,Dispositivo,desktop
+Paid Search,Organic Search,156,90,Dispositivo,desktop
+Paid Social,Organic Search,118,90,Dispositivo,desktop
+Referral,Paid Social,27,90,Dispositivo,desktop
+Email,Organic Search,129,90,Dispositivo,desktop
+Display,Email,57,90,Dispositivo,desktop
+Direct,Display,28,90,Dispositivo,desktop
+Organic Search,Display,29,90,Dispositivo,desktop
+Paid Social,Display,30,90,Dispositivo,desktop
+Email,Display,23,90,Dispositivo,desktop
+Paid Search,Referral,35,90,Dispositivo,desktop
+Email,Referral,27,90,Dispositivo,desktop
+Referral,Email,59,90,Dispositivo,desktop
+Paid Social,Referral,32,90,Dispositivo,desktop
+Display,Referral,9,90,Dispositivo,desktop
+Referral,Organic Search,37,90,Dispositivo,desktop
+Organic Search,Referral,38,90,Dispositivo,desktop
+Direct,Referral,36,90,Dispositivo,desktop
+Paid Search,Display,29,90,Dispositivo,desktop
+Display,Organic Search,53,90,Dispositivo,desktop
+Display,Paid Social,33,90,Dispositivo,desktop
+Referral,Display,7,90,Dispositivo,desktop
+Direct,Organic Search,329,90,Dispositivo,mobile
+Email,Organic Search,219,90,Dispositivo,mobile
+Paid Social,Organic Search,414,90,Dispositivo,mobile
+Display,Organic Search,104,90,Dispositivo,mobile
+Paid Search,Organic Search,321,90,Dispositivo,mobile
+Organic Search,Paid Social,320,90,Dispositivo,mobile
+Paid Search,Paid Social,358,90,Dispositivo,mobile
+Email,Paid Social,194,90,Dispositivo,mobile
+Direct,Email,277,90,Dispositivo,mobile
+Organic Search,Email,259,90,Dispositivo,mobile
+Paid Social,Email,329,90,Dispositivo,mobile
+Display,Email,91,90,Dispositivo,mobile
+Paid Search,Email,243,90,Dispositivo,mobile
+Direct,Paid Social,347,90,Dispositivo,mobile
+Referral,Paid Social,110,90,Dispositivo,mobile
+Display,Paid Social,144,90,Dispositivo,mobile
+Paid Social,Paid Search,508,90,Dispositivo,mobile
+Display,Paid Search,129,90,Dispositivo,mobile
+Direct,Paid Search,364,90,Dispositivo,mobile
+Referral,Email,84,90,Dispositivo,mobile
+Organic Search,Paid Search,321,90,Dispositivo,mobile
+Email,Paid Search,232,90,Dispositivo,mobile
+Paid Social,Display,111,90,Dispositivo,mobile
+Organic Search,Display,73,90,Dispositivo,mobile
+Direct,Display,84,90,Dispositivo,mobile
+Organic Search,Referral,62,90,Dispositivo,mobile
+Paid Search,Referral,69,90,Dispositivo,mobile
+Direct,Referral,62,90,Dispositivo,mobile
+Paid Search,Display,80,90,Dispositivo,mobile
+Email,Display,48,90,Dispositivo,mobile
+Display,Referral,18,90,Dispositivo,mobile
+Paid Social,Referral,95,90,Dispositivo,mobile
+Email,Referral,53,90,Dispositivo,mobile
+Referral,Paid Search,107,90,Dispositivo,mobile
+Referral,Organic Search,95,90,Dispositivo,mobile
+Referral,Display,20,90,Dispositivo,mobile
+Organic Search,Paid Search,50,90,Dispositivo,tablet
+Referral,Paid Search,16,90,Dispositivo,tablet
+Paid Social,Paid Search,70,90,Dispositivo,tablet
+Email,Paid Search,49,90,Dispositivo,tablet
+Direct,Organic Search,44,90,Dispositivo,tablet
+Email,Organic Search,28,90,Dispositivo,tablet
+Paid Social,Organic Search,41,90,Dispositivo,tablet
+Paid Search,Organic Search,36,90,Dispositivo,tablet
+Referral,Organic Search,6,90,Dispositivo,tablet
+Direct,Email,48,90,Dispositivo,tablet
+Display,Email,13,90,Dispositivo,tablet
+Paid Search,Email,43,90,Dispositivo,tablet
+Paid Social,Email,42,90,Dispositivo,tablet
+Direct,Paid Search,54,90,Dispositivo,tablet
+Direct,Display,11,90,Dispositivo,tablet
+Paid Search,Display,11,90,Dispositivo,tablet
+Organic Search,Email,30,90,Dispositivo,tablet
+Display,Paid Search,22,90,Dispositivo,tablet
+Paid Search,Paid Social,41,90,Dispositivo,tablet
+Organic Search,Paid Social,31,90,Dispositivo,tablet
+Direct,Paid Social,43,90,Dispositivo,tablet
+Organic Search,Display,5,90,Dispositivo,tablet
+Paid Social,Display,7,90,Dispositivo,tablet
+Display,Paid Social,16,90,Dispositivo,tablet
+Direct,Referral,9,90,Dispositivo,tablet
+Organic Search,Referral,10,90,Dispositivo,tablet
+Paid Search,Referral,9,90,Dispositivo,tablet
+Email,Referral,6,90,Dispositivo,tablet
+Referral,Email,9,90,Dispositivo,tablet
+Referral,Paid Social,15,90,Dispositivo,tablet
+Email,Paid Social,19,90,Dispositivo,tablet
+Display,Organic Search,10,90,Dispositivo,tablet
+Display,Referral,2,90,Dispositivo,tablet
+Email,Display,4,90,Dispositivo,tablet
+Referral,Display,5,90,Dispositivo,tablet
+Paid Social,Referral,5,90,Dispositivo,tablet
+Organic Search,Paid Social,253,90,Región,Lima
+Direct,Paid Social,301,90,Región,Lima
+Email,Paid Social,185,90,Región,Lima
+Direct,Paid Search,379,90,Región,Lima
+Organic Search,Paid Search,336,90,Región,Lima
+Referral,Paid Search,117,90,Región,Lima
+Email,Paid Search,300,90,Región,Lima
+Direct,Organic Search,341,90,Región,Lima
+Email,Organic Search,252,90,Región,Lima
+Paid Social,Organic Search,349,90,Región,Lima
+Display,Organic Search,99,90,Región,Lima
+Paid Search,Organic Search,334,90,Región,Lima
+Paid Search,Paid Social,304,90,Región,Lima
+Referral,Paid Social,99,90,Región,Lima
+Organic Search,Email,348,90,Región,Lima
+Paid Search,Email,348,90,Región,Lima
+Paid Social,Paid Search,459,90,Región,Lima
+Display,Paid Search,136,90,Región,Lima
+Paid Social,Email,347,90,Región,Lima
+Referral,Email,107,90,Región,Lima
+Direct,Email,379,90,Región,Lima
+Display,Paid Social,107,90,Región,Lima
+Display,Email,99,90,Región,Lima
+Paid Social,Display,79,90,Región,Lima
+Organic Search,Display,58,90,Región,Lima
+Direct,Display,62,90,Región,Lima
+Organic Search,Referral,76,90,Región,Lima
+Paid Search,Referral,81,90,Región,Lima
+Direct,Referral,76,90,Región,Lima
+Email,Display,41,90,Región,Lima
+Email,Referral,58,90,Región,Lima
+Paid Search,Display,62,90,Región,Lima
+Display,Referral,17,90,Región,Lima
+Paid Social,Referral,90,90,Región,Lima
+Referral,Organic Search,90,90,Región,Lima
+Referral,Display,21,90,Región,Lima
+Direct,Email,166,90,Región,Provincias
+Organic Search,Email,151,90,Región,Provincias
+Paid Social,Email,183,90,Región,Provincias
+Display,Email,62,90,Región,Provincias
+Paid Search,Email,148,90,Región,Provincias
+Email,Organic Search,124,90,Región,Provincias
+Organic Search,Paid Social,166,90,Región,Provincias
+Display,Paid Social,86,90,Región,Provincias
+Organic Search,Paid Search,209,90,Región,Provincias
+Direct,Paid Search,232,90,Región,Provincias
+Paid Social,Paid Search,300,90,Región,Provincias
+Paid Search,Paid Social,191,90,Región,Provincias
+Direct,Organic Search,184,90,Región,Provincias
+Paid Social,Organic Search,224,90,Región,Provincias
+Paid Search,Organic Search,179,90,Región,Provincias
+Referral,Organic Search,48,90,Región,Provincias
+Direct,Paid Social,172,90,Región,Provincias
+Email,Paid Social,88,90,Región,Provincias
+Referral,Paid Search,69,90,Región,Provincias
+Email,Paid Search,147,90,Región,Provincias
+Referral,Paid Social,53,90,Región,Provincias
+Display,Paid Search,82,90,Región,Provincias
+Direct,Display,61,90,Región,Provincias
+Paid Search,Display,58,90,Región,Provincias
+Paid Social,Display,69,90,Región,Provincias
+Email,Display,34,90,Región,Provincias
+Organic Search,Display,49,90,Región,Provincias
+Display,Organic Search,68,90,Región,Provincias
+Referral,Email,45,90,Región,Provincias
+Paid Social,Referral,42,90,Región,Provincias
+Paid Search,Referral,32,90,Región,Provincias
+Display,Referral,12,90,Región,Provincias
+Email,Referral,28,90,Región,Provincias
+Direct,Referral,31,90,Región,Provincias
+Organic Search,Referral,34,90,Región,Provincias
+Referral,Display,11,90,Región,Provincias
+Direct,Organic Search,378,90,Tipo de cliente,nuevo
+Email,Organic Search,281,90,Tipo de cliente,nuevo
+Paid Social,Organic Search,480,90,Tipo de cliente,nuevo
+Display,Organic Search,144,90,Tipo de cliente,nuevo
+Paid Search,Organic Search,417,90,Tipo de cliente,nuevo
+Organic Search,Paid Social,361,90,Tipo de cliente,nuevo
+Paid Search,Paid Social,431,90,Tipo de cliente,nuevo
+Email,Paid Social,227,90,Tipo de cliente,nuevo
+Direct,Email,312,90,Tipo de cliente,nuevo
+Organic Search,Email,337,90,Tipo de cliente,nuevo
+Paid Social,Email,406,90,Tipo de cliente,nuevo
+Display,Email,130,90,Tipo de cliente,nuevo
+Paid Search,Email,333,90,Tipo de cliente,nuevo
+Direct,Paid Social,381,90,Tipo de cliente,nuevo
+Referral,Paid Social,138,90,Tipo de cliente,nuevo
+Organic Search,Paid Search,431,90,Tipo de cliente,nuevo
+Referral,Paid Search,155,90,Tipo de cliente,nuevo
+Paid Social,Paid Search,650,90,Tipo de cliente,nuevo
+Email,Paid Search,332,90,Tipo de cliente,nuevo
+Display,Paid Social,175,90,Tipo de cliente,nuevo
+Direct,Paid Search,433,90,Tipo de cliente,nuevo
+Display,Paid Search,196,90,Tipo de cliente,nuevo
+Referral,Email,106,90,Tipo de cliente,nuevo
+Referral,Organic Search,118,90,Tipo de cliente,nuevo
+Paid Social,Display,139,90,Tipo de cliente,nuevo
+Organic Search,Display,96,90,Tipo de cliente,nuevo
+Direct,Display,109,90,Tipo de cliente,nuevo
+Organic Search,Referral,94,90,Tipo de cliente,nuevo
+Paid Search,Referral,93,90,Tipo de cliente,nuevo
+Direct,Referral,89,90,Tipo de cliente,nuevo
+Paid Search,Display,108,90,Tipo de cliente,nuevo
+Email,Display,69,90,Tipo de cliente,nuevo
+Email,Referral,74,90,Tipo de cliente,nuevo
+Display,Referral,27,90,Tipo de cliente,nuevo
+Paid Social,Referral,122,90,Tipo de cliente,nuevo
+Referral,Display,27,90,Tipo de cliente,nuevo
+Organic Search,Paid Social,58,90,Tipo de cliente,recurrente
+Direct,Paid Social,92,90,Tipo de cliente,recurrente
+Email,Paid Social,46,90,Tipo de cliente,recurrente
+Direct,Paid Search,178,90,Tipo de cliente,recurrente
+Organic Search,Paid Search,114,90,Tipo de cliente,recurrente
+Referral,Paid Search,31,90,Tipo de cliente,recurrente
+Email,Paid Search,115,90,Tipo de cliente,recurrente
+Email,Organic Search,95,90,Tipo de cliente,recurrente
+Paid Search,Paid Social,64,90,Tipo de cliente,recurrente
+Direct,Email,233,90,Tipo de cliente,recurrente
+Display,Email,31,90,Tipo de cliente,recurrente
+Paid Social,Paid Search,109,90,Tipo de cliente,recurrente
+Referral,Paid Social,14,90,Tipo de cliente,recurrente
+Organic Search,Email,162,90,Tipo de cliente,recurrente
+Direct,Organic Search,147,90,Tipo de cliente,recurrente
+Paid Search,Email,163,90,Tipo de cliente,recurrente
+Paid Social,Email,124,90,Tipo de cliente,recurrente
+Display,Paid Search,22,90,Tipo de cliente,recurrente
+Paid Search,Organic Search,96,90,Tipo de cliente,recurrente
+Display,Organic Search,23,90,Tipo de cliente,recurrente
+Paid Social,Organic Search,93,90,Tipo de cliente,recurrente
+Paid Social,Display,9,90,Tipo de cliente,recurrente
+Direct,Display,14,90,Tipo de cliente,recurrente
+Email,Display,6,90,Tipo de cliente,recurrente
+Referral,Organic Search,20,90,Tipo de cliente,recurrente
+Referral,Email,46,90,Tipo de cliente,recurrente
+Organic Search,Referral,16,90,Tipo de cliente,recurrente
+Direct,Referral,18,90,Tipo de cliente,recurrente
+Email,Referral,12,90,Tipo de cliente,recurrente
+Paid Social,Referral,10,90,Tipo de cliente,recurrente
+Paid Search,Referral,20,90,Tipo de cliente,recurrente
+Display,Referral,2,90,Tipo de cliente,recurrente
+Display,Paid Social,18,90,Tipo de cliente,recurrente
+Organic Search,Display,11,90,Tipo de cliente,recurrente
+Paid Search,Display,12,90,Tipo de cliente,recurrente
+Referral,Display,5,90,Tipo de cliente,recurrente
+Direct,Paid Search,123,90,Categoría,Hogar
+Organic Search,Paid Search,126,90,Categoría,Hogar
+Referral,Paid Search,60,90,Categoría,Hogar
+Email,Paid Search,103,90,Categoría,Hogar
+Organic Search,Paid Social,86,90,Categoría,Hogar
+Paid Search,Paid Social,107,90,Categoría,Hogar
+Email,Paid Social,71,90,Categoría,Hogar
+Direct,Paid Social,106,90,Categoría,Hogar
+Referral,Paid Social,55,90,Categoría,Hogar
+Paid Social,Paid Search,160,90,Categoría,Hogar
+Display,Paid Search,53,90,Categoría,Hogar
+Organic Search,Referral,36,90,Categoría,Hogar
+Paid Search,Referral,33,90,Categoría,Hogar
+Direct,Referral,33,90,Categoría,Hogar
+Direct,Organic Search,120,90,Categoría,Hogar
+Email,Organic Search,76,90,Categoría,Hogar
+Organic Search,Email,130,90,Categoría,Hogar
+Paid Search,Email,128,90,Categoría,Hogar
+Paid Social,Organic Search,114,90,Categoría,Hogar
+Direct,Email,135,90,Categoría,Hogar
+Referral,Email,57,90,Categoría,Hogar
+Display,Referral,12,90,Categoría,Hogar
+Paid Social,Referral,40,90,Categoría,Hogar
+Email,Referral,33,90,Categoría,Hogar
+Paid Social,Email,135,90,Categoría,Hogar
+Paid Search,Organic Search,102,90,Categoría,Hogar
+Display,Paid Social,45,90,Categoría,Hogar
+Display,Organic Search,32,90,Categoría,Hogar
+Referral,Organic Search,41,90,Categoría,Hogar
+Display,Email,37,90,Categoría,Hogar
+Organic Search,Display,18,90,Categoría,Hogar
+Direct,Display,23,90,Categoría,Hogar
+Email,Display,22,90,Categoría,Hogar
+Paid Social,Display,28,90,Categoría,Hogar
+Referral,Display,11,90,Categoría,Hogar
+Paid Search,Display,23,90,Categoría,Hogar
+Direct,Organic Search,107,90,Categoría,Libros y papelería
+Email,Organic Search,64,90,Categoría,Libros y papelería
+Paid Social,Organic Search,109,90,Categoría,Libros y papelería
+Display,Organic Search,21,90,Categoría,Libros y papelería
+Paid Search,Organic Search,102,90,Categoría,Libros y papelería
+Organic Search,Paid Search,103,90,Categoría,Libros y papelería
+Direct,Paid Search,104,90,Categoría,Libros y papelería
+Paid Social,Paid Search,128,90,Categoría,Libros y papelería
+Email,Paid Search,82,90,Categoría,Libros y papelería
+Direct,Paid Social,79,90,Categoría,Libros y papelería
+Organic Search,Paid Social,72,90,Categoría,Libros y papelería
+Paid Search,Paid Social,87,90,Categoría,Libros y papelería
+Referral,Organic Search,25,90,Categoría,Libros y papelería
+Display,Paid Search,21,90,Categoría,Libros y papelería
+Email,Paid Social,47,90,Categoría,Libros y papelería
+Paid Social,Email,80,90,Categoría,Libros y papelería
+Display,Email,18,90,Categoría,Libros y papelería
+Direct,Email,89,90,Categoría,Libros y papelería
+Organic Search,Email,86,90,Categoría,Libros y papelería
+Paid Search,Email,80,90,Categoría,Libros y papelería
+Display,Paid Social,24,90,Categoría,Libros y papelería
+Referral,Email,18,90,Categoría,Libros y papelería
+Direct,Display,14,90,Categoría,Libros y papelería
+Organic Search,Display,15,90,Categoría,Libros y papelería
+Paid Search,Display,11,90,Categoría,Libros y papelería
+Paid Social,Display,16,90,Categoría,Libros y papelería
+Paid Social,Referral,22,90,Categoría,Libros y papelería
+Paid Search,Referral,17,90,Categoría,Libros y papelería
+Organic Search,Referral,16,90,Categoría,Libros y papelería
+Email,Referral,15,90,Categoría,Libros y papelería
+Referral,Paid Social,14,90,Categoría,Libros y papelería
+Direct,Referral,15,90,Categoría,Libros y papelería
+Referral,Paid Search,25,90,Categoría,Libros y papelería
+Email,Display,8,90,Categoría,Libros y papelería
+Display,Referral,5,90,Categoría,Libros y papelería
+Referral,Display,4,90,Categoría,Libros y papelería
+Direct,Email,161,90,Categoría,Moda
+Organic Search,Email,131,90,Categoría,Moda
+Paid Social,Email,177,90,Categoría,Moda
+Display,Email,51,90,Categoría,Moda
+Paid Search,Email,118,90,Categoría,Moda
+Organic Search,Paid Search,134,90,Categoría,Moda
+Referral,Paid Search,35,90,Categoría,Moda
+Paid Social,Paid Search,227,90,Categoría,Moda
+Email,Paid Search,115,90,Categoría,Moda
+Direct,Organic Search,136,90,Categoría,Moda
+Paid Search,Organic Search,122,90,Categoría,Moda
+Display,Organic Search,51,90,Categoría,Moda
+Direct,Paid Social,182,90,Categoría,Moda
+Paid Search,Paid Social,160,90,Categoría,Moda
+Email,Paid Social,88,90,Categoría,Moda
+Direct,Paid Search,171,90,Categoría,Moda
+Organic Search,Paid Social,152,90,Categoría,Moda
+Display,Paid Social,84,90,Categoría,Moda
+Referral,Paid Social,45,90,Categoría,Moda
+Paid Social,Organic Search,168,90,Categoría,Moda
+Email,Organic Search,106,90,Categoría,Moda
+Display,Paid Search,70,90,Categoría,Moda
+Paid Social,Display,63,90,Categoría,Moda
+Organic Search,Display,39,90,Categoría,Moda
+Direct,Display,53,90,Categoría,Moda
+Email,Display,33,90,Categoría,Moda
+Referral,Organic Search,33,90,Categoría,Moda
+Referral,Email,40,90,Categoría,Moda
+Direct,Referral,29,90,Categoría,Moda
+Paid Search,Referral,28,90,Categoría,Moda
+Display,Referral,8,90,Categoría,Moda
+Paid Social,Referral,41,90,Categoría,Moda
+Paid Search,Display,47,90,Categoría,Moda
+Referral,Display,12,90,Categoría,Moda
+Organic Search,Referral,25,90,Categoría,Moda
+Email,Referral,18,90,Categoría,Moda
+Organic Search,Paid Social,109,90,Categoría,Tecnología
+Direct,Paid Social,106,90,Categoría,Tecnología
+Email,Paid Social,67,90,Categoría,Tecnología
+Email,Organic Search,130,90,Categoría,Tecnología
+Organic Search,Email,152,90,Categoría,Tecnología
+Paid Search,Email,170,90,Categoría,Tecnología
+Display,Paid Social,40,90,Categoría,Tecnología
+Direct,Email,160,90,Categoría,Tecnología
+Paid Social,Email,138,90,Categoría,Tecnología
+Paid Search,Paid Social,141,90,Categoría,Tecnología
+Paid Social,Paid Search,244,90,Categoría,Tecnología
+Display,Paid Search,74,90,Categoría,Tecnología
+Direct,Paid Search,213,90,Categoría,Tecnología
+Referral,Email,37,90,Categoría,Tecnología
+Referral,Paid Search,66,90,Categoría,Tecnología
+Email,Paid Search,147,90,Categoría,Tecnología
+Paid Search,Organic Search,187,90,Categoría,Tecnología
+Referral,Paid Social,38,90,Categoría,Tecnología
+Paid Social,Organic Search,182,90,Categoría,Tecnología
+Direct,Organic Search,162,90,Categoría,Tecnología
+Direct,Display,33,90,Categoría,Tecnología
+Paid Search,Display,39,90,Categoría,Tecnología
+Paid Social,Display,41,90,Categoría,Tecnología
+Email,Display,12,90,Categoría,Tecnología
+Organic Search,Display,35,90,Categoría,Tecnología
+Organic Search,Paid Search,182,90,Categoría,Tecnología
+Display,Email,55,90,Categoría,Tecnología
+Paid Search,Referral,35,90,Categoría,Tecnología
+Email,Referral,20,90,Categoría,Tecnología
+Referral,Organic Search,39,90,Categoría,Tecnología
+Direct,Referral,30,90,Categoría,Tecnología
+Organic Search,Referral,33,90,Categoría,Tecnología
+Paid Social,Referral,29,90,Categoría,Tecnología
+Display,Organic Search,63,90,Categoría,Tecnología
+Display,Referral,4,90,Categoría,Tecnología
+Referral,Display,5,90,Categoría,Tecnología

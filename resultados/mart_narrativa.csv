@@ -1,0 +1,11 @@
+tipo,ventana_dias,dim,segmento,modelo,texto,generado_con,advertencias,generado_en
+resumen,30,Todos,Todos,shapley,"**Paid Social concentra 28.9 % de las ventas atribuidas** (shapley, Todos: Todos, ventana de 30 días).
+- **Roles:** llena el embudo Paid Social (43,027 usuarios alcanzados); empuja hacia la compra Paid Social (2,122 conversiones asistidas); cierra mejor Email (10.2 % de sus usuarios compran). Cada canal cumple un rol distinto.
+- **Candidato a escalar, a validar con una prueba:** Paid Social (ROAS 5.6, CPA S/ 33).
+- **A revisar por retorno bajo:** Paid Search (ROAS 3.2, CPA S/ 59).
+- **No recortar:** Referral.",plantilla,Sin credenciales de Claude: se muestra la lectura automática.,2026-10-19T17:39:49+00:00
+siguientes_pasos,30,Todos,Todos,shapley,"1. **Validar Paid Social con una prueba de incrementalidad.** Con 12 semanas y 50 % de control se detectan efectos desde 30 % de sus conversiones; con 10 % de control y la máxima duración solo desde 50 %. Una prueba geográfica evita dejar sin anuncios a la mitad de la audiencia.
+2. **Confirmar la ventana de atribución.** La mitad de las compras ocurre en 8 días y el 90 % en 21; el último tramo aún concentra 0.0 % de las compras. Hoy el canal número 1 no cambia entre ventanas.
+3. **Mantener el modelo al día.** Reajustar cada mes y antes si cambia la inversión, el mix o el tracking. No hay alertas de reajuste.
+4. **Completar los datos.** Costos de Email, orgánico y referral; client_id en todos los pedidos (5,114 de 5,318 pedidos tienen ruta); impresiones para Display y Paid Social; margen por producto.
+5. **Llevarlo a producción.** Cargar las tablas mart_* a BigQuery y publicar el tablero en Looker Studio.",plantilla,Sin credenciales de Claude: se muestra la lectura automática.,2026-10-19T17:39:49+00:00
