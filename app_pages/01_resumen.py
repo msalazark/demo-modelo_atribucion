@@ -7,9 +7,11 @@ from dashboard_comun import (
     CONFIANZA_BADGE,
     NOMBRE_MODELO,
     SENAL_COLORS,
+    boton_descarga,
     color_canal,
     contexto,
     estilo_canal,
+    estilo_estado,
     estilo_senal,
     evidencia,
     panel_interpretacion,
@@ -35,6 +37,19 @@ with est:
              color="orange" if revisar else "green",
              help=f"{ejec.canales_cambiaron} canal(es) fuera de su intervalo frente al mes anterior y {ejec.alertas} alerta(s) "
                   "de reajuste. Detalle en Modelos y robustez.")
+
+# ----------------------------------------------------------------- semáforo de calidad (RQ-18)
+if not ctx.es_segmento:
+    controles = ctx.datos["controles"]
+    peor = "crítico" if (controles.estado == "crítico").any() else "alerta" if (controles.estado == "alerta").any() else "ok"
+    icono = {"ok": ":material/check_circle:", "alerta": ":material/warning:", "crítico": ":material/error:"}[peor]
+    with st.expander(f"{icono} Semáforo de calidad de datos", expanded=peor != "ok"):
+        tabla_controles = controles.rename(columns={"control": "Control", "valor": "Valor", "umbral": "Umbral",
+                                                     "unidad": "Unidad", "estado": "Estado"}).drop(columns="severidad")
+        st.dataframe(tabla_controles.style.map(estilo_estado, subset=["Estado"]), hide_index=True,
+                     alt="Controles de calidad de los datos de entrada, con su valor, umbral y estado")
+        st.caption("Un control «crítico» detiene la corrida antes de publicar resultados; «alerta» no la detiene pero conviene revisarlo.")
+        boton_descarga(controles, "calidad_controles")
 
 # ----------------------------------------------------------------- KPIs
 if not ctx.es_segmento:
@@ -71,7 +86,7 @@ def ganador(col: str) -> tuple[str, float, str, float]:
     return s.index[0], s.iloc[0], seg2[0], seg2[1]
 
 
-g_alc, g_asi, g_con = ganador("usuarios_alcanzados"), ganador("conv_asistidas"), ganador("tasa_conv_usuario_pct")
+g_alc, g_asi, g_con = ganador("usuarios_alcanzados"), ganador("ventas_asiste"), ganador("tasa_conv_usuario_pct")
 c1, c2, c3 = st.columns(3, border=True)
 with c1:
     st.caption(":material/groups: MEJOR ALCANCE")
@@ -85,6 +100,28 @@ with c3:
     st.caption(":material/target: MEJOR CONVERSIÓN")
     titulo_canal(g_con[0], "1.5rem")
     st.write(f"{g_con[1]:.1f} % de sus usuarios · 2.º {g_con[2]}")
+
+# ----------------------------------------------------------------- roles (RQ-11)
+st.markdown("**Rol de cada canal en las ventas** · abre, asiste, cierra o es el único contacto")
+roles = (
+    rank[["ventas_abre", "ventas_asiste", "ventas_cierra", "ventas_unico"]]
+    .rename(columns={"ventas_abre": "Abre", "ventas_asiste": "Asiste", "ventas_cierra": "Cierra", "ventas_unico": "Único"})
+    .reset_index().melt(id_vars="canal", var_name="rol", value_name="ventas")
+)
+st.altair_chart(
+    alt.Chart(roles).mark_bar(stroke="white", strokeWidth=1).encode(
+        y=alt.Y("canal:N", title=None, sort=alt.EncodingSortField("ventas", op="sum", order="descending")),
+        x=alt.X("ventas:Q", title="Ventas", stack="zero"),
+        color=color_canal(),
+        opacity=alt.Opacity("rol:N", scale=alt.Scale(domain=["Abre", "Asiste", "Cierra", "Único"],
+                                                      range=[0.3, 0.55, 1.0, 0.15]),
+                            legend=alt.Legend(title="Rol")),
+        order=alt.Order("rol_orden:Q"), tooltip=["canal", "rol", "ventas"],
+    ).transform_calculate(
+        rol_orden="datum.rol == 'Abre' ? 0 : datum.rol == 'Asiste' ? 1 : datum.rol == 'Cierra' ? 2 : 3"
+    ).properties(height=max(160, 34 * len(rank))),
+    alt="Ventas por rol del canal: abre, asiste, cierra o es el único contacto",
+)
 
 # ----------------------------------------------------------------- señales + interpretación
 izq, der = st.columns([3, 2], gap="large")
@@ -111,6 +148,7 @@ with izq:
     )
     if not ctx.es_segmento:
         st.caption("«Escalar (validar)» es una hipótesis: el ROAS es promedio, no marginal. Valídala con una prueba de incrementalidad.")
+    boton_descarga(acc, "senales_por_canal")
     foco = acc.canal.iloc[evento.selection.rows[0]] if evento.selection.rows else None
 with der:
     panel_interpretacion(ctx, "resumen", "Interpretación")
@@ -154,7 +192,7 @@ if foco:
                     st.metric("CPA", f"S/ {r.cpa:.0f}")
             with st.container(horizontal=True):
                 st.metric("Alcance", f"{r.usuarios_alcanzados:,.0f}")
-                st.metric("Asistencias por cierre", f"{r.ratio_asistencia:.1f}")
+                st.metric("Asistencias por cierre", f"{r.asistencias_por_cierre:.1f}")
                 st.metric("Conversión", f"{r.tasa_conv_usuario_pct:.1f} %")
         with b:
             st.markdown("**Su cuota según cada modelo**")

@@ -1,901 +1,901 @@
 ruta_txt,pedidos,ingresos,ventana_dias,dim,segmento
-Paid Social,337,62440.12,7,Todos,Todos
-Organic Search,231,44666.7,7,Todos,Todos
-Paid Search,188,36258.09,7,Todos,Todos
-Paid Social → Paid Search,142,27571.66,7,Todos,Todos
-Direct,138,24546.78,7,Todos,Todos
-Email,107,19369.56,7,Todos,Todos
-Paid Social → Email,81,15275.42,7,Todos,Todos
-Organic Search → Paid Search,78,15000.22,7,Todos,Todos
-Organic Search → Direct,73,13544.2,7,Todos,Todos
-Display,72,14504.38,7,Todos,Todos
-Paid Social → Organic Search,70,14274.19,7,Todos,Todos
-Organic Search → Email,69,13632.48,7,Todos,Todos
-Paid Search → Email,68,13115.48,7,Todos,Todos
-Direct → Paid Search,67,12674.11,7,Todos,Todos
-Paid Search → Paid Social,65,12773.0,7,Todos,Todos
-Organic Search,78,15994.960000000001,7,Dispositivo,desktop
-Paid Search,69,13147.05,7,Dispositivo,desktop
-Email,48,8164.79,7,Dispositivo,desktop
-Paid Social,46,8250.08,7,Dispositivo,desktop
-Direct,34,6243.82,7,Dispositivo,desktop
-Paid Search → Email,33,6259.53,7,Dispositivo,desktop
-Paid Social → Paid Search,32,6205.81,7,Dispositivo,desktop
-Organic Search → Email,32,5720.16,7,Dispositivo,desktop
-Organic Search → Direct,22,3749.64,7,Dispositivo,desktop
-Direct → Email,21,4712.8099999999995,7,Dispositivo,desktop
-Organic Search → Paid Search,19,3688.7,7,Dispositivo,desktop
-Paid Search → Organic Search,19,3081.5,7,Dispositivo,desktop
-Paid Search → Direct,18,3313.14,7,Dispositivo,desktop
-Email → Paid Search,18,3769.9300000000003,7,Dispositivo,desktop
-Paid Social → Email,18,3518.43,7,Dispositivo,desktop
-Paid Social,268,49827.18,7,Dispositivo,mobile
-Organic Search,135,25402.75,7,Dispositivo,mobile
-Paid Search,107,20273.52,7,Dispositivo,mobile
-Paid Social → Paid Search,98,18401.25,7,Dispositivo,mobile
-Direct,87,15686.43,7,Dispositivo,mobile
-Paid Social → Organic Search,54,10796.6,7,Dispositivo,mobile
-Paid Social → Email,53,9543.34,7,Dispositivo,mobile
-Email,51,9546.51,7,Dispositivo,mobile
-Organic Search → Paid Search,49,9661.77,7,Dispositivo,mobile
-Display,48,9581.07,7,Dispositivo,mobile
-Organic Search → Paid Social,47,8567.33,7,Dispositivo,mobile
-Direct → Paid Search,46,8427.94,7,Dispositivo,mobile
-Paid Social → Direct,46,7728.15,7,Dispositivo,mobile
-Organic Search → Direct,43,8143.59,7,Dispositivo,mobile
-Paid Search → Paid Social,42,7939.76,7,Dispositivo,mobile
-Paid Social,23,4362.86,7,Dispositivo,tablet
-Organic Search,18,3268.9900000000002,7,Dispositivo,tablet
-Direct,17,2616.53,7,Dispositivo,tablet
-Paid Social → Paid Search,12,2964.6,7,Dispositivo,tablet
-Paid Search,12,2837.52,7,Dispositivo,tablet
-Paid Search → Email,10,1805.87,7,Dispositivo,tablet
-Paid Social → Email,10,2213.65,7,Dispositivo,tablet
-Organic Search → Paid Search,10,1649.75,7,Dispositivo,tablet
-Direct → Paid Search,9,1903.51,7,Dispositivo,tablet
-Organic Search → Direct,8,1650.97,7,Dispositivo,tablet
-Display,8,1679.49,7,Dispositivo,tablet
-Email,8,1658.26,7,Dispositivo,tablet
-Paid Social → Direct,7,1642.08,7,Dispositivo,tablet
-Paid Search → Paid Search,7,1400.94,7,Dispositivo,tablet
-Paid Search → Paid Social,7,1239.53,7,Dispositivo,tablet
-Paid Social,192,35370.72,7,Región,Lima
-Organic Search,148,28910.53,7,Región,Lima
-Paid Search,123,24190.13,7,Región,Lima
-Direct,95,16244.28,7,Región,Lima
-Paid Social → Paid Search,78,15673.8,7,Región,Lima
-Email,72,12500.78,7,Región,Lima
-Paid Search → Email,49,8929.78,7,Región,Lima
-Organic Search → Direct,49,8724.82,7,Región,Lima
-Organic Search → Email,48,9531.83,7,Región,Lima
-Organic Search → Paid Search,46,9110.56,7,Región,Lima
-Paid Social → Direct,46,7725.84,7,Región,Lima
-Direct → Paid Search,44,8155.09,7,Región,Lima
-Paid Search → Organic Search,43,8332.47,7,Región,Lima
-Paid Social → Email,43,7693.5599999999995,7,Región,Lima
-Organic Search → Paid Social,40,6930.73,7,Región,Lima
-Paid Social,145,27069.4,7,Región,Provincias
-Organic Search,83,15756.17,7,Región,Provincias
-Paid Search,65,12067.96,7,Región,Provincias
-Paid Social → Paid Search,64,11897.86,7,Región,Provincias
-Direct,43,8302.5,7,Región,Provincias
-Paid Social → Email,38,7581.86,7,Región,Provincias
-Email,35,6868.78,7,Región,Provincias
-Display,34,7114.06,7,Región,Provincias
-Organic Search → Paid Search,32,5889.66,7,Región,Provincias
-Paid Search → Paid Social,31,6228.17,7,Región,Provincias
-Paid Social → Organic Search,30,5668.75,7,Región,Provincias
-Organic Search → Paid Social,24,4619.87,7,Región,Provincias
-Organic Search → Direct,24,4819.38,7,Región,Provincias
-Direct → Paid Search,23,4519.02,7,Región,Provincias
-Direct → Email,21,4953.01,7,Región,Provincias
-Paid Social,284,53143.37,7,Tipo de cliente,nuevo
-Organic Search,180,36040.08,7,Tipo de cliente,nuevo
-Paid Search,144,27663.66,7,Tipo de cliente,nuevo
-Paid Social → Paid Search,124,23878.65,7,Tipo de cliente,nuevo
-Direct,82,14378.43,7,Tipo de cliente,nuevo
-Email,74,13130.31,7,Tipo de cliente,nuevo
-Paid Social → Email,72,13791.84,7,Tipo de cliente,nuevo
-Paid Social → Organic Search,65,13291.58,7,Tipo de cliente,nuevo
-Organic Search → Paid Search,64,12184.73,7,Tipo de cliente,nuevo
-Display,63,12855.08,7,Tipo de cliente,nuevo
-Paid Search → Paid Social,56,10569.28,7,Tipo de cliente,nuevo
-Organic Search → Paid Social,53,9397.85,7,Tipo de cliente,nuevo
-Paid Search → Organic Search,51,9684.0,7,Tipo de cliente,nuevo
-Paid Search → Email,49,9846.3,7,Tipo de cliente,nuevo
-Organic Search → Email,49,8740.26,7,Tipo de cliente,nuevo
-Direct,56,10168.35,7,Tipo de cliente,recurrente
-Paid Social,53,9296.75,7,Tipo de cliente,recurrente
-Organic Search,51,8626.62,7,Tipo de cliente,recurrente
-Paid Search,44,8594.43,7,Tipo de cliente,recurrente
-Email,33,6239.25,7,Tipo de cliente,recurrente
-Organic Search → Direct,26,4761.66,7,Tipo de cliente,recurrente
-Direct → Email,25,4834.13,7,Tipo de cliente,recurrente
-Direct → Paid Search,24,4705.6,7,Tipo de cliente,recurrente
-Email → Direct,23,3346.81,7,Tipo de cliente,recurrente
-Paid Search → Direct,21,3686.85,7,Tipo de cliente,recurrente
-Organic Search → Email,20,4892.22,7,Tipo de cliente,recurrente
-Direct → Direct,20,3616.41,7,Tipo de cliente,recurrente
-Paid Search → Email,19,3269.18,7,Tipo de cliente,recurrente
-Paid Social → Paid Search,18,3693.01,7,Tipo de cliente,recurrente
-Paid Social → Direct,15,2674.96,7,Tipo de cliente,recurrente
-Paid Social,73,13737.97,7,Categoría,Hogar
-Organic Search,47,9021.48,7,Categoría,Hogar
-Direct,35,5692.23,7,Categoría,Hogar
-Paid Search,29,5410.85,7,Categoría,Hogar
-Paid Social → Paid Search,25,4487.52,7,Categoría,Hogar
-Email,23,3971.13,7,Categoría,Hogar
-Paid Social → Email,22,4214.42,7,Categoría,Hogar
-Organic Search → Paid Search,18,3039.25,7,Categoría,Hogar
-Paid Search → Email,17,4051.21,7,Categoría,Hogar
-Referral,16,2604.42,7,Categoría,Hogar
-Email → Paid Search,16,2855.7999999999997,7,Categoría,Hogar
-Organic Search → Email,16,2929.71,7,Categoría,Hogar
-Paid Search → Paid Social,15,2809.17,7,Categoría,Hogar
-Organic Search → Direct,15,2748.94,7,Categoría,Hogar
-Paid Social → Direct,14,2573.64,7,Categoría,Hogar
-Paid Social,50,9411.08,7,Categoría,Libros y papelería
-Organic Search,44,9476.45,7,Categoría,Libros y papelería
-Paid Search,44,8276.83,7,Categoría,Libros y papelería
-Paid Social → Paid Search,24,4509.47,7,Categoría,Libros y papelería
-Email,21,3244.4,7,Categoría,Libros y papelería
-Direct,20,3179.05,7,Categoría,Libros y papelería
-Organic Search → Paid Search,19,4725.25,7,Categoría,Libros y papelería
-Organic Search → Direct,17,2908.77,7,Categoría,Libros y papelería
-Paid Search → Organic Search,15,3013.53,7,Categoría,Libros y papelería
-Organic Search → Email,13,2513.85,7,Categoría,Libros y papelería
-Organic Search → Paid Social,13,2095.07,7,Categoría,Libros y papelería
-Direct → Paid Search,11,2084.0,7,Categoría,Libros y papelería
-Paid Social → Email,11,2245.59,7,Categoría,Libros y papelería
-Paid Social → Paid Social,11,1766.32,7,Categoría,Libros y papelería
-Direct → Email,10,2173.58,7,Categoría,Libros y papelería
-Paid Social,134,24865.02,7,Categoría,Moda
-Organic Search,61,12026.19,7,Categoría,Moda
-Paid Search,51,10127.09,7,Categoría,Moda
-Paid Social → Paid Search,44,9162.95,7,Categoría,Moda
-Email,40,7474.14,7,Categoría,Moda
-Direct,39,7417.24,7,Categoría,Moda
-Paid Social → Email,34,6281.01,7,Categoría,Moda
-Paid Social → Organic Search,30,6084.56,7,Categoría,Moda
-Display,30,6156.19,7,Categoría,Moda
-Paid Social → Direct,26,4640.08,7,Categoría,Moda
-Paid Search → Email,24,4386.5,7,Categoría,Moda
-Direct → Paid Search,21,3939.14,7,Categoría,Moda
-Organic Search → Direct,20,3424.35,7,Categoría,Moda
-Paid Search → Direct,20,3455.55,7,Categoría,Moda
-Organic Search → Paid Social,19,3261.39,7,Categoría,Moda
-Paid Social,80,14426.05,7,Categoría,Tecnología
-Organic Search,79,14142.58,7,Categoría,Tecnología
-Paid Search,64,12443.32,7,Categoría,Tecnología
-Paid Social → Paid Search,49,9411.72,7,Categoría,Tecnología
-Direct,44,8258.26,7,Categoría,Tecnología
-Organic Search → Email,28,5638.08,7,Categoría,Tecnología
-Organic Search → Paid Search,26,4578.2,7,Categoría,Tecnología
-Direct → Paid Search,25,4655.76,7,Categoría,Tecnología
-Paid Search → Organic Search,25,4667.26,7,Categoría,Tecnología
-Paid Search → Paid Social,25,4985.89,7,Categoría,Tecnología
-Email,23,4679.89,7,Categoría,Tecnología
-Display,22,4709.95,7,Categoría,Tecnología
-Organic Search → Direct,21,4462.14,7,Categoría,Tecnología
-Paid Social → Organic Search,21,4412.96,7,Categoría,Tecnología
-Direct → Email,20,4714.93,7,Categoría,Tecnología
-Paid Social,272,49855.56,14,Todos,Todos
-Organic Search,168,33236.9,14,Todos,Todos
-Paid Social → Paid Search,124,24623.84,14,Todos,Todos
-Paid Search,101,19483.239999999998,14,Todos,Todos
-Paid Social → Email,61,11790.31,14,Todos,Todos
-Paid Social → Organic Search,57,11996.43,14,Todos,Todos
-Direct,55,9563.48,14,Todos,Todos
-Organic Search → Paid Search,55,10167.38,14,Todos,Todos
-Organic Search → Email,54,10355.98,14,Todos,Todos
-Display,50,10074.9,14,Todos,Todos
-Paid Social → Direct,48,9135.7,14,Todos,Todos
-Organic Search → Paid Social,42,6880.5,14,Todos,Todos
-Organic Search → Direct,42,7440.5,14,Todos,Todos
-Paid Search → Email,42,8795.23,14,Todos,Todos
-Paid Search → Paid Social,41,8142.8099999999995,14,Todos,Todos
-Organic Search,56,12257.54,14,Dispositivo,desktop
-Paid Social,41,7263.2,14,Dispositivo,desktop
-Paid Search,36,6891.55,14,Dispositivo,desktop
-Paid Social → Paid Search,31,5709.76,14,Dispositivo,desktop
-Organic Search → Email,28,4965.84,14,Dispositivo,desktop
-Paid Search → Email,21,4355.47,14,Dispositivo,desktop
-Organic Search → Paid Search,17,3109.11,14,Dispositivo,desktop
-Organic Search → Direct,16,2862.81,14,Dispositivo,desktop
-Email,16,3170.31,14,Dispositivo,desktop
-Paid Social → Email,14,2894.39,14,Dispositivo,desktop
-Referral,11,1624.75,14,Dispositivo,desktop
-Paid Social → Organic Search,11,2359.33,14,Dispositivo,desktop
-Direct,11,2136.82,14,Dispositivo,desktop
-Display,11,2161.53,14,Dispositivo,desktop
-Organic Search → Organic Search,11,1915.08,14,Dispositivo,desktop
-Paid Social,217,40515.62,14,Dispositivo,mobile
-Organic Search,104,19598.82,14,Dispositivo,mobile
-Paid Social → Paid Search,82,16139.24,14,Dispositivo,mobile
-Paid Search,60,11160.12,14,Dispositivo,mobile
-Paid Social → Organic Search,42,8809.22,14,Dispositivo,mobile
-Paid Social → Email,39,7039.22,14,Dispositivo,mobile
-Paid Social → Direct,35,6631.04,14,Dispositivo,mobile
-Display,35,7074.72,14,Dispositivo,mobile
-Direct,35,5820.72,14,Dispositivo,mobile
-Organic Search → Paid Social,34,5612.49,14,Dispositivo,mobile
-Organic Search → Paid Search,31,5715.62,14,Dispositivo,mobile
-Paid Search → Paid Social,25,4758.349999999999,14,Dispositivo,mobile
-Organic Search → Email,24,5077.9,14,Dispositivo,mobile
-Paid Social → Paid Social,23,4566.59,14,Dispositivo,mobile
-Organic Search → Direct,23,3871.48,14,Dispositivo,mobile
-Paid Social,14,2076.74,14,Dispositivo,tablet
-Paid Social → Paid Search,11,2774.84,14,Dispositivo,tablet
-Direct,9,1605.94,14,Dispositivo,tablet
-Organic Search,8,1380.54,14,Dispositivo,tablet
-Paid Social → Email,8,1856.7,14,Dispositivo,tablet
-Organic Search → Paid Search,7,1342.65,14,Dispositivo,tablet
-Paid Social → Direct,6,1326.1100000000001,14,Dispositivo,tablet
-Paid Search → Paid Social,6,1098.79,14,Dispositivo,tablet
-Paid Search → Email,6,1455.03,14,Dispositivo,tablet
-Paid Search,5,1431.57,14,Dispositivo,tablet
-Paid Social → Email → Paid Search,4,572.2,14,Dispositivo,tablet
-Paid Social → Organic Search,4,827.88,14,Dispositivo,tablet
-Direct → Paid Search,4,612.57,14,Dispositivo,tablet
-Display,4,838.65,14,Dispositivo,tablet
-Paid Social → Direct → Email,4,504.03999999999996,14,Dispositivo,tablet
-Paid Social,163,29662.87,14,Región,Lima
-Organic Search,108,22335.45,14,Región,Lima
-Paid Search,69,13795.17,14,Región,Lima
-Paid Social → Paid Search,69,14164.82,14,Región,Lima
-Organic Search → Email,37,7146.96,14,Región,Lima
-Paid Social → Direct,36,6550.25,14,Región,Lima
-Direct,35,5630.65,14,Región,Lima
-Paid Social → Organic Search,33,6927.38,14,Región,Lima
-Organic Search → Paid Search,32,5710.26,14,Región,Lima
-Organic Search → Direct,31,5399.29,14,Región,Lima
-Paid Search → Email,29,5800.4,14,Región,Lima
-Paid Social → Email,28,5207.89,14,Región,Lima
-Organic Search → Paid Social,28,4716.86,14,Región,Lima
-Display,26,4979.3,14,Región,Lima
-Paid Search → Organic Search,22,4288.82,14,Región,Lima
-Paid Social,109,20192.69,14,Región,Provincias
-Organic Search,60,10901.45,14,Región,Provincias
-Paid Social → Paid Search,55,10459.02,14,Región,Provincias
-Paid Social → Email,33,6582.42,14,Región,Provincias
-Paid Search,32,5688.07,14,Región,Provincias
-Paid Social → Organic Search,24,5069.05,14,Región,Provincias
-Display,24,5095.6,14,Región,Provincias
-Organic Search → Paid Search,23,4457.12,14,Región,Provincias
-Paid Search → Paid Social,21,4318.99,14,Región,Provincias
-Direct,20,3932.83,14,Región,Provincias
-Organic Search → Email,17,3209.02,14,Región,Provincias
-Organic Search → Paid Social,14,2163.64,14,Región,Provincias
-Paid Search → Email,13,2994.83,14,Región,Provincias
-Paid Social → Direct,12,2585.45,14,Región,Provincias
-Organic Search → Direct,11,2041.21,14,Región,Provincias
-Paid Social,230,42954.89,14,Tipo de cliente,nuevo
-Organic Search,127,26010.84,14,Tipo de cliente,nuevo
-Paid Social → Paid Search,110,21827.77,14,Tipo de cliente,nuevo
-Paid Search,74,14232.6,14,Tipo de cliente,nuevo
-Paid Social → Email,54,10517.69,14,Tipo de cliente,nuevo
-Paid Social → Organic Search,51,10980.28,14,Tipo de cliente,nuevo
-Organic Search → Paid Search,43,7936.79,14,Tipo de cliente,nuevo
-Display,41,8425.6,14,Tipo de cliente,nuevo
-Organic Search → Email,40,7512.1,14,Tipo de cliente,nuevo
-Paid Social → Direct,37,7246.44,14,Tipo de cliente,nuevo
-Organic Search → Paid Social,36,5902.72,14,Tipo de cliente,nuevo
-Paid Search → Paid Social,33,6264.47,14,Tipo de cliente,nuevo
-Paid Search → Email,26,5620.41,14,Tipo de cliente,nuevo
-Paid Search → Organic Search,25,4711.09,14,Tipo de cliente,nuevo
-Referral,24,3707.16,14,Tipo de cliente,nuevo
-Paid Social,42,6900.67,14,Tipo de cliente,recurrente
-Organic Search,41,7226.06,14,Tipo de cliente,recurrente
-Direct,34,6170.26,14,Tipo de cliente,recurrente
-Paid Search,27,5250.639999999999,14,Tipo de cliente,recurrente
-Organic Search → Direct,18,3305.2799999999997,14,Tipo de cliente,recurrente
-Paid Search → Email,16,3174.82,14,Tipo de cliente,recurrente
-Paid Social → Paid Search,14,2796.07,14,Tipo de cliente,recurrente
-Organic Search → Email,14,2843.88,14,Tipo de cliente,recurrente
-Email,12,2191.75,14,Tipo de cliente,recurrente
-Organic Search → Paid Search,12,2230.59,14,Tipo de cliente,recurrente
-Direct → Email,11,2149.88,14,Tipo de cliente,recurrente
-Paid Social → Direct,11,1889.26,14,Tipo de cliente,recurrente
-Direct → Paid Search,11,2279.92,14,Tipo de cliente,recurrente
-Paid Search → Direct,10,1465.53,14,Tipo de cliente,recurrente
-Paid Social → Direct → Email,10,1582.64,14,Tipo de cliente,recurrente
-Paid Social,61,11574.73,14,Categoría,Hogar
-Organic Search,38,7559.83,14,Categoría,Hogar
-Paid Social → Email,18,3447.97,14,Categoría,Hogar
-Organic Search → Paid Search,17,3090.41,14,Categoría,Hogar
-Paid Social → Paid Search,17,3051.89,14,Categoría,Hogar
-Direct,16,2345.17,14,Categoría,Hogar
-Paid Search,15,2806.53,14,Categoría,Hogar
-Organic Search → Email,13,1788.8799999999999,14,Categoría,Hogar
-Referral,11,1751.26,14,Categoría,Hogar
-Organic Search → Paid Social,10,1600.2,14,Categoría,Hogar
-Paid Social → Email → Paid Search,10,1809.09,14,Categoría,Hogar
-Paid Social → Direct,10,1663.19,14,Categoría,Hogar
-Display,9,1726.55,14,Categoría,Hogar
-Email,9,1809.77,14,Categoría,Hogar
-Paid Search → Email,9,2308.33,14,Categoría,Hogar
-Paid Social,40,7147.38,14,Categoría,Libros y papelería
-Organic Search,32,7204.64,14,Categoría,Libros y papelería
-Paid Social → Paid Search,23,4121.47,14,Categoría,Libros y papelería
-Paid Search,22,4243.3099999999995,14,Categoría,Libros y papelería
-Organic Search → Paid Search,14,3090.17,14,Categoría,Libros y papelería
-Organic Search → Direct,11,1844.92,14,Categoría,Libros y papelería
-Email,10,1697.94,14,Categoría,Libros y papelería
-Direct,10,1581.3,14,Categoría,Libros y papelería
-Paid Search → Paid Search,9,2376.12,14,Categoría,Libros y papelería
-Paid Social → Email,8,1750.18,14,Categoría,Libros y papelería
-Paid Search → Paid Social,8,1500.45,14,Categoría,Libros y papelería
-Display,8,1215.75,14,Categoría,Libros y papelería
-Organic Search → Paid Social,8,1278.7,14,Categoría,Libros y papelería
-Organic Search → Email,8,1655.93,14,Categoría,Libros y papelería
-Organic Search → Organic Search,7,1380.65,14,Categoría,Libros y papelería
-Paid Social,109,20181.91,14,Categoría,Moda
-Organic Search,44,8581.87,14,Categoría,Moda
-Paid Social → Paid Search,40,8646.14,14,Categoría,Moda
-Paid Social → Organic Search,25,5354.2300000000005,14,Categoría,Moda
-Paid Social → Email,24,4610.94,14,Categoría,Moda
-Paid Search,23,4134.28,14,Categoría,Moda
-Display,20,4254.47,14,Categoría,Moda
-Paid Social → Direct,19,3624.43,14,Categoría,Moda
-Paid Search → Email,18,3911.7799999999997,14,Categoría,Moda
-Organic Search → Paid Social,14,2170.17,14,Categoría,Moda
-Organic Search → Email,14,2953.52,14,Categoría,Moda
-Direct,14,3224.94,14,Categoría,Moda
-Organic Search → Paid Search,12,2061.43,14,Categoría,Moda
-Paid Social → Paid Social,12,2535.06,14,Categoría,Moda
-Organic Search → Direct,11,1768.9,14,Categoría,Moda
-Paid Social,62,10951.539999999999,14,Categoría,Tecnología
-Organic Search,54,9890.56,14,Categoría,Tecnología
-Paid Social → Paid Search,44,8804.34,14,Categoría,Tecnología
-Paid Search,41,8299.119999999999,14,Categoría,Tecnología
-Organic Search → Email,19,3957.6499999999996,14,Categoría,Tecnología
-Paid Social → Organic Search,17,3729.2999999999997,14,Categoría,Tecnología
-Direct,15,2412.0699999999997,14,Categoría,Tecnología
-Paid Search → Organic Search,14,2641.2799999999997,14,Categoría,Tecnología
-Paid Search → Paid Social,14,2702.39,14,Categoría,Tecnología
-Organic Search → Direct,14,2609.7,14,Categoría,Tecnología
-Display,13,2878.13,14,Categoría,Tecnología
-Paid Social → Direct,13,2935.1,14,Categoría,Tecnología
-Paid Social → Paid Search → Organic Search,12,2190.89,14,Categoría,Tecnología
-Paid Search → Email,12,2020.39,14,Categoría,Tecnología
-Organic Search → Paid Search,12,1925.37,14,Categoría,Tecnología
-Paid Social,264,48461.38,30,Todos,Todos
-Organic Search,156,30738.42,30,Todos,Todos
-Paid Social → Paid Search,117,23067.19,30,Todos,Todos
-Paid Search,92,17625.73,30,Todos,Todos
-Paid Social → Email,56,10959.57,30,Todos,Todos
-Paid Social → Organic Search,54,11193.1,30,Todos,Todos
-Display,50,10074.9,30,Todos,Todos
-Direct,48,8512.48,30,Todos,Todos
-Organic Search → Paid Search,46,9001.78,30,Todos,Todos
-Organic Search → Email,46,8590.82,30,Todos,Todos
-Paid Social → Direct,42,7868.2,30,Todos,Todos
-Paid Search → Paid Social,38,7592.82,30,Todos,Todos
-Organic Search → Paid Social,37,6351.58,30,Todos,Todos
-Paid Search → Email,36,7631.7,30,Todos,Todos
-Organic Search → Direct,31,5706.31,30,Todos,Todos
-Organic Search,49,10660.45,30,Dispositivo,desktop
-Paid Social,41,7263.2,30,Dispositivo,desktop
-Paid Search,35,6665.61,30,Dispositivo,desktop
-Paid Social → Paid Search,30,5536.3,30,Dispositivo,desktop
-Organic Search → Email,25,4316.79,30,Dispositivo,desktop
-Paid Search → Email,17,3592.09,30,Dispositivo,desktop
-Organic Search → Paid Search,15,2874.3,30,Dispositivo,desktop
-Paid Social → Email,14,2894.39,30,Dispositivo,desktop
-Display,11,2161.5299999999997,30,Dispositivo,desktop
-Referral,11,1624.75,30,Dispositivo,desktop
-Paid Social → Organic Search,11,2169.04,30,Dispositivo,desktop
-Direct,10,1824.03,30,Dispositivo,desktop
-Paid Search → Paid Social,10,2285.67,30,Dispositivo,desktop
-Organic Search → Direct,10,1739.68,30,Dispositivo,desktop
-Paid Search → Direct,9,1472.22,30,Dispositivo,desktop
-Paid Social,210,39233.88,30,Dispositivo,mobile
-Organic Search,99,18697.43,30,Dispositivo,mobile
-Paid Social → Paid Search,79,15315.75,30,Dispositivo,mobile
-Paid Search,52,9528.55,30,Dispositivo,mobile
-Paid Social → Organic Search,40,8449.44,30,Dispositivo,mobile
-Paid Social → Email,35,6562.49,30,Dispositivo,mobile
-Display,35,7074.72,30,Dispositivo,mobile
-Direct,30,5204.36,30,Dispositivo,mobile
-Paid Social → Direct,30,5508.4,30,Dispositivo,mobile
-Organic Search → Paid Social,29,5083.57,30,Dispositivo,mobile
-Organic Search → Paid Search,24,4784.83,30,Dispositivo,mobile
-Paid Search → Paid Social,22,4208.36,30,Dispositivo,mobile
-Paid Social → Paid Social,21,3959.48,30,Dispositivo,mobile
-Organic Search → Email,21,4274.03,30,Dispositivo,mobile
-Organic Search → Direct,18,3260.42,30,Dispositivo,mobile
-Paid Social,13,1964.3,30,Dispositivo,tablet
-Organic Search,8,1380.54,30,Dispositivo,tablet
-Paid Social → Paid Search,8,2215.14,30,Dispositivo,tablet
-Direct,8,1484.09,30,Dispositivo,tablet
-Organic Search → Paid Search,7,1342.65,30,Dispositivo,tablet
-Paid Social → Email,7,1502.69,30,Dispositivo,tablet
-Paid Search → Email,6,1455.03,30,Dispositivo,tablet
-Paid Search → Paid Social,6,1098.79,30,Dispositivo,tablet
-Paid Social → Direct,6,1326.1100000000001,30,Dispositivo,tablet
-Paid Search,5,1431.57,30,Dispositivo,tablet
-Paid Social → Email → Paid Search,5,689.3299999999999,30,Dispositivo,tablet
-Direct → Paid Search,4,612.57,30,Dispositivo,tablet
-Display,4,838.6500000000001,30,Dispositivo,tablet
-Paid Social → Direct → Email,4,504.03999999999996,30,Dispositivo,tablet
-Direct → Email,3,460.03,30,Dispositivo,tablet
-Paid Social,158,28856.09,30,Región,Lima
-Organic Search,101,20722.07,30,Región,Lima
-Paid Social → Paid Search,65,13140.09,30,Región,Lima
-Paid Search,64,12912.8,30,Región,Lima
-Paid Social → Organic Search,32,6724.11,30,Región,Lima
-Organic Search → Email,31,5769.2300000000005,30,Región,Lima
-Paid Social → Direct,31,5439.22,30,Región,Lima
-Direct,29,4892.4400000000005,30,Región,Lima
-Paid Social → Email,27,5101.74,30,Región,Lima
-Organic Search → Paid Social,26,4484.9,30,Región,Lima
-Organic Search → Paid Search,26,4933.1900000000005,30,Región,Lima
-Display,26,4979.3,30,Región,Lima
-Paid Search → Email,24,4928.6,30,Región,Lima
-Organic Search → Direct,23,4286.96,30,Región,Lima
-Paid Social → Email → Paid Search,20,3479.91,30,Región,Lima
-Paid Social,106,19605.29,30,Región,Provincias
-Organic Search,55,10016.35,30,Región,Provincias
-Paid Social → Paid Search,52,9927.1,30,Región,Provincias
-Paid Social → Email,29,5857.83,30,Región,Provincias
-Paid Search,28,4712.93,30,Región,Provincias
-Display,24,5095.6,30,Región,Provincias
-Paid Social → Organic Search,22,4468.99,30,Región,Provincias
-Organic Search → Paid Search,20,4068.59,30,Región,Provincias
-Paid Search → Paid Social,20,4215.42,30,Región,Provincias
-Direct,19,3620.04,30,Región,Provincias
-Organic Search → Email,15,2821.59,30,Región,Provincias
-Paid Search → Email,12,2703.1,30,Región,Provincias
-Paid Social → Direct → Paid Search,12,2439.88,30,Región,Provincias
-Paid Social → Paid Social,11,2065.51,30,Región,Provincias
-Paid Social → Direct,11,2428.98,30,Región,Provincias
-Paid Social,223,41696.64,30,Tipo de cliente,nuevo
-Organic Search,119,24181.58,30,Tipo de cliente,nuevo
-Paid Social → Paid Search,103,20271.12,30,Tipo de cliente,nuevo
-Paid Search,67,12689.93,30,Tipo de cliente,nuevo
-Paid Social → Email,50,9775.39,30,Tipo de cliente,nuevo
-Paid Social → Organic Search,48,10202.25,30,Tipo de cliente,nuevo
-Display,41,8425.6,30,Tipo de cliente,nuevo
-Organic Search → Email,35,6178.37,30,Tipo de cliente,nuevo
-Organic Search → Paid Search,34,6771.19,30,Tipo de cliente,nuevo
-Paid Social → Direct,33,6273.66,30,Tipo de cliente,nuevo
-Organic Search → Paid Social,32,5450.85,30,Tipo de cliente,nuevo
-Paid Search → Paid Social,31,5818.05,30,Tipo de cliente,nuevo
-Referral,24,3707.16,30,Tipo de cliente,nuevo
-Paid Search → Email,21,4621.23,30,Tipo de cliente,nuevo
-Paid Social → Paid Social,20,3890.74,30,Tipo de cliente,nuevo
-Paid Social,41,6764.74,30,Tipo de cliente,recurrente
-Organic Search,37,6556.84,30,Tipo de cliente,recurrente
-Direct,32,5719.74,30,Tipo de cliente,recurrente
-Paid Search,25,4935.8,30,Tipo de cliente,recurrente
-Organic Search → Direct,16,2990.71,30,Tipo de cliente,recurrente
-Paid Search → Email,15,3010.47,30,Tipo de cliente,recurrente
-Paid Social → Paid Search,14,2796.07,30,Tipo de cliente,recurrente
-Organic Search → Paid Search,12,2230.59,30,Tipo de cliente,recurrente
-Organic Search → Email,11,2412.45,30,Tipo de cliente,recurrente
-Direct → Email,10,1965.72,30,Tipo de cliente,recurrente
-Paid Social → Email → Paid Search,10,1641.87,30,Tipo de cliente,recurrente
-Direct → Paid Search,10,2040.43,30,Tipo de cliente,recurrente
-Paid Social → Direct → Email,10,1582.64,30,Tipo de cliente,recurrente
-Display,9,1649.3,30,Tipo de cliente,recurrente
-Paid Social → Direct,9,1594.54,30,Tipo de cliente,recurrente
-Paid Social,58,11027.52,30,Categoría,Hogar
-Organic Search,36,7060.22,30,Categoría,Hogar
-Paid Social → Email,17,3359.53,30,Categoría,Hogar
-Paid Social → Paid Search,14,2521.91,30,Categoría,Hogar
-Organic Search → Paid Search,14,2666.5,30,Categoría,Hogar
-Paid Search,13,2367.9,30,Categoría,Hogar
-Direct,13,1975.68,30,Categoría,Hogar
-Paid Social → Email → Paid Search,11,1926.22,30,Categoría,Hogar
-Referral,11,1751.26,30,Categoría,Hogar
-Organic Search → Email,11,1528.68,30,Categoría,Hogar
-Organic Search → Paid Social,9,1523.15,30,Categoría,Hogar
-Display,9,1726.5500000000002,30,Categoría,Hogar
-Paid Social → Direct → Email,8,1173.96,30,Categoría,Hogar
-Paid Search → Email,8,2143.98,30,Categoría,Hogar
-Paid Search → Paid Social,8,1715.33,30,Categoría,Hogar
-Paid Social,38,6784.45,30,Categoría,Libros y papelería
-Organic Search,30,6757.86,30,Categoría,Libros y papelería
-Paid Social → Paid Search,23,4121.47,30,Categoría,Libros y papelería
-Paid Search,20,3872.79,30,Categoría,Libros y papelería
-Organic Search → Paid Search,12,2807.72,30,Categoría,Libros y papelería
-Organic Search → Direct,10,1709.58,30,Categoría,Libros y papelería
-Direct,10,1581.3,30,Categoría,Libros y papelería
-Display,8,1215.75,30,Categoría,Libros y papelería
-Organic Search → Paid Social,8,1278.7,30,Categoría,Libros y papelería
-Paid Social → Email,7,1551.0,30,Categoría,Libros y papelería
-Paid Social → Organic Search,7,1481.09,30,Categoría,Libros y papelería
-Organic Search → Email,7,1484.7,30,Categoría,Libros y papelería
-Paid Search → Paid Social,7,1396.88,30,Categoría,Libros y papelería
-Paid Social → Paid Social,6,919.01,30,Categoría,Libros y papelería
-Paid Social → Direct,6,912.98,30,Categoría,Libros y papelería
-Paid Social,109,20181.91,30,Categoría,Moda
-Organic Search,43,8484.81,30,Categoría,Moda
-Paid Social → Paid Search,38,8218.01,30,Categoría,Moda
-Paid Social → Email,23,4256.93,30,Categoría,Moda
-Paid Social → Organic Search,23,4734.1,30,Categoría,Moda
-Paid Search,22,3970.93,30,Categoría,Moda
-Display,20,4254.47,30,Categoría,Moda
-Paid Social → Direct,18,3442.04,30,Categoría,Moda
-Paid Search → Email,16,3448.5299999999997,30,Categoría,Moda
-Direct,12,2782.59,30,Categoría,Moda
-Organic Search → Email,12,2423.66,30,Categoría,Moda
-Organic Search → Paid Search,11,1951.44,30,Categoría,Moda
-Paid Search → Paid Social,11,2224.64,30,Categoría,Moda
-Organic Search → Paid Social,10,1718.3,30,Categoría,Moda
-Paid Social → Paid Social,10,2066.72,30,Categoría,Moda
-Paid Social,59,10467.5,30,Categoría,Tecnología
-Organic Search,47,8435.53,30,Categoría,Tecnología
-Paid Social → Paid Search,42,8205.8,30,Categoría,Tecnología
-Paid Search,37,7414.11,30,Categoría,Tecnología
-Paid Social → Organic Search,17,3704.0,30,Categoría,Tecnología
-Organic Search → Email,16,3153.7799999999997,30,Categoría,Tecnología
-Direct,13,2172.91,30,Categoría,Tecnología
-Display,13,2878.13,30,Categoría,Tecnología
-Paid Search → Paid Social,12,2255.97,30,Categoría,Tecnología
-Paid Search → Organic Search,11,2107.68,30,Categoría,Tecnología
-Referral,10,1524.1399999999999,30,Categoría,Tecnología
-Paid Social → Direct,10,2151.3199999999997,30,Categoría,Tecnología
-Organic Search → Direct,10,1862.77,30,Categoría,Tecnología
-Paid Social → Paid Search → Organic Search,10,1623.36,30,Categoría,Tecnología
-Organic Search → Paid Social,10,1831.43,30,Categoría,Tecnología
-Paid Social,264,48461.38,60,Todos,Todos
-Organic Search,156,30738.42,60,Todos,Todos
-Paid Social → Paid Search,117,23067.19,60,Todos,Todos
-Paid Search,92,17625.73,60,Todos,Todos
-Paid Social → Email,56,10959.57,60,Todos,Todos
-Paid Social → Organic Search,54,11193.1,60,Todos,Todos
-Display,50,10074.9,60,Todos,Todos
-Direct,47,8393.5,60,Todos,Todos
-Organic Search → Email,46,8590.82,60,Todos,Todos
-Organic Search → Paid Search,46,9001.78,60,Todos,Todos
-Paid Social → Direct,42,7868.2,60,Todos,Todos
-Paid Search → Paid Social,38,7592.82,60,Todos,Todos
-Organic Search → Paid Social,37,6351.58,60,Todos,Todos
-Paid Search → Email,36,7631.7,60,Todos,Todos
-Organic Search → Direct,31,5706.31,60,Todos,Todos
-Organic Search,49,10660.45,60,Dispositivo,desktop
-Paid Social,41,7263.2,60,Dispositivo,desktop
-Paid Search,35,6665.61,60,Dispositivo,desktop
-Paid Social → Paid Search,30,5536.3,60,Dispositivo,desktop
-Organic Search → Email,25,4316.79,60,Dispositivo,desktop
-Paid Search → Email,17,3592.09,60,Dispositivo,desktop
-Organic Search → Paid Search,15,2874.2999999999997,60,Dispositivo,desktop
-Paid Social → Email,14,2894.39,60,Dispositivo,desktop
-Paid Social → Organic Search,11,2169.04,60,Dispositivo,desktop
-Referral,11,1624.75,60,Dispositivo,desktop
-Display,11,2161.5299999999997,60,Dispositivo,desktop
-Organic Search → Direct,10,1739.68,60,Dispositivo,desktop
-Paid Search → Paid Social,10,2285.67,60,Dispositivo,desktop
-Direct,10,1824.03,60,Dispositivo,desktop
-Email,9,1643.83,60,Dispositivo,desktop
-Paid Social,210,39233.88,60,Dispositivo,mobile
-Organic Search,99,18697.43,60,Dispositivo,mobile
-Paid Social → Paid Search,79,15315.75,60,Dispositivo,mobile
-Paid Search,52,9528.55,60,Dispositivo,mobile
-Paid Social → Organic Search,40,8449.44,60,Dispositivo,mobile
-Paid Social → Email,35,6562.49,60,Dispositivo,mobile
-Display,35,7074.72,60,Dispositivo,mobile
-Paid Social → Direct,30,5508.4,60,Dispositivo,mobile
-Organic Search → Paid Social,29,5083.57,60,Dispositivo,mobile
-Direct,29,5085.38,60,Dispositivo,mobile
-Organic Search → Paid Search,24,4784.83,60,Dispositivo,mobile
-Paid Search → Paid Social,22,4208.36,60,Dispositivo,mobile
-Organic Search → Email,21,4274.03,60,Dispositivo,mobile
-Paid Social → Paid Social,21,3959.48,60,Dispositivo,mobile
-Organic Search → Direct,18,3260.42,60,Dispositivo,mobile
-Paid Social,13,1964.3,60,Dispositivo,tablet
-Organic Search,8,1380.54,60,Dispositivo,tablet
-Paid Social → Paid Search,8,2215.14,60,Dispositivo,tablet
-Direct,8,1484.09,60,Dispositivo,tablet
-Organic Search → Paid Search,7,1342.65,60,Dispositivo,tablet
-Paid Social → Email,7,1502.69,60,Dispositivo,tablet
-Paid Search → Email,6,1455.03,60,Dispositivo,tablet
-Paid Search → Paid Social,6,1098.79,60,Dispositivo,tablet
-Paid Social → Direct,6,1326.1100000000001,60,Dispositivo,tablet
-Paid Search,5,1431.57,60,Dispositivo,tablet
-Paid Social → Email → Paid Search,5,689.3299999999999,60,Dispositivo,tablet
-Display,4,838.6500000000001,60,Dispositivo,tablet
-Direct → Paid Search,4,612.57,60,Dispositivo,tablet
-Paid Social → Direct → Email,4,504.03999999999996,60,Dispositivo,tablet
-Direct → Email,3,460.03,60,Dispositivo,tablet
-Paid Social,158,28856.09,60,Región,Lima
-Organic Search,101,20722.07,60,Región,Lima
-Paid Social → Paid Search,65,13140.09,60,Región,Lima
-Paid Search,64,12912.8,60,Región,Lima
-Paid Social → Organic Search,32,6724.11,60,Región,Lima
-Paid Social → Direct,31,5439.22,60,Región,Lima
-Organic Search → Email,31,5769.23,60,Región,Lima
-Direct,28,4773.46,60,Región,Lima
-Paid Social → Email,27,5101.74,60,Región,Lima
-Organic Search → Paid Search,26,4933.1900000000005,60,Región,Lima
-Display,26,4979.3,60,Región,Lima
-Organic Search → Paid Social,26,4484.9,60,Región,Lima
-Paid Search → Email,24,4928.599999999999,60,Región,Lima
-Organic Search → Direct,23,4286.96,60,Región,Lima
-Paid Social → Email → Paid Search,19,3257.44,60,Región,Lima
-Paid Social,106,19605.29,60,Región,Provincias
-Organic Search,55,10016.35,60,Región,Provincias
-Paid Social → Paid Search,52,9927.1,60,Región,Provincias
-Paid Social → Email,29,5857.83,60,Región,Provincias
-Paid Search,28,4712.93,60,Región,Provincias
-Display,24,5095.6,60,Región,Provincias
-Paid Social → Organic Search,22,4468.99,60,Región,Provincias
-Paid Search → Paid Social,20,4215.42,60,Región,Provincias
-Organic Search → Paid Search,20,4068.59,60,Región,Provincias
-Direct,19,3620.04,60,Región,Provincias
-Organic Search → Email,15,2821.59,60,Región,Provincias
-Paid Search → Email,12,2703.1,60,Región,Provincias
-Paid Social → Direct → Paid Search,12,2439.88,60,Región,Provincias
-Paid Social → Paid Social,11,2065.51,60,Región,Provincias
-Paid Social → Direct,11,2428.98,60,Región,Provincias
-Paid Social,223,41696.64,60,Tipo de cliente,nuevo
-Organic Search,119,24181.58,60,Tipo de cliente,nuevo
-Paid Social → Paid Search,103,20271.12,60,Tipo de cliente,nuevo
-Paid Search,67,12689.93,60,Tipo de cliente,nuevo
-Paid Social → Email,50,9775.39,60,Tipo de cliente,nuevo
-Paid Social → Organic Search,48,10202.25,60,Tipo de cliente,nuevo
-Display,41,8425.6,60,Tipo de cliente,nuevo
-Organic Search → Email,35,6178.37,60,Tipo de cliente,nuevo
-Organic Search → Paid Search,34,6771.19,60,Tipo de cliente,nuevo
-Paid Social → Direct,33,6273.66,60,Tipo de cliente,nuevo
-Organic Search → Paid Social,32,5450.85,60,Tipo de cliente,nuevo
-Paid Search → Paid Social,31,5818.05,60,Tipo de cliente,nuevo
-Referral,24,3707.16,60,Tipo de cliente,nuevo
-Paid Search → Email,21,4621.23,60,Tipo de cliente,nuevo
-Paid Social → Paid Social,20,3890.74,60,Tipo de cliente,nuevo
-Paid Social,41,6764.74,60,Tipo de cliente,recurrente
-Organic Search,37,6556.84,60,Tipo de cliente,recurrente
-Direct,32,5719.74,60,Tipo de cliente,recurrente
-Paid Search,25,4935.8,60,Tipo de cliente,recurrente
-Organic Search → Direct,16,2990.71,60,Tipo de cliente,recurrente
-Paid Search → Email,15,3010.47,60,Tipo de cliente,recurrente
-Paid Social → Paid Search,14,2796.07,60,Tipo de cliente,recurrente
-Organic Search → Paid Search,12,2230.59,60,Tipo de cliente,recurrente
-Organic Search → Email,11,2412.45,60,Tipo de cliente,recurrente
-Direct → Email,10,1965.72,60,Tipo de cliente,recurrente
-Paid Social → Direct → Email,10,1582.64,60,Tipo de cliente,recurrente
-Paid Social → Email → Paid Search,10,1641.87,60,Tipo de cliente,recurrente
-Direct → Paid Search,10,2040.4299999999998,60,Tipo de cliente,recurrente
-Display,9,1649.3,60,Tipo de cliente,recurrente
-Paid Social → Direct,9,1594.54,60,Tipo de cliente,recurrente
-Paid Social,58,11027.52,60,Categoría,Hogar
-Organic Search,36,7060.22,60,Categoría,Hogar
-Paid Social → Email,17,3359.5299999999997,60,Categoría,Hogar
-Organic Search → Paid Search,14,2666.5,60,Categoría,Hogar
-Paid Social → Paid Search,14,2521.91,60,Categoría,Hogar
-Paid Search,13,2367.9,60,Categoría,Hogar
-Direct,12,1856.7,60,Categoría,Hogar
-Organic Search → Email,11,1528.68,60,Categoría,Hogar
-Paid Social → Email → Paid Search,11,1926.22,60,Categoría,Hogar
-Referral,11,1751.26,60,Categoría,Hogar
-Organic Search → Paid Social,9,1523.15,60,Categoría,Hogar
-Display,9,1726.5500000000002,60,Categoría,Hogar
-Paid Search → Email,8,2143.98,60,Categoría,Hogar
-Paid Social → Direct → Email,8,1173.96,60,Categoría,Hogar
-Paid Search → Paid Social,8,1715.33,60,Categoría,Hogar
-Paid Social,38,6784.45,60,Categoría,Libros y papelería
-Organic Search,30,6757.86,60,Categoría,Libros y papelería
-Paid Social → Paid Search,23,4121.47,60,Categoría,Libros y papelería
-Paid Search,20,3872.79,60,Categoría,Libros y papelería
-Organic Search → Paid Search,12,2807.72,60,Categoría,Libros y papelería
-Organic Search → Direct,10,1709.5800000000002,60,Categoría,Libros y papelería
-Direct,10,1581.3,60,Categoría,Libros y papelería
-Display,8,1215.75,60,Categoría,Libros y papelería
-Organic Search → Paid Social,8,1278.7,60,Categoría,Libros y papelería
-Organic Search → Email,7,1484.7,60,Categoría,Libros y papelería
-Paid Social → Email,7,1551.0,60,Categoría,Libros y papelería
-Paid Search → Paid Social,7,1396.88,60,Categoría,Libros y papelería
-Paid Social → Organic Search,7,1481.0900000000001,60,Categoría,Libros y papelería
-Paid Search → Paid Search,6,1555.6399999999999,60,Categoría,Libros y papelería
-Paid Social → Direct,6,912.98,60,Categoría,Libros y papelería
-Paid Social,109,20181.91,60,Categoría,Moda
-Organic Search,43,8484.81,60,Categoría,Moda
-Paid Social → Paid Search,38,8218.01,60,Categoría,Moda
-Paid Social → Organic Search,23,4734.1,60,Categoría,Moda
-Paid Social → Email,23,4256.93,60,Categoría,Moda
-Paid Search,22,3970.93,60,Categoría,Moda
-Display,20,4254.47,60,Categoría,Moda
-Paid Social → Direct,18,3442.04,60,Categoría,Moda
-Paid Search → Email,16,3448.5299999999997,60,Categoría,Moda
-Organic Search → Email,12,2423.66,60,Categoría,Moda
-Direct,12,2782.59,60,Categoría,Moda
-Organic Search → Paid Search,11,1951.44,60,Categoría,Moda
-Paid Search → Paid Social,11,2224.64,60,Categoría,Moda
-Organic Search → Paid Social,10,1718.3,60,Categoría,Moda
-Paid Social → Paid Social,10,2066.72,60,Categoría,Moda
-Paid Social,59,10467.5,60,Categoría,Tecnología
-Organic Search,47,8435.53,60,Categoría,Tecnología
-Paid Social → Paid Search,42,8205.8,60,Categoría,Tecnología
-Paid Search,37,7414.11,60,Categoría,Tecnología
-Paid Social → Organic Search,17,3704.0,60,Categoría,Tecnología
-Organic Search → Email,16,3153.78,60,Categoría,Tecnología
-Display,13,2878.13,60,Categoría,Tecnología
-Direct,13,2172.91,60,Categoría,Tecnología
-Paid Search → Paid Social,12,2255.97,60,Categoría,Tecnología
-Paid Search → Organic Search,11,2107.68,60,Categoría,Tecnología
-Paid Social → Direct,10,2151.3199999999997,60,Categoría,Tecnología
-Paid Social → Paid Search → Organic Search,10,1623.36,60,Categoría,Tecnología
-Referral,10,1524.1399999999999,60,Categoría,Tecnología
-Organic Search → Direct,10,1862.77,60,Categoría,Tecnología
-Organic Search → Paid Social,10,1831.43,60,Categoría,Tecnología
-Paid Social,264,48461.38,90,Todos,Todos
-Organic Search,156,30738.420000000002,90,Todos,Todos
-Paid Social → Paid Search,117,23067.19,90,Todos,Todos
-Paid Search,92,17625.73,90,Todos,Todos
-Paid Social → Email,56,10959.57,90,Todos,Todos
-Paid Social → Organic Search,54,11193.1,90,Todos,Todos
-Display,50,10074.9,90,Todos,Todos
-Direct,47,8393.5,90,Todos,Todos
-Organic Search → Email,46,8590.82,90,Todos,Todos
-Organic Search → Paid Search,46,9001.78,90,Todos,Todos
-Paid Social → Direct,42,7868.2,90,Todos,Todos
-Paid Search → Paid Social,38,7592.82,90,Todos,Todos
-Organic Search → Paid Social,37,6351.58,90,Todos,Todos
-Paid Search → Email,36,7631.7,90,Todos,Todos
-Organic Search → Direct,31,5706.31,90,Todos,Todos
-Organic Search,49,10660.45,90,Dispositivo,desktop
-Paid Social,41,7263.2,90,Dispositivo,desktop
-Paid Search,35,6665.61,90,Dispositivo,desktop
-Paid Social → Paid Search,30,5536.3,90,Dispositivo,desktop
-Organic Search → Email,25,4316.79,90,Dispositivo,desktop
-Paid Search → Email,17,3592.09,90,Dispositivo,desktop
-Organic Search → Paid Search,15,2874.2999999999997,90,Dispositivo,desktop
-Paid Social → Email,14,2894.39,90,Dispositivo,desktop
-Paid Social → Organic Search,11,2169.04,90,Dispositivo,desktop
-Referral,11,1624.75,90,Dispositivo,desktop
-Display,11,2161.53,90,Dispositivo,desktop
-Organic Search → Direct,10,1739.68,90,Dispositivo,desktop
-Paid Search → Paid Social,10,2285.67,90,Dispositivo,desktop
-Direct,10,1824.03,90,Dispositivo,desktop
-Email,9,1643.83,90,Dispositivo,desktop
-Paid Social,210,39233.88,90,Dispositivo,mobile
-Organic Search,99,18697.43,90,Dispositivo,mobile
-Paid Social → Paid Search,79,15315.75,90,Dispositivo,mobile
-Paid Search,52,9528.55,90,Dispositivo,mobile
-Paid Social → Organic Search,40,8449.44,90,Dispositivo,mobile
-Paid Social → Email,35,6562.49,90,Dispositivo,mobile
-Display,35,7074.72,90,Dispositivo,mobile
-Paid Social → Direct,30,5508.4,90,Dispositivo,mobile
-Organic Search → Paid Social,29,5083.57,90,Dispositivo,mobile
-Direct,29,5085.38,90,Dispositivo,mobile
-Organic Search → Paid Search,24,4784.83,90,Dispositivo,mobile
-Paid Search → Paid Social,22,4208.36,90,Dispositivo,mobile
-Organic Search → Email,21,4274.03,90,Dispositivo,mobile
-Paid Social → Paid Social,21,3959.48,90,Dispositivo,mobile
-Organic Search → Direct,18,3260.42,90,Dispositivo,mobile
-Paid Social,13,1964.3,90,Dispositivo,tablet
-Organic Search,8,1380.54,90,Dispositivo,tablet
-Paid Social → Paid Search,8,2215.14,90,Dispositivo,tablet
-Direct,8,1484.09,90,Dispositivo,tablet
-Organic Search → Paid Search,7,1342.65,90,Dispositivo,tablet
-Paid Social → Email,7,1502.69,90,Dispositivo,tablet
-Paid Search → Email,6,1455.03,90,Dispositivo,tablet
-Paid Search → Paid Social,6,1098.79,90,Dispositivo,tablet
-Paid Social → Direct,6,1326.1100000000001,90,Dispositivo,tablet
-Paid Search,5,1431.57,90,Dispositivo,tablet
-Paid Social → Email → Paid Search,5,689.3299999999999,90,Dispositivo,tablet
-Display,4,838.65,90,Dispositivo,tablet
-Direct → Paid Search,4,612.57,90,Dispositivo,tablet
-Paid Social → Direct → Email,4,504.03999999999996,90,Dispositivo,tablet
-Direct → Email,3,460.03,90,Dispositivo,tablet
-Paid Social,158,28856.09,90,Región,Lima
-Organic Search,101,20722.07,90,Región,Lima
-Paid Social → Paid Search,65,13140.09,90,Región,Lima
-Paid Search,64,12912.8,90,Región,Lima
-Paid Social → Organic Search,32,6724.11,90,Región,Lima
-Paid Social → Direct,31,5439.22,90,Región,Lima
-Organic Search → Email,31,5769.2300000000005,90,Región,Lima
-Direct,28,4773.46,90,Región,Lima
-Paid Social → Email,27,5101.74,90,Región,Lima
-Organic Search → Paid Search,26,4933.19,90,Región,Lima
-Display,26,4979.3,90,Región,Lima
-Organic Search → Paid Social,26,4484.9,90,Región,Lima
-Paid Search → Email,24,4928.6,90,Región,Lima
-Organic Search → Direct,23,4286.96,90,Región,Lima
-Paid Social → Email → Paid Search,19,3257.44,90,Región,Lima
-Paid Social,106,19605.29,90,Región,Provincias
-Organic Search,55,10016.35,90,Región,Provincias
-Paid Social → Paid Search,52,9927.1,90,Región,Provincias
-Paid Social → Email,29,5857.83,90,Región,Provincias
-Paid Search,28,4712.93,90,Región,Provincias
-Display,24,5095.6,90,Región,Provincias
-Paid Social → Organic Search,22,4468.99,90,Región,Provincias
-Paid Search → Paid Social,20,4215.42,90,Región,Provincias
-Organic Search → Paid Search,20,4068.59,90,Región,Provincias
-Direct,19,3620.04,90,Región,Provincias
-Organic Search → Email,15,2821.59,90,Región,Provincias
-Paid Search → Email,12,2703.1,90,Región,Provincias
-Paid Social → Direct → Paid Search,12,2439.88,90,Región,Provincias
-Paid Social → Paid Social,11,2065.51,90,Región,Provincias
-Paid Social → Direct,11,2428.98,90,Región,Provincias
-Paid Social,223,41696.64,90,Tipo de cliente,nuevo
-Organic Search,119,24181.58,90,Tipo de cliente,nuevo
-Paid Social → Paid Search,103,20271.12,90,Tipo de cliente,nuevo
-Paid Search,67,12689.93,90,Tipo de cliente,nuevo
-Paid Social → Email,50,9775.39,90,Tipo de cliente,nuevo
-Paid Social → Organic Search,48,10202.25,90,Tipo de cliente,nuevo
-Display,41,8425.6,90,Tipo de cliente,nuevo
-Organic Search → Email,35,6178.37,90,Tipo de cliente,nuevo
-Organic Search → Paid Search,34,6771.19,90,Tipo de cliente,nuevo
-Paid Social → Direct,33,6273.66,90,Tipo de cliente,nuevo
-Organic Search → Paid Social,32,5450.85,90,Tipo de cliente,nuevo
-Paid Search → Paid Social,31,5818.05,90,Tipo de cliente,nuevo
-Referral,24,3707.16,90,Tipo de cliente,nuevo
-Paid Search → Email,21,4621.23,90,Tipo de cliente,nuevo
-Paid Social → Paid Social,20,3890.74,90,Tipo de cliente,nuevo
-Paid Social,41,6764.74,90,Tipo de cliente,recurrente
-Organic Search,37,6556.84,90,Tipo de cliente,recurrente
-Direct,32,5719.74,90,Tipo de cliente,recurrente
-Paid Search,25,4935.8,90,Tipo de cliente,recurrente
-Organic Search → Direct,16,2990.71,90,Tipo de cliente,recurrente
-Paid Search → Email,15,3010.47,90,Tipo de cliente,recurrente
-Paid Social → Paid Search,14,2796.07,90,Tipo de cliente,recurrente
-Organic Search → Paid Search,12,2230.59,90,Tipo de cliente,recurrente
-Organic Search → Email,11,2412.45,90,Tipo de cliente,recurrente
-Direct → Email,10,1965.72,90,Tipo de cliente,recurrente
-Paid Social → Direct → Email,10,1582.64,90,Tipo de cliente,recurrente
-Paid Social → Email → Paid Search,10,1641.87,90,Tipo de cliente,recurrente
-Direct → Paid Search,10,2040.43,90,Tipo de cliente,recurrente
-Display,9,1649.3,90,Tipo de cliente,recurrente
-Paid Social → Direct,9,1594.54,90,Tipo de cliente,recurrente
-Paid Social,58,11027.52,90,Categoría,Hogar
-Organic Search,36,7060.22,90,Categoría,Hogar
-Paid Social → Email,17,3359.5299999999997,90,Categoría,Hogar
-Organic Search → Paid Search,14,2666.5,90,Categoría,Hogar
-Paid Social → Paid Search,14,2521.91,90,Categoría,Hogar
-Paid Search,13,2367.9,90,Categoría,Hogar
-Direct,12,1856.7,90,Categoría,Hogar
-Organic Search → Email,11,1528.6799999999998,90,Categoría,Hogar
-Paid Social → Email → Paid Search,11,1926.22,90,Categoría,Hogar
-Referral,11,1751.26,90,Categoría,Hogar
-Organic Search → Paid Social,9,1523.15,90,Categoría,Hogar
-Display,9,1726.55,90,Categoría,Hogar
-Paid Search → Email,8,2143.98,90,Categoría,Hogar
-Paid Social → Direct → Email,8,1173.96,90,Categoría,Hogar
-Paid Search → Paid Social,8,1715.33,90,Categoría,Hogar
-Paid Social,38,6784.45,90,Categoría,Libros y papelería
-Organic Search,30,6757.86,90,Categoría,Libros y papelería
-Paid Social → Paid Search,23,4121.47,90,Categoría,Libros y papelería
-Paid Search,20,3872.79,90,Categoría,Libros y papelería
-Organic Search → Paid Search,12,2807.72,90,Categoría,Libros y papelería
-Organic Search → Direct,10,1709.5800000000002,90,Categoría,Libros y papelería
-Direct,10,1581.3,90,Categoría,Libros y papelería
-Display,8,1215.75,90,Categoría,Libros y papelería
-Organic Search → Paid Social,8,1278.7,90,Categoría,Libros y papelería
-Organic Search → Email,7,1484.7,90,Categoría,Libros y papelería
-Paid Social → Email,7,1551.0,90,Categoría,Libros y papelería
-Paid Search → Paid Social,7,1396.88,90,Categoría,Libros y papelería
-Paid Social → Organic Search,7,1481.0900000000001,90,Categoría,Libros y papelería
-Paid Search → Paid Search,6,1555.64,90,Categoría,Libros y papelería
-Paid Social → Direct,6,912.98,90,Categoría,Libros y papelería
-Paid Social,109,20181.91,90,Categoría,Moda
-Organic Search,43,8484.81,90,Categoría,Moda
-Paid Social → Paid Search,38,8218.01,90,Categoría,Moda
-Paid Social → Organic Search,23,4734.1,90,Categoría,Moda
-Paid Social → Email,23,4256.93,90,Categoría,Moda
-Paid Search,22,3970.93,90,Categoría,Moda
-Display,20,4254.47,90,Categoría,Moda
-Paid Social → Direct,18,3442.04,90,Categoría,Moda
-Paid Search → Email,16,3448.5299999999997,90,Categoría,Moda
-Organic Search → Email,12,2423.66,90,Categoría,Moda
-Direct,12,2782.59,90,Categoría,Moda
-Organic Search → Paid Search,11,1951.44,90,Categoría,Moda
-Paid Search → Paid Social,11,2224.64,90,Categoría,Moda
-Organic Search → Paid Social,10,1718.3,90,Categoría,Moda
-Paid Social → Paid Social,10,2066.72,90,Categoría,Moda
-Paid Social,59,10467.5,90,Categoría,Tecnología
-Organic Search,47,8435.53,90,Categoría,Tecnología
-Paid Social → Paid Search,42,8205.8,90,Categoría,Tecnología
-Paid Search,37,7414.11,90,Categoría,Tecnología
-Paid Social → Organic Search,17,3704.0,90,Categoría,Tecnología
-Organic Search → Email,16,3153.7799999999997,90,Categoría,Tecnología
-Display,13,2878.13,90,Categoría,Tecnología
-Direct,13,2172.91,90,Categoría,Tecnología
-Paid Search → Paid Social,12,2255.97,90,Categoría,Tecnología
-Paid Search → Organic Search,11,2107.68,90,Categoría,Tecnología
-Paid Social → Direct,10,2151.3199999999997,90,Categoría,Tecnología
-Paid Social → Paid Search → Organic Search,10,1623.36,90,Categoría,Tecnología
-Referral,10,1524.14,90,Categoría,Tecnología
-Organic Search → Direct,10,1862.77,90,Categoría,Tecnología
-Organic Search → Paid Social,10,1831.43,90,Categoría,Tecnología
+Paid Social,330,64981.85,7,Todos,Todos
+Organic Search,231,44552.95,7,Todos,Todos
+Paid Search,209,39600.12,7,Todos,Todos
+Direct,141,25338.94,7,Todos,Todos
+Paid Social → Paid Search,135,25076.86,7,Todos,Todos
+Email,114,22480.12,7,Todos,Todos
+Paid Social → Organic Search,79,14862.55,7,Todos,Todos
+Paid Search → Organic Search,77,13933.56,7,Todos,Todos
+Organic Search → Paid Search,77,15209.32,7,Todos,Todos
+Paid Social → Email,74,14332.42,7,Todos,Todos
+Paid Search → Paid Social,71,13514.94,7,Todos,Todos
+Paid Search → Direct,69,13416.02,7,Todos,Todos
+Paid Social → Direct,69,12768.0,7,Todos,Todos
+Organic Search → Direct,68,13218.63,7,Todos,Todos
+Direct → Direct,63,12910.41,7,Todos,Todos
+Paid Search,79,15733.38,7,Dispositivo,desktop
+Organic Search,79,14336.59,7,Dispositivo,desktop
+Paid Social,49,8967.11,7,Dispositivo,desktop
+Email,47,10339.8,7,Dispositivo,desktop
+Direct,46,8156.01,7,Dispositivo,desktop
+Paid Search → Organic Search,26,4303.9400000000005,7,Dispositivo,desktop
+Paid Social → Email,26,4522.62,7,Dispositivo,desktop
+Paid Search → Email,26,4984.7,7,Dispositivo,desktop
+Paid Social → Paid Search,25,4724.17,7,Dispositivo,desktop
+Organic Search → Email,23,4669.27,7,Dispositivo,desktop
+Paid Search → Direct,22,4659.38,7,Dispositivo,desktop
+Paid Search → Paid Social,21,3516.7799999999997,7,Dispositivo,desktop
+Organic Search → Direct,21,3615.19,7,Dispositivo,desktop
+Email → Direct,20,3518.73,7,Dispositivo,desktop
+Display,20,3635.82,7,Dispositivo,desktop
+Paid Social,264,51807.38,7,Dispositivo,mobile
+Organic Search,135,27049.24,7,Dispositivo,mobile
+Paid Search,116,21823.94,7,Dispositivo,mobile
+Paid Social → Paid Search,102,18716.8,7,Dispositivo,mobile
+Direct,84,14780.18,7,Dispositivo,mobile
+Paid Social → Organic Search,60,11315.26,7,Dispositivo,mobile
+Email,58,10793.57,7,Dispositivo,mobile
+Paid Social → Direct,53,9493.04,7,Dispositivo,mobile
+Organic Search → Paid Search,51,9597.97,7,Dispositivo,mobile
+Paid Search → Organic Search,47,8453.92,7,Dispositivo,mobile
+Paid Search → Paid Social,46,9348.8,7,Dispositivo,mobile
+Paid Search → Direct,43,8205.6,7,Dispositivo,mobile
+Paid Social → Email,43,8876.89,7,Dispositivo,mobile
+Organic Search → Paid Social,41,8544.64,7,Dispositivo,mobile
+Organic Search → Direct,40,7978.79,7,Dispositivo,mobile
+Organic Search,17,3167.12,7,Dispositivo,tablet
+Paid Social,17,4207.36,7,Dispositivo,tablet
+Paid Search,14,2042.8,7,Dispositivo,tablet
+Direct,11,2402.75,7,Dispositivo,tablet
+Paid Social → Organic Search,9,1633.18,7,Dispositivo,tablet
+Organic Search → Paid Search,9,1801.4099999999999,7,Dispositivo,tablet
+Email,9,1346.75,7,Dispositivo,tablet
+Paid Social → Paid Search,8,1635.8899999999999,7,Dispositivo,tablet
+Direct → Direct,7,1119.73,7,Dispositivo,tablet
+Direct → Email,7,1170.35,7,Dispositivo,tablet
+Organic Search → Direct,7,1624.65,7,Dispositivo,tablet
+Organic Search → Email,7,1287.26,7,Dispositivo,tablet
+Paid Search → Email,6,934.86,7,Dispositivo,tablet
+Organic Search → Paid Social,6,896.92,7,Dispositivo,tablet
+Referral,6,895.2,7,Dispositivo,tablet
+Paid Social,174,32647.21,7,Región,Lima
+Organic Search,146,29531.58,7,Región,Lima
+Paid Search,139,26087.16,7,Región,Lima
+Direct,98,17234.1,7,Región,Lima
+Paid Social → Paid Search,85,16088.29,7,Región,Lima
+Email,76,14884.7,7,Región,Lima
+Paid Social → Email,53,10297.84,7,Región,Lima
+Organic Search → Paid Search,51,9813.85,7,Región,Lima
+Paid Search → Organic Search,48,8655.56,7,Región,Lima
+Paid Search → Direct,47,9492.32,7,Región,Lima
+Organic Search → Direct,45,8799.87,7,Región,Lima
+Referral,43,8105.22,7,Región,Lima
+Direct → Direct,41,7883.79,7,Región,Lima
+Direct → Email,41,8711.6,7,Región,Lima
+Paid Social → Organic Search,41,6917.29,7,Región,Lima
+Paid Social,156,32334.64,7,Región,Provincias
+Organic Search,85,15021.37,7,Región,Provincias
+Paid Search,70,13512.96,7,Región,Provincias
+Paid Social → Paid Search,50,8988.57,7,Región,Provincias
+Direct,43,8104.84,7,Región,Provincias
+Paid Social → Organic Search,38,7945.26,7,Región,Provincias
+Email,38,7595.42,7,Región,Provincias
+Paid Search → Paid Social,34,6306.37,7,Región,Provincias
+Paid Social → Direct,30,5721.49,7,Región,Provincias
+Paid Search → Organic Search,29,5278.0,7,Región,Provincias
+Display,26,4634.7699999999995,7,Región,Provincias
+Organic Search → Paid Search,26,5395.47,7,Región,Provincias
+Organic Search → Direct,23,4418.76,7,Región,Provincias
+Organic Search → Paid Social,22,4852.07,7,Región,Provincias
+Paid Search → Direct,22,3923.7,7,Región,Provincias
+Paid Social,279,54936.18,7,Tipo de cliente,nuevo
+Organic Search,175,34464.16,7,Tipo de cliente,nuevo
+Paid Search,157,28484.61,7,Tipo de cliente,nuevo
+Paid Social → Paid Search,117,21545.52,7,Tipo de cliente,nuevo
+Direct,94,17668.37,7,Tipo de cliente,nuevo
+Paid Social → Organic Search,73,13588.12,7,Tipo de cliente,nuevo
+Paid Search → Paid Social,65,12450.42,7,Tipo de cliente,nuevo
+Paid Search → Organic Search,63,11453.68,7,Tipo de cliente,nuevo
+Organic Search → Paid Search,63,11639.52,7,Tipo de cliente,nuevo
+Email,62,11519.34,7,Tipo de cliente,nuevo
+Paid Social → Email,51,9658.69,7,Tipo de cliente,nuevo
+Organic Search → Paid Social,50,10105.75,7,Tipo de cliente,nuevo
+Paid Social → Direct,48,9162.24,7,Tipo de cliente,nuevo
+Referral,45,9116.29,7,Tipo de cliente,nuevo
+Organic Search → Direct,45,8258.61,7,Tipo de cliente,nuevo
+Organic Search,56,10088.79,7,Tipo de cliente,recurrente
+Paid Search,52,11115.51,7,Tipo de cliente,recurrente
+Email,52,10960.78,7,Tipo de cliente,recurrente
+Paid Social,51,10045.67,7,Tipo de cliente,recurrente
+Direct,47,7670.57,7,Tipo de cliente,recurrente
+Direct → Direct,30,6247.29,7,Tipo de cliente,recurrente
+Paid Search → Direct,27,5881.25,7,Tipo de cliente,recurrente
+Direct → Email,26,6423.12,7,Tipo de cliente,recurrente
+Paid Social → Email,23,4673.73,7,Tipo de cliente,recurrente
+Organic Search → Direct,23,4960.02,7,Tipo de cliente,recurrente
+Paid Social → Direct,21,3605.76,7,Tipo de cliente,recurrente
+Direct → Paid Search,18,3414.93,7,Tipo de cliente,recurrente
+Paid Search → Email,18,3604.7599999999998,7,Tipo de cliente,recurrente
+Paid Social → Paid Search,18,3531.34,7,Tipo de cliente,recurrente
+Email → Direct,17,2732.04,7,Tipo de cliente,recurrente
+Paid Social,74,15787.17,7,Categoría,Hogar
+Organic Search,46,8604.6,7,Categoría,Hogar
+Paid Search,43,9167.15,7,Categoría,Hogar
+Paid Social → Paid Search,25,4370.54,7,Categoría,Hogar
+Direct,25,3978.9700000000003,7,Categoría,Hogar
+Paid Social → Email,23,4417.34,7,Categoría,Hogar
+Referral,21,4600.47,7,Categoría,Hogar
+Email,21,3482.4900000000002,7,Categoría,Hogar
+Paid Search → Email,16,3443.57,7,Categoría,Hogar
+Paid Search → Organic Search,16,3183.29,7,Categoría,Hogar
+Email → Paid Search,16,3584.89,7,Categoría,Hogar
+Direct → Direct,16,3630.88,7,Categoría,Hogar
+Organic Search → Direct,15,3246.65,7,Categoría,Hogar
+Organic Search → Email,14,2468.06,7,Categoría,Hogar
+Paid Social → Direct,13,2419.26,7,Categoría,Hogar
+Paid Social,69,13799.3,7,Categoría,Libros y papelería
+Organic Search,47,8804.63,7,Categoría,Libros y papelería
+Paid Search,36,6449.08,7,Categoría,Libros y papelería
+Paid Social → Paid Search,29,5473.11,7,Categoría,Libros y papelería
+Direct,22,3490.24,7,Categoría,Libros y papelería
+Email,22,4968.44,7,Categoría,Libros y papelería
+Paid Social → Organic Search,19,3676.87,7,Categoría,Libros y papelería
+Organic Search → Direct,16,3204.9900000000002,7,Categoría,Libros y papelería
+Paid Search → Direct,16,3261.18,7,Categoría,Libros y papelería
+Paid Social → Direct,15,3040.9,7,Categoría,Libros y papelería
+Direct → Direct,14,2736.69,7,Categoría,Libros y papelería
+Paid Search → Organic Search,14,2634.88,7,Categoría,Libros y papelería
+Organic Search → Paid Social,13,3175.62,7,Categoría,Libros y papelería
+Organic Search → Paid Search,13,2433.52,7,Categoría,Libros y papelería
+Organic Search → Email,13,3001.9700000000003,7,Categoría,Libros y papelería
+Paid Social,112,20518.39,7,Categoría,Moda
+Organic Search,57,11510.82,7,Categoría,Moda
+Paid Search,55,9288.0,7,Categoría,Moda
+Direct,50,9453.08,7,Categoría,Moda
+Paid Social → Paid Search,39,6873.36,7,Categoría,Moda
+Email,36,6379.94,7,Categoría,Moda
+Paid Social → Organic Search,33,5917.82,7,Categoría,Moda
+Paid Social → Direct,26,4478.39,7,Categoría,Moda
+Paid Social → Email,25,4977.16,7,Categoría,Moda
+Paid Search → Paid Social,24,4685.05,7,Categoría,Moda
+Paid Search → Organic Search,21,3658.41,7,Categoría,Moda
+Paid Search → Direct,20,4687.46,7,Categoría,Moda
+Paid Social → Paid Social,19,3333.03,7,Categoría,Moda
+Referral,19,3695.65,7,Categoría,Moda
+Direct → Paid Search,18,2952.56,7,Categoría,Moda
+Organic Search,81,15632.9,7,Categoría,Tecnología
+Paid Social,75,14876.99,7,Categoría,Tecnología
+Paid Search,75,14695.89,7,Categoría,Tecnología
+Direct,44,8416.65,7,Categoría,Tecnología
+Paid Social → Paid Search,42,8359.85,7,Categoría,Tecnología
+Organic Search → Paid Search,36,6660.46,7,Categoría,Tecnología
+Email,35,7649.25,7,Categoría,Tecnología
+Paid Search → Organic Search,26,4456.9800000000005,7,Categoría,Tecnología
+Paid Search → Direct,26,4215.7,7,Categoría,Tecnología
+Paid Search → Paid Social,25,4861.58,7,Categoría,Tecnología
+Organic Search → Direct,21,3608.36,7,Categoría,Tecnología
+Paid Social → Organic Search,19,3407.55,7,Categoría,Tecnología
+Organic Search → Email,18,3140.56,7,Categoría,Tecnología
+Organic Search → Paid Social,17,3468.98,7,Categoría,Tecnología
+Direct → Direct,17,3503.12,7,Categoría,Tecnología
+Paid Social,260,52365.1,14,Todos,Todos
+Organic Search,153,30018.19,14,Todos,Todos
+Paid Social → Paid Search,120,21093.85,14,Todos,Todos
+Paid Search,116,23115.82,14,Todos,Todos
+Direct,63,12159.45,14,Todos,Todos
+Paid Social → Organic Search,62,12034.41,14,Todos,Todos
+Paid Social → Direct,57,11108.56,14,Todos,Todos
+Organic Search → Paid Search,53,11002.19,14,Todos,Todos
+Paid Social → Email,53,9799.81,14,Todos,Todos
+Organic Search → Email,52,9133.07,14,Todos,Todos
+Paid Search → Paid Social,48,8625.48,14,Todos,Todos
+Organic Search → Direct,46,9083.41,14,Todos,Todos
+Organic Search → Paid Social,43,9242.44,14,Todos,Todos
+Paid Search → Organic Search,42,7336.21,14,Todos,Todos
+Referral,39,7429.08,14,Todos,Todos
+Paid Search,50,10388.97,14,Dispositivo,desktop
+Organic Search,49,8555.74,14,Dispositivo,desktop
+Paid Social,35,6386.62,14,Dispositivo,desktop
+Direct,28,5552.45,14,Dispositivo,desktop
+Paid Social → Paid Search,25,4615.98,14,Dispositivo,desktop
+Organic Search → Email,22,4264.54,14,Dispositivo,desktop
+Paid Search → Organic Search,21,3513.1,14,Dispositivo,desktop
+Email,20,4877.01,14,Dispositivo,desktop
+Paid Search → Paid Social,19,3422.56,14,Dispositivo,desktop
+Paid Search → Email,18,3612.85,14,Dispositivo,desktop
+Paid Social → Email,18,2957.77,14,Dispositivo,desktop
+Display,16,2894.3,14,Dispositivo,desktop
+Organic Search → Direct,16,2644.78,14,Dispositivo,desktop
+Organic Search → Paid Search,13,2933.9500000000003,14,Dispositivo,desktop
+Organic Search → Email → Direct,12,2356.06,14,Dispositivo,desktop
+Paid Social,211,42222.97,14,Dispositivo,mobile
+Organic Search,92,19553.15,14,Dispositivo,mobile
+Paid Social → Paid Search,88,15163.25,14,Dispositivo,mobile
+Paid Search,59,11558.21,14,Dispositivo,mobile
+Paid Social → Organic Search,48,9005.27,14,Dispositivo,mobile
+Paid Social → Direct,44,8239.45,14,Dispositivo,mobile
+Organic Search → Paid Search,32,6411.57,14,Dispositivo,mobile
+Direct,32,5897.23,14,Dispositivo,mobile
+Paid Social → Email,31,6260.5599999999995,14,Dispositivo,mobile
+Organic Search → Paid Social,29,6468.16,14,Dispositivo,mobile
+Paid Search → Paid Social,27,4907.46,14,Dispositivo,mobile
+Referral,26,5082.450000000001,14,Dispositivo,mobile
+Paid Social → Paid Social,26,4983.19,14,Dispositivo,mobile
+Paid Social → Paid Search → Organic Search,24,4437.16,14,Dispositivo,mobile
+Organic Search → Direct,24,5035.74,14,Dispositivo,mobile
+Paid Social,14,3755.51,14,Dispositivo,tablet
+Organic Search,12,1909.3,14,Dispositivo,tablet
+Organic Search → Paid Search,8,1656.67,14,Dispositivo,tablet
+Paid Social → Paid Search,7,1314.62,14,Dispositivo,tablet
+Paid Search,7,1168.64,14,Dispositivo,tablet
+Organic Search → Email,7,1307.6100000000001,14,Dispositivo,tablet
+Direct → Email,7,1107.33,14,Dispositivo,tablet
+Organic Search → Direct,6,1402.89,14,Dispositivo,tablet
+Organic Search → Paid Social,5,663.12,14,Dispositivo,tablet
+Paid Social → Organic Search,5,974.47,14,Dispositivo,tablet
+Paid Social → Email,4,581.48,14,Dispositivo,tablet
+Email,3,550.8,14,Dispositivo,tablet
+Referral,3,334.27,14,Dispositivo,tablet
+Direct → Paid Search,3,356.37,14,Dispositivo,tablet
+Paid Social → Direct,3,763.0,14,Dispositivo,tablet
+Paid Social,134,25262.15,14,Región,Lima
+Organic Search,95,19897.78,14,Región,Lima
+Paid Search,75,14884.03,14,Región,Lima
+Paid Social → Paid Search,74,13334.43,14,Región,Lima
+Direct,42,7570.89,14,Región,Lima
+Organic Search → Paid Search,35,7222.94,14,Región,Lima
+Paid Social → Email,35,6698.24,14,Región,Lima
+Paid Social → Organic Search,34,6189.37,14,Región,Lima
+Paid Social → Direct,34,6572.6900000000005,14,Región,Lima
+Organic Search → Direct,32,6425.93,14,Región,Lima
+Organic Search → Email,32,5670.03,14,Región,Lima
+Paid Search → Organic Search,28,5480.31,14,Región,Lima
+Referral,28,4833.99,14,Región,Lima
+Organic Search → Paid Social,27,5402.34,14,Región,Lima
+Paid Search → Email,26,4987.43,14,Región,Lima
+Paid Social,126,27102.95,14,Región,Provincias
+Organic Search,58,10120.41,14,Región,Provincias
+Paid Social → Paid Search,46,7759.42,14,Región,Provincias
+Paid Search,41,8231.79,14,Región,Provincias
+Paid Social → Organic Search,28,5845.04,14,Región,Provincias
+Paid Social → Direct,23,4535.87,14,Región,Provincias
+Paid Search → Paid Social,22,3655.21,14,Región,Provincias
+Direct,21,4588.56,14,Región,Provincias
+Organic Search → Email,20,3463.04,14,Región,Provincias
+Paid Social → Email,18,3101.5699999999997,14,Región,Provincias
+Organic Search → Paid Search,18,3779.25,14,Región,Provincias
+Display,18,3445.81,14,Región,Provincias
+Organic Search → Paid Social,16,3840.1,14,Región,Provincias
+Paid Social → Paid Social,14,2230.09,14,Región,Provincias
+Organic Search → Direct,14,2657.48,14,Región,Provincias
+Paid Social,213,43042.02,14,Tipo de cliente,nuevo
+Organic Search,109,22618.44,14,Tipo de cliente,nuevo
+Paid Social → Paid Search,104,17897.53,14,Tipo de cliente,nuevo
+Paid Search,75,13970.36,14,Tipo de cliente,nuevo
+Paid Social → Organic Search,55,10865.82,14,Tipo de cliente,nuevo
+Paid Search → Paid Social,44,7961.31,14,Tipo de cliente,nuevo
+Direct,41,8332.24,14,Tipo de cliente,nuevo
+Organic Search → Paid Search,41,8013.8,14,Tipo de cliente,nuevo
+Organic Search → Email,39,6721.86,14,Tipo de cliente,nuevo
+Organic Search → Paid Social,38,7900.32,14,Tipo de cliente,nuevo
+Paid Search → Organic Search,36,6346.56,14,Tipo de cliente,nuevo
+Paid Social → Email,35,6450.03,14,Tipo de cliente,nuevo
+Paid Social → Direct,35,7090.18,14,Tipo de cliente,nuevo
+Referral,31,6018.88,14,Tipo de cliente,nuevo
+Display,30,5087.77,14,Tipo de cliente,nuevo
+Paid Social,47,9323.08,14,Tipo de cliente,recurrente
+Organic Search,44,7399.75,14,Tipo de cliente,recurrente
+Paid Search,41,9145.46,14,Tipo de cliente,recurrente
+Paid Social → Direct,22,4018.38,14,Tipo de cliente,recurrente
+Direct,22,3827.21,14,Tipo de cliente,recurrente
+Email,22,5169.77,14,Tipo de cliente,recurrente
+Organic Search → Direct,19,4242.92,14,Tipo de cliente,recurrente
+Paid Social → Email,18,3349.7799999999997,14,Tipo de cliente,recurrente
+Paid Social → Paid Search,16,3196.32,14,Tipo de cliente,recurrente
+Direct → Email,16,3746.66,14,Tipo de cliente,recurrente
+Paid Search → Email,15,3115.62,14,Tipo de cliente,recurrente
+Organic Search → Email,13,2411.21,14,Tipo de cliente,recurrente
+Organic Search → Paid Search,12,2988.39,14,Tipo de cliente,recurrente
+Direct → Direct,11,2257.59,14,Tipo de cliente,recurrente
+Paid Search → Direct,11,2464.27,14,Tipo de cliente,recurrente
+Paid Social,59,12789.5,14,Categoría,Hogar
+Organic Search,33,6663.78,14,Categoría,Hogar
+Paid Social → Paid Search,23,4048.43,14,Categoría,Hogar
+Paid Search,22,4763.849999999999,14,Categoría,Hogar
+Paid Social → Email,18,3387.83,14,Categoría,Hogar
+Direct,14,2112.03,14,Categoría,Hogar
+Referral,12,2675.05,14,Categoría,Hogar
+Organic Search → Email,12,2044.2,14,Categoría,Hogar
+Paid Search → Email,10,2161.75,14,Categoría,Hogar
+Paid Search → Paid Social,9,1742.19,14,Categoría,Hogar
+Paid Social → Paid Social,9,2162.2799999999997,14,Categoría,Hogar
+Organic Search → Paid Social,9,1891.68,14,Categoría,Hogar
+Email,9,1656.34,14,Categoría,Hogar
+Display,8,1475.99,14,Categoría,Hogar
+Paid Search → Organic Search,8,1630.21,14,Categoría,Hogar
+Paid Social,55,11113.43,14,Categoría,Libros y papelería
+Organic Search,27,5239.95,14,Categoría,Libros y papelería
+Paid Social → Paid Search,26,4643.28,14,Categoría,Libros y papelería
+Paid Search,23,4506.66,14,Categoría,Libros y papelería
+Paid Social → Organic Search,18,3647.63,14,Categoría,Libros y papelería
+Paid Social → Direct,12,2417.6,14,Categoría,Libros y papelería
+Organic Search → Direct,11,2589.2,14,Categoría,Libros y papelería
+Organic Search → Email,11,2407.4900000000002,14,Categoría,Libros y papelería
+Paid Social → Email,9,1533.13,14,Categoría,Libros y papelería
+Organic Search → Paid Social,9,2395.02,14,Categoría,Libros y papelería
+Paid Search → Organic Search,8,1107.98,14,Categoría,Libros y papelería
+Display,8,1308.6,14,Categoría,Libros y papelería
+Direct,8,1475.16,14,Categoría,Libros y papelería
+Organic Search → Organic Search,7,1315.94,14,Categoría,Libros y papelería
+Paid Social → Paid Search → Direct,6,1522.92,14,Categoría,Libros y papelería
+Paid Social,87,16365.81,14,Categoría,Moda
+Organic Search,40,8001.74,14,Categoría,Moda
+Paid Social → Paid Search,35,5736.88,14,Categoría,Moda
+Direct,25,5183.94,14,Categoría,Moda
+Paid Social → Organic Search,23,3981.92,14,Categoría,Moda
+Paid Search,22,3987.04,14,Categoría,Moda
+Paid Social → Direct,20,3746.9500000000003,14,Categoría,Moda
+Paid Search → Paid Social,19,3203.77,14,Categoría,Moda
+Paid Social → Email,17,3198.8,14,Categoría,Moda
+Organic Search → Paid Search,14,3438.19,14,Categoría,Moda
+Paid Social → Paid Social,14,2483.9300000000003,14,Categoría,Moda
+Organic Search → Direct,13,2235.79,14,Categoría,Moda
+Organic Search → Email,13,2082.73,14,Categoría,Moda
+Referral,12,2137.05,14,Categoría,Moda
+Organic Search → Paid Social,12,2221.55,14,Categoría,Moda
+Paid Social,59,12096.36,14,Categoría,Tecnología
+Organic Search,53,10112.72,14,Categoría,Tecnología
+Paid Search,49,9858.27,14,Categoría,Tecnología
+Paid Social → Paid Search,36,6665.26,14,Categoría,Tecnología
+Organic Search → Paid Search,27,5086.49,14,Categoría,Tecnología
+Paid Social → Direct,17,3325.05,14,Categoría,Tecnología
+Paid Search → Paid Social,16,3128.7200000000003,14,Categoría,Tecnología
+Paid Social → Organic Search,16,3395.77,14,Categoría,Tecnología
+Organic Search → Email,16,2598.65,14,Categoría,Tecnología
+Direct,16,3388.32,14,Categoría,Tecnología
+Paid Search → Organic Search,15,2372.29,14,Categoría,Tecnología
+Paid Search → Direct,15,2589.76,14,Categoría,Tecnología
+Organic Search → Direct,14,2511.16,14,Categoría,Tecnología
+Paid Social → Organic Search → Paid Search,14,2599.28,14,Categoría,Tecnología
+Organic Search → Paid Social,13,2734.19,14,Categoría,Tecnología
+Paid Social,250,50812.74,30,Todos,Todos
+Organic Search,149,29061.31,30,Todos,Todos
+Paid Social → Paid Search,115,20223.47,30,Todos,Todos
+Paid Search,108,21723.88,30,Todos,Todos
+Paid Social → Organic Search,56,10664.04,30,Todos,Todos
+Paid Social → Direct,54,10774.98,30,Todos,Todos
+Direct,52,10238.16,30,Todos,Todos
+Organic Search → Paid Search,49,10222.89,30,Todos,Todos
+Paid Social → Email,47,8990.67,30,Todos,Todos
+Organic Search → Email,44,7810.51,30,Todos,Todos
+Paid Search → Paid Social,39,7124.4,30,Todos,Todos
+Organic Search → Direct,39,7759.32,30,Todos,Todos
+Organic Search → Paid Social,37,8226.38,30,Todos,Todos
+Referral,37,6805.51,30,Todos,Todos
+Paid Search → Organic Search,37,6503.42,30,Todos,Todos
+Paid Search,48,10141.34,30,Dispositivo,desktop
+Organic Search,47,7893.08,30,Dispositivo,desktop
+Paid Social,33,6128.5599999999995,30,Dispositivo,desktop
+Paid Social → Paid Search,26,4739.58,30,Dispositivo,desktop
+Direct,23,4615.8,30,Dispositivo,desktop
+Organic Search → Email,21,3999.08,30,Dispositivo,desktop
+Paid Search → Organic Search,19,3320.05,30,Dispositivo,desktop
+Paid Social → Email,18,2957.77,30,Dispositivo,desktop
+Display,16,2894.3,30,Dispositivo,desktop
+Paid Search → Paid Social,16,2864.97,30,Dispositivo,desktop
+Paid Search → Email,15,3233.93,30,Dispositivo,desktop
+Organic Search → Direct,14,2411.93,30,Dispositivo,desktop
+Email,14,3077.99,30,Dispositivo,desktop
+Organic Search → Paid Search,13,2933.95,30,Dispositivo,desktop
+Paid Social → Direct,11,2296.28,30,Dispositivo,desktop
+Paid Social,203,40928.67,30,Dispositivo,mobile
+Organic Search,90,19258.93,30,Dispositivo,mobile
+Paid Social → Paid Search,82,14169.27,30,Dispositivo,mobile
+Paid Search,53,10413.9,30,Dispositivo,mobile
+Paid Social → Organic Search,44,8172.34,30,Dispositivo,mobile
+Paid Social → Direct,40,7715.7,30,Dispositivo,mobile
+Organic Search → Paid Search,29,5787.82,30,Dispositivo,mobile
+Paid Social → Paid Social,27,5203.78,30,Dispositivo,mobile
+Organic Search → Paid Social,27,6103.05,30,Dispositivo,mobile
+Direct,26,4912.59,30,Dispositivo,mobile
+Paid Social → Email,26,5570.51,30,Dispositivo,mobile
+Referral,25,4887.09,30,Dispositivo,mobile
+Paid Search → Paid Social,21,3963.9700000000003,30,Dispositivo,mobile
+Paid Social → Paid Search → Organic Search,21,3932.93,30,Dispositivo,mobile
+Paid Social → Organic Search → Paid Search,20,3329.53,30,Dispositivo,mobile
+Paid Social,14,3755.51,30,Dispositivo,tablet
+Organic Search,12,1909.3,30,Dispositivo,tablet
+Organic Search → Paid Search,7,1501.12,30,Dispositivo,tablet
+Paid Search,7,1168.64,30,Dispositivo,tablet
+Paid Social → Paid Search,7,1314.62,30,Dispositivo,tablet
+Organic Search → Email,6,1200.49,30,Dispositivo,tablet
+Organic Search → Direct,5,1018.4300000000001,30,Dispositivo,tablet
+Paid Social → Organic Search,5,974.47,30,Dispositivo,tablet
+Direct → Email,5,812.36,30,Dispositivo,tablet
+Organic Search → Paid Social,4,504.6,30,Dispositivo,tablet
+Direct,3,709.77,30,Dispositivo,tablet
+Direct → Direct,3,533.02,30,Dispositivo,tablet
+Referral,3,334.27,30,Dispositivo,tablet
+Organic Search → Organic Search → Paid Search,3,715.46,30,Dispositivo,tablet
+Organic Search → Display → Paid Search → Email,3,561.6500000000001,30,Dispositivo,tablet
+Paid Social,130,24699.77,30,Región,Lima
+Organic Search,93,19287.19,30,Región,Lima
+Paid Social → Paid Search,71,12743.1,30,Región,Lima
+Paid Search,68,13605.35,30,Región,Lima
+Direct,36,6618.77,30,Región,Lima
+Paid Social → Email,33,6520.26,30,Región,Lima
+Organic Search → Paid Search,33,6870.44,30,Región,Lima
+Paid Social → Direct,31,6240.68,30,Región,Lima
+Paid Social → Organic Search,30,5146.96,30,Región,Lima
+Organic Search → Direct,29,5903.17,30,Región,Lima
+Organic Search → Email,27,4675.2,30,Región,Lima
+Referral,27,4638.63,30,Región,Lima
+Paid Search → Organic Search,24,4772.67,30,Región,Lima
+Organic Search → Paid Social,23,4627.08,30,Región,Lima
+Paid Search → Paid Social,21,4120.86,30,Región,Lima
+Paid Social,120,26112.97,30,Región,Provincias
+Organic Search,56,9774.12,30,Región,Provincias
+Paid Social → Paid Search,44,7480.37,30,Región,Provincias
+Paid Search,40,8118.53,30,Región,Provincias
+Paid Social → Organic Search,26,5517.08,30,Región,Provincias
+Paid Social → Direct,23,4534.3,30,Región,Provincias
+Paid Search → Paid Social,18,3003.54,30,Región,Provincias
+Display,17,3271.87,30,Región,Provincias
+Organic Search → Email,17,3135.31,30,Región,Provincias
+Direct,16,3619.3900000000003,30,Región,Provincias
+Organic Search → Paid Search,16,3352.4500000000003,30,Región,Provincias
+Paid Social → Paid Social,15,2559.91,30,Región,Provincias
+Organic Search → Paid Social,14,3599.2999999999997,30,Región,Provincias
+Paid Social → Email,14,2470.41,30,Región,Provincias
+Paid Search → Organic Search,13,1730.75,30,Región,Provincias
+Paid Social,206,42044.81,30,Tipo de cliente,nuevo
+Organic Search,105,21661.56,30,Tipo de cliente,nuevo
+Paid Social → Paid Search,99,17027.15,30,Tipo de cliente,nuevo
+Paid Search,70,13357.02,30,Tipo de cliente,nuevo
+Paid Social → Organic Search,50,9698.74,30,Tipo de cliente,nuevo
+Organic Search → Paid Search,37,7234.5,30,Tipo de cliente,nuevo
+Paid Search → Paid Social,35,6460.2300000000005,30,Tipo de cliente,nuevo
+Direct,35,7002.81,30,Tipo de cliente,nuevo
+Paid Social → Direct,35,7214.83,30,Tipo de cliente,nuevo
+Organic Search → Email,32,5511.83,30,Tipo de cliente,nuevo
+Organic Search → Paid Social,32,6884.26,30,Tipo de cliente,nuevo
+Paid Search → Organic Search,31,5513.77,30,Tipo de cliente,nuevo
+Paid Social → Email,31,5942.69,30,Tipo de cliente,nuevo
+Referral,29,5395.31,30,Tipo de cliente,nuevo
+Display,28,4807.7,30,Tipo de cliente,nuevo
+Organic Search,44,7399.75,30,Tipo de cliente,recurrente
+Paid Social,44,8767.93,30,Tipo de cliente,recurrente
+Paid Search,38,8366.86,30,Tipo de cliente,recurrente
+Email,19,4123.68,30,Tipo de cliente,recurrente
+Paid Social → Direct,19,3560.15,30,Tipo de cliente,recurrente
+Organic Search → Direct,18,4119.41,30,Tipo de cliente,recurrente
+Direct,17,3235.35,30,Tipo de cliente,recurrente
+Paid Social → Email,16,3047.98,30,Tipo de cliente,recurrente
+Paid Social → Paid Search,16,3196.32,30,Tipo de cliente,recurrente
+Paid Search → Email,13,2817.19,30,Tipo de cliente,recurrente
+Organic Search → Email,12,2298.68,30,Tipo de cliente,recurrente
+Organic Search → Paid Search,12,2988.3900000000003,30,Tipo de cliente,recurrente
+Referral → Email,10,1812.19,30,Tipo de cliente,recurrente
+Paid Search → Direct,9,2036.16,30,Tipo de cliente,recurrente
+Organic Search → Email → Direct,8,1544.83,30,Tipo de cliente,recurrente
+Paid Social,56,12414.97,30,Categoría,Hogar
+Organic Search,31,6299.39,30,Categoría,Hogar
+Paid Social → Paid Search,21,3572.3,30,Categoría,Hogar
+Paid Search,20,4464.64,30,Categoría,Hogar
+Paid Social → Email,17,3248.16,30,Categoría,Hogar
+Referral,12,2675.05,30,Categoría,Hogar
+Direct,11,1657.46,30,Categoría,Hogar
+Organic Search → Email,11,1922.47,30,Categoría,Hogar
+Paid Search → Email,9,2047.63,30,Categoría,Hogar
+Paid Social → Paid Social,9,2162.2799999999997,30,Categoría,Hogar
+Organic Search → Paid Social,9,1891.68,30,Categoría,Hogar
+Paid Social → Direct,8,1543.3899999999999,30,Categoría,Hogar
+Organic Search → Direct,8,1747.26,30,Categoría,Hogar
+Display,8,1475.99,30,Categoría,Hogar
+Paid Search → Paid Social,7,1366.1799999999998,30,Categoría,Hogar
+Paid Social,52,10688.16,30,Categoría,Libros y papelería
+Organic Search,27,5239.95,30,Categoría,Libros y papelería
+Paid Social → Paid Search,25,4511.26,30,Categoría,Libros y papelería
+Paid Search,22,4382.63,30,Categoría,Libros y papelería
+Paid Social → Organic Search,16,3110.19,30,Categoría,Libros y papelería
+Paid Social → Direct,11,2375.46,30,Categoría,Libros y papelería
+Organic Search → Email,9,1910.29,30,Categoría,Libros y papelería
+Organic Search → Direct,9,1880.58,30,Categoría,Libros y papelería
+Organic Search → Paid Social,8,2312.74,30,Categoría,Libros y papelería
+Paid Search → Organic Search,7,1048.43,30,Categoría,Libros y papelería
+Display,7,1134.6599999999999,30,Categoría,Libros y papelería
+Paid Social → Email,7,1160.73,30,Categoría,Libros y papelería
+Organic Search → Paid Search,6,1349.0,30,Categoría,Libros y papelería
+Email,5,1056.25,30,Categoría,Libros y papelería
+Direct,5,1023.73,30,Categoría,Libros y papelería
+Paid Social,85,15989.79,30,Categoría,Moda
+Organic Search,38,7409.25,30,Categoría,Moda
+Paid Social → Paid Search,35,5736.88,30,Categoría,Moda
+Paid Social → Organic Search,21,3653.96,30,Categoría,Moda
+Paid Search,21,3873.78,30,Categoría,Moda
+Direct,20,4168.65,30,Categoría,Moda
+Paid Social → Direct,20,3746.95,30,Categoría,Moda
+Paid Search → Paid Social,16,2812.56,30,Categoría,Moda
+Paid Social → Email,14,2847.14,30,Categoría,Moda
+Organic Search → Paid Search,14,3438.19,30,Categoría,Moda
+Paid Social → Paid Social,13,2332.4300000000003,30,Categoría,Moda
+Organic Search → Paid Social,11,2035.54,30,Categoría,Moda
+Display,11,1894.57,30,Categoría,Moda
+Paid Search → Organic Search,11,2225.73,30,Categoría,Moda
+Referral,11,1708.8400000000001,30,Categoría,Moda
+Paid Social,57,11719.82,30,Categoría,Tecnología
+Organic Search,53,10112.72,30,Categoría,Tecnología
+Paid Search,45,9002.83,30,Categoría,Tecnología
+Paid Social → Paid Search,34,6403.03,30,Categoría,Tecnología
+Organic Search → Paid Search,23,4307.1900000000005,30,Categoría,Tecnología
+Direct,16,3388.32,30,Categoría,Tecnología
+Paid Social → Direct,15,3109.18,30,Categoría,Tecnología
+Organic Search → Email,14,2345.75,30,Categoría,Tecnología
+Paid Social → Organic Search,14,2931.35,30,Categoría,Tecnología
+Paid Social → Organic Search → Paid Search,13,2119.2,30,Categoría,Tecnología
+Paid Search → Organic Search,13,2179.2400000000002,30,Categoría,Tecnología
+Paid Search → Paid Social,12,2353.35,30,Categoría,Tecnología
+Organic Search → Direct,12,2254.81,30,Categoría,Tecnología
+Referral,11,2034.49,30,Categoría,Tecnología
+Paid Social → Paid Search → Organic Search,11,2322.97,30,Categoría,Tecnología
+Paid Social,250,50812.74,60,Todos,Todos
+Organic Search,149,29061.31,60,Todos,Todos
+Paid Social → Paid Search,115,20223.47,60,Todos,Todos
+Paid Search,108,21723.88,60,Todos,Todos
+Paid Social → Organic Search,56,10664.04,60,Todos,Todos
+Paid Social → Direct,54,10774.98,60,Todos,Todos
+Direct,52,10238.16,60,Todos,Todos
+Organic Search → Paid Search,49,10222.89,60,Todos,Todos
+Paid Social → Email,47,8990.67,60,Todos,Todos
+Organic Search → Email,44,7810.51,60,Todos,Todos
+Paid Search → Paid Social,39,7124.4,60,Todos,Todos
+Organic Search → Direct,38,7575.73,60,Todos,Todos
+Paid Search → Organic Search,37,6503.42,60,Todos,Todos
+Organic Search → Paid Social,37,8226.38,60,Todos,Todos
+Referral,37,6805.51,60,Todos,Todos
+Paid Search,48,10141.34,60,Dispositivo,desktop
+Organic Search,47,7893.08,60,Dispositivo,desktop
+Paid Social,33,6128.5599999999995,60,Dispositivo,desktop
+Paid Social → Paid Search,26,4739.58,60,Dispositivo,desktop
+Direct,23,4615.8,60,Dispositivo,desktop
+Organic Search → Email,21,3999.08,60,Dispositivo,desktop
+Paid Search → Organic Search,19,3320.05,60,Dispositivo,desktop
+Paid Social → Email,18,2957.77,60,Dispositivo,desktop
+Display,16,2894.3,60,Dispositivo,desktop
+Paid Search → Paid Social,16,2864.97,60,Dispositivo,desktop
+Paid Search → Email,15,3233.93,60,Dispositivo,desktop
+Email,14,3077.99,60,Dispositivo,desktop
+Organic Search → Direct,14,2411.93,60,Dispositivo,desktop
+Organic Search → Paid Search,13,2933.9500000000003,60,Dispositivo,desktop
+Paid Social → Direct,11,2296.28,60,Dispositivo,desktop
+Paid Social,203,40928.67,60,Dispositivo,mobile
+Organic Search,90,19258.93,60,Dispositivo,mobile
+Paid Social → Paid Search,82,14169.27,60,Dispositivo,mobile
+Paid Search,53,10413.9,60,Dispositivo,mobile
+Paid Social → Organic Search,44,8172.34,60,Dispositivo,mobile
+Paid Social → Direct,40,7715.7,60,Dispositivo,mobile
+Organic Search → Paid Search,29,5787.82,60,Dispositivo,mobile
+Organic Search → Paid Social,27,6103.05,60,Dispositivo,mobile
+Paid Social → Paid Social,27,5203.78,60,Dispositivo,mobile
+Direct,26,4912.59,60,Dispositivo,mobile
+Paid Social → Email,26,5570.51,60,Dispositivo,mobile
+Referral,25,4887.09,60,Dispositivo,mobile
+Paid Social → Paid Search → Organic Search,21,3932.93,60,Dispositivo,mobile
+Paid Search → Paid Social,21,3963.9700000000003,60,Dispositivo,mobile
+Paid Social → Organic Search → Paid Search,20,3329.53,60,Dispositivo,mobile
+Paid Social,14,3755.51,60,Dispositivo,tablet
+Organic Search,12,1909.3000000000002,60,Dispositivo,tablet
+Paid Social → Paid Search,7,1314.62,60,Dispositivo,tablet
+Organic Search → Paid Search,7,1501.12,60,Dispositivo,tablet
+Paid Search,7,1168.64,60,Dispositivo,tablet
+Organic Search → Email,6,1200.49,60,Dispositivo,tablet
+Direct → Email,5,812.36,60,Dispositivo,tablet
+Organic Search → Direct,5,1018.4300000000001,60,Dispositivo,tablet
+Paid Social → Organic Search,5,974.47,60,Dispositivo,tablet
+Organic Search → Paid Social,4,504.59999999999997,60,Dispositivo,tablet
+Referral,3,334.27,60,Dispositivo,tablet
+Paid Social → Paid Social → Paid Search,3,417.47,60,Dispositivo,tablet
+Organic Search → Organic Search → Paid Search,3,715.46,60,Dispositivo,tablet
+Paid Social → Direct,3,763.0,60,Dispositivo,tablet
+Paid Social → Email,3,462.39,60,Dispositivo,tablet
+Paid Social,130,24699.77,60,Región,Lima
+Organic Search,93,19287.19,60,Región,Lima
+Paid Social → Paid Search,71,12743.1,60,Región,Lima
+Paid Search,68,13605.35,60,Región,Lima
+Direct,36,6618.77,60,Región,Lima
+Paid Social → Email,33,6520.26,60,Región,Lima
+Organic Search → Paid Search,33,6870.44,60,Región,Lima
+Paid Social → Direct,31,6240.68,60,Región,Lima
+Paid Social → Organic Search,30,5146.96,60,Región,Lima
+Organic Search → Direct,28,5719.58,60,Región,Lima
+Referral,27,4638.63,60,Región,Lima
+Organic Search → Email,27,4675.2,60,Región,Lima
+Paid Search → Organic Search,24,4772.67,60,Región,Lima
+Organic Search → Paid Social,23,4627.08,60,Región,Lima
+Paid Search → Paid Social,21,4120.86,60,Región,Lima
+Paid Social,120,26112.97,60,Región,Provincias
+Organic Search,56,9774.12,60,Región,Provincias
+Paid Social → Paid Search,44,7480.37,60,Región,Provincias
+Paid Search,40,8118.53,60,Región,Provincias
+Paid Social → Organic Search,26,5517.08,60,Región,Provincias
+Paid Social → Direct,23,4534.3,60,Región,Provincias
+Paid Search → Paid Social,18,3003.54,60,Región,Provincias
+Organic Search → Email,17,3135.31,60,Región,Provincias
+Display,17,3271.87,60,Región,Provincias
+Direct,16,3619.3900000000003,60,Región,Provincias
+Organic Search → Paid Search,16,3352.4500000000003,60,Región,Provincias
+Paid Social → Paid Social,15,2559.91,60,Región,Provincias
+Organic Search → Paid Social,14,3599.3,60,Región,Provincias
+Paid Social → Email,14,2470.41,60,Región,Provincias
+Paid Search → Organic Search,13,1730.75,60,Región,Provincias
+Paid Social,206,42044.81,60,Tipo de cliente,nuevo
+Organic Search,105,21661.56,60,Tipo de cliente,nuevo
+Paid Social → Paid Search,99,17027.15,60,Tipo de cliente,nuevo
+Paid Search,70,13357.02,60,Tipo de cliente,nuevo
+Paid Social → Organic Search,50,9698.74,60,Tipo de cliente,nuevo
+Organic Search → Paid Search,37,7234.5,60,Tipo de cliente,nuevo
+Paid Search → Paid Social,35,6460.23,60,Tipo de cliente,nuevo
+Direct,35,7002.81,60,Tipo de cliente,nuevo
+Paid Social → Direct,35,7214.83,60,Tipo de cliente,nuevo
+Organic Search → Email,32,5511.83,60,Tipo de cliente,nuevo
+Organic Search → Paid Social,32,6884.26,60,Tipo de cliente,nuevo
+Paid Social → Email,31,5942.69,60,Tipo de cliente,nuevo
+Paid Search → Organic Search,31,5513.77,60,Tipo de cliente,nuevo
+Referral,29,5395.31,60,Tipo de cliente,nuevo
+Display,28,4807.7,60,Tipo de cliente,nuevo
+Paid Social,44,8767.93,60,Tipo de cliente,recurrente
+Organic Search,44,7399.75,60,Tipo de cliente,recurrente
+Paid Search,38,8366.86,60,Tipo de cliente,recurrente
+Paid Social → Direct,19,3560.15,60,Tipo de cliente,recurrente
+Email,19,4123.68,60,Tipo de cliente,recurrente
+Organic Search → Direct,18,4119.41,60,Tipo de cliente,recurrente
+Direct,17,3235.35,60,Tipo de cliente,recurrente
+Paid Social → Email,16,3047.98,60,Tipo de cliente,recurrente
+Paid Social → Paid Search,16,3196.32,60,Tipo de cliente,recurrente
+Paid Search → Email,13,2817.19,60,Tipo de cliente,recurrente
+Organic Search → Email,12,2298.68,60,Tipo de cliente,recurrente
+Organic Search → Paid Search,12,2988.39,60,Tipo de cliente,recurrente
+Referral → Email,10,1812.19,60,Tipo de cliente,recurrente
+Paid Search → Direct,9,2036.16,60,Tipo de cliente,recurrente
+Organic Search → Email → Direct,8,1544.83,60,Tipo de cliente,recurrente
+Paid Social,56,12414.97,60,Categoría,Hogar
+Organic Search,31,6299.39,60,Categoría,Hogar
+Paid Social → Paid Search,21,3572.3,60,Categoría,Hogar
+Paid Search,20,4464.64,60,Categoría,Hogar
+Paid Social → Email,17,3248.16,60,Categoría,Hogar
+Referral,12,2675.05,60,Categoría,Hogar
+Organic Search → Email,11,1922.47,60,Categoría,Hogar
+Direct,11,1657.46,60,Categoría,Hogar
+Organic Search → Paid Social,9,1891.68,60,Categoría,Hogar
+Paid Search → Email,9,2047.63,60,Categoría,Hogar
+Paid Social → Paid Social,9,2162.2799999999997,60,Categoría,Hogar
+Display,8,1475.99,60,Categoría,Hogar
+Organic Search → Direct,8,1747.26,60,Categoría,Hogar
+Paid Social → Direct,8,1543.3899999999999,60,Categoría,Hogar
+Email,7,1272.28,60,Categoría,Hogar
+Paid Social,52,10688.16,60,Categoría,Libros y papelería
+Organic Search,27,5239.95,60,Categoría,Libros y papelería
+Paid Social → Paid Search,25,4511.26,60,Categoría,Libros y papelería
+Paid Search,22,4382.63,60,Categoría,Libros y papelería
+Paid Social → Organic Search,16,3110.19,60,Categoría,Libros y papelería
+Paid Social → Direct,11,2375.46,60,Categoría,Libros y papelería
+Organic Search → Email,9,1910.29,60,Categoría,Libros y papelería
+Organic Search → Direct,8,1696.99,60,Categoría,Libros y papelería
+Organic Search → Paid Social,8,2312.74,60,Categoría,Libros y papelería
+Paid Search → Organic Search,7,1048.43,60,Categoría,Libros y papelería
+Paid Social → Email,7,1160.73,60,Categoría,Libros y papelería
+Display,7,1134.6599999999999,60,Categoría,Libros y papelería
+Organic Search → Paid Search,6,1349.0,60,Categoría,Libros y papelería
+Paid Social → Paid Search → Direct → Email,5,1152.62,60,Categoría,Libros y papelería
+Referral → Email,5,1136.75,60,Categoría,Libros y papelería
+Paid Social,85,15989.79,60,Categoría,Moda
+Organic Search,38,7409.25,60,Categoría,Moda
+Paid Social → Paid Search,35,5736.88,60,Categoría,Moda
+Paid Search,21,3873.78,60,Categoría,Moda
+Paid Social → Organic Search,21,3653.96,60,Categoría,Moda
+Paid Social → Direct,20,3746.9500000000003,60,Categoría,Moda
+Direct,20,4168.65,60,Categoría,Moda
+Paid Search → Paid Social,16,2812.56,60,Categoría,Moda
+Paid Social → Email,14,2847.14,60,Categoría,Moda
+Organic Search → Paid Search,14,3438.19,60,Categoría,Moda
+Paid Social → Paid Social,13,2332.4300000000003,60,Categoría,Moda
+Paid Search → Organic Search,11,2225.73,60,Categoría,Moda
+Display,11,1894.57,60,Categoría,Moda
+Referral,11,1708.8400000000001,60,Categoría,Moda
+Organic Search → Paid Social,11,2035.54,60,Categoría,Moda
+Paid Social,57,11719.82,60,Categoría,Tecnología
+Organic Search,53,10112.72,60,Categoría,Tecnología
+Paid Search,45,9002.83,60,Categoría,Tecnología
+Paid Social → Paid Search,34,6403.03,60,Categoría,Tecnología
+Organic Search → Paid Search,23,4307.19,60,Categoría,Tecnología
+Direct,16,3388.32,60,Categoría,Tecnología
+Paid Social → Direct,15,3109.18,60,Categoría,Tecnología
+Organic Search → Email,14,2345.75,60,Categoría,Tecnología
+Paid Social → Organic Search,14,2931.35,60,Categoría,Tecnología
+Paid Social → Organic Search → Paid Search,13,2119.2,60,Categoría,Tecnología
+Paid Search → Organic Search,13,2179.2400000000002,60,Categoría,Tecnología
+Organic Search → Direct,12,2254.81,60,Categoría,Tecnología
+Paid Search → Paid Social,12,2353.35,60,Categoría,Tecnología
+Referral,11,2034.49,60,Categoría,Tecnología
+Paid Social → Paid Search → Organic Search,11,2322.97,60,Categoría,Tecnología
+Paid Social,250,50812.74,90,Todos,Todos
+Organic Search,149,29061.31,90,Todos,Todos
+Paid Social → Paid Search,115,20223.47,90,Todos,Todos
+Paid Search,108,21723.88,90,Todos,Todos
+Paid Social → Organic Search,56,10664.04,90,Todos,Todos
+Paid Social → Direct,54,10774.98,90,Todos,Todos
+Direct,52,10238.16,90,Todos,Todos
+Organic Search → Paid Search,49,10222.89,90,Todos,Todos
+Paid Social → Email,47,8990.67,90,Todos,Todos
+Organic Search → Email,44,7810.51,90,Todos,Todos
+Paid Search → Paid Social,39,7124.4,90,Todos,Todos
+Organic Search → Direct,38,7575.7300000000005,90,Todos,Todos
+Paid Search → Organic Search,37,6503.42,90,Todos,Todos
+Organic Search → Paid Social,37,8226.38,90,Todos,Todos
+Referral,37,6805.51,90,Todos,Todos
+Paid Search,48,10141.34,90,Dispositivo,desktop
+Organic Search,47,7893.08,90,Dispositivo,desktop
+Paid Social,33,6128.5599999999995,90,Dispositivo,desktop
+Paid Social → Paid Search,26,4739.58,90,Dispositivo,desktop
+Direct,23,4615.8,90,Dispositivo,desktop
+Organic Search → Email,21,3999.08,90,Dispositivo,desktop
+Paid Search → Organic Search,19,3320.05,90,Dispositivo,desktop
+Paid Social → Email,18,2957.77,90,Dispositivo,desktop
+Display,16,2894.3,90,Dispositivo,desktop
+Paid Search → Paid Social,16,2864.97,90,Dispositivo,desktop
+Paid Search → Email,15,3233.93,90,Dispositivo,desktop
+Email,14,3077.99,90,Dispositivo,desktop
+Organic Search → Direct,14,2411.93,90,Dispositivo,desktop
+Organic Search → Paid Search,13,2933.95,90,Dispositivo,desktop
+Paid Social → Direct,11,2296.28,90,Dispositivo,desktop
+Paid Social,203,40928.67,90,Dispositivo,mobile
+Organic Search,90,19258.93,90,Dispositivo,mobile
+Paid Social → Paid Search,82,14169.27,90,Dispositivo,mobile
+Paid Search,53,10413.9,90,Dispositivo,mobile
+Paid Social → Organic Search,44,8172.34,90,Dispositivo,mobile
+Paid Social → Direct,40,7715.7,90,Dispositivo,mobile
+Organic Search → Paid Search,29,5787.82,90,Dispositivo,mobile
+Organic Search → Paid Social,27,6103.05,90,Dispositivo,mobile
+Paid Social → Paid Social,27,5203.78,90,Dispositivo,mobile
+Direct,26,4912.59,90,Dispositivo,mobile
+Paid Social → Email,26,5570.51,90,Dispositivo,mobile
+Referral,25,4887.09,90,Dispositivo,mobile
+Paid Social → Paid Search → Organic Search,21,3932.93,90,Dispositivo,mobile
+Paid Search → Paid Social,21,3963.9700000000003,90,Dispositivo,mobile
+Paid Social → Organic Search → Paid Search,20,3329.53,90,Dispositivo,mobile
+Paid Social,14,3755.51,90,Dispositivo,tablet
+Organic Search,12,1909.3,90,Dispositivo,tablet
+Paid Social → Paid Search,7,1314.62,90,Dispositivo,tablet
+Organic Search → Paid Search,7,1501.12,90,Dispositivo,tablet
+Paid Search,7,1168.64,90,Dispositivo,tablet
+Organic Search → Email,6,1200.49,90,Dispositivo,tablet
+Direct → Email,5,812.36,90,Dispositivo,tablet
+Organic Search → Direct,5,1018.4300000000001,90,Dispositivo,tablet
+Paid Social → Organic Search,5,974.47,90,Dispositivo,tablet
+Organic Search → Paid Social,4,504.59999999999997,90,Dispositivo,tablet
+Referral,3,334.27,90,Dispositivo,tablet
+Paid Social → Paid Social → Paid Search,3,417.47,90,Dispositivo,tablet
+Organic Search → Organic Search → Paid Search,3,715.46,90,Dispositivo,tablet
+Paid Social → Direct,3,763.0,90,Dispositivo,tablet
+Paid Social → Email,3,462.39,90,Dispositivo,tablet
+Paid Social,130,24699.77,90,Región,Lima
+Organic Search,93,19287.19,90,Región,Lima
+Paid Social → Paid Search,71,12743.1,90,Región,Lima
+Paid Search,68,13605.35,90,Región,Lima
+Direct,36,6618.77,90,Región,Lima
+Paid Social → Email,33,6520.26,90,Región,Lima
+Organic Search → Paid Search,33,6870.44,90,Región,Lima
+Paid Social → Direct,31,6240.68,90,Región,Lima
+Paid Social → Organic Search,30,5146.96,90,Región,Lima
+Organic Search → Direct,28,5719.58,90,Región,Lima
+Referral,27,4638.63,90,Región,Lima
+Organic Search → Email,27,4675.2,90,Región,Lima
+Paid Search → Organic Search,24,4772.67,90,Región,Lima
+Organic Search → Paid Social,23,4627.08,90,Región,Lima
+Paid Search → Paid Social,21,4120.86,90,Región,Lima
+Paid Social,120,26112.97,90,Región,Provincias
+Organic Search,56,9774.12,90,Región,Provincias
+Paid Social → Paid Search,44,7480.37,90,Región,Provincias
+Paid Search,40,8118.53,90,Región,Provincias
+Paid Social → Organic Search,26,5517.08,90,Región,Provincias
+Paid Social → Direct,23,4534.3,90,Región,Provincias
+Paid Search → Paid Social,18,3003.54,90,Región,Provincias
+Organic Search → Email,17,3135.31,90,Región,Provincias
+Display,17,3271.87,90,Región,Provincias
+Direct,16,3619.3900000000003,90,Región,Provincias
+Organic Search → Paid Search,16,3352.4500000000003,90,Región,Provincias
+Paid Social → Paid Social,15,2559.91,90,Región,Provincias
+Organic Search → Paid Social,14,3599.3,90,Región,Provincias
+Paid Social → Email,14,2470.41,90,Región,Provincias
+Paid Search → Organic Search,13,1730.75,90,Región,Provincias
+Paid Social,206,42044.81,90,Tipo de cliente,nuevo
+Organic Search,105,21661.56,90,Tipo de cliente,nuevo
+Paid Social → Paid Search,99,17027.15,90,Tipo de cliente,nuevo
+Paid Search,70,13357.02,90,Tipo de cliente,nuevo
+Paid Social → Organic Search,50,9698.74,90,Tipo de cliente,nuevo
+Organic Search → Paid Search,37,7234.5,90,Tipo de cliente,nuevo
+Paid Search → Paid Social,35,6460.23,90,Tipo de cliente,nuevo
+Direct,35,7002.81,90,Tipo de cliente,nuevo
+Paid Social → Direct,35,7214.83,90,Tipo de cliente,nuevo
+Organic Search → Email,32,5511.83,90,Tipo de cliente,nuevo
+Organic Search → Paid Social,32,6884.26,90,Tipo de cliente,nuevo
+Paid Social → Email,31,5942.6900000000005,90,Tipo de cliente,nuevo
+Paid Search → Organic Search,31,5513.77,90,Tipo de cliente,nuevo
+Referral,29,5395.31,90,Tipo de cliente,nuevo
+Display,28,4807.7,90,Tipo de cliente,nuevo
+Paid Social,44,8767.93,90,Tipo de cliente,recurrente
+Organic Search,44,7399.75,90,Tipo de cliente,recurrente
+Paid Search,38,8366.86,90,Tipo de cliente,recurrente
+Paid Social → Direct,19,3560.15,90,Tipo de cliente,recurrente
+Email,19,4123.68,90,Tipo de cliente,recurrente
+Organic Search → Direct,18,4119.41,90,Tipo de cliente,recurrente
+Direct,17,3235.35,90,Tipo de cliente,recurrente
+Paid Social → Email,16,3047.98,90,Tipo de cliente,recurrente
+Paid Social → Paid Search,16,3196.32,90,Tipo de cliente,recurrente
+Paid Search → Email,13,2817.19,90,Tipo de cliente,recurrente
+Organic Search → Email,12,2298.68,90,Tipo de cliente,recurrente
+Organic Search → Paid Search,12,2988.3900000000003,90,Tipo de cliente,recurrente
+Referral → Email,10,1812.19,90,Tipo de cliente,recurrente
+Paid Search → Direct,9,2036.16,90,Tipo de cliente,recurrente
+Organic Search → Email → Direct,8,1544.8300000000002,90,Tipo de cliente,recurrente
+Paid Social,56,12414.97,90,Categoría,Hogar
+Organic Search,31,6299.39,90,Categoría,Hogar
+Paid Social → Paid Search,21,3572.3,90,Categoría,Hogar
+Paid Search,20,4464.64,90,Categoría,Hogar
+Paid Social → Email,17,3248.16,90,Categoría,Hogar
+Referral,12,2675.05,90,Categoría,Hogar
+Organic Search → Email,11,1922.47,90,Categoría,Hogar
+Direct,11,1657.46,90,Categoría,Hogar
+Organic Search → Paid Social,9,1891.68,90,Categoría,Hogar
+Paid Search → Email,9,2047.63,90,Categoría,Hogar
+Paid Social → Paid Social,9,2162.2799999999997,90,Categoría,Hogar
+Display,8,1475.99,90,Categoría,Hogar
+Organic Search → Direct,8,1747.26,90,Categoría,Hogar
+Paid Social → Direct,8,1543.3899999999999,90,Categoría,Hogar
+Email,7,1272.28,90,Categoría,Hogar
+Paid Social,52,10688.16,90,Categoría,Libros y papelería
+Organic Search,27,5239.95,90,Categoría,Libros y papelería
+Paid Social → Paid Search,25,4511.26,90,Categoría,Libros y papelería
+Paid Search,22,4382.63,90,Categoría,Libros y papelería
+Paid Social → Organic Search,16,3110.19,90,Categoría,Libros y papelería
+Paid Social → Direct,11,2375.46,90,Categoría,Libros y papelería
+Organic Search → Email,9,1910.29,90,Categoría,Libros y papelería
+Organic Search → Direct,8,1696.99,90,Categoría,Libros y papelería
+Organic Search → Paid Social,8,2312.74,90,Categoría,Libros y papelería
+Paid Search → Organic Search,7,1048.43,90,Categoría,Libros y papelería
+Paid Social → Email,7,1160.73,90,Categoría,Libros y papelería
+Display,7,1134.6599999999999,90,Categoría,Libros y papelería
+Organic Search → Paid Search,6,1349.0,90,Categoría,Libros y papelería
+Paid Social → Paid Search → Direct → Email,5,1152.62,90,Categoría,Libros y papelería
+Referral → Email,5,1136.75,90,Categoría,Libros y papelería
+Paid Social,85,15989.79,90,Categoría,Moda
+Organic Search,38,7409.25,90,Categoría,Moda
+Paid Social → Paid Search,35,5736.88,90,Categoría,Moda
+Paid Search,21,3873.7799999999997,90,Categoría,Moda
+Paid Social → Organic Search,21,3653.96,90,Categoría,Moda
+Paid Social → Direct,20,3746.95,90,Categoría,Moda
+Direct,20,4168.65,90,Categoría,Moda
+Paid Search → Paid Social,16,2812.56,90,Categoría,Moda
+Paid Social → Email,14,2847.14,90,Categoría,Moda
+Organic Search → Paid Search,14,3438.19,90,Categoría,Moda
+Paid Social → Paid Social,13,2332.4300000000003,90,Categoría,Moda
+Paid Search → Organic Search,11,2225.73,90,Categoría,Moda
+Display,11,1894.57,90,Categoría,Moda
+Referral,11,1708.8400000000001,90,Categoría,Moda
+Organic Search → Paid Social,11,2035.54,90,Categoría,Moda
+Paid Social,57,11719.82,90,Categoría,Tecnología
+Organic Search,53,10112.72,90,Categoría,Tecnología
+Paid Search,45,9002.83,90,Categoría,Tecnología
+Paid Social → Paid Search,34,6403.03,90,Categoría,Tecnología
+Organic Search → Paid Search,23,4307.19,90,Categoría,Tecnología
+Direct,16,3388.32,90,Categoría,Tecnología
+Paid Social → Direct,15,3109.18,90,Categoría,Tecnología
+Organic Search → Email,14,2345.75,90,Categoría,Tecnología
+Paid Social → Organic Search,14,2931.35,90,Categoría,Tecnología
+Paid Social → Organic Search → Paid Search,13,2119.2,90,Categoría,Tecnología
+Paid Search → Organic Search,13,2179.2400000000002,90,Categoría,Tecnología
+Organic Search → Direct,12,2254.81,90,Categoría,Tecnología
+Paid Search → Paid Social,12,2353.3500000000004,90,Categoría,Tecnología
+Referral,11,2034.49,90,Categoría,Tecnología
+Paid Social → Paid Search → Organic Search,11,2322.97,90,Categoría,Tecnología

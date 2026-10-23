@@ -24,13 +24,15 @@ from pathlib import Path
 import structlog
 
 from . import plantilla
-from .datos import Lector, Vista, construir_hechos
+from .datos import CFG, Lector, Vista, construir_hechos
 from .herramientas import HERRAMIENTAS, ejecutar
+from .uso import registrar as registrar_uso
 from .verificador import cifras_no_respaldadas
 
 log = structlog.get_logger()
 
 CONOCIMIENTO_DIR = Path(__file__).parent / "conocimiento"
+RUTA_USO_DEFECTO = Path(__file__).parent.parent / "logs" / "uso_interprete.csv"
 MODELO = os.getenv("INTERPRETE_MODELO", "claude-opus-5-5")  # p. ej. claude-sonnet-5-5 o claude-haiku-5-5 para abaratar
 ESFUERZO = os.getenv("INTERPRETE_ESFUERZO", "medium")
 USAR_FALLBACKS = os.getenv("INTERPRETE_FALLBACKS", "1") == "1"  # reintento server-side si el modelo declina
@@ -55,6 +57,10 @@ efecto real. ROAS y CPA son promedios, no marginales. "Escalar (validar)" es una
 
 A continuación, el conocimiento de referencia (glosario, reglas de las señales, límites y guía de redacción).
 """
+
+INSTRUCCION_PRODUCCION = """9. Este despliegue está en modo producción: NO existen datos sintéticos ni un "efecto real" \
+de referencia (eso solo existía en la demo). Nunca los menciones ni los cites, aunque el conocimiento de \
+referencia que sigue los describa como ejemplo de la demo."""
 
 TAREAS = {
     "resumen": "Redacta el resumen ejecutivo de la vista actual siguiendo la guía de redacción (máximo 170 palabras).",
@@ -85,11 +91,13 @@ class Respuesta:
 
 
 class Interprete:
-    def __init__(self, lector: Lector | None = None, cliente=None, modelo: str | None = None, api_key: str | None = None):
+    def __init__(self, lector: Lector | None = None, cliente=None, modelo: str | None = None, api_key: str | None = None,
+                 ruta_uso: str | Path | None = None):
         self.lector = lector or Lector()
         self.modelo = modelo or MODELO
         self._cliente = cliente
         self._api_key = api_key
+        self.ruta_uso = ruta_uso or RUTA_USO_DEFECTO
 
     # ------------------------------------------------------------------ API pública
     @property
@@ -136,7 +144,8 @@ class Interprete:
         if not self.disponible:
             return Respuesta(respaldo, "plantilla", ["Sin credenciales de Claude: se muestra la lectura automática."])
         t0 = time.time()
-        system = [{"type": "text", "text": INSTRUCCIONES + "\n" + conocimiento(),
+        instrucciones = INSTRUCCIONES + ("\n" + INSTRUCCION_PRODUCCION if CFG.modo == "produccion" else "")
+        system = [{"type": "text", "text": instrucciones + "\n" + conocimiento(),
                    "cache_control": {"type": "ephemeral"}}]  # prefijo estable: conocimiento fijo
         r = Respuesta("", f"llm:{self.modelo}")
         extra_respaldo: list[str] = []
@@ -182,8 +191,7 @@ class Interprete:
             r.advertencias.append("Cifras que no aparecen en los datos de la vista (revisar): " + ", ".join(sospechosas))
         return self._cerrar(r, None, r.generado_con, v, tipo, t0)
 
-    @staticmethod
-    def _cerrar(r: Respuesta, respaldo: str | None, generado_con: str, v: Vista, tipo: str, t0: float) -> Respuesta:
+    def _cerrar(self, r: Respuesta, respaldo: str | None, generado_con: str, v: Vista, tipo: str, t0: float) -> Respuesta:
         if respaldo is not None:
             r.texto = respaldo
         r.generado_con = generado_con
@@ -191,4 +199,9 @@ class Interprete:
         log.info("interprete", vista=v.clave(), tipo=tipo, generado_con=generado_con, tokens_entrada=r.tokens_entrada,
                  tokens_salida=r.tokens_salida, segundos=r.segundos, herramientas=r.herramientas,
                  advertencias=len(r.advertencias))
+        try:
+            registrar_uso(self.ruta_uso, v.clave(), tipo, self.modelo, generado_con, r.tokens_entrada,
+                         r.tokens_salida, r.segundos, r.herramientas)
+        except OSError as e:  # el registro de uso nunca debe romper la interpretación
+            log.warning("uso_interprete_no_registrado", error=str(e))
         return r

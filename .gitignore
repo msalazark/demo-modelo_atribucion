@@ -11,6 +11,8 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 .ipynb_checkpoints/
+.coverage
+.cache_rendimiento/
 
 # Credenciales y configuración local (nunca versionar)
 .env
@@ -33,6 +35,10 @@ Thumbs.db
 
 # Logs
 *.log
+logs/
 
 # Secretos de Streamlit (API keys)
 .streamlit/secrets.toml
+
+# Base DuckDB generada (>100MB, se regenera con generar_datos.py)
+*.duckdb

@@ -7,14 +7,18 @@ combinación de canales es conocida (PARAMS_REALES). Eso permite medir qué tan
 cerca llega cada modelo de atribución al efecto real.
 
 Salida: data/ecommerce.duckdb con las tablas
-  events   -> imita analytics_XXXX.events_YYYYMMDD (una sola tabla con event_date)
-  orders   -> pedidos del backend (fuente de verdad de la venta)
-  costs    -> inversión diaria por canal pagado
-  truth    -> parámetros reales del modelo generador (solo para validar)
+  events               -> imita analytics_XXXX.events_YYYYMMDD (una sola tabla con event_date)
+  orders               -> pedidos del backend (fuente de verdad de la venta)
+  costs                -> inversión diaria por canal y campaña pagada (RQ-09)
+  impresiones          -> impresiones, alcance y frecuencia por campaña y día (RQ-16)
+  reportado_plataformas -> conversiones e ingresos que cada plataforma (Meta/Google Ads) reclama
+                           haber generado, por campaña y día (RQ-15; siempre por encima de lo
+                           real: ver el comentario junto a CAMPANAS_PAGADAS)
+  truth                -> parámetros reales del modelo generador (solo para validar)
 """
 import json
 import math
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 import duckdb
@@ -23,7 +27,7 @@ import pandas as pd
 
 SEED = 20261014
 N_USUARIOS = 150_000
-INICIO = datetime(2025, 7, 1, tzinfo=timezone.utc)
+INICIO = datetime(2025, 7, 1, tzinfo=UTC)
 # 15 meses (2025-07 a 2026-09): los últimos 12 son la ventana de análisis y los 3 anteriores dan
 # historia de lookback y una ventana previa para vigilar la estabilidad del modelo.
 DIAS = 457
@@ -81,6 +85,35 @@ PASARELAS = ["niubiz.com.pe", "mercadopago.com.pe"]
 METODOS_PAGO = ["tarjeta", "yape", "transferencia", "contraentrega"]
 P_METODOS = [.55, .25, .12, .08]
 
+# RQ-09/RQ-15/RQ-16: dos campañas por canal pagado, cada una con su costo y sus impresiones por
+# sesión (CTR implícito = 1 / impresiones_por_sesion). `exceso_vista` es el extra que la propia
+# plataforma reclama por conversiones con solo vista (sin clic, no generan sesión en GA4: no se
+# pueden ver con esta metodología). El resto de la brecha plataforma-vs-modelo sale solo, sin
+# ningún factor artificial: si una ruta convertida pasó por dos canales pagados, ambas plataformas
+# reclaman la venta completa (igual que en la vida real, cada una mide con su propia ventana).
+CAMPANAS_PAGADAS = {
+    "Paid Social": [
+        {"id": "paid_social_prospecting", "peso": .6, "mult_costo": .85, "exceso_vista": 1.35,
+         "impresiones_por_sesion": 42},
+        {"id": "paid_social_retargeting", "peso": .4, "mult_costo": 1.25, "exceso_vista": 1.15,
+         "impresiones_por_sesion": 18},
+    ],
+    "Paid Search": [
+        {"id": "paid_search_marca", "peso": .35, "mult_costo": .6, "exceso_vista": 1.05,
+         "impresiones_por_sesion": 3},
+        {"id": "paid_search_generica", "peso": .65, "mult_costo": 1.3, "exceso_vista": 1.20,
+         "impresiones_por_sesion": 12},
+    ],
+    "Display": [
+        {"id": "display_prospecting", "peso": .7, "mult_costo": .9, "exceso_vista": 1.60,
+         "impresiones_por_sesion": 90},
+        {"id": "display_remarketing", "peso": .3, "mult_costo": 1.1, "exceso_vista": 1.30,
+         "impresiones_por_sesion": 35},
+    ],
+}
+CAMPANA_CANAL = {info["id"]: canal for canal, lst in CAMPANAS_PAGADAS.items() for info in lst}
+CAMPANA_INFO = {info["id"]: info for lst in CAMPANAS_PAGADAS.values() for info in lst}
+
 
 def prob_conversion(canales: set) -> float:
     z = PARAMS_REALES["b0"] + sum(PARAMS_REALES["beta"][c] for c in canales)
@@ -113,9 +146,18 @@ def param(key, s=None, i=None, d=None):
 def main():
     rng = np.random.default_rng(SEED)
     fin = INICIO + timedelta(days=DIAS)
+    # Una sesión que arranca justo antes de `fin` puede todavía generar un pedido hasta 25 minutos
+    # después (más el evento de purchase de la pasarela): sin este margen, el pedido puede caer
+    # después de `fin`, dejando el último día del rango de eventos casi vacío y disparando la
+    # alerta de "caída de eventos" en `calidad.py` por una razón que no tiene nada que ver con la
+    # calidad real de los datos. Encontrado al variar la secuencia aleatoria para RQ-09/15/16.
+    fin_sesiones = fin - timedelta(hours=2)
     eventos, pedidos = [], []
     atributos_usuario: dict[str, dict] = {}
     sesiones_pagadas = {c: {} for c in COSTO_POR_SESION}  # canal -> fecha -> sesiones
+    sesiones_por_campana: dict[str, dict[str, int]] = {}  # campaña -> fecha -> sesiones
+    conv_reportadas: dict[str, dict[str, int]] = {}       # campaña -> fecha -> conversiones (reclamadas por la plataforma)
+    ingresos_reportados: dict[str, dict[str, float]] = {}
     n_pedido = 100_000
 
     for u in range(N_USUARIOS):
@@ -129,7 +171,7 @@ def main():
         for k in range(n_ses):
             if k > 0:
                 t = t + timedelta(days=float(rng.exponential(3.0)), minutes=float(rng.uniform(5, 600)))
-            if t >= fin:
+            if t >= fin_sesiones:
                 break
             canal = elegir(rng, p_primera if k == 0 else p_siguiente)
             ruta.append((t, canal))
@@ -139,10 +181,17 @@ def main():
         canales_ruta = {c for _, c in ruta}
         convierte = rng.random() < prob_conversion(canales_ruta)
 
+        campanas_pagadas_ruta: set[str] = set()  # campañas pagadas tocadas en la ruta, para RQ-15
         for idx, (ts, canal) in enumerate(ruta):
             ga_session_id = int(ts.timestamp())
             source, medium = FUENTES[canal][rng.integers(len(FUENTES[canal]))]
-            campana = None if source is None else f"{canal.lower().replace(' ', '_')}_always_on"
+            if source is None:
+                campana = None
+            elif canal in CAMPANAS_PAGADAS:
+                opciones = CAMPANAS_PAGADAS[canal]
+                campana = opciones[rng.choice(len(opciones), p=[o["peso"] for o in opciones])]["id"]
+            else:
+                campana = f"{canal.lower().replace(' ', '_')}_always_on"
             url = DOMINIO + "/"
             cts = None
             if source is not None:
@@ -155,6 +204,9 @@ def main():
             if canal in COSTO_POR_SESION:
                 dia = ts.date().isoformat()
                 sesiones_pagadas[canal][dia] = sesiones_pagadas[canal].get(dia, 0) + 1
+                sesiones_por_campana.setdefault(campana, {})
+                sesiones_por_campana[campana][dia] = sesiones_por_campana[campana].get(dia, 0) + 1
+                campanas_pagadas_ruta.add(campana)
 
             n_pv = int(rng.integers(1, 5))
             for j in range(n_pv + 1):
@@ -189,6 +241,18 @@ def main():
                     "ga_client_id": None if sin_cookie else user_pseudo_id,
                     "ga_session_id": None if sin_cookie else ga_session_id,
                 })
+                # RQ-15: cada plataforma presente en la ruta reclama la venta completa con su
+                # propia medición (de ahí que la suma de lo reportado por todas las campañas sea
+                # mayor que las ventas reales cuando una ruta pasó por más de un canal pagado), en
+                # la fecha del pedido (una plataforma reporta por fecha de conversión, no por cada
+                # día en que hubo un toque previo).
+                dia_pagada = t_pedido.date().isoformat()
+                for campana_pagada in campanas_pagadas_ruta:
+                    conv_reportadas.setdefault(campana_pagada, {})
+                    ingresos_reportados.setdefault(campana_pagada, {})
+                    conv_reportadas[campana_pagada][dia_pagada] = conv_reportadas[campana_pagada].get(dia_pagada, 0) + 1
+                    ingresos_reportados[campana_pagada][dia_pagada] = (
+                        ingresos_reportados[campana_pagada].get(dia_pagada, 0.0) + valor)
                 # El evento purchase en GA4 se pierde en ~12 % de los casos (thank you page)
                 # y en ~10 % de los que llegan, la pasarela abre una sesión nueva.
                 if rng.random() < 0.12 or metodo in ("transferencia", "contraentrega"):
@@ -223,17 +287,41 @@ def main():
                     "ecommerce": {"transaction_id": order_id, "purchase_revenue": valor},
                 })
 
-    costos = [{"date": d, "channel": c, "cost_pen": round(n * COSTO_POR_SESION[c] * float(rng.uniform(.9, 1.1)), 2)}
-              for c, por_dia in sesiones_pagadas.items() for d, n in sorted(por_dia.items())]
+    # RQ-09: costo por campaña (no solo por canal); RQ-16: impresiones/alcance/frecuencia por
+    # campaña y día; RQ-15: lo que cada plataforma reclama haber generado (siempre >= lo real:
+    # ver el comentario junto a `campanas_pagadas_ruta` sobre por qué).
+    costos = [{"date": d, "channel": CAMPANA_CANAL[camp], "campaign": camp,
+               "cost_pen": round(n * COSTO_POR_SESION[CAMPANA_CANAL[camp]] * CAMPANA_INFO[camp]["mult_costo"]
+                                  * float(rng.uniform(.9, 1.1)), 2)}
+              for camp, por_dia in sesiones_por_campana.items() for d, n in sorted(por_dia.items())]
+
+    impresiones = []
+    for camp, por_dia in sesiones_por_campana.items():
+        info = CAMPANA_INFO[camp]
+        for d, n in sorted(por_dia.items()):
+            imp = max(1, int(n * info["impresiones_por_sesion"] * float(rng.uniform(.85, 1.15))))
+            frecuencia = round(float(rng.uniform(1.6, 3.2)), 2)
+            impresiones.append({"date": d, "channel": CAMPANA_CANAL[camp], "campaign": camp,
+                                "impressions": imp, "reach": max(1, int(imp / frecuencia)), "frequency": frecuencia})
+
+    reportado = []
+    for camp, por_dia in conv_reportadas.items():
+        info = CAMPANA_INFO[camp]
+        for d, n in sorted(por_dia.items()):
+            exceso = info["exceso_vista"] * float(rng.uniform(.95, 1.05))
+            reportado.append({"date": d, "channel": CAMPANA_CANAL[camp], "campaign": camp,
+                              "platform_conversions": round(n * exceso, 1),
+                              "platform_revenue": round(ingresos_reportados[camp][d] * exceso, 2)})
 
     carpeta = Path(__file__).parent / "data"
     carpeta.mkdir(exist_ok=True)
     con = duckdb.connect(str(carpeta / "ecommerce.duckdb"))
-    for tabla in ("events", "orders", "costs", "truth"):
+    for tabla in ("events", "orders", "costs", "truth", "impresiones", "reportado_plataformas"):
         con.execute(f"DROP TABLE IF EXISTS {tabla}")
     con.execute("""
         CREATE TABLE events (
           event_date VARCHAR, event_timestamp BIGINT, event_name VARCHAR, user_pseudo_id VARCHAR,
+          user_id VARCHAR,
           event_params STRUCT(key VARCHAR, value STRUCT(string_value VARCHAR, int_value BIGINT, double_value DOUBLE))[],
           collected_traffic_source STRUCT(manual_source VARCHAR, manual_medium VARCHAR, manual_campaign_name VARCHAR, gclid VARCHAR),
           ecommerce STRUCT(transaction_id VARCHAR, purchase_revenue DOUBLE),
@@ -241,13 +329,22 @@ def main():
     df_ev = pd.DataFrame(eventos)
     for atributo in SEGMENTOS:  # atributos del usuario repetidos en cada evento (columnas planas)
         df_ev[atributo] = df_ev.user_pseudo_id.map(lambda u, a=atributo: atributos_usuario[u][a])
-    con.execute("INSERT INTO events SELECT * FROM df_ev")
+    # `user_id` (RQ-07, llave de unión #3) no existe en este generador: esta demo no simula
+    # usuarios logueados entre dispositivos. `BY NAME` lo deja en NULL sin tocar `eventos`.
+    con.execute("INSERT INTO events BY NAME SELECT * FROM df_ev")
     df_ped = pd.DataFrame(pedidos)
     con.execute("CREATE TABLE orders AS SELECT * FROM df_ped")
     df_cost = pd.DataFrame(costos)
-    con.execute("CREATE TABLE costs AS SELECT CAST(date AS DATE) AS date, channel, cost_pen FROM df_cost")
+    con.execute("CREATE TABLE costs AS SELECT CAST(date AS DATE) AS date, channel, campaign, cost_pen FROM df_cost")
+    df_imp = pd.DataFrame(impresiones)
+    con.execute("CREATE TABLE impresiones AS SELECT CAST(date AS DATE) AS date, channel, campaign, "
+                "impressions, reach, frequency FROM df_imp")
+    df_rep = pd.DataFrame(reportado)
+    con.execute("CREATE TABLE reportado_plataformas AS SELECT CAST(date AS DATE) AS date, channel, campaign, "
+                "platform_conversions, platform_revenue FROM df_rep")
     con.execute("CREATE TABLE truth AS SELECT ? AS params", [json.dumps(PARAMS_REALES)])
-    print(f"eventos={len(df_ev):,} pedidos={len(df_ped):,} filas_costos={len(df_cost):,}")
+    print(f"eventos={len(df_ev):,} pedidos={len(df_ped):,} filas_costos={len(df_cost):,} "
+          f"filas_impresiones={len(df_imp):,} filas_reportado={len(df_rep):,}")
     con.close()
 
 

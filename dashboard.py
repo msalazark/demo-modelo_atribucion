@@ -10,7 +10,7 @@ Uso:
 import duckdb
 import streamlit as st
 
-from dashboard_comun import DIMENSIONES, MODELOS, PAGADOS, VENTANAS, cargar, db_mtime
+from dashboard_comun import CFG, DIMENSIONES, MODELOS, PAGADOS, VENTANAS, cargar, db_mtime
 from interprete.datos import Lector
 
 st.set_page_config(page_title="Atribución de canales", page_icon=":material/insights:", layout="wide")
@@ -53,8 +53,9 @@ with st.sidebar:
         help="Direct es el regreso de usuarios que ya conocían la marca; no es un canal en el que se invierta.",
     )
     st.divider()
+    nota_demo = " Datos sintéticos con la estructura del export de GA4." if CFG.modo == "demo" else ""
     st.caption(f":material/update: Ventana de análisis móvil: {ejec.inicio} a {ejec.corte} ({ejec.ventana_meses} meses). "
-               f"Actualizado {ejec.ejecutado_en[:10]}. Datos sintéticos con la estructura del export de GA4.")
+               f"Actualizado {ejec.ejecutado_en[:10]}.{nota_demo}")
 
 pg = st.navigation(
     [

@@ -11,6 +11,7 @@ from interprete import plantilla
 from interprete.agente import Interprete, conocimiento
 from interprete.datos import Lector, Vista, construir_hechos
 from interprete.herramientas import ejecutar
+from interprete.uso import leer as leer_uso
 from interprete.verificador import cifras_no_respaldadas
 
 
@@ -54,6 +55,23 @@ def test_verificador_acepta_cifras_de_los_hechos(hechos):
 
 def test_verificador_marca_cifras_inventadas(hechos):
     assert "73.4" in cifras_no_respaldadas("Paid Social aporta 73.4 % de las ventas", json.dumps(hechos))
+
+
+# RQ-25: el verificador debe reconocer los formatos de número que usa Perú, no solo el inglés.
+def test_verificador_reconoce_soles_con_separador_de_miles():
+    assert cifras_no_respaldadas("Ingresos de S/ 1,234.56 este mes", "el valor es 1234.56") == []
+
+
+def test_verificador_reconoce_porcentaje_con_coma_decimal():
+    assert cifras_no_respaldadas("una brecha de 3,5 pp", "el valor es 3.5") == []
+
+
+def test_verificador_reconoce_porcentaje_sin_espacio():
+    assert cifras_no_respaldadas("creció 12,5% este mes", "el valor es 12.5") == []
+
+
+def test_verificador_coma_decimal_fuera_de_tolerancia_se_marca():
+    assert "9.9" in cifras_no_respaldadas("una brecha de 9,9 pp", "el valor es 3.5")
 
 
 # ----------------------------------------------------------------- plantilla (lectura sin LLM)
@@ -110,6 +128,24 @@ def test_error_del_api_degrada_a_plantilla():
 def test_rechazo_degrada_a_plantilla():
     r = Interprete(cliente=ClienteFalso(texto("", stop="refusal"))).interpretar(Vista(), "resumen")
     assert r.generado_con == "plantilla" and r.texto
+
+
+# ----------------------------------------------------------------- registro de uso (RQ-25)
+def test_cada_interpretacion_registra_uso(tmp_path):
+    ruta = tmp_path / "uso.csv"
+    cliente = ClienteFalso(texto("Paid Social lidera."))
+    Interprete(cliente=cliente, ruta_uso=ruta).interpretar(Vista(), "resumen")
+    uso = leer_uso(ruta)
+    assert len(uso) == 1
+    assert uso.iloc[0].tipo == "resumen" and uso.iloc[0].tokens_entrada == 100 and uso.iloc[0].tokens_salida == 50
+    assert uso.iloc[0].generado_con.startswith("llm:")
+
+
+def test_uso_se_acumula_entre_llamadas(tmp_path):
+    ruta = tmp_path / "uso.csv"
+    Interprete(cliente=ClienteFalso(texto("A.")), ruta_uso=ruta).interpretar(Vista(), "resumen")
+    Interprete(cliente=ClienteFalso(texto("B.")), ruta_uso=ruta).interpretar(Vista(), "siguientes_pasos")
+    assert len(leer_uso(ruta)) == 2
 
 
 # ----------------------------------------------------------------- herramientas

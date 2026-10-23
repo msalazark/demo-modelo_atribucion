@@ -3,6 +3,7 @@ import streamlit as st
 
 from dashboard_comun import api_key, contexto, interprete_disponible
 from interprete.agente import Interprete
+from interprete.uso import costo_usd
 
 ctx = contexto()
 v = ctx.vista
@@ -53,8 +54,12 @@ if pregunta:
             r = Interprete(api_key=api_key()).preguntar(v, pregunta, historial)
         st.markdown(r.texto)
         usos = f"Herramientas: {', '.join(r.herramientas)} · " if r.herramientas else ""
-        meta = (f"{usos}{r.generado_con} · {r.segundos:.1f} s" if r.generado_con.startswith("llm:")
-                else "Lectura automática por reglas (sin IA)")
+        if r.generado_con.startswith("llm:"):
+            costo = costo_usd(r.generado_con[4:], r.tokens_entrada, r.tokens_salida)
+            tokens_costo = f"{r.tokens_entrada + r.tokens_salida:,} tokens" + (f" · US$ {costo:.4f}" if costo is not None else "")
+            meta = f"{usos}{r.generado_con} · {r.segundos:.1f} s · {tokens_costo}"
+        else:
+            meta = "Lectura automática por reglas (sin IA)"
         st.caption(meta)
         for a in r.advertencias:
             st.warning(a, icon=":material/fact_check:")

@@ -1,6 +1,6 @@
-pedidos_backend,pedidos_vistos_en_ga4,compras_ga4_en_sesion_de_pasarela,pedidos_sin_client_id,pedidos_con_ruta,ventana_dias
-5318,3774,366,204,5114,7
-5318,3774,366,204,5114,14
-5318,3774,366,204,5114,30
-5318,3774,366,204,5114,60
-5318,3774,366,204,5114,90
+pedidos_backend,pedidos_vistos_en_ga4,compras_ga4_en_sesion_de_pasarela,pedidos_sin_client_id,pedidos_con_ruta,unidos_por_ga_client_id,unidos_por_transaction_id,unidos_por_user_id,pedidos_sin_union,ventana_dias
+5281,3705,404,227,5223,5054,169,0,58,7
+5281,3705,404,227,5223,5054,169,0,58,14
+5281,3705,404,227,5223,5054,169,0,58,30
+5281,3705,404,227,5223,5054,169,0,58,60
+5281,3705,404,227,5223,5054,169,0,58,90

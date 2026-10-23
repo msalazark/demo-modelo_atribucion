@@ -3,12 +3,18 @@
 -- El canal se toma de la fuente/medio con que ENTRÓ la sesión (collected_traffic_source
 -- del primer evento). No se usa session_traffic_source_last_click porque aplica
 -- último clic no directo y ocultaría las sesiones directas de la ruta.
+--
+-- RQ-06: las reglas de UTM, la lista de site_source_name de Meta y las pasarelas vienen de
+-- config/<cliente>.yaml; run_demo._sql() sustituye los dos placeholders de más abajo por el SQL
+-- generado en reglas_canal.py a partir de esas reglas. El orden es: 1) UTMs, 2) gclid -> Paid
+-- Search, 3) fbclid en la URL sin UTMs -> "Meta (sin UTM)", 4) sin fuente -> Direct, 5) Unassigned.
 
 CREATE OR REPLACE TABLE sesiones AS
 WITH ev AS (
   SELECT
     user_pseudo_id,
     list_filter(event_params, lambda p: p.key = 'ga_session_id')[1].value.int_value AS ga_session_id,
+    list_filter(event_params, lambda p: p.key = 'page_location')[1].value.string_value AS page_location,
     event_timestamp,
     collected_traffic_source AS cts
   FROM events
@@ -20,30 +26,19 @@ por_sesion AS (
     to_timestamp(min(event_timestamp) / 1e6)                    AS inicio_sesion,
     arg_min(cts.manual_source, event_timestamp) FILTER (WHERE cts IS NOT NULL) AS source,
     arg_min(cts.manual_medium, event_timestamp) FILTER (WHERE cts IS NOT NULL) AS medium,
-    arg_min(cts.manual_campaign_name, event_timestamp) FILTER (WHERE cts IS NOT NULL) AS campaign
+    arg_min(cts.manual_campaign_name, event_timestamp) FILTER (WHERE cts IS NOT NULL) AS campaign,
+    arg_min(cts.gclid, event_timestamp) FILTER (WHERE cts IS NOT NULL) AS gclid,
+    arg_min(page_location, event_timestamp) AS page_location
   FROM ev
   GROUP BY ALL
 )
 SELECT
-  *,
-  -- Agrupación de canales simplificada a partir de las reglas por defecto de GA4
-  CASE
-    WHEN source IS NULL THEN 'Direct'
-    WHEN regexp_matches(lower(medium), '^(.*cp.*|ppc|retargeting|paid.*)$')
-         AND lower(source) IN ('fb','ig','facebook','instagram','m.facebook.com','l.facebook.com','tiktok','linkedin')
-      THEN 'Paid Social'
-    WHEN regexp_matches(lower(medium), '^(.*cp.*|ppc|retargeting|paid.*)$')
-         AND lower(source) IN ('google','bing','yahoo')
-      THEN 'Paid Search'
-    WHEN lower(medium) IN ('display','banner','cpm','interstitial','expandable') THEN 'Display'
-    WHEN lower(medium) = 'organic' THEN 'Organic Search'
-    WHEN lower(medium) IN ('email','e-mail','e_mail','e mail') THEN 'Email'
-    WHEN lower(medium) = 'referral' THEN 'Referral'
-    ELSE 'Unassigned'
-  END AS canal,
+  * EXCLUDE (page_location, gclid),
+  -- Agrupación de canales (RQ-06): reglas de config/<cliente>.yaml
+  {{CASE_CANAL}} AS canal,
   -- Sesiones abiertas por la pasarela de pago al volver a la thank you page:
   -- no son un canal de marketing y se excluyen de la ruta.
-  coalesce(lower(source) IN ('niubiz.com.pe','mercadopago.com.pe','paypal.com','izipay.pe'), FALSE) AS es_pasarela
+  {{ES_PASARELA}} AS es_pasarela
 FROM por_sesion;
 
 

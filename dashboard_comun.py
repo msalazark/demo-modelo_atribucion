@@ -14,14 +14,19 @@ import duckdb
 import pandas as pd
 import streamlit as st
 
+from config import cargar_config
 from interprete.agente import Interprete, credenciales_probables
 from interprete.datos import Vista
 
-DB_PATH = Path(__file__).parent / "data" / "ecommerce.duckdb"
-NO_INVERTIBLES = ["Direct"]  # no es un canal sobre el que se decida presupuesto
-PAGADOS = ["Paid Social", "Paid Search", "Display"]
-VENTANAS = [7, 14, 30, 60, 90]
-DIMENSIONES = ["Todos", "Dispositivo", "Región", "Tipo de cliente", "Categoría"]
+# Config del cliente (RQ-01): reemplaza las constantes que antes estaban repetidas aquí y en
+# run_demo.py / interprete/datos.py. `ATRIBUCION_CONFIG` permite apuntar a otro YAML sin tocar
+# código (streamlit run no acepta argumentos de línea de comandos como run_demo.py).
+CFG = cargar_config(os.getenv("ATRIBUCION_CONFIG", "config/demo.yaml"))
+DB_PATH = Path(__file__).parent / CFG.ruta_bd
+NO_INVERTIBLES = CFG.canales_no_invertibles  # no son canales sobre los que se decida presupuesto
+PAGADOS = CFG.canales_pagados
+VENTANAS = CFG.ventanas_atribucion_dias
+DIMENSIONES = ["Todos", *CFG.dimensiones_segmentacion]
 
 # Un color por canal, el mismo en todo el reporte (gráficos, tarjetas y tablas).
 CANAL_COLORS = {
@@ -43,8 +48,17 @@ SENAL_COLORS = {  # fondo de la celda de señal (tono suave) y texto
     "Sub-índice": ("#FFE3E3", "#9B1C1C"),
     "Igual al total": ("#F1F3F5", "#495057"),
     "No es palanca": ("#F1F3F5", "#868E96"),
+    "Evidencia insuficiente": ("#FFF3BF", "#7A5A00"),  # RQ-14: no se publica una señal real
 }
 CONFIANZA_BADGE = {"alta": "green", "media": "orange", "baja": "red"}
+# RQ-18/RQ-19/RQ-21: mismo semáforo (verde/ámbar/rojo) para controles de calidad, estado del
+# modelo frente al mes anterior y validación con experimentos — todos usan ok/alerta/crítico o un
+# sinónimo (estable/cambió, Validado/Sin validar/Sin probar).
+ESTADO_COLORS = {
+    "ok": ("#D3F9D8", "#1B5E20"), "estable": ("#D3F9D8", "#1B5E20"), "Validado": ("#D3F9D8", "#1B5E20"),
+    "alerta": ("#FFF3BF", "#7A5A00"), "Sin probar": ("#F1F3F5", "#495057"),
+    "crítico": ("#FFE3E3", "#9B1C1C"), "cambió": ("#FFE3E3", "#9B1C1C"), "Sin validar": ("#FFE3E3", "#9B1C1C"),
+}
 
 # Nombres legibles de los modelos y su familia (reglas fijas vs. aprendidos de los datos)
 MODELOS = {
@@ -57,7 +71,9 @@ MODELOS = {
     "posicion_u": ("Posición (U)", "Regla"),
     "decaimiento_temporal": ("Decaimiento temporal", "Regla"),
 }
-NOMBRE_MODELO = {k: v[0] for k, v in MODELOS.items()} | {"efecto_real": "Efecto real (sintético)"}
+NOMBRE_MODELO = {k: v[0] for k, v in MODELOS.items()}
+if CFG.modo == "demo":  # efecto_real solo existe en modo demo (RQ-02)
+    NOMBRE_MODELO["efecto_real"] = "Efecto real (sintético)"
 
 
 # ----------------------------------------------------------------- estilo
@@ -88,6 +104,18 @@ def estilo_senal(v: str) -> str:
     return f"background-color:{bg};color:{fg};font-weight:600"
 
 
+def estilo_estado(v: str) -> str:
+    """Para Styler.map sobre una columna de estado (ok/alerta/crítico, estable/cambió, Validado/...)."""
+    bg, fg = ESTADO_COLORS.get(v, ("#F1F3F5", "#495057"))
+    return f"background-color:{bg};color:{fg};font-weight:600"
+
+
+def boton_descarga(df: pd.DataFrame, nombre: str) -> None:
+    """Descarga en CSV de una tabla visible (RQ-23). `nombre` identifica el archivo, sin extensión."""
+    st.download_button("Descargar CSV", df.to_csv(index=False).encode("utf-8"), file_name=f"{nombre}.csv",
+                        mime="text/csv", icon=":material/download:")
+
+
 def barras(df: pd.DataFrame, x: str, titulo_x: str, alto: int | None = None) -> alt.Chart:
     d = df.reset_index()
     return (
@@ -110,7 +138,8 @@ TABLAS = {
     "senal": "mart_decision__senal",
     "pares": "mart_decision__pares_asistencia",
     "rutas": "mart_decision__rutas_top",
-    "error": "mart_calidad__error_modelo",
+    # mart_calidad__error_modelo solo existe en modo demo (RQ-02); no se genera en producción.
+    **({"error": "mart_calidad__error_modelo"} if CFG.modo == "demo" else {}),
     "conciliacion": "mart_calidad__conciliacion",
     "kpi": "mart_kpi__mensual",
     "estado": "mart_estado__modelo",
@@ -120,6 +149,16 @@ TABLAS = {
     "incrementalidad": "mart_siguientes_pasos__prueba_incrementalidad",
     "ejecucion": "mart_ejecucion",
     "narrativa": "mart_narrativa",
+    "controles": "mart_calidad__controles",
+    "diagnostico": "mart_calidad__modelo",
+    "hist_comp": "hist_mart_modelos__comparativo",
+    "val_exp": "mart_validacion__experimentos",
+    "val_canal": "mart_validacion__canal",
+    "campana": "mart_decision__campana",
+    "plataformas": "mart_plataformas__comparacion",
+    "alcance": "mart_plataformas__alcance",
+    "mmm_curvas": "mart_mmm__curvas",
+    "mmm_resumen": "mart_mmm__resumen",
 }
 
 
@@ -208,7 +247,7 @@ def contexto() -> Ctx:
     ctx.tabla = canal.join(cm[["conversiones", "cuota_pct", "ingresos", "roas", "cpa", "cuota_p05", "cuota_p95", "ranking"]]
                            .rename(columns={"ranking": "ranking_modelo"})).join(sen[["senal", "motivo", "confianza",
                                                                                       "brecha_vs_ultimo_clic_pp"]])
-    ctx.pedidos = int(canal.conv_cerradas.sum())
+    ctx.pedidos = int(canal.ventas_cierra.sum() + canal.ventas_unico.sum())  # cierra + único = total convertidas
     tipos = s["tipo_canal"] or ["Pagados", "No pagados"]
     permitidos = [c for c in ctx.tabla.index if ((c in PAGADOS) and "Pagados" in tipos) or
                   ((c not in PAGADOS) and "No pagados" in tipos)]
@@ -223,7 +262,8 @@ def contexto() -> Ctx:
 
 # ----------------------------------------------------------------- piezas reutilizables
 def evidencia(pedidos: int) -> str:
-    return "alta" if pedidos >= 3000 else "media" if pedidos >= 1000 else "baja"
+    return ("alta" if pedidos >= CFG.confianza_alta_pedidos
+            else "media" if pedidos >= CFG.confianza_media_pedidos else "baja")
 
 
 def panel_interpretacion(ctx: Ctx, tipo: str, titulo: str) -> None:

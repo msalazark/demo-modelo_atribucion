@@ -94,7 +94,8 @@ def _detalle_canal(canal: str, v: Vista, lector: Lector) -> str:
         "roas_por_modelo": {r.modelo: r.roas for r in comp.itertuples() if pd.notna(r.roas)},
         "senal": s.senal, "motivo": s.motivo, "confianza": s.confianza,
         "usuarios_alcanzados": int(m.usuarios_alcanzados), "usuarios_nuevos": int(m.usuarios_nuevos),
-        "conversiones_asistidas": int(m.conv_asistidas), "conversiones_cerradas": int(m.conv_cerradas),
+        "ventas_abre": int(m.ventas_abre), "conversiones_asistidas": int(m.ventas_asiste),
+        "conversiones_cerradas": int(m.ventas_cierra), "ventas_unico": int(m.ventas_unico),
         "conversion_por_usuario_pct": round(float(m.tasa_conv_usuario_pct), 2),
     })
 
@@ -128,7 +129,10 @@ def _sensibilidad(v: Vista, lector: Lector) -> str:
 
 
 def _prueba(canal: str, lector: Lector) -> str:
-    inc = lector.consulta("mart_siguientes_pasos__prueba_incrementalidad", "WHERE canal = ?", [canal])
+    # RQ-20: solo la prueba de holdout por usuario; geográfica y Conversion Lift de Meta usan
+    # otras columnas (region_control / insumos) y no calzan en esta respuesta.
+    inc = lector.consulta("mart_siguientes_pasos__prueba_incrementalidad",
+                          "WHERE canal = ? AND tipo_prueba = 'holdout_usuario'", [canal])
     if inc.empty:
         raise ValueError("el canal no es pagado")
     return _json({"canal": canal, "referencia_emd_pct": 30, "configuraciones": [

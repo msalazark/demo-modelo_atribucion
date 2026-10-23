@@ -3,6 +3,11 @@
 -- Reemplazar: `proyecto`, `analytics_XXXXXXXXX`, el dataset de salida y la tabla de pedidos.
 -- Nota: escrito con la misma lógica que la versión DuckDB probada en la demo;
 -- validar contra el export del cliente antes de programarlo como consulta recurrente.
+--
+-- Desactualizado (RQ-04, diferido): este archivo no tiene las reglas de canal configurables
+-- (RQ-06), el join de pedidos por 3 llaves (RQ-07), `pedido_anterior` (RQ-08) ni `ruta_campana`
+-- (RQ-09). No se mantuvo en paralelo a propósito (ver la nota de RQ-04 en docs/RQ_mejoras.md):
+-- regenerar desde cero a partir de la versión DuckDB cuando se retome RQ-04, no parchear esto.
 
 DECLARE fecha_ini DATE DEFAULT DATE '2026-08-01';
 DECLARE fecha_fin DATE DEFAULT DATE '2026-09-29';

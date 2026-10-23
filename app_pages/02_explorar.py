@@ -2,7 +2,7 @@
 import altair as alt
 import streamlit as st
 
-from dashboard_comun import DIMENSIONES, barras, color_canal, contexto, estilo_canal
+from dashboard_comun import DIMENSIONES, barras, boton_descarga, color_canal, contexto, estilo_canal
 
 ctx = contexto()
 v, rank = ctx.vista, ctx.rank
@@ -10,9 +10,10 @@ seg = "Todo el negocio" if v.dim == "Todos" else f"{v.dim}: {v.segmento}"
 st.subheader(seg)
 st.caption(f"Ventana de atribución {v.ventana_dias} días · modelo {ctx.nombre_modelo}")
 
-tab_alc, tab_asi, tab_conv, tab_inv, tab_seg, tab_rut = st.tabs(
+tab_alc, tab_asi, tab_conv, tab_inv, tab_camp, tab_plat, tab_seg, tab_rut = st.tabs(
     [":material/groups: Alcance", ":material/handshake: Asistencia", ":material/target: Conversión",
-     ":material/payments: Inversión", ":material/segment: Segmentos", ":material/route: Rutas"]
+     ":material/payments: Inversión", ":material/campaign: Campañas", ":material/compare_arrows: Plataformas",
+     ":material/segment: Segmentos", ":material/route: Rutas"]
 )
 
 with tab_alc:
@@ -26,22 +27,25 @@ with tab_alc:
 
 with tab_asi:
     roles = (
-        rank[["conv_introducidas", "conv_asistidas", "conv_cerradas"]]
-        .rename(columns={"conv_introducidas": "Introdujo", "conv_asistidas": "Asistió", "conv_cerradas": "Cerró"})
+        rank[["ventas_abre", "ventas_asiste", "ventas_cierra", "ventas_unico"]]
+        .rename(columns={"ventas_abre": "Abrió", "ventas_asiste": "Asistió", "ventas_cierra": "Cerró",
+                         "ventas_unico": "Único"})
         .reset_index().melt(id_vars="canal", var_name="rol", value_name="conversiones")
     )
-    st.markdown("**Rol de cada canal en las ventas** · abrió la ruta, ayudó a mitad de camino o la cerró")
+    st.markdown("**Rol de cada canal en las ventas** · abrió la ruta, ayudó a mitad de camino, la cerró o fue el único contacto")
     st.altair_chart(
         alt.Chart(roles).mark_bar(stroke="white", strokeWidth=1).encode(
             y=alt.Y("canal:N", title=None, sort=alt.EncodingSortField("conversiones", op="sum", order="descending")),
             x=alt.X("conversiones:Q", title="Ventas", stack="zero"),
             color=color_canal(),
-            opacity=alt.Opacity("rol:N", scale=alt.Scale(domain=["Introdujo", "Asistió", "Cerró"], range=[0.3, 0.6, 1.0]),
+            opacity=alt.Opacity("rol:N", scale=alt.Scale(domain=["Abrió", "Asistió", "Cerró", "Único"],
+                                                          range=[0.3, 0.6, 1.0, 0.15]),
                                 legend=alt.Legend(title="Rol (más oscuro = más cerca de la compra)")),
             order=alt.Order("rol_orden:Q"), tooltip=["canal", "rol", "conversiones"],
-        ).transform_calculate(rol_orden="datum.rol == 'Introdujo' ? 0 : datum.rol == 'Asistió' ? 1 : 2")
-        .properties(height=max(200, 44 * len(rank))),
-        alt="Ventas por rol del canal: introdujo, asistió o cerró",
+        ).transform_calculate(
+            rol_orden="datum.rol == 'Abrió' ? 0 : datum.rol == 'Asistió' ? 1 : datum.rol == 'Cerró' ? 2 : 3"
+        ).properties(height=max(200, 44 * len(rank))),
+        alt="Ventas por rol del canal: abrió, asistió, cerró o fue el único contacto",
     )
     pares = ctx.rebanada("pares")
     pares = pares[pares.asistente.isin(rank.index) & pares.cierre.isin(rank.index)]
@@ -69,8 +73,8 @@ with tab_conv:
             x=alt.X("alcance_pct:Q", title="Alcance (% de usuarios)"),
             y=alt.Y("tasa_conv_usuario_pct:Q", title="Conversión por usuario (%)"),
             color=color_canal(legend=True),
-            size=alt.Size("conv_asistidas:Q", title="Asistencias", scale=alt.Scale(range=[200, 1800])),
-            tooltip=["canal", "alcance_pct", "tasa_conv_usuario_pct", "conv_asistidas"],
+            size=alt.Size("ventas_asiste:Q", title="Asistencias", scale=alt.Scale(range=[200, 1800])),
+            tooltip=["canal", "alcance_pct", "tasa_conv_usuario_pct", "ventas_asiste"],
         ).properties(height=340),
         alt="Dispersión de alcance contra conversión por canal",
     )
@@ -99,6 +103,111 @@ with tab_inv:
             alt="Costo, ventas, CPA, ROAS y cuota de los canales pagados",
         )
         st.caption("Email, orgánico y referral no tienen costo en los datos. ROAS y CPA son promedios, no marginales.")
+        boton_descarga(tabla, "inversion_canales_pagados")
+
+# ----------------------------------------------------------------- campañas (RQ-09)
+with tab_camp:
+    camp = ctx.datos["campana"]
+    camp = camp[camp.canal.isin(rank.index)]
+    if camp.empty:
+        st.info("Ningún canal pagado con campañas en la selección.")
+    else:
+        st.markdown("**Campañas por canal pagado** · la cuota del canal se reparte en proporción a las sesiones de "
+                    "cada campaña en rutas convertidas")
+        st.caption("Vista fija: ventana de atribución vigente, total del negocio (no cambia con el segmento ni la "
+                   "ventana elegidos en el menú lateral).")
+        orden = camp.sort_values("conversiones", ascending=False).campana.tolist()
+        g1, g2 = st.columns(2, border=True)
+        with g1:
+            st.altair_chart(
+                alt.Chart(camp).mark_bar(cornerRadiusEnd=3).encode(
+                    y=alt.Y("campana:N", sort=orden, title=None), x=alt.X("conversiones:Q", title="Ventas atribuidas"),
+                    color=color_canal(legend=True), tooltip=["canal", "campana", "conversiones", "ingresos"],
+                ).properties(height=max(160, 40 * len(camp))),
+                alt="Ventas atribuidas por campaña")
+        with g2:
+            st.altair_chart(
+                alt.Chart(camp).mark_bar(cornerRadiusEnd=3).encode(
+                    y=alt.Y("campana:N", sort=orden, title=None), x=alt.X("roas:Q", title="ROAS"),
+                    color=color_canal(legend=False), tooltip=["canal", "campana", "roas", "cpa", "costo"],
+                ).properties(height=max(160, 40 * len(camp))),
+                alt="ROAS por campaña")
+        tabla_camp = camp.rename(columns={
+            "canal": "Canal", "campana": "Campaña", "sesiones": "Sesiones", "participacion_pct": "Participación %",
+            "conversiones": "Ventas", "ingresos": "Ingresos (S/)", "costo": "Costo (S/)", "roas": "ROAS", "cpa": "CPA (S/)"})
+        st.dataframe(
+            tabla_camp.style.map(estilo_canal, subset=["Canal"]), hide_index=True,
+            column_config={
+                "Participación %": st.column_config.NumberColumn(format="%.1f %%"),
+                "Ventas": st.column_config.NumberColumn(format="%,.1f"),
+                "Ingresos (S/)": st.column_config.NumberColumn(format="S/ %,.0f"),
+                "Costo (S/)": st.column_config.NumberColumn(format="S/ %,.0f"),
+                "ROAS": st.column_config.NumberColumn(format="%.2f"), "CPA (S/)": st.column_config.NumberColumn(format="S/ %.2f"),
+            },
+            alt="Campañas de los canales pagados seleccionados",
+        )
+        st.caption("El reparto es proporcional, no un modelo de atribución aparte a nivel campaña: Shapley no escala a "
+                   "tantas combinaciones (ver el límite de jugadores en Modelos y robustez).")
+        boton_descarga(camp, "campanas")
+
+# ----------------------------------------------------------------- plataformas (RQ-15/RQ-16)
+with tab_plat:
+    plat = ctx.datos["plataformas"]
+    plat = plat[plat.canal.isin(rank.index)]
+    if plat.empty:
+        st.info("Ningún canal pagado con datos de plataforma en la selección.")
+    else:
+        st.markdown("**Lo que reporta cada plataforma frente a lo que le asigna el modelo**")
+        st.warning(
+            "La brecha incluye vistas sin clic (no generan sesión en GA4: el modelo no las puede ver) y que cada "
+            "plataforma reclama la venta completa cuando la ruta pasó por más de un canal pagado, mientras el modelo "
+            "la reparte entre todos. No es un error del modelo ni de la plataforma: miden cosas distintas.",
+            icon=":material/warning:")
+        orden = plat.sort_values("conv_plataforma", ascending=False).campaign_id.tolist()
+        largo = plat.melt(id_vars=["canal", "campaign_id", "plataforma"], value_vars=["conv_modelo", "conv_plataforma"],
+                          var_name="fuente", value_name="conversiones")
+        largo["fuente"] = largo.fuente.map({"conv_modelo": "Modelo (multi-touch)", "conv_plataforma": "Plataforma (reportado)"})
+        st.altair_chart(
+            alt.Chart(largo).mark_bar().encode(
+                y=alt.Y("campaign_id:N", sort=orden, title=None), x=alt.X("conversiones:Q", title="Ventas"),
+                color=alt.Color("fuente:N", scale=alt.Scale(range=["#14213D", "#ADB5BD"]), legend=alt.Legend(title=None)),
+                yOffset="fuente:N", tooltip=["canal", "campaign_id", "fuente", "conversiones"],
+            ).properties(height=max(200, 50 * len(plat))),
+            alt="Ventas atribuidas por el modelo frente a lo reportado por cada plataforma")
+        tabla_plat = plat.rename(columns={
+            "plataforma": "Plataforma", "canal": "Canal", "campaign_id": "Campaña",
+            "conv_plataforma": "Conv. plataforma", "conv_modelo": "Conv. modelo",
+            "ingresos_plataforma": "Ingresos plataforma (S/)", "ingresos_modelo": "Ingresos modelo (S/)",
+            "brecha_pct": "Brecha %"})
+        st.dataframe(
+            tabla_plat.style.map(estilo_canal, subset=["Canal"]), hide_index=True,
+            column_config={
+                "Conv. plataforma": st.column_config.NumberColumn(format="%,.1f"),
+                "Conv. modelo": st.column_config.NumberColumn(format="%,.1f"),
+                "Ingresos plataforma (S/)": st.column_config.NumberColumn(format="S/ %,.0f"),
+                "Ingresos modelo (S/)": st.column_config.NumberColumn(format="S/ %,.0f"),
+                "Brecha %": st.column_config.NumberColumn(format="%+.0f %%"),
+            },
+            alt="Conversiones e ingresos: plataforma vs. modelo, por campaña",
+        )
+        boton_descarga(plat, "plataformas_comparacion")
+
+        st.divider()
+        alc = ctx.datos["alcance"]
+        alc = alc[alc.canal.isin(rank.index)]
+        if not alc.empty:
+            st.markdown("**Impresiones, alcance y frecuencia** · no entran a las rutas de conversión")
+            tabla_alc = alc.rename(columns={"canal": "Canal", "campana": "Campaña", "impresiones": "Impresiones",
+                                            "alcance": "Alcance", "frecuencia": "Frecuencia"})
+            st.dataframe(
+                tabla_alc.style.map(estilo_canal, subset=["Canal"]), hide_index=True,
+                column_config={"Impresiones": st.column_config.NumberColumn(format="%,.0f"),
+                              "Alcance": st.column_config.NumberColumn(format="%,.0f"),
+                              "Frecuencia": st.column_config.NumberColumn(format="%.2f")},
+                alt="Impresiones, alcance y frecuencia por campaña",
+            )
+            st.caption("Insumo para un futuro Marketing Mix Model (RQ-22, opcional); hoy no se usa en las rutas de conversión.")
+            boton_descarga(alc, "alcance_campanas")
 
 with tab_seg:
     dims = [d for d in DIMENSIONES if d != "Todos"]
@@ -133,3 +242,4 @@ with tab_rut:
         },
         alt="Rutas de conversión más frecuentes",
     )
+    boton_descarga(rt, "rutas_top")

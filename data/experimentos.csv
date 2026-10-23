@@ -1,0 +1,3 @@
+canal,fecha_inicio,fecha_fin,tipo_prueba,ventas_incrementales,intervalo_90_bajo,intervalo_90_alto,fuente
+Paid Social,2026-06-01,2026-07-26,holdout_usuario,250,210,290,"Holdout interno por usuario (20% control, 8 semanas)"
+Paid Search,2026-03-03,2026-03-30,geografica,58,42,74,"Prueba geográfica Lima vs Provincias (4 semanas)"

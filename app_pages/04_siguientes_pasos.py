@@ -3,7 +3,7 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
-from dashboard_comun import color_canal, contexto, estilo_canal, panel_interpretacion
+from dashboard_comun import boton_descarga, color_canal, contexto, estilo_canal, estilo_estado, panel_interpretacion
 
 ctx = contexto()
 v = ctx.vista
@@ -41,8 +41,10 @@ with izq:
 # ----------------------------------------------------------------- incrementalidad
 with der:
     st.markdown("**Diseño de una prueba de incrementalidad** · ¿qué efecto puede detectar?")
+    # RQ-20: esta vista sigue mostrando solo el holdout por usuario; la prueba geográfica y la
+    # plantilla de Meta Conversion Lift usan otras columnas (region_control / insumos).
     inc = ctx.datos["incrementalidad"]
-    inc = inc[inc.canal.isin(ctx.rank.index)]
+    inc = inc[(inc.canal.isin(ctx.rank.index)) & (inc.tipo_prueba == "holdout_usuario")]
     if inc.empty:
         st.info("Selecciona al menos un canal pagado.")
     else:
@@ -82,6 +84,43 @@ with der:
                 "- Tasa base = ventas atribuidas por Shapley / usuarios alcanzados.\n"
                 "- Confianza del 95 % y poder del 80 %, con grupos de control y expuesto de distinto tamaño.\n"
                 "- Es una estimación de planificación: la potencia final depende de la varianza real y del diseño del control.")
+
+# ----------------------------------------------------------------- validación con experimentos (RQ-21)
+st.divider()
+val_canal = ctx.datos["val_canal"]
+val_canal = val_canal[val_canal.canal.isin(ctx.rank.index)]
+if not val_canal.empty:
+    st.markdown("**Validación con experimentos** · crédito que atribuye el modelo frente al efecto que midió cada prueba")
+    tabla_val = val_canal.rename(columns={"canal": "Canal", "estado": "Estado", "factor_calibracion": "Factor de calibración"})
+    st.dataframe(
+        tabla_val.style.map(estilo_canal, subset=["Canal"]).map(estilo_estado, subset=["Estado"]),
+        hide_index=True,
+        column_config={"Factor de calibración": st.column_config.NumberColumn(
+            format="%.2f", help="Ventas incrementales medidas / ventas atribuidas por el modelo para el mismo periodo. "
+                                "Informativo: no se aplica solo a ninguna cuota.")},
+        alt="Estado de validación (Validado / Sin validar / Sin probar) y factor de calibración por canal pagado",
+    )
+    st.caption("Los experimentos no se repiten por segmento: esta tabla es siempre la vista total, con la ventana de atribución vigente.")
+    exp = ctx.datos["val_exp"]
+    exp = exp[exp.canal.isin(ctx.rank.index)]
+    if not exp.empty:
+        with st.expander("Detalle de los experimentos cargados"):
+            tabla_exp = exp.rename(columns={
+                "canal": "Canal", "tipo_prueba": "Tipo de prueba", "fecha_inicio": "Inicio", "fecha_fin": "Fin",
+                "dias_prueba": "Días", "ventas_atribuidas_prorrateadas": "Atribuido por el modelo",
+                "ventas_incrementales_medidas": "Medido por el experimento", "fuente": "Fuente"})
+            st.dataframe(
+                tabla_exp.style.map(estilo_canal, subset=["Canal"]),
+                hide_index=True, column_order=["Canal", "Tipo de prueba", "Inicio", "Fin", "Días",
+                                               "Atribuido por el modelo", "Medido por el experimento",
+                                               "intervalo_90_bajo", "intervalo_90_alto", "Fuente"],
+                alt="Detalle de cada experimento: periodo, crédito atribuido y efecto medido",
+            )
+            st.caption("«Atribuido por el modelo» se prorratea a los días del experimento a partir de la cuota de la ventana "
+                       "de atribución vigente: no se vuelve a correr el pipeline solo para esas fechas.")
+    boton_descarga(val_canal, "validacion_por_canal")
+else:
+    st.caption("Sin canales pagados seleccionados: no hay validación con experimentos que mostrar.")
 
 # ----------------------------------------------------------------- hoja de ruta
 st.divider()

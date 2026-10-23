@@ -7,7 +7,7 @@ se guarda la lectura determinista (plantilla) y queda marcada como tal.
 """
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import duckdb
@@ -30,7 +30,7 @@ def generar_narrativas(db_path: Path | str = DB_PATH) -> pd.DataFrame:
         filas.append({
             "tipo": tipo, "ventana_dias": v.ventana_dias, "dim": v.dim, "segmento": v.segmento, "modelo": v.modelo,
             "texto": r.texto, "generado_con": r.generado_con, "advertencias": " | ".join(r.advertencias),
-            "generado_en": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "generado_en": datetime.now(UTC).isoformat(timespec="seconds"),
         })
     df = pd.DataFrame(filas)
     con = duckdb.connect(str(db_path))

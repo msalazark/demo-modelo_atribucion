@@ -1,0 +1,52 @@
+# Plantilla de configuración para un cliente real sobre BigQuery (RQ-01/RQ-02).
+# Reemplaza proyecto_gcp, dataset_gcp y los canales/pasarelas/estados según el cliente.
+cliente: nombre-del-cliente
+modo: produccion
+motor: bigquery
+proyecto_gcp: proyecto-gcp-del-cliente
+dataset_gcp: dataset_marts
+
+zona_horaria: America/Lima
+moneda: PEN
+
+ventana_analisis_meses: 12
+ventanas_atribucion_dias: [7, 14, 30, 60, 90]
+ventana_vigente_dias: 30
+ventana_tiempo_dias: 90
+n_bootstrap: 30
+
+canales_pagados: ["Paid Social", "Paid Search", "Display"]
+canales_no_invertibles: ["Direct"]
+pasarelas: []
+estados_validos_pedido: ["pagado"]
+campo_fecha_conversion: created_at
+variante_cierre: ultima_sesion
+dimensiones_segmentacion:
+  Dispositivo: device_category
+  Región: geo_region
+  Tipo de cliente: customer_type
+  Categoría: content_group
+
+umbral_escalar: 1.2
+umbral_revisar: 0.8
+ratio_asistidor: 2.0
+brecha_modelos_pp: 3.0
+sobre_indice_pp: 3.0
+confianza_alta_ci: 2.0
+confianza_media_ci: 4.0
+confianza_alta_pedidos: 3000
+confianza_media_pedidos: 1000
+
+limite_jugadores_shapley: 12
+shapley_monte_carlo_permutaciones: 200
+shapley_c: 1.0  # null para elegirlo por validación cruzada en vez de un valor fijo
+
+markov_orden: 1
+markov_excluir_direct: false
+markov_ingreso_por_valor: false
+
+retencion_eventos_meses: 13
+
+minimo_conversiones_senal: 1000
+
+n_jobs: -1

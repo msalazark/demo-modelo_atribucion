@@ -1,0 +1,7 @@
+control,valor,umbral,unidad,severidad,estado
+Pedidos con ruta,98.9,85.0,%,crítico,ok
+Pedidos vistos en GA4,70.16,70.0,%,alerta,ok
+Sesiones Unassigned,0.0,5.0,%,alerta,ok
+Tráfico de Meta sin UTM,0.0,10.0,%,alerta,ok
+Días sin costos de un canal pagado activo,0.0,0.0,días,crítico,ok
+Caída de eventos vs. media de 28 días,0.09,-30.0,%,crítico,ok

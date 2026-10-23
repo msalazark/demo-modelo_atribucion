@@ -1,28 +1,47 @@
-canal,semanas,holdout_pct,usuarios_prueba,usuarios_control,tasa_base_pct,emd_relativo_pct
-Display,4,10,1426,142,1.15,229.4
-Display,4,20,1426,285,1.15,172.0
-Display,4,50,1426,713,1.15,137.6
-Display,8,10,2852,285,1.15,162.2
-Display,8,20,2852,570,1.15,121.6
-Display,8,50,2852,1426,1.15,97.3
-Display,12,10,4278,427,1.15,132.4
-Display,12,20,4278,855,1.15,99.3
-Display,12,50,4278,2139,1.15,79.5
-Paid Search,4,10,2613,261,3.47,96.3
-Paid Search,4,20,2613,522,3.47,72.2
-Paid Search,4,50,2613,1306,3.47,57.8
-Paid Search,8,10,5226,522,3.47,68.1
-Paid Search,8,20,5226,1045,3.47,51.1
-Paid Search,8,50,5226,2613,3.47,40.9
-Paid Search,12,10,7840,784,3.47,55.6
-Paid Search,12,20,7840,1568,3.47,41.7
-Paid Search,12,50,7840,3920,3.47,33.4
-Paid Social,4,10,3300,330,3.44,86.2
-Paid Social,4,20,3300,660,3.44,64.6
-Paid Social,4,50,3300,1650,3.44,51.7
-Paid Social,8,10,6601,660,3.44,60.9
-Paid Social,8,20,6601,1320,3.44,45.7
-Paid Social,8,50,6601,3300,3.44,36.6
-Paid Social,12,10,9902,990,3.44,49.7
-Paid Social,12,20,9902,1980,3.44,37.3
-Paid Social,12,50,9902,4951,3.44,29.8
+canal,tipo_prueba,semanas,holdout_pct,usuarios_prueba,usuarios_control,tasa_base_pct,emd_relativo_pct,costo_prueba_pedidos,costo_prueba_soles,region_control,insumos
+Display,holdout_usuario,4,10.0,1435,143,1.18,225.3,1.7,318.0,,
+Display,holdout_usuario,4,20.0,1435,287,1.18,168.9,3.4,637.0,,
+Display,holdout_usuario,4,50.0,1435,717,1.18,135.2,8.5,1592.0,,
+Display,holdout_usuario,8,10.0,2870,287,1.18,159.3,3.4,637.0,,
+Display,holdout_usuario,8,20.0,2870,574,1.18,119.5,6.8,1274.0,,
+Display,holdout_usuario,8,50.0,2870,1435,1.18,95.6,17.0,3185.0,,
+Display,holdout_usuario,12,10.0,4305,430,1.18,130.1,5.1,955.0,,
+Display,holdout_usuario,12,20.0,4305,861,1.18,97.5,10.2,1911.0,,
+Display,holdout_usuario,12,50.0,4305,2152,1.18,78.0,25.5,4777.0,,
+Paid Search,holdout_usuario,4,10.0,2612,261,3.59,94.8,9.4,1788.0,,
+Paid Search,holdout_usuario,4,20.0,2612,522,3.59,71.1,18.7,3577.0,,
+Paid Search,holdout_usuario,4,50.0,2612,1306,3.59,56.9,46.8,8941.0,,
+Paid Search,holdout_usuario,8,10.0,5224,522,3.59,67.0,18.7,3577.0,,
+Paid Search,holdout_usuario,8,20.0,5224,1044,3.59,50.2,37.5,7153.0,,
+Paid Search,holdout_usuario,8,50.0,5224,2612,3.59,40.2,93.7,17883.0,,
+Paid Search,holdout_usuario,12,10.0,7836,783,3.59,54.7,28.1,5365.0,,
+Paid Search,holdout_usuario,12,20.0,7836,1567,3.59,41.0,56.2,10730.0,,
+Paid Search,holdout_usuario,12,50.0,7836,3918,3.59,32.8,140.5,26824.0,,
+Paid Social,holdout_usuario,4,10.0,3303,330,3.49,85.4,11.5,2201.0,,
+Paid Social,holdout_usuario,4,20.0,3303,660,3.49,64.0,23.1,4401.0,,
+Paid Social,holdout_usuario,4,50.0,3303,1651,3.49,51.2,57.7,11003.0,,
+Paid Social,holdout_usuario,8,10.0,6606,660,3.49,60.4,23.1,4401.0,,
+Paid Social,holdout_usuario,8,20.0,6606,1321,3.49,45.3,46.2,8802.0,,
+Paid Social,holdout_usuario,8,50.0,6606,3303,3.49,36.2,115.4,22006.0,,
+Paid Social,holdout_usuario,12,10.0,9909,990,3.49,49.3,34.6,6602.0,,
+Paid Social,holdout_usuario,12,20.0,9909,1981,3.49,37.0,69.3,13204.0,,
+Paid Social,holdout_usuario,12,50.0,9909,4954,3.49,29.6,173.1,33009.0,,
+Display,geografica,4,,1435,797,1.18,136.0,9.4,,Lima,
+Display,geografica,8,,2870,1595,1.18,96.2,18.9,,Lima,
+Display,geografica,12,,4305,2392,1.18,78.5,28.3,,Lima,
+Display,geografica,4,,1435,637,1.18,136.0,7.5,,Provincias,
+Display,geografica,8,,2870,1275,1.18,96.2,15.1,,Provincias,
+Display,geografica,12,,4305,1912,1.18,78.5,22.6,,Provincias,
+Paid Search,geografica,4,,2612,1684,3.59,59.4,60.4,,Lima,
+Paid Search,geografica,8,,5224,3368,3.59,42.0,120.8,,Lima,
+Paid Search,geografica,12,,7836,5052,3.59,34.3,181.1,,Lima,
+Paid Search,geografica,4,,2612,928,3.59,59.4,33.3,,Provincias,
+Paid Search,geografica,8,,5224,1856,3.59,42.0,66.6,,Provincias,
+Paid Search,geografica,12,,7836,2784,3.59,34.3,99.8,,Provincias,
+Paid Social,geografica,4,,3303,1919,3.49,51.9,67.1,,Lima,
+Paid Social,geografica,8,,6606,3839,3.49,36.7,134.2,,Lima,
+Paid Social,geografica,12,,9909,5759,3.49,30.0,201.3,,Lima,
+Paid Social,geografica,4,,3303,1383,3.49,51.9,48.3,,Provincias,
+Paid Social,geografica,8,,6606,2766,3.49,36.7,96.7,,Provincias,
+Paid Social,geografica,12,,9909,4149,3.49,30.0,145.0,,Provincias,
+Paid Social,conversion_lift_meta,4,10.0,3303,330,3.49,85.4,11.5,,,Business Manager con permiso de Conversion Lift; evento de conversión configurado en el píxel/CAPI; presupuesto mínimo según Meta (suele pedir spend diario estable durante toda la prueba); no pausar ni cambiar creatividades/audiencias mientras corre.

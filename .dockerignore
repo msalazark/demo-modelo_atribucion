@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.git/
+.github/
+logs/
+.coverage
+.cache_rendimiento/
+.streamlit/secrets.toml
+tests/
+docs/

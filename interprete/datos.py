@@ -7,22 +7,33 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
 import duckdb
 import pandas as pd
 
-DB_PATH = Path(__file__).resolve().parent.parent / "data" / "ecommerce.duckdb"
-VENTANA_VIGENTE = 30
-CANALES_NO_INVERTIBLES = ("Direct",)
+from config import cargar_config
+
+# Mismo origen de configuración que dashboard_comun.py (RQ-01): un solo YAML, `ATRIBUCION_CONFIG`
+# para apuntar a otro sin tocar código.
+CFG = cargar_config(os.getenv("ATRIBUCION_CONFIG", "config/demo.yaml"))
+DB_PATH = Path(__file__).resolve().parent.parent / CFG.ruta_bd
+VENTANA_VIGENTE = CFG.ventana_vigente_dias
+CANALES_NO_INVERTIBLES = tuple(CFG.canales_no_invertibles)
 REGLAS = ["primer_clic", "ultimo_clic", "ultimo_no_directo", "lineal", "posicion_u", "decaimiento_temporal"]
 TABLAS = {  # lista blanca: las herramientas del agente solo pueden leer estas
-    "mart_decision__canal", "mart_modelos__comparativo", "mart_decision__senal", "mart_calidad__error_modelo",
+    "mart_decision__canal", "mart_modelos__comparativo", "mart_decision__senal",
     "mart_calidad__conciliacion", "mart_kpi__mensual", "mart_estado__modelo", "mart_estado__disparadores",
     "mart_tiempo__a_compra", "mart_tiempo__histograma", "mart_siguientes_pasos__prueba_incrementalidad",
+    "mart_validacion__experimentos", "mart_validacion__canal",
+    "mart_decision__campana", "mart_plataformas__comparacion", "mart_plataformas__alcance",
+    "mart_mmm__curvas", "mart_mmm__resumen",
     "mart_ejecucion", "mart_narrativa",
 }
+if CFG.modo == "demo":  # mart_calidad__error_modelo (efecto_real) solo existe en modo demo (RQ-02)
+    TABLAS.add("mart_calidad__error_modelo")
 
 
 @dataclass(frozen=True)
@@ -93,6 +104,7 @@ def construir_hechos(v: Vista, lector: Lector | None = None) -> dict:
     por_modelo = comp[comp.modelo == v.modelo].set_index("canal")
     unc = comp[comp.modelo == "ultimo_no_directo"].set_index("canal").cuota_pct
     rango = comp[comp.modelo.isin(REGLAS)].groupby("canal").cuota_pct.agg(["min", "max"])
+    val_canal = lector.consulta("mart_validacion__canal").set_index("canal")
 
     canales = []
     for c in canal.index:
@@ -107,10 +119,14 @@ def construir_hechos(v: Vista, lector: Lector | None = None) -> dict:
             "rango_cuota_entre_reglas_pct": [_r(rango.loc[c, "min"]), _r(rango.loc[c, "max"])],
             "roas": _r(p.roas, 2), "cpa_soles": _r(p.cpa, 1), "costo_soles": _r(p.costo, 0),
             "usuarios_alcanzados": int(m.usuarios_alcanzados), "usuarios_nuevos": int(m.usuarios_nuevos),
-            "conversiones_asistidas": int(m.conv_asistidas), "conversiones_cerradas": int(m.conv_cerradas),
-            "asistencias_por_cierre": _r(m.ratio_asistencia, 2),
+            "ventas_abre": int(m.ventas_abre), "conversiones_asistidas": int(m.ventas_asiste),
+            "conversiones_cerradas": int(m.ventas_cierra), "ventas_unico": int(m.ventas_unico),
+            "asistencias_por_cierre": _r(m.asistencias_por_cierre, 2),
             "conversion_por_usuario_pct": _r(m.tasa_conv_usuario_pct, 2),
             "prob_abrir_ruta_pct": _r(m.p_apertura_pct), "prob_cerrar_en_visita_pct": _r(m.p_cierre_pct),
+            # RQ-21: "Validado"/"Sin validar"/"Sin probar" solo existe para canales pagados.
+            "estado_validacion_experimento": val_canal.loc[c, "estado"] if c in val_canal.index else None,
+            "factor_calibracion": _r(val_canal.loc[c, "factor_calibracion"], 2) if c in val_canal.index else None,
         })
 
     ranking = [c for c in canales if not (v.excluir_directo and not c["es_palanca_de_inversion"])]
@@ -125,7 +141,7 @@ def construir_hechos(v: Vista, lector: Lector | None = None) -> dict:
     kpi = lector.consulta("mart_kpi__mensual").sort_values("periodo")
     ult, ant = kpi.iloc[-1], kpi.iloc[-2]
     cols = ["pedidos", "ingresos", "inversion_medios", "mer", "cpa_blended", "conv_sesion_pct"]
-    err = lector.rebanada("mart_calidad__error_modelo", v)
+    err = lector.rebanada("mart_calidad__error_modelo", v) if CFG.modo == "demo" else None
     numero_1 = lector.consulta(
         "mart_modelos__comparativo", "WHERE dim = ? AND segmento = ? AND modelo = ? AND ranking = 1",
         [v.dim, v.segmento, v.modelo],
@@ -135,7 +151,22 @@ def construir_hechos(v: Vista, lector: Lector | None = None) -> dict:
     disp = lector.consulta("mart_estado__disparadores")
     tcan = lector.consulta("mart_tiempo__a_compra").query("canal_apertura == '(todos)'").iloc[0]
     thist = lector.consulta("mart_tiempo__histograma").sort_values("dias_desde")
+    # RQ-20: la tabla ahora trae también pruebas geográficas y la plantilla de Meta Conversion
+    # Lift (tipo_prueba); el intérprete solo recomienda la prueba de holdout por usuario, que es
+    # la que sabe describir hoy.
     inc = lector.consulta("mart_siguientes_pasos__prueba_incrementalidad")
+    inc = inc[inc.tipo_prueba == "holdout_usuario"]
+    # RQ-21: crédito atribuido (lo que calcula el modelo) y efecto incremental medido (lo que
+    # midió el experimento) van en claves separadas a propósito: el intérprete no debe fundirlos
+    # en un solo número ni presentar el crédito atribuido como si fuera el efecto medido.
+    exp = lector.consulta("mart_validacion__experimentos")
+    validacion_experimentos = [{
+        "canal": r.canal, "tipo_prueba": r.tipo_prueba, "periodo": f"{r.fecha_inicio} a {r.fecha_fin}",
+        "credito_atribuido_por_el_modelo": _r(r.ventas_atribuidas_prorrateadas, 1),
+        "efecto_incremental_medido_por_el_experimento": _r(r.ventas_incrementales_medidas, 1),
+        "intervalo_90_medido": [_r(r.intervalo_90_bajo, 1), _r(r.intervalo_90_alto, 1)],
+        "validado": bool(r.validado), "factor_calibracion": _r(r.factor_calibracion, 2), "fuente": r.fuente,
+    } for r in exp.itertuples()]
 
     objetivo = next((c["canal"] for c in canales if c["senal"] == "Escalar (validar)"), None)
     prueba = None
@@ -164,8 +195,12 @@ def construir_hechos(v: Vista, lector: Lector | None = None) -> dict:
                     "conversion_por_usuario": mejor("conversion_por_usuario_pct")},
         "kpi_ultimo_mes": {"mes": ult.periodo, **{k: _r(ult[k], 2) for k in cols}},
         "kpi_mes_anterior": {"mes": ant.periodo, **{k: _r(ant[k], 2) for k in cols}},
-        "error_de_cada_modelo_vs_efecto_real_pp": {r.modelo: _r(r.error_medio_pp, 2) for r in err.itertuples()},
-        "nota_error": "Solo medible porque los datos son sintéticos; con un cliente real no existe.",
+        # error_de_cada_modelo_vs_efecto_real_pp y nota_error solo existen en modo demo (RQ-02):
+        # en producción no hay verdad sintética contra la que comparar los modelos.
+        **({
+            "error_de_cada_modelo_vs_efecto_real_pp": {r.modelo: _r(r.error_medio_pp, 2) for r in err.itertuples()},
+            "nota_error": "Solo medible porque los datos son sintéticos; con un cliente real no existe.",
+        } if err is not None else {}),
         "canal_numero_1_segun_ventana": [{"ventana_dias": int(r.ventana_dias), "canal": r.canal}
                                          for r in numero_1.itertuples()],
         "estado_del_modelo": [
@@ -178,4 +213,5 @@ def construir_hechos(v: Vista, lector: Lector | None = None) -> dict:
                                    "pct_de_compras_en_el_ultimo_tramo": _r(thist.pct.iloc[-1]),
                                    "ventana_medida_dias": int(tcan.ventana_dias)},
         "prueba_de_incrementalidad": prueba,
+        "validacion_experimentos": validacion_experimentos,
     }
