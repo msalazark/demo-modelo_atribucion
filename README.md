@@ -8,11 +8,15 @@ Los datos son sintéticos, con la misma estructura del export de GA4 en BigQuery
 
 ```bash
 pip install -r requirements.txt
-python generar_datos.py   # crea data/ecommerce.duckdb (~920 mil eventos, 120 mil usuarios, 12 meses: 2025-10 a 2026-09)
+python generar_datos.py   # crea data/ecommerce.duckdb (~1,15 millones de eventos, 150 mil usuarios, 15 meses: 2025-07 a 2026-09)
 python run_demo.py        # usa config/demo.yaml; SQL + modelos + validación; escribe resultados/*.csv (~2-3 min)
 ```
 
 O con `make`: `make datos`, `make pipeline`, `make app`, `make test`.
+
+Los datos son sintéticos (semilla fija, reproducibles): qué representa cada tabla, por qué el MMM
+tiene intervalos anchos, por qué "lo que reporta la plataforma" es mucho más alto que lo que le
+atribuye el modelo, etc. — ver `docs/datos_sinteticos.md`.
 
 ## Configuración (RQ-01)
 
